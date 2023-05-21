@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brains Help Center</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous" ></script>
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/style2.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../Images/brains.ico" />
+  </head>
+  <body>
+
+    <!-- Navbar (sit on top)-->
+    <div class="w3-top">
+      <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
+        <a href="../index.html" class="logobrains w3-bar-item w3-wide">Brains</a >
+        <a href="../index.html" aria-label="logobrains">
+          <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+          <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000" colors="primary:#121331,secondary:#911710" style="width: 50px; height: 50px" >
+          </lord-icon>
+        </a>
+
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small w3-hide-medium" style="margin-right: 15px">
+          <a href="../index.html#home" class="navbartop w3-bar-item" style="--i: 1">HOME</a>
+          <a href="../index.html#about" class="navbartop w3-bar-item" style="--i: 2">ABOUT</a>
+          <a href="../index.html#team" class="navbartop w3-bar-item" style="--i: 3">TEAM</a>
+          <a href="../index.html#work" class="navbartop w3-bar-item" style="--i: 4" >CAREERS</a>
+          <a href="../index.html#contact" class="navbartop w3-bar-item" style="--i: 5" >CONTACT</a>
+          <a href="#HelpCenter" class="navbartop w3-bar-item active" style="--i: 6" >HELP CENTER</a>
+        </div>
+
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()" aria-label="menu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display: none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16" >Close ×</a>
+      <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button" >HOME</a>
+      <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button" >ABOUT</a>
+      <a href="../index.html#team" onclick="w3_close()" class="w3-bar-item w3-button" >TEAM</a>
+      <a href="../index.html#work" onclick="w3_close()" class="w3-bar-item w3-button" >CAREERS</a>
+      <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button" >CONTACT</a>
+      <a href="HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button" >HELP CENTER</a>
+    </nav>
+
+    <!-- header section -->
+    <header class="w3-display-container w3-grayscale-min" id="HelpCenter">
+      <div class="HelpSearch">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 m-auto">
+              <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+              <div style="
+                  display: flex;
+                  justify-content: center;">
+                <lord-icon src="https://cdn.lordicon.com/vlupvdhl.json" trigger="loop" delay="1000"
+                  colors="primary:#ffffff,secondary:red" style="width:70px;height:70px">
+                </lord-icon>
+              </div>
+              <h3 class="text-center mb-3">How can we help?</h3>
+              <p class="digitalized text-center">The Help Center has the answers you need to succeed using <span>Brains</span></p>
+              <div class="form-group">
+                <input type="text" id="search" class="form-control form-control-lg" placeholder="Enter error code or search..." autocomplete="new-password"/>
+              </div>
+              <div id="match-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section class="faqs">
+      <div class="w3-container w3-light-grey">
+        <h1>FAQ</h1>
+        <h4>General FAQs about <span>Brains</span></h4>
+        <br>
+        <div id="faqs"></div>
+      </div>
+    </section>
+
+    <div class="faqsend">
+      <img src='../Images/brains.ico' alt="icon">
+      <i>: Kindly reach out to our customer services for assistance in accessing this answer.</i>
+    </div>
+   
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <div>
+        <h4>Working Hours</h4>
+      </div>
+      <div>
+        Monday to Friday<br />
+        From 9:00 A.M.<br />
+        To 4:00 P.M.
+      </div>
+      <div class="footer w3-xlarge w3-section">
+        <ul>
+          <div></div>
+          <li>
+            <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp">
+              <i class="fa fa-whatsapp w3-hover-opacity"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank" aria-label="facebook">
+              <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/brains-lb/" target="_blank" aria-label="linkedin">
+              <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </a>
+          </li>
+          <div></div>
+        </ul>
+      </div>
+      <p class="w3-small">
+        Copyright &copy; Brains s.a.r.l - Designed and powered by Brains SARL
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script src="helpcenter.js"></script>
+  </body>
+</html>

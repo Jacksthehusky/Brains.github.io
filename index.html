@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Brains</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Images/brains.ico">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="logobrains w3-bar-item w3-wide">Brains</a>
+      <a href="#home" aria-label="logobrains">
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
+          colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
+        </lord-icon>
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="header w3-right w3-hide-small w3-hide-medium" style="margin-right: 15px">
+        <a href="#home" class="navbartop w3-bar-item active" style="--i:1;">HOME</a>
+        <a href="#about" class="navbartop w3-bar-item" style="--i:2;">ABOUT</a>
+        <a href="#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
+        <a href="#work" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
+        <a href="#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
+        <a href="js/HelpCenter.html" class="navbartop w3-bar-item" style="--i:6;">HELP CENTER</a>
+      </div>
+  
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"
+        aria-label="menu">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="js/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
+  </nav>
+
+  <!-- Home Section -->
+  <header class="w3-display-container w3-grayscale-min">
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Experience the New Technology in computer system with our</h3>
+        <h1>Cutting-edge software</h1>
+        <h3>For <span class="multiple-text"></span></h3>
+  
+        <div class="social-media w3-text-grey w3-large">
+          <a href="javascript:void(0)" style="--i:7;" onclick="sendWhatsAppMessageHome()" aria-label="whatsapp">
+            <i class="fa fa-whatsapp w3-hover-opacity"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" style="--i:8;" target="_blank"
+            aria-label="facebook">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/brains-lb/" style="--i:9;" target="_blank" aria-label="linkedin">
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </a>
+        </div>
+        <a href="#about" class="btns">Tell me more</a>
+      </div>
+      <!-- Home img -->
+      <div class="home-img">
+        <img src="Images/mockup.png" alt="">
+      </div>
+    </section>
+  </header>
+
+  <!-- About Section-->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="Images/about.jpg" alt="">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Brains</span></h2>
+      <h3>Integrated Complete ERP Solution Developed Under Visual Studio .NET Framework Using Sql Server Database.</h3>
+      <p>Throughout the years, <span>Brains</span> has developed practical and creative solutions. A young, dedicated
+        team keeping up with future trends in the software industry, offer their expertise to develop, implement and
+        train customers. Their know-how is always at the service of the client's needs.
+        The foundation of <span>Brains</span> success is our human resources committed to excellent service, efficient
+        original software development, and a satisfied client.
+        Since the establishment of our company several years ago, we have hundreds of clients and are continuously
+        expanding our base. <span>Brains</span> covers all sectors, wherever a creative software solution is needed.</p>
+    </div>
+  </section>
+
+
+  <!-- services-->
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+  
+      <div class="services-box">
+        <img src="Images/POS.png" alt="POS" />
+        <h3>Point of sale</h3>
+        <p>A system used to refer to the cash register at a store.</p>
+        <a href="#tab1" class="btns">Read More</a>
+      </div>
+  
+      <div class="services-box">
+        <img src="Images/Payroll.png" alt="Payroll" />
+        <h3>Payroll</h3>
+        <p>A system designed to assist all types of organization's human resources.</p>
+        <a href="#tab2" class="btns">Read More</a>
+      </div>
+  
+      <div class="services-box">
+        <img src="Images/inventory.png" alt="inventory" />
+        <h3>Inventory Management</h3>
+        <p>A system to track and control your business inventory.</p>
+        <a href="#tab3" class="btns">Read More</a>
+      </div>
+  
+      <div class="services-box">
+        <img src="Images/accounting.png" alt="accounting" />
+        <h3>Accounting</h3>
+        <p>A system that can help you manage your cash flow easily and to be ready for tax time.</p>
+        <a href="#tab4" class="btns">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <div class="w3-container portfolio-layer portfolio-container" style="padding:128px 16px">
+    <div class="w3-row-padding">
+  
+      <div class="w3-col l3 m6 portfolio-box" id="tab1">
+        <h4>Point of sale</h4>
+        <img src="Images/PointOS.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="A point-of-sale system used to refer to the cash register at a store.">
+        <div class="portfolio-layer">
+          <p>A point-of-sale system used to refer to the cash register at a store.</p>
+          <ul>
+            <li>Issue printed or electronic receipts.</li>
+            <li>Apply discounts and issue refunds.</li>
+            <li>Keep recording sales even when offline.</li>
+            <li>Connect a receipt printer, barcode scanner, and cash drawer.</li>
+            <li>supports multi-currency payments.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 m6 portfolio-box" id="tab2">
+        <h4>Payroll</h4>
+        <img src="Images/PayrollSystem.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="A payroll management system is designed to assist all types of organization's human resources.">
+        <div class="portfolio-layer">
+          <p>A payroll management system is designed to assist all types of organization's human resources.</p>
+          <ul>
+            <li>Easily manage your staff and make balanced decisions.</li>
+            <li>Employees clock in and out and their total work hours are calculated automatically.</li>
+            <li>Grant different levels of access to protect sensitive information.</li>
+          </ul>
+        </div>
+      </div>
+  
+  
+      <div class="w3-col l3 m6 portfolio-box" id="tab3">
+        <h4>Inventory management</h4>
+        <img src="Images/InventoryManagment.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Modern inventory management to track and control your business inventory as it is bought, manufactured, stored, and used. Never run out of stock.">
+        <div class="portfolio-layer">
+          <p>Modern inventory management to track and control your business inventory as it is bought, manufactured,
+            stored and used. Never run out of stock.</p>
+          <ul>
+            <li>Track stock levels in real time.</li>
+            <li>Receive automatic low stock alerts.</li>
+            <li>Send orders to suppliers and track stock receipts.</li>
+            <li>Transfer stock between your stores.</li>
+            <li>Print barcode labels</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="w3-col l3 m6 portfolio-box" id="tab4">
+        <h4>Accounting</h4>
+        <img src="Images/AccountingSystem.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="An accounting software that is simple, reliable, and secure can help you manage your cash flow easily. It can help you be ready for tax time.">
+        <div class="portfolio-layer">
+          <p>An accounting software that is simple, reliable, and secure can help you manage your cash flow easily. It
+            can help you be ready for tax time.</p>
+          <ul>
+            <li>View revenue, average sale and profit.</li>
+            <li>Track sales trends and react to changes promptly.</li>
+            <li>Determine best-selling items and categories.</li>
+            <li>View complete sales history.</li>
+            <li>Export sales data to the spreadsheets.</li>
+          </ul>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" alt="">
+      <p id="caption" class="w3-opacity w3-large caption"></p>
+    </div>
+  </div>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="team">
+    <h2 class="heading"><span>POS software</span> fits just right for your business</h2>
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+      <div class="marquee w3-quarter">
+        <span class="w3-xlarge">Food drink Restaurant bar Coffee-shop Retail Grocery-store Boutique Fashion Services
+          Salon Hotels Rentals Bakery Fast-food Café Jewelry</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- small and large" -->
+  <div class="about-content w3-container" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h2 class="heading">Built for <span>small</span> and <span>large</span> business owners</h2>
+        <p>Our software is designed to cater to the needs of both small and large business owners.
+          <br><span>Brains</span> is a popular accounting software that is widely used by businesses of all sizes.
+          It offers a wide range of features that help business owners manage their finances more efficiently, including
+          invoicing, inventory tracking,
+          payroll management, and financial reporting. <br>One of the key benefits of <span>Brains</span> is its
+          scalability, which means that the software can adapt to the changing needs
+          of a business as it grows. This makes it an ideal solution for small business owners who are looking to expand
+          their operations and need a reliable accounting
+          software that can support their growth. At the same time, <span>Brains</span> offers advanced features that
+          can meet the needs of larger businesses with more complex
+          accounting requirements. <br>Overall, <span>Brains</span> is a versatile software that can be customized to
+          suit the specific needs of businesses of all sizes.
+        </p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large w3-grayscale-min" src="./Images/companies.jpg" alt="Buildings" width="700"
+          height="394">
+      </div>
+    </div>
+  </div>
+
+  <!-- System Requirements Section -->
+  <div class="systemreq">
+    <h2 class="heading">System Requirements Of <span>Brains</span> V5</h2>
+    <div class="systemreq-content">
+      <b>Minimum:</b>
+      <ul>
+        <li>OS: Windows 7</li>
+        <li>Processor: Intel Core i5 7th generation</li>
+        <li>Memory: 8 GB RAM</li>
+        <li>Storage: 50 GB available space</li>
+      </ul>
+      <br>
+      <b>Recommended:</b>
+      <ul>
+        <li>OS: Windows 10+ 64bit</li>
+        <li>Processor: Intel Core i7 7th generation</li>
+        <li>Memory: 16 GB RAM</li>
+        <li>Storage: SSD with 100 GB available space</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Team Section-->
+  <section class="team w3-light-grey" id="team">
+    <div>
+      <h2 class="heading">The <span>ones</span> who runs this company</h2>
+      <div class="center w3-row-padding w3-grayscale" style="margin-top:64px">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="card w3-card">
+            <img src="./Images/Michel.jpg" alt="Michel" style="width:100%; border-radius: 50px;">
+            <div class="w3-container">
+              <h3 style="color: darkred">Michel Aynati</h3>
+              <p class="w3-opacity">CEO & Founder</p>
+              <p>Feel free to get in touch with us if you wish to gain additional information about our product.
+              </p>
+              <p>
+              <div class="social-media w3-text-grey">
+                <a href="javascript:void(0)" onclick="sendWhatsAppMessageMichel()" aria-label="whatsapp">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="card w3-card w4-card">
+            <img src="./Images/Nassar.jpg" alt="Nassar" style="width:100%; border-radius: 50px;">
+            <div class="w3-container">
+              <h3 style="color: darkred">Nassar Nassar</h3>
+              <p class="w3-opacity">CEO & Founder</p>
+              <p>For more information or inquiries about our product, please contact us.</p>
+              <p>
+              <div class="social-media w3-text-grey">
+                <a href="javascript:void(0)" onclick="sendWhatsAppMessageNassar()" aria-label="whatsapp">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="careers" id="work">
+    <div>
+      <h2 class="heading">Career opportunities at <span>Brains</span></h2>
+      <p class="w3-center">
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/uukerzzv.json" trigger="loop" delay="4000"
+          colors="primary:#121331,secondary:darkred" style="width:100px;height:100px">
+        </lord-icon>
+      </p>
+      <p class="w3-center w3-xlarge">Coming soon</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Us!</span></h2>
+    <form action="mailto:presale@brains-lb.com" method="post" enctype="text/plain">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" required name="Name" autocomplete="new-password">
+        <input type="email" placeholder="Email Address" required name="Email" autocomplete="new-password">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number" required name="Phone">
+        <input type="text" placeholder="Email Subject" required name="Subject" autocomplete="new-password">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Message" required name="Message"></textarea>
+      <input type="submit" value="SEND MESSAGE" class="btns">
+    </form>
+  </section>
+
+  <!-- map -->
+  <div class="map">
+    <p class="w3-center">
+      <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+      <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
+        colors="primary:#121331,secondary:darkred" style="width:100px;height:100px">
+      </lord-icon>
+    </p>
+    <p class="w3-center w3-xlarge">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</p>
+    <p class="w3-center" style="margin-top:48px">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3312.002323540315!2d35.562044!3d33.889593999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDUzJzIyLjUiTiAzNcKwMzMnNDMuNCJF!5e0!3m2!1sen!2slb!4v1679157298394!5m2!1sen!2slb"
+        width="100%" height="450" style="border: 0; border-radius: 25px;" allowfullscreen="" loading="lazy" title="map"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="btns w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div>
+      <h4>Working Hours</h4>
+    </div>
+    <div>
+      Monday to Friday<br>
+      From 9:00 A.M.<br>
+      To 4:00 P.M.
+    </div>
+  
+    <div class="footer w3-xlarge w3-section">
+      <ul>
+        <div></div>
+        <li><a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp">
+            <i class="fa fa-whatsapp w3-hover-opacity"></i>
+          </a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
+            aria-label="facebook">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          </a></li>
+        <li><a href="https://www.linkedin.com/company/brains-lb/" target="_blank" aria-label="linkedin">
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </a></li>
+        <div></div>
+      </ul>
+    </div>
+    <p class="w3-small">Copyright &copy; Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script src="js/script.js"></script>
+  
+  </body>
+  
+  </html>

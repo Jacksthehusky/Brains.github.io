@@ -1,0 +1,371 @@
+[
+  {
+    "id": 1,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Closing / Opening steps",
+    "q": "How to do closing and opening from 2022 to 2023?",
+    "answer": [
+      "<b>PREPARING:</b> Go to the company for the year <b>2022</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end, it is normal for the system to not respond during Fix.</i>",
+      "<b>CURRENCY:</b> Now you have to create new currency rates for <b>01/01/2023</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2023</b> and Press Save.",
+      "<b>CLOSING END OF YEAR:</b> Make sure you are in this year <b>2022</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.",
+      "Go to the newly created company for the year <b>2023</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
+    ],
+    "notes": "Wait for the operation to end, it is normal for the system to not respond during Closing.",
+    "screenshots": [
+      "../screenshots/ClosingOpening/01.jpg",
+      "../screenshots/ClosingOpening/02.jpg",
+      "../screenshots/ClosingOpening/03.jpg",
+      "../screenshots/ClosingOpening/04.jpg"
+    ],
+    "modifiedDateTime": "2023-01-08T10:30:00",
+    "helpfulCount": 1,
+    "unhelpfulCount": 1
+  },
+  {
+    "id": 2,
+    "requiresPermission": false,
+    "group":"System",
+    "abbr": "invalid LICENSE",
+    "q": "How to update license?",
+    "answer": [
+      "If you encounter any of these errors: <b>license expires soon</b> | <b>key is licensed to another computer</b> | <b>invalid license</b>.",
+      "Please contact Brains to update your license."
+    ],
+    "notes": "If your license is invalid or about to expire soon, you won't have access to our system.",
+    "screenshots": [
+      "../screenshots/License/01.jpg",
+      "../screenshots/License/02.jpg"
+    ],
+    "modifiedDateTime": "2023-01-20T12:00:00"
+  },
+  {
+    "id": 3,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "5 digits rates",
+    "q": "How to change rates to more than 5 digits?",
+    "answer": [
+      "If you're unable to adjust rates exceeding 99,999, it may be necessary to upgrade your software version. Kindly get in touch with Brains for assistance with the update."
+    ],
+    "notes": "With brains v4.9+ at your disposal, you will have the capability to modify rates exceeding five digits.",
+    "screenshots": [
+      "../screenshots/CurrencyRates/01.jpg"
+    ],
+    "modifiedDateTime": "2023-02-20T12:00:00"
+  },
+  {
+    "id": 4,
+    "requiresPermission": false,
+    "group":"Other",
+    "abbr": "Single User Databse Error",
+    "q": "How to Fix Sql Error? Cannot open database requested by the login.",
+    "answer": [
+      "If you encounter the error message <b>SQL Error</b> you will need to perform the following actions:",
+      "First open your SQL Server to check if your database is (Single User)",
+      "Go to services and restart SQL Server service.",
+      "Next open your SQL Server and create New Query on this Database and Execute the following Query: <br><code>ALTER DATABASE [YourDatabase] SET MULTI_USER</code>"
+    ],
+    "notes": "Don't forget to change [YourDatabase] to your current database name.",
+    "screenshots": [
+      "../screenshots/SingleUserDatabseError/01.jpg",
+      "../screenshots/SingleUserDatabseError/02.jpg",
+      "../screenshots/SingleUserDatabseError/03.jpg",
+      "../screenshots/SingleUserDatabseError/04.jpg"
+    ],
+    "modifiedDateTime": "2023-02-20T12:00:00"
+  },
+  {
+    "id": 5,
+    "requiresPermission": false,
+    "group":"System",
+    "abbr": "Allow Passing Unavailable Qty",
+    "q": "What steps can be taken to prevent the system from selling when the quantity is zero or negative?",
+    "answer": [
+      "In order to do this you have to tick <b>Check aval. Qty in cash sale</b> and Untick <b>Allow Passing Unavailable Qty</b> in 3 places (<b>Preference, Type and Warehouse</b>).<br>First go to System > Preference > Select <b>Operartions</b> Tab > Stock > tick <b>Check aval. Qty in cash sale</b> > Untick <b>Allow Passing Unavailable Qty</b>.",
+      "Next go to Data Entry > Types > Operations Type > <b>Data Entry</b> Tab Untick <b>Allow Passing Unavailable Qty</b>.",
+      "Next go to Data Entry > Item > Warehouse > <b>Data Entry</b> Tab Untick <b>Allow Passing Unavailable Qty</b>.",
+      "Please ensure that the <b>Lite POS</b> option is unchecked in the system's <b>Preferences</b> under the <b>POS</b> tab."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/AllowPassingUnavailableQty/01.jpg",
+      "../screenshots/AllowPassingUnavailableQty/02.jpg",
+      "../screenshots/AllowPassingUnavailableQty/03.jpg",
+      "../screenshots/AllowPassingUnavailableQty/04.jpg"
+    ],
+    "modifiedDateTime": "2023-03-20T12:00:00"
+  },
+  {
+    "id": 6,
+    "requiresPermission": false,
+    "group":"System",
+    "abbr": "Synchronize Export/Import",
+    "q": "How to export / import Journal Voucher (JV)?",
+    "answer": [
+      "Navigate to System > Synchronize > Export and search for the JV number you wish to export in the <b>Number</b> field. <i>i.e: <b>JV000014</b></i>.<br>At the top right under Timer enter company name followed by year with a space in between <i>i.e: <b>ab 23</b></i>.<br>Tick <b>Accounting</b> and Export.",
+      "Now navigate to system > Synchronize > import > Select the <b>Browse</b> button and enter the file path for the exported JV, then click on the <b>Import</b> button."
+    ],
+    "notes": "By adding a comma between each number, it is possible to import/export multiple JVs simultaneously.",
+    "screenshots": [
+      "../screenshots/ExportImport/01.jpg",
+      "../screenshots/ExportImport/02.jpg"
+    ],
+    "modifiedDateTime": "2023-03-20T12:00:00"
+  },
+  {
+    "id": 7,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Journal voucher",
+    "q": "How to import journal voucher from another year/company?",
+    "answer": [
+      "In order to do this you have to create new voucher > <b>Additional info.</b> > click on import from another company <b>button</b>",
+      "Choose the year or company first, and then look for the operation number that you wish to import.",
+      "Choose <b>no</b> in the new pop-up window for the invert credit and debit.<br>Input the Type Code into the designated field."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ImportJournalVoucher/01.jpg",
+      "../screenshots/ImportJournalVoucher/02.jpg",
+      "../screenshots/ImportJournalVoucher/03.jpg"
+    ],
+    "modifiedDateTime": "2023-03-20T12:00:00"
+  },
+  {
+    "id": 8,
+    "requiresPermission": true,
+    "group":"Operations",
+    "abbr": "remove duplicate descriptions",
+    "q": "How to find duplicate descriptions across multiple item codes, combining their quantities, and eliminating any unnecessary codes?",
+    "answer": [
+      "You can use the following query:<br><code>SELECT description, COUNT(*) as count FROM sfitem GROUP BY description HAVING COUNT(*) > 1;</code>",
+      "Go to Operations > System Maintenance > Change item code.<br>Input the item that you want to remove in the <b>From</b> field and the item that you want to keep in the <b>To</b> field. Than Press <b>Save</b>",
+      "This operation will merge qty and will delete unnecessary item.",
+      "If the item has an initial quantity, it will not be deleted, but rather marked as inactive, thereby fulfilling the condition for its non-deletion."
+    ],
+    "notes": "This query will group the items in the table by their descriptions and count how many items share the same description. It will then filter the results to only show descriptions that appear more than once (i.e., duplicates). The output will include the description and the count of how many times it appears in the table.",
+    "screenshots": [
+      "../screenshots/DuplicateDescription/01.jpg",
+      "../screenshots/DuplicateDescription/02.jpg",
+      "../screenshots/DuplicateDescription/03.jpg",
+      "../screenshots/DuplicateDescription/04.jpg"
+    ],
+    "modifiedDateTime": "2023-03-20T12:00:00"
+  },
+  {
+    "id": 9,
+    "requiresPermission": false,
+    "group":"Data Entry",
+    "abbr": "View item history",
+    "q": "How to check item history?",
+    "answer": [
+      "Go to system > Password > <b>search</b> tab > search for <b>Operation history</b>.<br>Modify than tick <b>Operation history</b> and save.",
+      "Now you will be able to see <b>view history</b> button in data entry > item > <b>additional info.</b> tab."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ItemHistory/01.jpg",
+      "../screenshots/ItemHistory/02.jpg"
+    ],
+    "modifiedDateTime": "2023-04-20T12:00:00"
+  },
+  {
+    "id": 10,
+    "requiresPermission": true,
+    "group":"Operations",
+    "abbr": "update invoice rate",
+    "q": "What is the process for updating the invoice rate from 1,515 to a new rate? ",
+    "answer": [
+      "First do backup: go to End of session > backup.<br>You can use the following query to select:<br><code>select * from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code>",
+      "Than use the following query to update:<br><code>update sftran set ratelc=curtra.ratelc, ratebc=curtra.ratebc from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code><br>Navigate to the invoice and click on <b>Refresh</b> to verify that the updated rates are functional.",
+      "Proceed to Operations > System Maintenance > Fix and select <b>Vouchers</b>. Input the starting date for the fix (in this case, 01/02/2023) in the <b>From</b> field and specify a type in the <b>Operation Type</b> field (e.g., CA). Finally, click on <b>Save</b>.",
+      "Than go operations > accounting > system maintenance > fix > select <b>Yes</b>."
+    ],
+    "notes": "This SQL query updates the <b>ratelc</b> and <b>ratebc</b> columns in the <b>sftran</b> table with the corresponding values from the <b>curtra</b> table, based on certain conditions using an inner join. The update is performed only on rows where typecode is <b>'CA'</b>, date is in or after <b>February 2023</b>.",
+    "screenshots": [
+      "../screenshots/UpdateInvoiceRates/01.jpg",
+      "../screenshots/UpdateInvoiceRates/02.jpg",
+      "../screenshots/UpdateInvoiceRates/03.jpg",
+      "../screenshots/UpdateInvoiceRates/04.jpg"
+    ],
+    "modifiedDateTime": "2023-05-03T12:00:00"
+  },
+  {
+    "id": 11,
+    "requiresPermission": false,
+    "group":"Reprots",
+    "abbr": "daily journal",
+    "q": "What is the process for verifying the detailed invoice total inclusive and exclusive of VAT in the daily journal? ",
+    "answer": [
+      "Go to Reports > Daily Journal.",
+      "Than go to <b>Stock</b> tab and tick <b>With Prices</b> and <b>All Items</b>.",
+      "Than go to <b>Accounting</b> tab and tick <b>Summary</b>.",
+      "Click Preview."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/DailyJournal/01.jpg",
+      "../screenshots/DailyJournal/02.jpg",
+      "../screenshots/DailyJournal/03.jpg",
+      "../screenshots/DailyJournal/04.jpg"
+    ],
+    "modifiedDateTime": "2023-05-09T12:00:00"
+  },
+  {
+    "id": 12,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "VAT Sayrafa",
+    "q": "How to change VAT rate to Sayrafa?",
+    "answer": [
+      "Ensure that you have installed our most recent version +V4.9.",
+      "Go to operations > Currency > Currency Rates > Press <b>Locate</b> Select the following date: <b>03/01/2000</b> and Press <b>Modify</b>.",
+      "Enter new VAT rate and Press <b>Save</b>.",
+      "To verify if this will function, attempt to generate a new invoice, navigate to the accounting tab, and examine the VAT rate."
+    ],
+    "notes": "If the date of <b>03/01/2000</b> is not present, you will need to create new currency rates for that specific date.",
+    "screenshots": [
+      "../screenshots/VATSayrafa/01.jpg",
+      "../screenshots/VATSayrafa/02.jpg",
+      "../screenshots/VATSayrafa/03.jpg",
+      "../screenshots/VATSayrafa/04.jpg"
+    ],
+    "modifiedDateTime": "2023-05-09T12:00:00"
+  },
+  {
+    "id": 13,
+    "requiresPermission": false,
+    "group":"System",
+    "abbr": "Password",
+    "q": "What is the process for adding or removing a POS supervisor password when deleting an item?",
+    "answer": [
+      "Go to system > Password > <b>Features</b> tab > than <b>Stock</b> tab search for <b>POS Supervisor</b>.",
+      "Selecting this option allows you to delete items without the password, and not selecting this option requires the password to be entered."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/POSSupervisor/01.jpg",
+      "../screenshots/POSSupervisor/02.jpg"
+    ],
+    "modifiedDateTime": "2023-05-10T12:00:00"
+  },
+  {
+    "id": 14,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Inventory",
+    "q": "What is the process for conducting inventory?",
+    "answer": [
+      "Go to Operations > Periodic Operation > <b>Inventory</b>.<br>Please input any numerical value in the designated <b>number</b> field.<br>Select the <b>Warehouse</b> for which you wish to conduct inventory.<br>Tick <b>All Items</b>.",
+      "Upon clicking the preview button, you will initially see all items listed in the window with a default quantity of <b>zero</b>. To update the actual quantity of items available in the specified warehouse, you may either add a new row by pressing <b>Add Row</b> button and input the new quantity or use the <b>Get template</b> button to open an Excel file and enter the updated quantities there.",
+      "Once you have entered the updated quantities, you will need to check the <b>update movement</b> checkbox and select an operation type in the designated field. Finally, you can save the changes by clicking the <b>save</b> button.",
+      "You can now navigate to Operations > <b>movement</b> section to view the updates you have made to the quantity."
+    ],
+    "notes": "One way to verify the quantity of your item is by navigating to the <b>item</b> section within <b>data entry</b> and selecting the <b>quantity</b> tab.",
+    "screenshots": [
+      "../screenshots/Inventory/01.jpg",
+      "../screenshots/Inventory/02.jpg",
+      "../screenshots/Inventory/03.jpg",
+      "../screenshots/Inventory/04.jpg"
+    ],
+    "modifiedDateTime": "2023-05-15T12:00:00"
+  },
+  {
+    "id": 15,
+    "requiresPermission": false,
+    "group":"Reprots",
+    "abbr": "Statement Of account",
+    "q": "What is the process to display the VAT amount separately in Lebanese Pound (LBP) and US Dollar ($) on the statements report?",
+    "answer": [
+      "Go to Operation Type > <b>Account No.</b> Tab > Tick <b>Account Vat And Non Vat</b> and <b>Account No Vat Rate</b> checkbox.",
+      "To apply the new settings, simply click on <b>modify</b> to the invoice and then <b>save</b>.",
+      "Proceed to the <b>reports</b> section, then select <b>statement of accounts</b> to view the VAT amount separately displayed in Lebanese Pound (LBP) and US Dollar ($) on the statements report."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/VatMultiCurrencyStatement/01.jpg",
+      "../screenshots/VatMultiCurrencyStatement/02.jpg",
+      "../screenshots/VatMultiCurrencyStatement/03.jpg"
+    ],
+    "modifiedDateTime": "2023-05-15T12:00:00"
+  },
+  {
+    "id": 16,
+    "requiresPermission": false,
+    "group":"Other",
+    "abbr": "Error",
+    "q": "How to Fix Printer Spooler Errors in Windows?",
+    "answer": [
+      "If you come across the <b>Printer Spooler Problem</b> error message, you can resolve it by restarting the print spooler using the following steps:",
+      "Either press the Windows key on your keyboard or click/tap inside the Search box and type the word services. Then, press Enter when you see the Services search result, or click or tap on it.",
+      "Go down the list of services arranged alphabetically and select Print Spooler. Click <b>Restart</b>."
+    ],
+    "notes": "The Print Spooler is responsible for common printing errors on Windows by organizing data and sending it to low memory peripheral devices such as printers. When the Print Spooler fails, print jobs can get stuck in the queue, and the print data won't reach the printer. Resetting the spooler can solve these problems, canceling the print job and allowing a fresh start.",
+    "screenshots": [
+      "../screenshots/PrintSpooler/01.jpg",
+      "../screenshots/PrintSpooler/02.jpg",
+      "../screenshots/PrintSpooler/03.jpg"
+    ],
+    "modifiedDateTime": "2023-05-16T12:00:00"
+  },
+  {
+    "id": 17,
+    "requiresPermission": false,
+    "group":"Other",
+    "abbr": "Difference",
+    "q": "How to fix this small difference in trial balance?",
+    "answer": [
+      "In the event of a minor discrepancy in the trial balance, the following steps should be taken:",
+      "To address the small difference in the trial balance, access the opening journal voucher, select the <b>Modify</b> option, press the <b>F5</b> key on your keyboard, and then <b>Save</b> the changes.",
+      "Now, proceed to verify the trial balance, ensuring that the discrepancy has been resolved."
+    ],
+    "notes": "Only perform the aforementioned steps if you encounter a minor difference in the trial balance. Otherwise, you should proceed with the process of calculating the difference of exchange.",
+    "screenshots": [
+      "../screenshots/F5Difference/01.jpg",
+      "../screenshots/F5Difference/02.jpg",
+      "../screenshots/F5Difference/03.jpg"
+    ],
+    "modifiedDateTime": "2023-05-16T12:00:00"
+  },
+  {
+    "id": 18,
+    "requiresPermission": false,
+    "group":"Data Entry",
+    "abbr": "Charges",
+    "q": "How can I resolve the issue of charges code not being displayed in purchases?",
+    "answer": [
+      "To resolve the issue of a charges code not appearing in purchases, you can take the following steps:",
+      "Navigate to the data entry section > <b>Accounting</b> > <b>charges</b>. Select the charges code that is missing and click on <b>modify</b> Make sure to check the box for <b>Purchases</b> and then save the changes.",
+      "After completing the aforementioned steps, the charges code should now be visible in the purchases section."
+    ],
+    "notes": "The same steps can be followed for <b>Sales</b> and <b>Production</b> as well.",
+    "screenshots": [
+      "../screenshots/ChargesNotShowingInPurchases/01.jpg",
+      "../screenshots/ChargesNotShowingInPurchases/02.jpg",
+      "../screenshots/ChargesNotShowingInPurchases/03.jpg"
+    ],
+    "modifiedDateTime": "2023-05-17T12:00:00"
+  },
+  {
+    "id": 19,
+    "requiresPermission": false,
+    "group":"Data Entry",
+    "abbr": "Inactive Item Code",
+    "q": "How can I prevent an item with an inactive code from being processed in the POS system?",
+    "answer": [
+      "If you encounter a situation where an inactive item is being processed in the POS system, despite its inactive status, you should follow these steps:",
+      "Let me provide you with an example of an inactive code that is being processed during cash sales.",
+      "To prevent the processing of this inactive code, navigate to the <b>Types</b> section and access the <b>Preferences</b> tab. Proceed to modify the settings and ensure that the option <b>Without inactive item</b> is selected or checked.",
+      "With the modification in place, inactive items will no longer be processed and will not be added to this cash sale."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/InactiveCode/01.jpg",
+      "../screenshots/InactiveCode/02.jpg",
+      "../screenshots/InactiveCode/03.jpg",
+      "../screenshots/InactiveCode/04.jpg"
+    ],
+    "modifiedDateTime": "2023-05-18T12:00:00"
+  }
+]
