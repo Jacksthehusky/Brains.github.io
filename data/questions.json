@@ -181,7 +181,7 @@
       "Than use the following query to update:<br><code>update sftran set ratelc=curtra.ratelc, ratebc=curtra.ratebc from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code><br>Navigate to the invoice and click on <b>Refresh</b> to verify that the updated rates are functional.",
       "Proceed to Operations > System Maintenance > Fix and select <b>Vouchers</b>. Input the starting date for the fix (in this case, 01/02/2023) in the <b>From</b> field and specify a type in the <b>Operation Type</b> field (e.g., CA). Finally, click on <b>Save</b>.",
       "Than go operations > accounting > system maintenance > fix > select <b>Yes</b>.",
-      "Than run this query to updateto update the 'tottvalc' column in the 'sftran' table <br><code>update sftran set tottvalc = cast (ratelc * tottva  as decimal(18,2)) where currcode <> '01' </code>"
+      "Than run this query to update the <b>tottvalc</b> column in the <b>sftran</b> table <br><code>update sftran set tottvalc = cast (ratelc * tottva  as decimal(18,2)) where currcode <> '01' </code>"
     ],
     "notes": "This SQL query updates the <b>ratelc</b> and <b>ratebc</b> columns in the <b>sftran</b> table with the corresponding values from the <b>curtra</b> table, based on certain conditions using an inner join. The update is performed only on rows where typecode is <b>'CA'</b>, date is in or after <b>February 2023</b>.",
     "screenshots": [
@@ -322,7 +322,7 @@
       "To address the small difference in the trial balance, access the opening journal voucher, select the <b>Modify</b> option, press the <b>F5</b> key on your keyboard, and then <b>Save</b> the changes.",
       "Now, proceed to verify the trial balance, ensuring that the discrepancy has been resolved."
     ],
-    "notes": "Only perform the aforementioned steps if you encounter a minor difference in the trial balance. Otherwise, you should proceed with the process of calculating the difference of exchange.",
+    "notes": "If you come across a small discrepancy in the trial balance after calculating the difference of exchange, only then should you proceed with the aforementioned steps. However, if you encounter a significant difference, it would be advisable to instead initiate the process of calculating the profit and loss.",
     "screenshots": [
       "../screenshots/F5Difference/01.jpg",
       "../screenshots/F5Difference/02.jpg",

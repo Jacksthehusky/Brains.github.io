@@ -2,23 +2,11 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 let questions = [];
 
-// Retrieve questions data from local storage or fetch it
-const storedQuestions = localStorage.getItem("questions");
-
-if (storedQuestions) {
-  questions = JSON.parse(storedQuestions);
-  initializePage();
-} else {
-  fetch("../data/questions.json")
-    .then((response) => response.json())
-    .then((data) => {
-      questions = data;
-      initializePage();
-    });
-}
-
-function initializePage() {
-  const question = questions.find((q) => q.id == id);
+fetch("../data/questions.json")
+  .then((response) => response.json())
+  .then((data) => {
+    questions = data;
+    const question = questions.find((q) => q.id == id);
 
   //id
   document.getElementById("id").innerHTML = question.id;
@@ -92,4 +80,4 @@ function initializePage() {
 
   // Initialize the helpful count
   updateHelpfulCount();
-}
+})
