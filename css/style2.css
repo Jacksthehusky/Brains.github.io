@@ -67,7 +67,7 @@ a {
   width: 100%;
   height: 45vh;
   display: flex;
-  background: #252525;
+  background: #353535;
   padding: 60px 5% 0;
 }
 
@@ -793,7 +793,7 @@ h4 {
   width: 100%;
   height: 25vh;
   display: flex;
-  background:#252525;
+  background:#353535;
   padding: 95px 5% 0;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -840,7 +840,7 @@ h4 {
   padding: 8px 16px;
 }
 .faqsend i{
-  color: #252525;
+  color: #353535;
 }
 .faqsend img{
   max-width:20px; 
@@ -849,7 +849,7 @@ h4 {
 
 .Solution span {
   text-transform: uppercase;
-  color: black;
+  color: #252525;
   font-weight: bold;
   font-size: 28px;
 }
@@ -877,7 +877,7 @@ h4 {
 }
 
 .Solution i {
-  color: #252525;
+  color: #353535;
   font-size: 16px;
 }
 
@@ -886,18 +886,19 @@ h4 {
 }
 
 @media (min-width: 450px) {
-  
-/*breadcrumb*/
-.breadcrumb {
-  width: 450px;
-}
+
+  /*breadcrumb*/
+  .breadcrumb {
+    width: 450px;
+  }
 
 }
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: #ffffff;
-  color: #252525;
+  color: #353535;
 }
 
 ul.breadcrumb li {
@@ -932,31 +933,38 @@ ul.breadcrumb li a:hover {
   html {
     font-size: 55%;
   }
-  .about-img img{
+
+  .about-img img {
     width: 35vw;
   }
- 
+
 }
 
 @media (max-width: 991px) {
   .header {
     padding: 2rem 3%;
   }
+
   section {
     padding: 10rem 3% 2rem;
   }
-  .services{
+
+  .services {
     padding-bottom: 7rem;
   }
+
   .portfolio {
     padding-bottom: 7rem;
   }
+
   .contact {
     min-height: auto;
   }
-  .footer{
+
+  .footer {
     padding: 2rem 3%;
   }
+
   .systemreq div {
     display: grid;
     padding-bottom: 50px;
@@ -966,36 +974,43 @@ ul.breadcrumb li a:hover {
 @media (max-width: 1140px) and (min-width: 769px) {
   .home-img img {
     width: 60vw;
-   }
+  }
 }
 
 @media (max-width: 768px) {
- .home {
-  flex-direction: column;
- } 
- .home-content h3 {
-  font-size: 2.6rem;
- }
- .home-content h1 {
-  font-size: 4.6rem;
- }
- .home-img img {
-  width: 70vw;
-  margin-top: 4rem;
- }
- .about {
-  flex-direction: column-reverse;
- }
- .about-img img {
-width: 70vw;
-margin-top: 4rem;
- }
-.services h2 {
-  margin-bottom: 3rem;
-}
-.portfolio h2 {
-  margin-bottom: 3rem;
-}
+  .home {
+    flex-direction: column;
+  }
+
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+
+  .home-content h1 {
+    font-size: 4.6rem;
+  }
+
+  .home-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
 
 }
 
@@ -1007,16 +1022,19 @@ margin-top: 4rem;
   .contact form .input-box input {
     width: 100%;
   }
-  .row{
+
+  .row {
     width: 100%;
   }
-  .SolutionHeader lord-icon{
+
+  .SolutionHeader lord-icon {
     width: 64px;
     height: 64px;
     position: absolute;
     right: 0;
     bottom: 0;
   }
+
   ul.breadcrumb li {
     display: inline;
     font-size: 14px;
@@ -1027,7 +1045,49 @@ margin-top: 4rem;
   .home-img img {
     width: 90vw;
   }
+
   .about-img img {
     width: 90vw;
+  }
+}
+
+/* Add specific CSS styles for landscape orientation */
+@media (max-height: 450px) {
+  .home {
+    height: auto;
+  }
+
+  .home-img img {
+    width: 40vw;
+  }
+
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+    margin: auto;
+  }
+
+  .mt-5 {
+    margin-top: auto;
+  }
+
+  .HelpSearch {
+    height: 78vh;
+    padding: 50px 5% 0;
+  }
+
+  .SolutionHeader {
+    height: 50vh;
+  }
+
+  .SolutionHeader lord-icon {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
