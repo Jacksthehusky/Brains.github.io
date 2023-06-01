@@ -395,7 +395,7 @@
     "q": "How to do difference of exchange?",
     "answer": [
       "Go to Operations > Accounting > Periodic Operation > Difference Of Exchange.",
-      "Fill the type, details and date accordingly<br>If you have specific cost center, branch or project, enable <b>Detailed</b><br>Then save.",
+      "Fill the <b>type</b>, <b>details</b> and <b>date</b> accordingly<br>If you have specific cost center, branch or project, enable <b>Detailed</b><br>Then save.",
       "After that, enable USD<br>Then redo the steps again."
     ],
     "notes": "",
