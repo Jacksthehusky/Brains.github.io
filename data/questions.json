@@ -8,7 +8,7 @@
     "answer": [
       "<b>PREPARING:</b> Go to the company for the year <b>2022</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end, it is normal for the system to not respond during Fix.</i>",
       "<b>CURRENCY:</b> Now you have to create new currency rates for <b>01/01/2023</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2023</b> and Press Save.",
-      "<b>CLOSING END OF YEAR:</b> Make sure you are in this year <b>2022</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.",
+      "<b>CLOSING END OF YEAR:</b> Make sure you are in this year <b>2022</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.",
       "Go to the newly created company for the year <b>2023</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
     ],
     "notes": "Wait for the operation to end, it is normal for the system to not respond during Closing.",
@@ -369,5 +369,41 @@
       "../screenshots/InactiveCode/04.jpg"
     ],
     "modifiedDateTime": "2023-05-18T12:00:00"
+  },
+  {
+    "id": 20,
+    "requiresPermission": false,
+    "group":"RDLC Report",
+    "abbr": "Page Breaks",
+    "q": "How can I print each individual journal voucher on a separate page when selecting multiple vouchers to print?",
+    "answer": [
+      "Open the report file using Visual Studio 2013, and right-click on (uid) under row groups to access and modify the group properties.",
+      "Change page break options by ticking between each instance of a group."
+    ],
+    "notes": "This will allow you to make the necessary changes to the page break settings.",
+    "screenshots": [
+      "../screenshots/PageBreaks/01.jpg",
+      "../screenshots/PageBreaks/02.jpg"
+    ],
+    "modifiedDateTime": "2023-05-23T12:00:00"
+  },
+  {
+    "id": 21,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Difference Of Exchange",
+    "q": "How to do difference of exchange?",
+    "answer": [
+      "Go to Operations > Accounting > Periodic Operation > Difference Of Exchange.",
+      "Fill the type, details and date accordingly<br>If you have specific cost center, branch or project, enable <b>Detailed</b><br>Then save.",
+      "After that, enable USD<br>Then redo the steps again."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/DifferenceOfExchange/01.jpg",
+      "../screenshots/DifferenceOfExchange/02.jpg",
+      "../screenshots/DifferenceOfExchange/03.jpg"
+    ],
+    "modifiedDateTime": "2023-06-01T15:40:00"
   }
 ]
