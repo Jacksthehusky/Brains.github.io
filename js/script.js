@@ -149,4 +149,4 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .map, .heading', { origin:'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .team, .about-content', { origin:'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin:'left' });
-ScrollReveal().reveal('.home-content p, .systemreq-content', { origin:'right' });
+ScrollReveal().reveal('.home-content p, .systemreq-content, .careers p', { origin:'right' });
