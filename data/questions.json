@@ -405,5 +405,24 @@
       "../screenshots/DifferenceOfExchange/03.jpg"
     ],
     "modifiedDateTime": "2023-06-01T15:40:00"
+  },
+  {
+    "id": 22,
+    "requiresPermission": false,
+    "group":"Reprots",
+    "abbr": "Out Of Budget",
+    "q": "What is the method for generating a report without including any company information?",
+    "answer": [
+      "To generate a report without including any company information, you need to do the following.",
+      "Go to Operation Type > Locate and tick <b>Out Of Budget</b> checkbox.",
+      "Your report will now be generated wihtout company information."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/OutOfBudget/01.jpg",
+      "../screenshots/OutOfBudget/02.jpg",
+      "../screenshots/OutOfBudget/03.jpg"
+    ],
+    "modifiedDateTime": "2023-06-05T16:30:00"
   }
 ]
