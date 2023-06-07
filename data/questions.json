@@ -424,5 +424,34 @@
       "../screenshots/OutOfBudget/03.jpg"
     ],
     "modifiedDateTime": "2023-06-05T16:30:00"
+  },
+  {
+    "id": 23,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Transfer",
+    "q": "What is the process for transferring stock to a different warehouse?",
+    "answer": [
+      "Go to operations > Transfer > Transfer.",
+      "When initiating a transfer and wishing to move an item from Warehouse 1 to Warehouse 2, you are required to input <b>01</b> in the W.H. (Warehouse) field and <b>02</b> in the <b>To</b> field.",
+      "If you wish to import a <b>Purchase Order</b>, for instance, you have the option to utilize the import function.",
+      "Within the row, the W.H. fields function in a way that if you enter <b>Warehouse 03</b> for an item, the stock of that item will be transferred from <b>Warehouse 03</b> to <b>Warehouse 02</b>.",
+      "By clicking on <b>Get Template</b> in the additional info tab, you have the option to utilize our Excel template to import data into Brains.",
+      "After that, click on <b>Import Excel</b>.",
+      "After importing all the items and quantities from Excel, if you want to fetch the unit price from the system, you should select the first available <b>empty option</b> in the dropdown menu following the number field. Alternatively, you can choose <b>Purchase Cost</b> from the dropdown menu to retrieve the <b>unit price</b> equal to the purchase cost.",
+      "click yes the change all UnitPrice."
+    ],
+    "notes": "Please ensure that your rates are neither empty nor zero.",
+    "screenshots": [
+      "../screenshots/Transfer/01.jpg",
+      "../screenshots/Transfer/02.jpg",
+      "../screenshots/Transfer/03.jpg",
+      "../screenshots/Transfer/04.jpg",
+      "../screenshots/Transfer/05.jpg",
+      "../screenshots/Transfer/06.jpg",
+      "../screenshots/Transfer/07.jpg",
+      "../screenshots/Transfer/08.jpg"
+    ],
+    "modifiedDateTime": "2023-06-07T15:30:00"
   }
 ]

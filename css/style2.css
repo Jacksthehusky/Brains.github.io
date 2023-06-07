@@ -883,6 +883,7 @@ h4 {
 
 .Solution div img {
   width:40vw;
+  cursor: pointer;
 }
 
 @media (min-width: 450px) {
