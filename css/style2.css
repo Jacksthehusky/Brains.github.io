@@ -303,17 +303,24 @@ color: var(--second-bg-color1);
   overflow: hidden;
 }
 
+.systemreq .sys-icons{
+display: flex;
+justify-content: space-evenly;
+font-size: 2em;
+padding-top: 25px;
+}
+
 .systemreq h2 span {
   text-transform: capitalize;
   font-weight: bold;
   color: rgb(122, 21, 21);
 }
 
-.systemreq div {
+.systemreq .systemreq-content {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 50px;
   font-size: 1.8rem;
 }
 
@@ -966,7 +973,7 @@ ul.breadcrumb li a:hover {
     padding: 2rem 3%;
   }
 
-  .systemreq div {
+  .systemreq .systemreq-content {
     display: grid;
     padding-bottom: 50px;
   }
