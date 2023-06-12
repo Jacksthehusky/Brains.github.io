@@ -470,6 +470,25 @@
       "../screenshots/SalesCategory/02.jpg"
     ],
     "modifiedDateTime": "2023-06-08T11:50:00"
+  },
+  {
+    "id": 25,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Sale Price",
+    "q": "How can I update the sale price of an item using the import feature from Excel?",
+    "answer": [
+      "Go to Operations > System Maintenance > <b>Import Items from Excel</b>.",
+      "By clicking on the <b>Get Template</b> button and selecting the <b>Filled Template</b> option, an Excel sheet will open with all the items filled in Brains.",
+      "To modify the sale price of specific items, open the Excel sheet and edit the corresponding cells. Once you have made the necessary changes, save the Excel sheet. Afterward, in Brains, go to Operations > System Maintenance > <b>Import Items from Excel</b>. Click on <b>Browse</b> to locate the modified Excel file and then click on <b>Import</b> ensuring that the <b>Ignore Empty Fields</b> option is checked."
+    ],
+    "notes": "It is always recommended to create a backup before proceeding.",
+    "screenshots": [
+      "../screenshots/SalePriceExcel/01.jpg",
+      "../screenshots/SalePriceExcel/02.jpg",
+      "../screenshots/SalePriceExcel/03.jpg"
+    ],
+    "modifiedDateTime": "2023-06-12T11:00:00"
   }
 
 ]
