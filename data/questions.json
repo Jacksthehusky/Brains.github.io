@@ -137,7 +137,7 @@
     "requiresPermission": true,
     "group":"Operations",
     "abbr": "remove duplicate descriptions",
-    "q": "How to find duplicate descriptions across multiple item codes, combining their quantities, and eliminating any unnecessary codes?",
+    "q": "How to find duplicate descriptions across multiple item codes, combining their quantities, and eliminating any unnecessary codes? ",
     "answer": [
       "You can use the following query:<br><code>SELECT description, COUNT(*) as count FROM sfitem GROUP BY description HAVING COUNT(*) > 1;</code>",
       "Go to Operations > System Maintenance > Change item code.<br>Input the item that you want to remove in the <b>From</b> field and the item that you want to keep in the <b>To</b> field. Than Press <b>Save</b>",
@@ -476,7 +476,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Sale Price",
-    "q": "How can I update the sale price of an item using the import feature from Excel?",
+    "q": "How to update the sale price of an item using the import feature from Excel?",
     "answer": [
       "Go to Operations > System Maintenance > <b>Import Items from Excel</b>.",
       "By clicking on the <b>Get Template</b> button and selecting the <b>Filled Template</b> option, an Excel sheet will open with all the items filled in Brains.",
@@ -489,6 +489,21 @@
       "../screenshots/SalePriceExcel/03.jpg"
     ],
     "modifiedDateTime": "2023-06-12T11:00:00"
+  },
+  {
+    "id": 26,
+    "requiresPermission": false,
+    "group":"Data Entry",
+    "abbr": "Customer",
+    "q": "How to create new customer on brains?",
+    "answer": [
+      "To add a new customer on brains, navigate to <b>Data Entry</b> tab, select <b>Customer</b>, and click on the <b>New</b> option. Then proceed to input the required customer details into the appropriate fields provided."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NewCustomer/01.jpg"
+    ],
+    "modifiedDateTime": "2023-06-15T09:00:00"
   }
 
 ]
