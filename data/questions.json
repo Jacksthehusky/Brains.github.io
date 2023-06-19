@@ -497,13 +497,47 @@
     "abbr": "Customer",
     "q": "How to create new customer on brains?",
     "answer": [
-      "To add a new customer on brains, navigate to <b>Data Entry</b> tab, select <b>Customer</b>, and click on the <b>New</b> option. Then proceed to input the required customer details into the appropriate fields provided."
+      "To add a new customer on brains, navigate to <b>Data Entry</b> tab, select <b>Customer</b>, and click <b>New</b> Button. Then proceed to input the required customer details into the appropriate fields provided, Than Click <b>Save</b> Button."
      ],
     "notes": "",
     "screenshots": [
       "../screenshots/NewCustomer/01.jpg"
     ],
     "modifiedDateTime": "2023-06-15T09:00:00"
+  },
+  {
+    "id": 27,
+    "requiresPermission": false,
+    "group":"Data Entry",
+    "abbr": "Item",
+    "q": "How to create new Item on brains?",
+    "answer": [
+      "To add a new Item on brains, navigate to <b>Data Entry</b> tab > Item > select <b>Item</b>.",
+      "Click <b>New</b> Button. Then proceed to input the required Item details into the appropriate fields provided, Than Click <b>Save</b> Button."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NewItem/01.jpg",
+      "../screenshots/NewItem/02.jpg"
+    ],
+    "modifiedDateTime": "2023-06-19T15:00:00"
+  },
+  {
+    "id": 28,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Purchases",
+    "q": "How to create a Purchases on brains?",
+    "answer": [
+      "To add a new Item on brains, navigate to <b>Data Entry</b> tab > Item > select <b>Item</b>.",
+      "Click <b>New</b> Button. Then proceed to input the required Item details into the appropriate fields provided, Than Click <b>Save</b> Button."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NewPurchases/01.jpg",
+      "../screenshots/NewPurchases/02.jpg"
+    ],
+    "modifiedDateTime": "2023-06-19T15:30:00"
   }
-
+  
 ]
