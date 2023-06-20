@@ -1047,6 +1047,9 @@ ul.breadcrumb li a:hover {
     display: inline;
     font-size: 14px;
   }
+  .Solution div img {
+    width: 100%
+  }
 }
 
 @media (max-width: 400px) {
@@ -1057,6 +1060,7 @@ ul.breadcrumb li a:hover {
   .about-img img {
     width: 90vw;
   }
+
 }
 
 /* Add specific CSS styles for landscape orientation */
