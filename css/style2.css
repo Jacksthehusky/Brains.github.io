@@ -1002,7 +1002,9 @@ ul.breadcrumb li a:hover {
     width: 70vw;
     margin-top: 4rem;
   }
-
+  .Solution div img {
+    width: 100%
+  }
   .about {
     flex-direction: column-reverse;
   }
@@ -1047,9 +1049,7 @@ ul.breadcrumb li a:hover {
     display: inline;
     font-size: 14px;
   }
-  .Solution div img {
-    width: 100%
-  }
+  
 }
 
 @media (max-width: 400px) {
