@@ -196,7 +196,7 @@
   {
     "id": 11,
     "requiresPermission": false,
-    "group":"Reprots",
+    "group":"Reports",
     "abbr": "daily journal",
     "q": "What is the process for verifying the detailed invoice total inclusive and exclusive of VAT in the daily journal? ",
     "answer": [
@@ -276,7 +276,7 @@
   {
     "id": 15,
     "requiresPermission": false,
-    "group":"Reprots",
+    "group":"Reports",
     "abbr": "Statement Of account",
     "q": "What is the process to display the VAT amount separately in Lebanese Pound (LBP) and US Dollar ($) on the statements report?",
     "answer": [
@@ -409,7 +409,7 @@
   {
     "id": 22,
     "requiresPermission": false,
-    "group":"Reprots",
+    "group":"Reports",
     "abbr": "Out Of Budget",
     "q": "What is the method for generating a report without including any company information?",
     "answer": [
@@ -529,8 +529,8 @@
     "abbr": "Purchases",
     "q": "How to create a Purchases on brains?",
     "answer": [
-      "To add a new Item on brains, navigate to <b>Data Entry</b> tab > Item > select <b>Item</b>.",
-      "Click <b>New</b> Button. Then proceed to input the required Item details into the appropriate fields provided, Than Click <b>Save</b> Button."
+      "Navigate to <b>Operations</b> > <b>Purchases</b> To create a new <b>Purchases</b> on brains.",
+      "Click on the <b>New</b> button.<br>Enter the relevant details such as <b>Type, supplier, currency, and date</b> in the respective fields.<br>Add the <b>item, quantity, and price</b>, starting from the first row.<br>Finally, click on <b>Save</b> to complete the purchase entry."
      ],
     "notes": "",
     "screenshots": [
@@ -538,6 +538,24 @@
       "../screenshots/NewPurchases/02.jpg"
     ],
     "modifiedDateTime": "2023-06-19T15:30:00"
+  },
+  {
+    "id": 29,
+    "requiresPermission": false,
+    "group":"Reports",
+    "abbr": "Item",
+    "q": "How to view item details by supplier item number?",
+    "answer": [
+      "To view item details by supplier item number, navigate to <b>Reports</b> tab > select <b>Item</b>.",
+      "Enter the <b>supplier item number</b> in the provided field.<br>Click the <b>View button</b> at the bottom left. <br>This will show you all the important information about the items, like how many are in stock, where is their stock coming from, how much they cost, how much they sell for, and other details about the item itself."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ReportsItem/01.jpg",
+      "../screenshots/ReportsItem/02.jpg"
+    ],
+    "modifiedDateTime": "2023-06-20T14:00:00"
   }
+  
   
 ]
