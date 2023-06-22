@@ -555,6 +555,21 @@
       "../screenshots/ReportsItem/02.jpg"
     ],
     "modifiedDateTime": "2023-06-20T14:00:00"
+  },
+  {
+    "id": 30,
+    "requiresPermission": false,
+    "group":"System",
+    "abbr": "Modify Voucher Amounts",
+    "q": "How to enable the modification of voucher amounts?",
+    "answer": [
+      "To enable voucher amount modification, access system preferences, go to the <b>operations</b> tab > <b>accounting</b>, tick the <b>Modify Voucher Amount</b> checkbox, and <b>Save</b>."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ModifyVoucherAmounts/01.jpg"
+    ],
+    "modifiedDateTime": "2023-06-22T15:00:00"
   }
   
   
