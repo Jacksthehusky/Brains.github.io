@@ -174,11 +174,12 @@
     "id": 10,
     "requiresPermission": true,
     "group":"Operations",
-    "abbr": "update invoice rate",
-    "q": "What is the process for updating the invoice rate from 1,515 to a new rate? ",
+    "abbr": "update invoice/ Voucher rate",
+    "q": "What is the process for updating the invoice/ voucher rate from 1,515 to a new rate? ",
     "answer": [
       "First do backup: go to End of session > backup.<br>You can use the following query to select:<br><code>select * from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code>",
       "Than use the following query to update:<br><code>update sftran set ratelc=curtra.ratelc, ratebc=curtra.ratebc from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code><br>Navigate to the invoice and click on <b>Refresh</b> to verify that the updated rates are functional.",
+      "Now for the voucher use the following query: <br><code>UPDATE afvouc SET ratelc = curtra.ratelc,ratebc = curtra.ratebc,amtlc = amtfc * curtra.ratelc,amtbc = amtfc / curtra.ratebc FROM afvouc INNER JOIN curtra ON afvouc.due = curtra.date AND afvouc.currcode = curtra.currcode INNER JOIN sftran ON sftran.uid = afvouc.uid WHERE sftran.opercode = '85' AND Month(afvouc.due) >= 2 AND Year(afvouc.due) = 2023</code><br>Navigate to the voucher and click on <b>Refresh</b> to verify that the updated rates are functional.",
       "Proceed to Operations > System Maintenance > Fix and select <b>Vouchers</b>. Input the starting date for the fix (in this case, 01/02/2023) in the <b>From</b> field and specify a type in the <b>Operation Type</b> field (e.g., CA). Finally, click on <b>Save</b>.",
       "Than go operations > accounting > system maintenance > fix > select <b>Yes</b>.",
       "Than run this query to update the <b>tottvalc</b> column in the <b>sftran</b> table <br><code>update sftran set tottvalc = cast (ratelc * tottva  as decimal(18,2)) where currcode <> '01' </code>"
@@ -189,9 +190,10 @@
       "../screenshots/UpdateInvoiceRates/02.jpg",
       "../screenshots/UpdateInvoiceRates/03.jpg",
       "../screenshots/UpdateInvoiceRates/04.jpg",
-      "../screenshots/UpdateInvoiceRates/05.jpg"
+      "../screenshots/UpdateInvoiceRates/05.jpg",
+      "../screenshots/UpdateInvoiceRates/06.jpg"
     ],
-    "modifiedDateTime": "2023-05-22T10:50:00"
+    "modifiedDateTime": "2023-07-05T15:50:00"
   },
   {
     "id": 11,
