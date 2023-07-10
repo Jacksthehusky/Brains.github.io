@@ -224,18 +224,16 @@
     "q": "How to change VAT rate to Sayrafa?",
     "answer": [
       "Ensure that you have installed our most recent version +V4.9.",
-      "Go to operations > Currency > Currency Rates > Press <b>Locate</b> Select the following date: <b>03/01/2000</b> and Press <b>Modify</b>.",
-      "Enter new VAT rate and Press <b>Save</b>.",
+      "Go to operations > Currency > Currency Rates > Press <b>Locate</b> Select the following date: <b>03/01/2000</b> and Press <b>Modify</b>.<b>Enter new VAT rate and Press <b>Save</b>.",
       "To verify if this will function, attempt to generate a new invoice, navigate to the accounting tab, and examine the VAT rate."
     ],
     "notes": "If the date of <b>03/01/2000</b> is not present, you will need to create new currency rates for that specific date.",
     "screenshots": [
       "../screenshots/VATSayrafa/01.jpg",
       "../screenshots/VATSayrafa/02.jpg",
-      "../screenshots/VATSayrafa/03.jpg",
-      "../screenshots/VATSayrafa/04.jpg"
+      "../screenshots/VATSayrafa/03.jpg"
     ],
-    "modifiedDateTime": "2023-05-09T12:00:00"
+    "modifiedDateTime": "2023-07-04T12:00:00"
   },
   {
     "id": 13,
