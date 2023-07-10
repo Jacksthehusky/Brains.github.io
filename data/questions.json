@@ -572,6 +572,30 @@
       "../screenshots/ModifyVoucherAmounts/01.jpg"
     ],
     "modifiedDateTime": "2023-06-22T15:00:00"
+  },
+  {
+    "id": 31,
+    "requiresPermission": false,
+    "group":"System",
+    "abbr": "Enable Edit Voucher",
+    "q": "What are the steps to activate the Edit Voucher button for purchases?",
+    "answer": [
+      "In order to activate the <b>Edit voucher</b> button within the accounting tab for purchases, the following actions must be taken:",
+      "Navigate to the <b>System</b> menu, select <b>Preferences</b> and locate the option titled <b>Modify exported vouchers</b> Enable this option by checking the corresponding box.",
+      "Next, proceed to the <b>System</b> menu and access the <b>Password</b> section. From there, enable the <b>Modify</b> option for the specific user in question.",
+      "Alternatively, if you require more detailed user access, you can select the option for <b>Detailed User Access</b> Once selected, you can proceed to the next step.",
+      "Navigate to the <b>Operations Access Rights>/b> tab, then to <b>Accounting</b> and check the <b>M</b> checkbox to grant modify access to the journal voucher."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/EditVoucher/01.jpg",
+      "../screenshots/EditVoucher/02.jpg",
+      "../screenshots/EditVoucher/03.jpg",
+      "../screenshots/EditVoucher/04.jpg",
+      "../screenshots/EditVoucher/05.jpg"
+      
+    ],
+    "modifiedDateTime": "2023-07-06T15:50:00"
   }
   
   
