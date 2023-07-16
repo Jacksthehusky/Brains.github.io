@@ -18,6 +18,7 @@
       "../screenshots/ClosingOpening/03.jpg",
       "../screenshots/ClosingOpening/04.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-01-08T10:30:00",
     "helpfulCount": 1,
     "unhelpfulCount": 1
@@ -37,6 +38,7 @@
       "../screenshots/License/01.jpg",
       "../screenshots/License/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-01-20T12:00:00"
   },
   {
@@ -52,6 +54,7 @@
     "screenshots": [
       "../screenshots/CurrencyRates/01.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-02-20T12:00:00"
   },
   {
@@ -73,6 +76,7 @@
       "../screenshots/SingleUserDatabseError/03.jpg",
       "../screenshots/SingleUserDatabseError/04.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-02-20T12:00:00"
   },
   {
@@ -94,6 +98,7 @@
       "../screenshots/AllowPassingUnavailableQty/03.jpg",
       "../screenshots/AllowPassingUnavailableQty/04.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
@@ -111,6 +116,7 @@
       "../screenshots/ExportImport/01.jpg",
       "../screenshots/ExportImport/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
@@ -130,6 +136,7 @@
       "../screenshots/ImportJournalVoucher/02.jpg",
       "../screenshots/ImportJournalVoucher/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
@@ -151,6 +158,7 @@
       "../screenshots/DuplicateDescription/03.jpg",
       "../screenshots/DuplicateDescription/04.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
@@ -168,6 +176,7 @@
       "../screenshots/ItemHistory/01.jpg",
       "../screenshots/ItemHistory/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-04-20T12:00:00"
   },
   {
@@ -193,6 +202,7 @@
       "../screenshots/UpdateInvoiceRates/05.jpg",
       "../screenshots/UpdateInvoiceRates/06.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-07-05T15:50:00"
   },
   {
@@ -214,6 +224,7 @@
       "../screenshots/DailyJournal/03.jpg",
       "../screenshots/DailyJournal/04.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-09T12:00:00"
   },
   {
@@ -233,6 +244,7 @@
       "../screenshots/VATSayrafa/02.jpg",
       "../screenshots/VATSayrafa/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-07-04T12:00:00"
   },
   {
@@ -250,6 +262,7 @@
       "../screenshots/POSSupervisor/01.jpg",
       "../screenshots/POSSupervisor/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-10T12:00:00"
   },
   {
@@ -271,6 +284,7 @@
       "../screenshots/Inventory/03.jpg",
       "../screenshots/Inventory/04.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-15T12:00:00"
   },
   {
@@ -290,6 +304,7 @@
       "../screenshots/VatMultiCurrencyStatement/02.jpg",
       "../screenshots/VatMultiCurrencyStatement/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-15T12:00:00"
   },
   {
@@ -309,6 +324,7 @@
       "../screenshots/PrintSpooler/02.jpg",
       "../screenshots/PrintSpooler/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-16T12:00:00"
   },
   {
@@ -328,6 +344,7 @@
       "../screenshots/F5Difference/02.jpg",
       "../screenshots/F5Difference/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-16T12:00:00"
   },
   {
@@ -347,6 +364,7 @@
       "../screenshots/ChargesNotShowingInPurchases/02.jpg",
       "../screenshots/ChargesNotShowingInPurchases/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-17T12:00:00"
   },
   {
@@ -368,6 +386,7 @@
       "../screenshots/InactiveCode/03.jpg",
       "../screenshots/InactiveCode/04.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-18T12:00:00"
   },
   {
@@ -385,6 +404,7 @@
       "../screenshots/PageBreaks/01.jpg",
       "../screenshots/PageBreaks/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-05-23T12:00:00"
   },
   {
@@ -404,6 +424,7 @@
       "../screenshots/DifferenceOfExchange/02.jpg",
       "../screenshots/DifferenceOfExchange/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-01T15:40:00"
   },
   {
@@ -423,6 +444,7 @@
       "../screenshots/OutOfBudget/02.jpg",
       "../screenshots/OutOfBudget/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-05T16:30:00"
   },
   {
@@ -452,6 +474,7 @@
       "../screenshots/Transfer/07.jpg",
       "../screenshots/Transfer/08.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-07T15:30:00"
   },
   {
@@ -469,6 +492,7 @@
       "../screenshots/SalesCategory/01.jpg",
       "../screenshots/SalesCategory/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-08T11:50:00"
   },
   {
@@ -488,6 +512,7 @@
       "../screenshots/SalePriceExcel/02.jpg",
       "../screenshots/SalePriceExcel/03.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-12T11:00:00"
   },
   {
@@ -503,6 +528,7 @@
     "screenshots": [
       "../screenshots/NewCustomer/01.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-15T09:00:00"
   },
   {
@@ -520,6 +546,7 @@
       "../screenshots/NewItem/01.jpg",
       "../screenshots/NewItem/02.jpg"
     ],
+    "video":"../screenshots/NewItem/01.mp4",
     "modifiedDateTime": "2023-06-19T15:00:00"
   },
   {
@@ -537,6 +564,7 @@
       "../screenshots/NewPurchases/01.jpg",
       "../screenshots/NewPurchases/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-19T15:30:00"
   },
   {
@@ -554,6 +582,7 @@
       "../screenshots/ReportsItem/01.jpg",
       "../screenshots/ReportsItem/02.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-20T14:00:00"
   },
   {
@@ -569,6 +598,7 @@
     "screenshots": [
       "../screenshots/ModifyVoucherAmounts/01.jpg"
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-06-22T15:00:00"
   },
   {
@@ -593,6 +623,7 @@
       "../screenshots/EditVoucher/05.jpg"
       
     ],
+    "video":"../screenshots/CurrencyRates/01.mp4",
     "modifiedDateTime": "2023-07-06T15:50:00"
   }
   

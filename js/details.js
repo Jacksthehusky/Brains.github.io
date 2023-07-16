@@ -41,6 +41,15 @@ fetch("../data/questions.json")
   const formattedModifiedDateTime = new Date(question.modifiedDateTime).toLocaleString('en-US', options);
   modifiedDateTimeElement.textContent = "Updated: " + formattedModifiedDateTime;
 
+ // Video
+ const videoElement = document.createElement("video");
+ videoElement.src = question.video;
+ videoElement.controls = true;
+
+ const videoContainer = document.getElementById("video-container");
+ videoContainer.appendChild(videoElement);
+
+
   // Feedback section
   const helpfulCountElement = document.getElementById("helpful-count");
   const likeBtn = document.getElementById("like-btn");
@@ -80,4 +89,4 @@ fetch("../data/questions.json")
 
   // Initialize the helpful count
   updateHelpfulCount();
-})
+});
