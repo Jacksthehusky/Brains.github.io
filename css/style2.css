@@ -585,6 +585,42 @@ h4 {
   font-size: calc(1.325rem + 0.9vw);
 }
 
+/*Whatsapp share button */
+.whatsapp-share-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.whatsapp-share-button:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-share-button i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* WhatsApp logo icon */
+.whatsapp-share-button::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../Images/whatsapp-logo.png');
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+
 /*KEYFRAMES ANIMATION*/
 
 @keyframes marquee {
