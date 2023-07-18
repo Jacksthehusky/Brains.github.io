@@ -95,12 +95,15 @@ fetch("../data/questions.json")
 
   // Initialize the helpful count
   updateHelpfulCount();
+
 });
 
+// Assuming you have retrieved the 'question' object from the JSON data and stored it in a variable named 'question'
 
 const shareButton = document.getElementById("share-button");
 shareButton.addEventListener("click", () => {
   const pageUrl = encodeURIComponent(window.location.href);
-  const whatsappUrl = `https://wa.me/?text=${pageUrl}`;
+  const caption = encodeURIComponent(document.getElementById("question").textContent);
+  const whatsappUrl = `https://wa.me/?text=${caption}%0A${pageUrl}`;
   window.open(whatsappUrl, "_blank");
 });
