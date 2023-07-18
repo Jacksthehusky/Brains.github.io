@@ -49,6 +49,12 @@ fetch("../data/questions.json")
  const videoContainer = document.getElementById("video-container");
  videoContainer.appendChild(videoElement);
 
+ // Video cover image
+ const videoCover = question.videoCover;
+ const videoCoverElement = document.getElementById("video-cover");
+ videoCoverElement.src = videoCover;
+
+
 
   // Feedback section
   const helpfulCountElement = document.getElementById("helpful-count");
@@ -89,4 +95,12 @@ fetch("../data/questions.json")
 
   // Initialize the helpful count
   updateHelpfulCount();
+});
+
+
+const shareButton = document.getElementById("share-button");
+shareButton.addEventListener("click", () => {
+  const pageUrl = encodeURIComponent(window.location.href);
+  const whatsappUrl = `https://wa.me/?text=${pageUrl}`;
+  window.open(whatsappUrl, "_blank");
 });

@@ -546,7 +546,8 @@
       "../screenshots/NewItem/01.jpg",
       "../screenshots/NewItem/02.jpg"
     ],
-    "video":"../screenshots/NewItem/01.mp4",
+    "video":"../screenshots/NewItem/AddNewItem.mp4",
+    "videoCover":"../screenshots/NewItem/Cover.jpg",
     "modifiedDateTime": "2023-06-19T15:00:00"
   },
   {
