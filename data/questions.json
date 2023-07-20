@@ -4,6 +4,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Closing / Opening steps",
+    "tag":"",
     "q": "How to do closing and opening from 2022 to 2023?",
     "answer": [
       "<b>PREPARING:</b> Go to the company for the year <b>2022</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end, it is normal for the system to not respond during Fix.</i>",
@@ -28,6 +29,7 @@
     "requiresPermission": false,
     "group":"System",
     "abbr": "invalid LICENSE",
+    "tag":"",
     "q": "How to update license?",
     "answer": [
       "If you encounter any of these errors: <b>license expires soon</b> | <b>key is licensed to another computer</b> | <b>invalid license</b>.",
@@ -46,6 +48,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "5 digits rates",
+    "tag":"",
     "q": "How to change rates to more than 5 digits?",
     "answer": [
       "If you're unable to adjust rates exceeding 99,999, it may be necessary to upgrade your software version. Kindly get in touch with Brains for assistance with the update."
@@ -62,6 +65,7 @@
     "requiresPermission": false,
     "group":"Other",
     "abbr": "Single User Databse Error",
+    "tag":"",
     "q": "How to Fix Sql Error? Cannot open database requested by the login.",
     "answer": [
       "If you encounter the error message <b>SQL Error</b> you will need to perform the following actions:",
@@ -84,6 +88,7 @@
     "requiresPermission": false,
     "group":"System",
     "abbr": "Allow Passing Unavailable Qty",
+    "tag":"",
     "q": "What steps can be taken to prevent the system from selling when the quantity is zero or negative?",
     "answer": [
       "In order to do this you have to tick <b>Check aval. Qty in cash sale</b> and Untick <b>Allow Passing Unavailable Qty</b> in 3 places (<b>Preference, Type and Warehouse</b>).<br>First go to System > Preference > Select <b>Operartions</b> Tab > Stock > tick <b>Check aval. Qty in cash sale</b> > Untick <b>Allow Passing Unavailable Qty</b>.",
@@ -106,6 +111,7 @@
     "requiresPermission": false,
     "group":"System",
     "abbr": "Synchronize Export/Import",
+    "tag":"",
     "q": "How to export / import Journal Voucher (JV)?",
     "answer": [
       "Navigate to System > Synchronize > Export and search for the JV number you wish to export in the <b>Number</b> field. <i>i.e: <b>JV000014</b></i>.<br>At the top right under Timer enter company name followed by year with a space in between <i>i.e: <b>ab 23</b></i>.<br>Tick <b>Accounting</b> and Export.",
@@ -124,6 +130,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Journal voucher",
+    "tag":"",
     "q": "How to import journal voucher from another year/company?",
     "answer": [
       "In order to do this you have to create new voucher > <b>Additional info.</b> > click on import from another company <b>button</b>",
@@ -144,6 +151,7 @@
     "requiresPermission": true,
     "group":"Operations",
     "abbr": "remove duplicate descriptions",
+    "tag":"",
     "q": "How to find duplicate descriptions across multiple item codes, combining their quantities, and eliminating any unnecessary codes? ",
     "answer": [
       "You can use the following query:<br><code>SELECT description, COUNT(*) as count FROM sfitem GROUP BY description HAVING COUNT(*) > 1;</code>",
@@ -166,6 +174,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "View item history",
+    "tag":"",
     "q": "How to check item history?",
     "answer": [
       "Go to system > Password > <b>search</b> tab > search for <b>Operation history</b>.<br>Modify than tick <b>Operation history</b> and save.",
@@ -184,6 +193,7 @@
     "requiresPermission": true,
     "group":"Operations",
     "abbr": "update invoice/ Voucher rate",
+    "tag":"",
     "q": "What is the process for updating the invoice/ voucher rate from 1,515 to a new rate? ",
     "answer": [
       "First do backup: go to End of session > backup.<br>You can use the following query to select:<br><code>select * from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code>",
@@ -210,6 +220,7 @@
     "requiresPermission": false,
     "group":"Reports",
     "abbr": "daily journal",
+    "tag":"",
     "q": "What is the process for verifying the detailed invoice total inclusive and exclusive of VAT in the daily journal? ",
     "answer": [
       "Go to Reports > Daily Journal.",
@@ -232,6 +243,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "VAT Sayrafa",
+    "tag":"",
     "q": "How to change VAT rate to Sayrafa?",
     "answer": [
       "Ensure that you have installed our most recent version +V4.9.",
@@ -252,6 +264,7 @@
     "requiresPermission": false,
     "group":"System",
     "abbr": "Password",
+    "tag":"",
     "q": "What is the process for adding or removing a POS supervisor password when deleting an item?",
     "answer": [
       "Go to system > Password > <b>Features</b> tab > than <b>Stock</b> tab search for <b>POS Supervisor</b>.",
@@ -270,6 +283,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Inventory",
+    "tag":"",
     "q": "What is the process for conducting inventory?",
     "answer": [
       "Go to Operations > Periodic Operation > <b>Inventory</b>.<br>Please input any numerical value in the designated <b>number</b> field.<br>Select the <b>Warehouse</b> for which you wish to conduct inventory.<br>Tick <b>All Items</b>.",
@@ -292,6 +306,7 @@
     "requiresPermission": false,
     "group":"Reports",
     "abbr": "Statement Of account",
+    "tag":"",
     "q": "What is the process to display the VAT amount separately in Lebanese Pound (LBP) and US Dollar ($) on the statements report?",
     "answer": [
       "Go to Operation Type > <b>Account No.</b> Tab > Tick <b>Account Vat And Non Vat</b> and <b>Account No Vat Rate</b> checkbox.",
@@ -312,6 +327,7 @@
     "requiresPermission": false,
     "group":"Other",
     "abbr": "Error",
+    "tag":"",
     "q": "How to Fix Printer Spooler Errors in Windows?",
     "answer": [
       "If you come across the <b>Printer Spooler Problem</b> error message, you can resolve it by restarting the print spooler using the following steps:",
@@ -332,6 +348,7 @@
     "requiresPermission": false,
     "group":"Other",
     "abbr": "Difference",
+    "tag":"",
     "q": "How to fix this small difference in trial balance?",
     "answer": [
       "In the event of a minor discrepancy in the trial balance, the following steps should be taken:",
@@ -352,6 +369,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "Charges",
+    "tag":"",
     "q": "How can I resolve the issue of charges code not being displayed in purchases?",
     "answer": [
       "To resolve the issue of a charges code not appearing in purchases, you can take the following steps:",
@@ -372,6 +390,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "Inactive Item Code",
+    "tag":"",
     "q": "How can I prevent an item with an inactive code from being processed in the POS system?",
     "answer": [
       "If you encounter a situation where an inactive item is being processed in the POS system, despite its inactive status, you should follow these steps:",
@@ -394,6 +413,7 @@
     "requiresPermission": false,
     "group":"RDLC Report",
     "abbr": "Page Breaks",
+    "tag":"",
     "q": "How can I print each individual journal voucher on a separate page when selecting multiple vouchers to print?",
     "answer": [
       "Open the report file using Visual Studio 2013, and right-click on (uid) under row groups to access and modify the group properties.",
@@ -412,6 +432,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Difference Of Exchange",
+    "tag":"",
     "q": "How to do difference of exchange?",
     "answer": [
       "Go to Operations > Accounting > Periodic Operation > Difference Of Exchange.",
@@ -432,6 +453,7 @@
     "requiresPermission": false,
     "group":"Reports",
     "abbr": "Out Of Budget",
+    "tag":"",
     "q": "What is the method for generating a report without including any company information?",
     "answer": [
       "To generate a report without including any company information, you need to do the following.",
@@ -452,6 +474,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Transfer",
+    "tag":"",
     "q": "What is the process for transferring stock to a different warehouse?",
     "answer": [
       "Go to operations > Transfer > Transfer.",
@@ -482,6 +505,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "Sales Category",
+    "tag":"",
     "q": "How can I add an automatic discount for this specific client on each invoice?",
     "answer": [
       "To create a new category, go to <b>Data Entry</b> > <b>Sales Category</b>, then enter a <b>description</b> and <b>percentage</b> in the designated fields, Than click <b>Save</b>.",
@@ -500,6 +524,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Sale Price",
+    "tag":"",
     "q": "How to update the sale price of an item using the import feature from Excel?",
     "answer": [
       "Go to Operations > System Maintenance > <b>Import Items from Excel</b>.",
@@ -520,6 +545,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "Customer",
+    "tag":"",
     "q": "How to create new customer on brains?",
     "answer": [
       "To add a new customer on brains, navigate to <b>Data Entry</b> tab, select <b>Customer</b>, and click <b>New</b> Button. Then proceed to input the required customer details into the appropriate fields provided, Than Click <b>Save</b> Button."
@@ -536,6 +562,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "Item",
+    "tag":"",
     "q": "How to create new Item on brains?",
     "answer": [
       "To add a new Item on brains, navigate to <b>Data Entry</b> tab > Item > select <b>Item</b>.",
@@ -555,6 +582,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Purchases",
+    "tag":"",
     "q": "How to create a Purchases on brains?",
     "answer": [
       "Navigate to <b>Operations</b> > <b>Purchases</b> To create a new <b>Purchases</b> on brains.",
@@ -573,6 +601,7 @@
     "requiresPermission": false,
     "group":"Reports",
     "abbr": "Item",
+    "tag":"",
     "q": "How to view item details by supplier item number?",
     "answer": [
       "To view item details by supplier item number, navigate to <b>Reports</b> tab > select <b>Item</b>.",
@@ -591,6 +620,7 @@
     "requiresPermission": false,
     "group":"System",
     "abbr": "Modify Voucher Amounts",
+    "tag":"voucher",
     "q": "How to enable the modification of voucher amounts?",
     "answer": [
       "To enable voucher amount modification, access system preferences, go to the <b>operations</b> tab > <b>accounting</b>, tick the <b>Modify Voucher Amount</b> checkbox, and <b>Save</b>."
@@ -607,13 +637,14 @@
     "requiresPermission": false,
     "group":"System",
     "abbr": "Enable Edit Voucher",
+    "tag":"voucher",
     "q": "What are the steps to activate the Edit Voucher button for purchases?",
     "answer": [
       "In order to activate the <b>Edit voucher</b> button within the accounting tab for purchases, the following actions must be taken:",
       "Navigate to the <b>System</b> menu, select <b>Preferences</b> and locate the option titled <b>Modify exported vouchers</b> Enable this option by checking the corresponding box.",
       "Next, proceed to the <b>System</b> menu and access the <b>Password</b> section. From there, enable the <b>Modify</b> option for the specific user in question.",
       "Alternatively, if you require more detailed user access, you can select the option for <b>Detailed User Access</b> Once selected, you can proceed to the next step.",
-      "Navigate to the <b>Operations Access Rights>/b> tab, then to <b>Accounting</b> and check the <b>M</b> checkbox to grant modify access to the journal voucher."
+      "Navigate to the <b>Operations Access Rights</b> tab, then to <b>Accounting</b> and check the <b>M</b> checkbox to grant modify access to the journal voucher."
      ],
     "notes": "",
     "screenshots": [

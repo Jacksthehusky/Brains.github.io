@@ -52,6 +52,8 @@ fetch("../data/questions.json")
  // Video cover image
  const videoCover = question.videoCover;
  const videoCoverElement = document.getElementById("video-cover");
+
+ if(videoCoverElement != null)
  videoCoverElement.src = videoCover;
 
 
@@ -96,7 +98,42 @@ fetch("../data/questions.json")
   // Initialize the helpful count
   updateHelpfulCount();
 
+// Check out other related articles
+const relatedArticlesContainer = document.getElementById("related-articles");
+
+var relatedQuestions = questions.filter((q) => q.tag === question.tag && q.id !== question.id);
+console.log(relatedQuestions);
+console.log(relatedQuestions.length);
+if (relatedQuestions.length > 0) {
+  const relatedArticlesTitle = document.createElement("h2");
+  relatedArticlesTitle.textContent = "Check out other related articles";
+
+  relatedArticlesContainer.appendChild(relatedArticlesTitle);
+
+  const relatedArticlesList = document.createElement("ul");
+
+  relatedQuestions.forEach((relatedQuestion) => {
+    const relatedArticleItem = document.createElement("li");
+    const relatedArticleLink = document.createElement("a");
+    relatedArticleLink.textContent = relatedQuestion.q;
+    relatedArticleLink.href = `details.html?id=${relatedQuestion.id}`;
+
+    relatedArticleItem.appendChild(relatedArticleLink);
+    relatedArticlesList.appendChild(relatedArticleItem);
+  });
+
+  relatedArticlesContainer.appendChild(relatedArticlesList);
+} else {
+  const noRelatedArticlesMessage = document.createElement("p");
+  noRelatedArticlesMessage.textContent = "";
+
+  relatedArticlesContainer.appendChild(noRelatedArticlesMessage);
+}
+})
+.catch((error) => {
+console.log("An error occurred while fetching data:", error);
 });
+
 
 // Assuming you have retrieved the 'question' object from the JSON data and stored it in a variable named 'question'
 
