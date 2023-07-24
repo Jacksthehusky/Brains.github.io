@@ -349,6 +349,7 @@ padding-top: 25px;
 /*careers*/
 .careers {
   background: var(--second-bg-color);
+  overflow: hidden;
 }
 
 .careers h2 {
