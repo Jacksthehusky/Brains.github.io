@@ -68,8 +68,14 @@
               <h3 class="text-center mb-3">How can we help?</h3>
               <p class="digitalized text-center">The Help Center has the answers you need to succeed using <span>Brains</span></p>
               <div class="form-group">
-                <input type="text" id="search" class="form-control form-control-lg" placeholder="Enter error code or search..." autocomplete="new-password"/>
+                <div class="input-group">
+                  <input type="text" id="search" class="form-control form-control-lg" placeholder="Search" autocomplete="new-password" />
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                  </div>
+                </div>
               </div>
+              
               <div id="match-list"></div>
             </div>
           </div>

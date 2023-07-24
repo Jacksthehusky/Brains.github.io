@@ -892,7 +892,6 @@ h4 {
 
 .Solution p {
   color: rgb(122, 21, 21);
-  text-transform: capitalize;
   font-weight: bold;
   font-size: 24px;
   padding: 15px 10px
@@ -1167,6 +1166,7 @@ ul.breadcrumb li a:hover {
   font-size: 1.5rem; 
   font-weight: normal;
   float: right;
+  color: #666;
 }
 
 .question-id {
@@ -1179,4 +1179,10 @@ ul.breadcrumb li a:hover {
 
 .question-header:hover .question-id {
   opacity: 1;
+}
+
+/* To add some spacing between the icon and the input */
+.input-group .input-group-text {
+  padding: 1rem 1rem;
+  font-size: 15px;
 }
