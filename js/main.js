@@ -1,6 +1,6 @@
-const search = document.getElementById("search");
-const matchList = document.getElementById("match-list");
-let questions = [];
+var questions = [];
+var search = document.getElementById("search");
+var matchList = document.getElementById("match-list");
 
 // Get questions
 const getQuestions = async () => {

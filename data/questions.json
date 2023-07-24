@@ -48,7 +48,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "5 digits rates",
-    "tag":"",
+    "tag":"rate",
     "q": "How to change rates to more than 5 digits?",
     "answer": [
       "If you're unable to adjust rates exceeding 99,999, it may be necessary to upgrade your software version. Kindly get in touch with Brains for assistance with the update."
@@ -111,7 +111,7 @@
     "requiresPermission": false,
     "group":"System",
     "abbr": "Synchronize Export/Import",
-    "tag":"",
+    "tag":"voucher",
     "q": "How to export / import Journal Voucher (JV)?",
     "answer": [
       "Navigate to System > Synchronize > Export and search for the JV number you wish to export in the <b>Number</b> field. <i>i.e: <b>JV000014</b></i>.<br>At the top right under Timer enter company name followed by year with a space in between <i>i.e: <b>ab 23</b></i>.<br>Tick <b>Accounting</b> and Export.",
@@ -130,7 +130,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Journal voucher",
-    "tag":"",
+    "tag":"voucher",
     "q": "How to import journal voucher from another year/company?",
     "answer": [
       "In order to do this you have to create new voucher > <b>Additional info.</b> > click on import from another company <b>button</b>",
@@ -174,7 +174,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "View item history",
-    "tag":"",
+    "tag":"item",
     "q": "How to check item history?",
     "answer": [
       "Go to system > Password > <b>search</b> tab > search for <b>Operation history</b>.<br>Modify than tick <b>Operation history</b> and save.",
@@ -243,7 +243,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "VAT Sayrafa",
-    "tag":"",
+    "tag":"rate",
     "q": "How to change VAT rate to Sayrafa?",
     "answer": [
       "Ensure that you have installed our most recent version +V4.9.",
@@ -390,7 +390,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "Inactive Item Code",
-    "tag":"",
+    "tag":"item",
     "q": "How can I prevent an item with an inactive code from being processed in the POS system?",
     "answer": [
       "If you encounter a situation where an inactive item is being processed in the POS system, despite its inactive status, you should follow these steps:",
@@ -524,7 +524,7 @@
     "requiresPermission": false,
     "group":"Operations",
     "abbr": "Sale Price",
-    "tag":"",
+    "tag":"item",
     "q": "How to update the sale price of an item using the import feature from Excel?",
     "answer": [
       "Go to Operations > System Maintenance > <b>Import Items from Excel</b>.",
@@ -562,7 +562,7 @@
     "requiresPermission": false,
     "group":"Data Entry",
     "abbr": "Item",
-    "tag":"",
+    "tag":"item",
     "q": "How to create new Item on brains?",
     "answer": [
       "To add a new Item on brains, navigate to <b>Data Entry</b> tab > Item > select <b>Item</b>.",
@@ -574,7 +574,6 @@
       "../screenshots/NewItem/02.jpg"
     ],
     "video":"../screenshots/NewItem/AddNewItem.mp4",
-    "videoCover":"../screenshots/NewItem/Cover.jpg",
     "modifiedDateTime": "2023-07-18T15:00:00"
   },
   {
@@ -655,7 +654,7 @@
       "../screenshots/EditVoucher/05.jpg"
       
     ],
-    "video":"../screenshots/CurrencyRates/01.mp4",
+    "video":"",
     "modifiedDateTime": "2023-07-06T15:50:00"
   }
   
