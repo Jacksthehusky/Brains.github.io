@@ -9,7 +9,7 @@ fetch("../data/questions.json")
     const question = questions.find((q) => q.id == id);
 
     //id
-    document.getElementById("id").innerHTML = question.id;
+    document.getElementById("id").innerHTML = "(ID: " + question.id + ")";
 
     //abbr
     document.getElementById("abbr").innerHTML = question.abbr;

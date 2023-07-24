@@ -23,7 +23,7 @@ html {
 
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 5rem 5% 0 5%;
 }
 
 * {
@@ -890,13 +890,6 @@ h4 {
   border-radius:25%;
 }
 
-.Solution span {
-  text-transform: uppercase;
-  color: #252525;
-  font-weight: bold;
-  font-size: 28px;
-}
-
 .Solution p {
   color: rgb(122, 21, 21);
   text-transform: capitalize;
@@ -1007,7 +1000,7 @@ ul.breadcrumb li a:hover {
   }
 
   section {
-    padding: 10rem 3% 2rem;
+    padding: 5rem 5% 0 5%;
   }
 
   .services {
@@ -1155,4 +1148,35 @@ ul.breadcrumb li a:hover {
     right: 0;
     bottom: 0;
   }
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-title {
+  text-transform: uppercase;
+  color: #252525;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.question-time {
+  font-size: 1.5rem; 
+  font-weight: normal;
+  float: right;
+}
+
+.question-id {
+  opacity: 0;
+  font-size: 2rem; 
+  font-weight: normal;
+  margin: 1rem;
+  transition: opacity ease-in-out 0.15s;
+}
+
+.question-header:hover .question-id {
+  opacity: 1;
 }
