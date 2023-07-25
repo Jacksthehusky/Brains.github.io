@@ -86,21 +86,24 @@
       <div><span class="question-title" id="abbr"></span> <span class="question-id" id="id"></span></div>
       <span class="question-time" id="modified-date-time"></span>
     </div>
-    <button class="whatsapp-share-button" id="share-button">Share</button>
-    <p id="question"></p>
+    <div style="display: flex;justify-content: space-between;align-items: baseline;">
+      <p id="question"></p>
+      <button class="whatsapp-share-button" id="share-button">Share</button>
+    </div>
     <div id="video-container" class="video-wrapper"></div>
-    <ul id="answers-container">
+    <ul id="answers-container" class="answer-steps">
     </ul>
     <i id="notes"></i>
-    
-    <div class="w3-right" id="feedback-section" style="padding:50px 16px">
-      <h4 style="font-size: 15px; font-weight: bold;">Was this article helpful?</h4>
-      <button class="fas fa-thumbs-up w3-hover-opacity w3-xlarge" style="padding:10px 30px" aria-hidden="true" id="like-btn" onclick="handleLike()"></button>
-      <button class="fas fa-thumbs-down w3-hover-opacity w3-xlarge" aria-hidden="true" id="dislike-btn" onclick="handleDislike()"></button><br>
-      <span style="font-size: 15px; font-weight: normal; text-transform:none" id="helpful-count"></span> 
+    <div style="display: flex;justify-content: center;">
+      <div class="w3-right" id="feedback-section" style="padding:5em 0 1em 0">
+        <h4 style="font-size: 15px; font-weight: bold;">Was this article helpful?</h4>
+        <button class="fas fa-thumbs-up w3-hover-opacity w3-xlarge" style="padding:10px 30px" aria-hidden="true" id="like-btn" onclick="handleLike()"></button>
+        <button class="fas fa-thumbs-down w3-hover-opacity w3-xlarge" aria-hidden="true" id="dislike-btn" onclick="handleDislike()"></button><br>
+        <span style="font-size: 15px; font-weight: normal; text-transform:none" id="helpful-count"></span> 
+      </div>
     </div>
   </div>
-  <div style="color: #000;" id="related-articles">
+  <div style="color: #000;" id="related-articles" class="related-articles">
     <ul id="related-articles-list"></ul>
   </div>
 </section>
