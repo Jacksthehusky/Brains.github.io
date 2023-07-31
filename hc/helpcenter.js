@@ -35,7 +35,7 @@ fetch('../data/questions.json')
           const questionElement = document.createElement('a');
           const questionContainer = document.createElement('p');
           questionElement.innerHTML = question.q;
-          questionElement.href = `details.html?id=${question.id}`;
+          questionElement.href = `results.html?id=${question.id}`;
           questionContainer.appendChild(questionElement);
           faqsContainer.appendChild(questionContainer);
          

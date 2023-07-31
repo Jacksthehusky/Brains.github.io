@@ -129,7 +129,7 @@ fetch("../data/questions.json")
         const relatedArticleItem = document.createElement("li");
         const relatedArticleLink = document.createElement("a");
         relatedArticleLink.textContent = relatedQuestion.q;
-        relatedArticleLink.href = `details.html?id=${relatedQuestion.id}`;
+        relatedArticleLink.href = `results.html?id=${relatedQuestion.id}`;
 
         relatedArticleItem.appendChild(relatedArticleLink);
         relatedArticlesList.appendChild(relatedArticleItem);
