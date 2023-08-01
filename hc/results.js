@@ -27,7 +27,7 @@ fetch("../data/questions.json")
       const answerElement = document.createElement("li");
       answerElement.innerHTML = `
       <span>${answer}</span>
-      <img src="${url}" alt="${answer}" class="w3-hover-opacity" onclick="onClick(this, ${i})">
+      <div style="display: flex;justify-content: center;"><img src="${url}" alt="${answer}" class="w3-hover-opacity" onclick="onClick(this, ${i})"><div>
     `;
       answersContainer.appendChild(answerElement);
     }
