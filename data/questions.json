@@ -193,7 +193,7 @@
     "requiresPermission": true,
     "group":"Operations",
     "abbr": "update invoice/ Voucher rate",
-    "tag":"",
+    "tag":"Daily Journal",
     "q": "What is the process for updating the invoice/ voucher rate from 1,515 to a new rate? ",
     "answer": [
       "First do backup: go to End of session > backup.<br>You can use the following query to select:<br><code>select * from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code>",
@@ -656,6 +656,25 @@
     ],
     "video":"",
     "modifiedDateTime": "2023-07-06T15:50:00"
+  },
+  {
+    "id": 32,
+    "requiresPermission": false,
+    "group":"Reports",
+    "abbr": "Top 10 Suppliers Customers",
+    "tag":"Daily Journal",
+    "q": "How to obtain a report featuring the top 10 suppliers/customers in Brains?",
+    "answer": [
+      "Navigate to the <b>Reports</b> section and access the <b>Daily Journal</b> Then, proceed to the <b>Stock</b> tab and mark the checkboxes for <b>VAT</b> and <b>Payables</b>. Finally, click on the <b>Preview</b> button to generate a report displaying the top 10 suppliers.",
+      "For accessing the list of the top 10 customers, you need to follow similar steps. Begin by going to the <b>Reports</b> section and selecting <b>Daily Journal</b> Then, choose the <b>Stock</b> tab and check the checkboxes for both <b>VAT</b> and <b>Receivables</b>. Once done, click on the <b>Preview</b> button."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/Top10SuppliersCustomers/01.jpg",
+      "../screenshots/Top10SuppliersCustomers/02.jpg"
+    ],
+    "video":"",
+    "modifiedDateTime": "2023-08-02T15:30:00"
   }
   
   
