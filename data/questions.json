@@ -193,7 +193,7 @@
     "requiresPermission": true,
     "group":"Operations",
     "abbr": "update invoice/ Voucher rate",
-    "tag":"Daily Journal",
+    "tag":"",
     "q": "What is the process for updating the invoice/ voucher rate from 1,515 to a new rate? ",
     "answer": [
       "First do backup: go to End of session > backup.<br>You can use the following query to select:<br><code>select * from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code>",
@@ -220,7 +220,7 @@
     "requiresPermission": false,
     "group":"Reports",
     "abbr": "daily journal",
-    "tag":"",
+    "tag":"Daily Journal",
     "q": "What is the process for verifying the detailed invoice total inclusive and exclusive of VAT in the daily journal? ",
     "answer": [
       "Go to Reports > Daily Journal.",
