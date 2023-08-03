@@ -698,6 +698,33 @@
     ],
     "video":"",
     "modifiedDateTime": "2023-08-03T09:50:00"
+  },
+  {
+    "id": 34,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Sale Price",
+    "tag":"Sale Price",
+    "q": "How to add two distinct sale prices for two separate customers?",
+    "answer": [
+      "To begin, create a <b>Type Of Sell</b> by following these steps: Go to Data Entry > Item > Type Of Sell. Click the <b>New</b> button and provide the required <b>Description</b> and <b>Currency rate</b> for this type of sell in the designated field. Lastly, click the <b>Save</b> button.",
+      "Next, proceed to data entry > item > item and find the item for which you wish to assign two different sale prices to cater to individual customers. Then, access the 'Type of Sell' tab.",
+      "Now, click on the 'Modify' button, and then select the 'Add Row' option. There, you can select the first customer by pressing F2 or manually inputting the required information, including the corresponding sale price for that customer. Than click save.",
+      "Now, for the second customer, you should repeat the same steps, but this time, make sure to adjust the sale price and to select the second customer accordingly. Than click save.",
+      "Now, you must create a new invoice to verify that each customer has a unique sale price assigned to them.",
+      "Do the same steps for the second customer."
+     ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/SalePriceForEachCustomer/01.jpg",
+      "../screenshots/SalePriceForEachCustomer/02.jpg",
+      "../screenshots/SalePriceForEachCustomer/03.jpg",
+      "../screenshots/SalePriceForEachCustomer/04.jpg",
+      "../screenshots/SalePriceForEachCustomer/05.jpg",
+      "../screenshots/SalePriceForEachCustomer/06.jpg"
+    ],
+    "video":"",
+    "modifiedDateTime": "2023-08-03T15:30:00"
   }
   
   
