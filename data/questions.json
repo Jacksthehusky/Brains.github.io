@@ -675,6 +675,29 @@
     ],
     "video":"",
     "modifiedDateTime": "2023-08-02T15:30:00"
+  },
+  {
+    "id": 33,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "Closing VAT",
+    "tag":"Vat",
+    "q": "How to do Closing VAT for each quarter on brains?",
+    "answer": [
+      "To close the VAT for each quarter using the brains system, follow these steps:<br><br>1. Navigate to Operations > Accounting > Periodic Operation > Closing VAT.<br>2. Enter the type in the designated field.<br>3. For the first quarter, input <b>31/03/2023</b> in the date field and specify <b>First quarter</b> in the details field.<br>4. In the <b>Account No - From</b> and <b>Account No - To</b> fields, enter all accounts from the starting account to the last account.<br>5. In the <b>Account No VAT</b> field, enter the account number for which you want to close the VAT.<br>6. Finally, click the save button.",
+      "For the Second quarter, input <b>31/06/2023</b> in the date field and specify <b>Second quarter</b> in the details field.",
+      "For the Third quarter, input <b>31/09/2023</b> in the date field and specify <b>Third quarter</b> in the details field.",
+      "For the Fourth quarter, input <b>31/12/2023</b> in the date field and specify <b>Fourth quarter</b> in the details field."
+     ],
+    "notes": "In the details field, specify any information related to the specific quarter (e.g., First quarter, Q1 - 2023, etc.).",
+    "screenshots": [
+      "../screenshots/ClosingVat/01.jpg",
+      "../screenshots/ClosingVat/02.jpg",
+      "../screenshots/ClosingVat/03.jpg",
+      "../screenshots/ClosingVat/04.jpg"
+    ],
+    "video":"",
+    "modifiedDateTime": "2023-08-03T09:50:00"
   }
   
   
