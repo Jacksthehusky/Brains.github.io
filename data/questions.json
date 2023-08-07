@@ -709,7 +709,7 @@
     "answer": [
       "To begin, create a <b>Type Of Sell</b> by following these steps: Go to Data Entry > Item > Type Of Sell. Click the <b>New</b> button and provide the required <b>Description</b> and <b>Currency rate</b> for this type of sell in the designated field. Lastly, click the <b>Save</b> button.",
       "Next, proceed to Data Entry > Item > Item and Locate the item for which you wish to assign two different sale prices to cater to individual customers. Then, access the 'Type of Sell.' tab.",
-      "Now, click on the 'Modify' button, and then click <b>bAdd Row</b> button. There, you can select the first customer by pressing F2 or manually inputting the required information, including the corresponding sale price for that customer. Than click save.",
+      "Now, click on the 'Modify' button, and then click <b>Add Row</b> button. There, you can select the first customer by pressing F2 or manually inputting the required information, including the corresponding sale price for that customer. Than click save.",
       "Now, for the second customer, you should repeat the same steps, but this time, make sure to adjust the sale price and to select the second customer accordingly. Than click save.",
       "Now, you must create a new invoice to verify that each customer has a unique sale price assigned to them.",
       "Do the same steps for the second customer."
