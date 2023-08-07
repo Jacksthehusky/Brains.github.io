@@ -148,10 +148,10 @@
   },
   {
     "id": 8,
-    "requiresPermission": true,
+    "requiresPermission": false,
     "group":"Operations",
     "abbr": "remove duplicate descriptions",
-    "tag":"",
+    "tag":"duplicate",
     "q": "How to find duplicate descriptions across multiple item codes, combining their quantities, and eliminating any unnecessary codes? ",
     "answer": [
       "You can use the following query:<br><code>SELECT description, COUNT(*) as count FROM sfitem GROUP BY description HAVING COUNT(*) > 1;</code>",
@@ -161,10 +161,10 @@
     ],
     "notes": "This query will group the items in the table by their descriptions and count how many items share the same description. It will then filter the results to only show descriptions that appear more than once (i.e., duplicates). The output will include the description and the count of how many times it appears in the table.",
     "screenshots": [
-      "../screenshots/DuplicateDescription/01.jpg",
-      "../screenshots/DuplicateDescription/02.jpg",
-      "../screenshots/DuplicateDescription/03.jpg",
-      "../screenshots/DuplicateDescription/04.jpg"
+      "../screenshots/DuplicateDescriptionItem/01.jpg",
+      "../screenshots/DuplicateDescriptionItem/02.jpg",
+      "../screenshots/DuplicateDescriptionItem/03.jpg",
+      "../screenshots/DuplicateDescriptionItem/04.jpg"
     ],
      "video":"",
     "modifiedDateTime": "2023-03-20T12:00:00"
@@ -725,6 +725,23 @@
     ],
     "video":"",
     "modifiedDateTime": "2023-08-03T15:30:00"
+  },
+  {
+    "id": 35,
+    "requiresPermission": false,
+    "group":"Operations",
+    "abbr": "remove duplicate descriptions",
+    "tag":"duplicate",
+    "q": "How to remove duplicate descriptions across multiple Customer / Supplier / Auxiliary / Contacts, and eliminating any unnecessary codes? ",
+    "answer": [
+      "Go to Operations > Accounting > System Maintenance > Change code.<br>Input the Customer / Supplier / Auxiliary / Contacts that you want to remove in the <b>From</b> field and the Customer / Supplier / Auxiliary / Contacts that you want to keep in the <b>To</b> field. Make sure to Tick Fix Accounting Than Press <b>Save</b>"
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/DuplicateDescriptionCustomer/01.jpg"
+    ],
+     "video":"",
+    "modifiedDateTime": "2023-08-07T10:00:00"
   }
   
   
