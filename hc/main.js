@@ -31,7 +31,10 @@ const outputHtml = (matches) => {
     const html = matches
       .map((match) => {
         const regex = new RegExp(`(${search.value})`, "gi");
-        const highlightedQuestion = match.q.replace(regex, "<mark style='background-color: red; color:white'>$1</mark>");
+        const highlightedQuestion = match.q.replace(
+          regex,
+          "<mark style='background-color: red; color:white'>$1</mark>"
+        );
         return `
           <div class="card card-body">
             <a href="./results.html?id=${match.id}">
@@ -39,8 +42,7 @@ const outputHtml = (matches) => {
             </a>
           </div>
         `;
-      }
-      )
+      })
       .join("");
     matchList.innerHTML = html;
 
@@ -55,10 +57,12 @@ const outputHtml = (matches) => {
         if (question.requiresPermission) {
           event.preventDefault();
           const password = prompt("Access denied.");
-          if (password === 'brains123') {
+          if (password === "brains123") {
             window.location.href = href;
           } else {
-            alert("Kindly reach out to our customer services for assistance in accessing this answer.");
+            alert(
+              "Kindly reach out to our customer services for assistance in accessing this answer."
+            );
           }
         }
       });

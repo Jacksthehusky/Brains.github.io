@@ -1,5 +1,3 @@
-
-
 function sendWhatsAppMessageFooter() {
   // Replace this with your WhatsApp number and message text
   var whatsappNumber = "+96171492657";
@@ -88,26 +86,24 @@ function w3_close() {
   mySidebar.style.display = "none";
 }
 
-
 /*===============  Scroll sections active link ===============*/
-let sections = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('div.header a.navbartop');
+let sections = document.querySelectorAll("section");
+let navlinks = document.querySelectorAll("div.header a.navbartop");
 
-window.addEventListener('scroll', () => {
-  sections.forEach(sec => {
+window.addEventListener("scroll", () => {
+  sections.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop - 150;
     let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
+    let id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navlinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(id)) {
-          link.classList.add('active');
+      navlinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(id)) {
+          link.classList.add("active");
         }
       });
     }
   });
 });
-

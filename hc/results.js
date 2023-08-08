@@ -53,7 +53,7 @@ fetch("../data/questions.json")
 
     // Video
     const videoContainer = document.getElementById("video-container");
-    
+
     if (question.video != null && question.video != "") {
       const videoElement = document.createElement("video");
       videoElement.src = question.video;

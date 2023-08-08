@@ -2,9 +2,9 @@
   {
     "id": 1,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Closing / Opening steps",
-    "tag":"",
+    "tag": "",
     "q": "How to do closing and opening from 2022 to 2023?",
     "answer": [
       "<b>PREPARING:</b> Go to the company for the year <b>2022</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end, it is normal for the system to not respond during Fix.</i>",
@@ -19,7 +19,7 @@
       "../screenshots/ClosingOpening/03.jpg",
       "../screenshots/ClosingOpening/04.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-01-08T10:30:00",
     "helpfulCount": 1,
     "unhelpfulCount": 1
@@ -27,9 +27,9 @@
   {
     "id": 2,
     "requiresPermission": false,
-    "group":"System",
+    "group": "System",
     "abbr": "invalid LICENSE",
-    "tag":"",
+    "tag": "",
     "q": "How to update license?",
     "answer": [
       "If you encounter any of these errors: <b>license expires soon</b> | <b>key is licensed to another computer</b> | <b>invalid license</b>.",
@@ -40,15 +40,15 @@
       "../screenshots/License/01.jpg",
       "../screenshots/License/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-01-20T12:00:00"
   },
   {
     "id": 3,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "5 digits rates",
-    "tag":"rate",
+    "tag": "rate",
     "q": "How to change rates to more than 5 digits?",
     "answer": [
       "If you're unable to adjust rates exceeding 99,999, it may be necessary to upgrade your software version. Kindly get in touch with Brains support for assistance with the update."
@@ -57,15 +57,15 @@
     "screenshots": [
       "../screenshots/CurrencyRates/01.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-02-20T12:00:00"
   },
   {
     "id": 4,
     "requiresPermission": false,
-    "group":"Other",
+    "group": "Other",
     "abbr": "Single User Databse Error",
-    "tag":"",
+    "tag": "",
     "q": "How to Fix Sql Error? Cannot open database requested by the login.",
     "answer": [
       "If you encounter the error message <b>SQL Error</b> you will need to perform the following actions:",
@@ -80,15 +80,15 @@
       "../screenshots/SingleUserDatabseError/03.jpg",
       "../screenshots/SingleUserDatabseError/04.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-02-20T12:00:00"
   },
   {
     "id": 5,
     "requiresPermission": false,
-    "group":"System",
+    "group": "System",
     "abbr": "Allow Passing Unavailable Qty",
-    "tag":"",
+    "tag": "",
     "q": "What steps can be taken to prevent the system from selling when the quantity is zero or negative?",
     "answer": [
       "In order to do this you have to tick <b>Check aval. Qty in cash sale</b> and Untick <b>Allow Passing Unavailable Qty</b> in 3 places (<b>Preference, Type and Warehouse</b>).<br>First go to System > Preference > Select <b>Operartions</b> Tab > Stock > tick <b>Check aval. Qty in cash sale</b> > Untick <b>Allow Passing Unavailable Qty</b>.",
@@ -103,15 +103,15 @@
       "../screenshots/AllowPassingUnavailableQty/03.jpg",
       "../screenshots/AllowPassingUnavailableQty/04.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
     "id": 6,
     "requiresPermission": false,
-    "group":"System",
+    "group": "System",
     "abbr": "Synchronize Export/Import",
-    "tag":"voucher",
+    "tag": "voucher",
     "q": "How to export / import Journal Voucher (JV)?",
     "answer": [
       "Navigate to System > Synchronize > Export and search for the JV number you wish to export in the <b>Number</b> field. <i>i.e: <b>JV000014</b></i>.<br>At the top right under Timer enter company name followed by year with a space in between <i>i.e: <b>ab 23</b></i>.<br>Tick <b>Accounting</b> and Export.",
@@ -122,15 +122,15 @@
       "../screenshots/ExportImport/01.jpg",
       "../screenshots/ExportImport/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
     "id": 7,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Journal voucher",
-    "tag":"voucher",
+    "tag": "voucher",
     "q": "How to import journal voucher from another year/company?",
     "answer": [
       "In order to do this you have to create new voucher > <b>Additional info.</b> > click on import from another company <b>button</b>",
@@ -143,15 +143,15 @@
       "../screenshots/ImportJournalVoucher/02.jpg",
       "../screenshots/ImportJournalVoucher/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
     "id": 8,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "remove duplicate descriptions",
-    "tag":"duplicate",
+    "tag": "duplicate",
     "q": "How to find duplicate descriptions across multiple item codes, combining their quantities, and eliminating any unnecessary codes? ",
     "answer": [
       "You can use the following query:<br><code>SELECT description, COUNT(*) as count FROM sfitem GROUP BY description HAVING COUNT(*) > 1;</code>",
@@ -166,15 +166,15 @@
       "../screenshots/DuplicateDescriptionItem/03.jpg",
       "../screenshots/DuplicateDescriptionItem/04.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-03-20T12:00:00"
   },
   {
     "id": 9,
     "requiresPermission": false,
-    "group":"Data Entry",
+    "group": "Data Entry",
     "abbr": "View item history",
-    "tag":"item",
+    "tag": "item",
     "q": "How to check item history?",
     "answer": [
       "Go to system > Password > <b>search</b> tab > search for <b>Operation history</b>.<br>Modify than tick <b>Operation history</b> and save.",
@@ -185,15 +185,15 @@
       "../screenshots/ItemHistory/01.jpg",
       "../screenshots/ItemHistory/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-04-20T12:00:00"
   },
   {
     "id": 10,
     "requiresPermission": true,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "update invoice/ Voucher rate",
-    "tag":"",
+    "tag": "",
     "q": "What is the process for updating the invoice/ voucher rate from 1,515 to a new rate? ",
     "answer": [
       "First do backup: go to End of session > backup.<br>You can use the following query to select:<br><code>select * from sftran inner join curtra on sftran.date=curtra.date and sftran.currcode=curtra.currcode where typecode='CA' and opercode='60' and month(sftran.date) >= 2 and year(sftran.date) = 2023</code>",
@@ -212,15 +212,15 @@
       "../screenshots/UpdateInvoiceRates/05.jpg",
       "../screenshots/UpdateInvoiceRates/06.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-07-05T15:50:00"
   },
   {
     "id": 11,
     "requiresPermission": false,
-    "group":"Reports",
+    "group": "Reports",
     "abbr": "daily journal",
-    "tag":"Daily Journal",
+    "tag": "Daily Journal",
     "q": "What is the process for verifying the detailed invoice total inclusive and exclusive of VAT in the daily journal? ",
     "answer": [
       "Go to Reports > Daily Journal.",
@@ -235,15 +235,15 @@
       "../screenshots/DailyJournal/03.jpg",
       "../screenshots/DailyJournal/04.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-09T12:00:00"
   },
   {
     "id": 12,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "VAT Sayrafa",
-    "tag":"rate",
+    "tag": "rate",
     "q": "How to change VAT rate to Sayrafa?",
     "answer": [
       "Ensure that you have installed our most recent version +V4.9.",
@@ -256,15 +256,15 @@
       "../screenshots/VATSayrafa/02.jpg",
       "../screenshots/VATSayrafa/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-07-04T12:00:00"
   },
   {
     "id": 13,
     "requiresPermission": false,
-    "group":"System",
+    "group": "System",
     "abbr": "Password",
-    "tag":"",
+    "tag": "",
     "q": "What is the process for adding or removing a POS supervisor password when deleting an item?",
     "answer": [
       "Go to system > Password > <b>Features</b> tab > than <b>Stock</b> tab search for <b>POS Supervisor</b>.",
@@ -275,15 +275,15 @@
       "../screenshots/POSSupervisor/01.jpg",
       "../screenshots/POSSupervisor/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-10T12:00:00"
   },
   {
     "id": 14,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Inventory",
-    "tag":"",
+    "tag": "",
     "q": "What is the process for conducting inventory?",
     "answer": [
       "Go to Operations > Periodic Operation > <b>Inventory</b>.<br>Please input any numerical value in the designated <b>number</b> field.<br>Select the <b>Warehouse</b> for which you wish to conduct inventory.<br>Tick <b>All Items</b>.",
@@ -298,15 +298,15 @@
       "../screenshots/Inventory/03.jpg",
       "../screenshots/Inventory/04.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-15T12:00:00"
   },
   {
     "id": 15,
     "requiresPermission": false,
-    "group":"Reports",
+    "group": "Reports",
     "abbr": "Statement Of account",
-    "tag":"",
+    "tag": "",
     "q": "What is the process to display the VAT amount separately in Lebanese Pound (LBP) and US Dollar ($) on the statements report?",
     "answer": [
       "Go to Operation Type > <b>Account No.</b> Tab > Tick <b>Account Vat And Non Vat</b> and <b>Account No Vat Rate</b> checkbox.",
@@ -319,15 +319,15 @@
       "../screenshots/VatMultiCurrencyStatement/02.jpg",
       "../screenshots/VatMultiCurrencyStatement/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-15T12:00:00"
   },
   {
     "id": 16,
     "requiresPermission": false,
-    "group":"Other",
+    "group": "Other",
     "abbr": "Error",
-    "tag":"",
+    "tag": "",
     "q": "How to Fix Printer Spooler Errors in Windows?",
     "answer": [
       "If you come across the <b>Printer Spooler Problem</b> error message, you can resolve it by restarting the print spooler using the following steps:",
@@ -340,15 +340,15 @@
       "../screenshots/PrintSpooler/02.jpg",
       "../screenshots/PrintSpooler/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-16T12:00:00"
   },
   {
     "id": 17,
     "requiresPermission": false,
-    "group":"Other",
+    "group": "Other",
     "abbr": "Difference",
-    "tag":"",
+    "tag": "",
     "q": "How to fix this small difference in trial balance?",
     "answer": [
       "In the event of a minor discrepancy in the trial balance, the following steps should be taken:",
@@ -361,15 +361,15 @@
       "../screenshots/F5Difference/02.jpg",
       "../screenshots/F5Difference/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-16T12:00:00"
   },
   {
     "id": 18,
     "requiresPermission": false,
-    "group":"Data Entry",
+    "group": "Data Entry",
     "abbr": "Charges",
-    "tag":"",
+    "tag": "",
     "q": "How can I resolve the issue of charges code not being displayed in purchases?",
     "answer": [
       "To resolve the issue of a charges code not appearing in purchases, you can take the following steps:",
@@ -382,15 +382,15 @@
       "../screenshots/ChargesNotShowingInPurchases/02.jpg",
       "../screenshots/ChargesNotShowingInPurchases/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-17T12:00:00"
   },
   {
     "id": 19,
     "requiresPermission": false,
-    "group":"Data Entry",
+    "group": "Data Entry",
     "abbr": "Inactive Item Code",
-    "tag":"item",
+    "tag": "item",
     "q": "How can I prevent an item with an inactive code from being processed in the POS system?",
     "answer": [
       "If you encounter a situation where an inactive item is being processed in the POS system, despite its inactive status, you should follow these steps:",
@@ -405,15 +405,15 @@
       "../screenshots/InactiveCode/03.jpg",
       "../screenshots/InactiveCode/04.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-18T12:00:00"
   },
   {
     "id": 20,
     "requiresPermission": false,
-    "group":"RDLC Report",
+    "group": "RDLC Report",
     "abbr": "Page Breaks",
-    "tag":"",
+    "tag": "",
     "q": "How can I print each individual journal voucher on a separate page when selecting multiple vouchers to print?",
     "answer": [
       "Open the report file using Visual Studio 2013, and right-click on (uid) under row groups to access and modify the group properties.",
@@ -424,15 +424,15 @@
       "../screenshots/PageBreaks/01.jpg",
       "../screenshots/PageBreaks/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-05-23T12:00:00"
   },
   {
     "id": 21,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Difference Of Exchange",
-    "tag":"",
+    "tag": "",
     "q": "How to do difference of exchange?",
     "answer": [
       "Go to Operations > Accounting > Periodic Operation > Difference Of Exchange.",
@@ -445,15 +445,15 @@
       "../screenshots/DifferenceOfExchange/02.jpg",
       "../screenshots/DifferenceOfExchange/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-01T15:40:00"
   },
   {
     "id": 22,
     "requiresPermission": false,
-    "group":"Reports",
+    "group": "Reports",
     "abbr": "Out Of Budget",
-    "tag":"",
+    "tag": "",
     "q": "What is the method for generating a report without including any company information?",
     "answer": [
       "To generate a report without including any company information, you need to do the following.",
@@ -466,15 +466,15 @@
       "../screenshots/OutOfBudget/02.jpg",
       "../screenshots/OutOfBudget/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-05T16:30:00"
   },
   {
     "id": 23,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Transfer",
-    "tag":"",
+    "tag": "",
     "q": "What is the process for transferring stock to a different warehouse?",
     "answer": [
       "Go to operations > Transfer > Transfer.",
@@ -497,15 +497,15 @@
       "../screenshots/Transfer/07.jpg",
       "../screenshots/Transfer/08.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-07T15:30:00"
   },
   {
     "id": 24,
     "requiresPermission": false,
-    "group":"Data Entry",
+    "group": "Data Entry",
     "abbr": "Sales Category",
-    "tag":"",
+    "tag": "",
     "q": "How can I add an automatic discount for this specific client on each invoice?",
     "answer": [
       "To create a new category, go to <b>Data Entry</b> > <b>Sales Category</b>, then enter a <b>description</b> and <b>percentage</b> in the designated fields, Than click <b>Save</b>.",
@@ -516,15 +516,15 @@
       "../screenshots/SalesCategory/01.jpg",
       "../screenshots/SalesCategory/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-08T11:50:00"
   },
   {
     "id": 25,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Sale Price",
-    "tag":"item",
+    "tag": "item",
     "q": "How to update the sale price of an item using the import feature from Excel?",
     "answer": [
       "Go to Operations > System Maintenance > <b>Import Items from Excel</b>.",
@@ -537,106 +537,106 @@
       "../screenshots/SalePriceExcel/02.jpg",
       "../screenshots/SalePriceExcel/03.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-12T11:00:00"
   },
   {
     "id": 26,
     "requiresPermission": false,
-    "group":"Data Entry",
+    "group": "Data Entry",
     "abbr": "Customer",
-    "tag":"",
+    "tag": "",
     "q": "How to create new customer on brains?",
     "answer": [
       "To add a new customer on brains, navigate to <b>Data Entry</b> tab, select <b>Customer</b>, and click <b>New</b> Button. Then proceed to input the required customer details into the appropriate fields provided, Than Click <b>Save</b> Button."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/NewCustomer/01.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-15T09:00:00"
   },
   {
     "id": 27,
     "requiresPermission": false,
-    "group":"Data Entry",
+    "group": "Data Entry",
     "abbr": "Item",
-    "tag":"item",
+    "tag": "item",
     "q": "How to create new Item on brains?",
     "answer": [
       "To add a new Item on brains, navigate to <b>Data Entry</b> tab > Item > select <b>Item</b>.",
       "Click <b>New</b> Button. Then proceed to input the required Item details into the appropriate fields provided, Than Click <b>Save</b> Button."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/NewItem/01.jpg",
       "../screenshots/NewItem/02.jpg"
     ],
-    "video":"../screenshots/NewItem/AddNewItem.mp4",
+    "video": "../screenshots/NewItem/AddNewItem.mp4",
     "modifiedDateTime": "2023-07-18T15:00:00"
   },
   {
     "id": 28,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Purchases",
-    "tag":"",
+    "tag": "",
     "q": "How to create a Purchases on brains?",
     "answer": [
       "Navigate to <b>Operations</b> > <b>Purchases</b> To create a new <b>Purchases</b> on brains.",
       "Click on the <b>New</b> button.<br>Enter the relevant details such as <b>Type, supplier, currency, and date</b> in the respective fields.<br>Add the <b>item, quantity, and price</b>, starting from the first row.<br>Finally, click on <b>Save</b> to complete the purchase entry."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/NewPurchases/01.jpg",
       "../screenshots/NewPurchases/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-19T15:30:00"
   },
   {
     "id": 29,
     "requiresPermission": false,
-    "group":"Reports",
+    "group": "Reports",
     "abbr": "Item",
-    "tag":"",
+    "tag": "",
     "q": "How to view item details by supplier item number?",
     "answer": [
       "To view item details by supplier item number, navigate to <b>Reports</b> tab > select <b>Item</b>.",
       "Enter the <b>supplier item number</b> in the provided field.<br>Click the <b>View button</b> at the bottom left. <br>This will show you all the important information about the items, like how many are in stock, where is their stock coming from, how much they cost, how much they sell for, and other details about the item itself."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/ReportsItem/01.jpg",
       "../screenshots/ReportsItem/02.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-20T14:00:00"
   },
   {
     "id": 30,
     "requiresPermission": false,
-    "group":"System",
+    "group": "System",
     "abbr": "Modify Voucher Amounts",
-    "tag":"voucher",
+    "tag": "voucher",
     "q": "How to enable the modification of voucher amounts?",
     "answer": [
       "To enable voucher amount modification, access system preferences, go to the <b>operations</b> tab > <b>accounting</b>, tick the <b>Modify Voucher Amount</b> checkbox, and <b>Save</b>."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/ModifyVoucherAmounts/01.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-06-22T15:00:00"
   },
   {
     "id": 31,
     "requiresPermission": false,
-    "group":"System",
+    "group": "System",
     "abbr": "Enable Edit Voucher",
-    "tag":"voucher",
+    "tag": "voucher",
     "q": "What are the steps to activate the Edit Voucher button for purchases?",
     "answer": [
       "In order to activate the <b>Edit voucher</b> button within the accounting tab for purchases, the following actions must be taken:",
@@ -644,7 +644,7 @@
       "Next, proceed to the <b>System</b> menu and access the <b>Password</b> section. From there, enable the <b>Modify</b> option for the specific user in question.",
       "Alternatively, if you require more detailed user access, you can select the option for <b>Detailed User Access</b> Once selected, you can proceed to the next step.",
       "Navigate to the <b>Operations Access Rights</b> tab, then to <b>Accounting</b> and check the <b>M</b> checkbox to grant modify access to the journal voucher."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/EditVoucher/01.jpg",
@@ -652,43 +652,42 @@
       "../screenshots/EditVoucher/03.jpg",
       "../screenshots/EditVoucher/04.jpg",
       "../screenshots/EditVoucher/05.jpg"
-      
     ],
-    "video":"",
+    "video": "",
     "modifiedDateTime": "2023-07-06T15:50:00"
   },
   {
     "id": 32,
     "requiresPermission": false,
-    "group":"Reports",
+    "group": "Reports",
     "abbr": "Top 10 Suppliers Customers",
-    "tag":"Daily Journal",
+    "tag": "Daily Journal",
     "q": "How to obtain a report featuring the top 10 suppliers/customers in Brains?",
     "answer": [
       "Navigate to the <b>Reports</b> section and access the <b>Daily Journal</b> Then, proceed to the <b>Stock</b> tab and mark the checkboxes for <b>VAT</b> and <b>Payables</b>. Finally, click on the <b>Preview</b> button to generate a report displaying the top 10 suppliers.",
       "For accessing the list of the top 10 customers, you need to follow similar steps. Begin by going to the <b>Reports</b> section and selecting <b>Daily Journal</b> Then, choose the <b>Stock</b> tab and check the checkboxes for both <b>VAT</b> and <b>Receivables</b>. Once done, click on the <b>Preview</b> button."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/Top10SuppliersCustomers/01.jpg",
       "../screenshots/Top10SuppliersCustomers/02.jpg"
     ],
-    "video":"",
+    "video": "",
     "modifiedDateTime": "2023-08-02T15:30:00"
   },
   {
     "id": 33,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Closing VAT",
-    "tag":"Vat",
+    "tag": "Vat",
     "q": "How to do Closing VAT for each quarter on brains?",
     "answer": [
       "To close the VAT for each quarter using the brains system, follow these steps:<br><br>1. Navigate to Operations > Accounting > Periodic Operation > Closing VAT.<br>2. Enter the type in the designated field.<br>3. For the first quarter, input <b>31/03/2023</b> in the date field and specify <b>First quarter</b> in the details field.<br>4. In the <b>Account No - From</b> and <b>Account No - To</b> fields, enter all accounts from the starting account to the last account.<br>5. In the <b>Account No VAT</b> field, enter the account number for which you want to close the VAT.<br>6. Finally, click the save button.",
       "For the Second quarter, input <b>31/06/2023</b> in the date field and specify <b>Second quarter</b> in the details field.",
       "For the Third quarter, input <b>31/09/2023</b> in the date field and specify <b>Third quarter</b> in the details field.",
       "For the Fourth quarter, input <b>31/12/2023</b> in the date field and specify <b>Fourth quarter</b> in the details field."
-     ],
+    ],
     "notes": "In the details field, specify any information related to the specific quarter (e.g., First quarter, Q1 - 2023, etc.).",
     "screenshots": [
       "../screenshots/ClosingVat/01.jpg",
@@ -696,15 +695,15 @@
       "../screenshots/ClosingVat/03.jpg",
       "../screenshots/ClosingVat/04.jpg"
     ],
-    "video":"",
+    "video": "",
     "modifiedDateTime": "2023-08-03T09:50:00"
   },
   {
     "id": 34,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "Sale Price",
-    "tag":"Sale Price",
+    "tag": "Sale Price",
     "q": "How to add two distinct sale prices for two separate customers?",
     "answer": [
       "To begin, create a <b>Type Of Sell</b> by following these steps: Go to Data Entry > Item > Type Of Sell. Click the <b>New</b> button and provide the required <b>Description</b> and <b>Currency rate</b> for this type of sell in the designated field. Lastly, click the <b>Save</b> button.",
@@ -713,7 +712,7 @@
       "Now, for the second customer, you should repeat the same steps, but this time, make sure to adjust the sale price and to select the second customer accordingly. Than click save.",
       "Now, you must create a new invoice to verify that each customer has a unique sale price assigned to them.",
       "Do the same steps for the second customer."
-     ],
+    ],
     "notes": "",
     "screenshots": [
       "../screenshots/SalePriceForEachCustomer/01.jpg",
@@ -723,15 +722,15 @@
       "../screenshots/SalePriceForEachCustomer/05.jpg",
       "../screenshots/SalePriceForEachCustomer/06.jpg"
     ],
-    "video":"",
+    "video": "",
     "modifiedDateTime": "2023-08-03T15:30:00"
   },
   {
     "id": 35,
     "requiresPermission": false,
-    "group":"Operations",
+    "group": "Operations",
     "abbr": "remove duplicate descriptions",
-    "tag":"duplicate",
+    "tag": "duplicate",
     "q": "How to remove duplicate descriptions across multiple Customer / Supplier / Auxiliary / Contacts, and eliminating any unnecessary codes? ",
     "answer": [
       "Go to Operations > Accounting > System Maintenance > Change code.<br>Input the Customer / Supplier / Auxiliary / Contacts that you want to remove in the <b>From</b> field and the Customer / Supplier / Auxiliary / Contacts that you want to keep in the <b>To</b> field. Make sure to Tick Fix Accounting Than Press <b>Save</b>"
@@ -740,15 +739,15 @@
     "screenshots": [
       "../screenshots/DuplicateDescriptionCustomer/01.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-08-07T10:00:00"
   },
   {
     "id": 36,
     "requiresPermission": false,
-    "group":"System",
+    "group": "System",
     "abbr": "recover transaction",
-    "tag":"recover",
+    "tag": "recover",
     "q": "How to recover transactions that were accidentally deleted?",
     "answer": [
       "Navigate to System > Recover Transaction. Then, choose the 'Operation Type' and 'Operation Number' associated with the accidentally deleted transactions, and finally, click the <b>Recover</b> button."
@@ -757,9 +756,7 @@
     "screenshots": [
       "../screenshots/RecoverTransaction/01.jpg"
     ],
-     "video":"",
+    "video": "",
     "modifiedDateTime": "2023-08-08T14:00:00"
   }
-  
-  
 ]

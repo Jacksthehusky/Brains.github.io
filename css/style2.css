@@ -38,14 +38,13 @@ section {
 }
 
 /*background-color*/
-:root{
+:root {
   --bg-color: rgb(255, 255, 255);
   --second-bg-color: rgb(235 220 220);
   --bg-color1: #1f242d;
   --second-bg-color1: #323946;
   --main-color: rgb(122, 21, 21);
   --text-color: #fff;
-  
 }
 
 a {
@@ -61,7 +60,6 @@ a {
   box-shadow: 0 4px 8px 0 #a07d7d, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .HelpSearch {
   position: relative;
   width: 100%;
@@ -70,7 +68,6 @@ a {
   background: #353535;
   padding: 60px 5% 0;
 }
-
 
 /*Home*/
 .home {
@@ -161,6 +158,12 @@ a {
   margin: 2rem 0 3rem;
 }
 
+.about-img img {
+  width: 350px;
+  margin: 32px;
+  border-radius: 10%;
+}
+
 /*Services*/
 .services {
   background: var(--second-bg-color);
@@ -190,8 +193,8 @@ a {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: .2rem solid rgb(235 220 220);
-  transition: .5s ease;
+  border: 0.2rem solid rgb(235 220 220);
+  transition: 0.5s ease;
 }
 
 .services-container .services-box:hover {
@@ -218,23 +221,23 @@ a {
 }
 
 .portfolio-container {
-display: grid;
-grid-template-columns: repeat(1, 1fr);
-align-items: center;
-gap: 2.5rem;
-color: var(--text-color);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  color: var(--text-color);
 }
 
 .portfolio-container .portfolio-box {
-position: relative;
-border-radius: 2rem;
-overflow: hidden;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 .portfolio-box img {
-width: 45%;
-transition: .5s ease;
-padding-bottom: 10px;
+  width: 45%;
+  transition: 0.5s ease;
+  padding-bottom: 10px;
 }
 
 .portfolio-box:hover img {
@@ -253,9 +256,8 @@ padding-bottom: 10px;
   flex-direction: column;
   padding: 4rem;
   transform: translateY(100%);
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0%;
-  
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -264,22 +266,22 @@ padding-bottom: 10px;
 }
 
 .portfolio-layer h4 {
-font-size: 3rem;
-font-weight: bold;
-color: var(--main-color);
-text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--main-color);
+  text-align: center;
 }
 
 .portfolio-layer p {
   font-size: 1.6rem;
-  margin: .3rem 0 1rem;
+  margin: 0.3rem 0 1rem;
 }
 
 .portfolio-layer ul {
   text-align: left;
 }
 
-.portfolio-layer a { 
+.portfolio-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -290,10 +292,9 @@ text-align: center;
 }
 
 .portfolio-layer a i {
-font-size: 2rem;
-color: var(--second-bg-color1);
+  font-size: 2rem;
+  color: var(--second-bg-color1);
 }
-
 
 /*systemreq*/
 .systemreq {
@@ -303,11 +304,11 @@ color: var(--second-bg-color1);
   overflow: hidden;
 }
 
-.systemreq .sys-icons{
-display: flex;
-justify-content: space-evenly;
-font-size: 2em;
-padding-top: 25px;
+.systemreq .sys-icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2em;
+  padding-top: 25px;
 }
 
 .systemreq h2 span {
@@ -330,13 +331,13 @@ padding-top: 25px;
 }
 
 /*team*/
-.team {  
-    overflow: hidden;
+.team {
+  overflow: hidden;
 }
 .team h2 {
   margin-bottom: 3rem;
 }
-.center{
+.center {
   display: flex;
   justify-content: center;
 }
@@ -393,8 +394,8 @@ padding-top: 25px;
   font-size: 1.6rem;
   color: rgb(0, 0, 0);
   background: var(--second-bg-color);
-  border-radius: .8rem;
-  margin: .7rem 0;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
 }
 
 .contact form .input-box input {
@@ -462,7 +463,6 @@ padding-top: 25px;
   padding: 16px;
 }
 
-
 /*Buttons*/
 .social-media a {
   display: inline-flex;
@@ -471,13 +471,13 @@ padding-top: 25px;
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: .2rem solid rgb(122, 21, 21);
+  border: 0.2rem solid rgb(122, 21, 21);
   border-radius: 50%;
   font-size: 2rem;
   color: rgb(122, 21, 21);
   text-decoration: none;
   margin: 3rem 1.5rem 3rem 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
@@ -498,7 +498,7 @@ padding-top: 25px;
   border: 2px solid rgb(122, 21, 21);
   font-size: 1.6rem;
   color: white;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-decoration: none;
   font-weight: 600;
   opacity: 0;
@@ -526,7 +526,8 @@ padding-top: 25px;
 }
 
 .card:hover {
-  transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX("0deg") rotateY("0deg") rotateZ("0deg") skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX("0deg")
+    rotateY("0deg") rotateZ("0deg") skew(0deg, 0deg);
   transform-style: preserve-3d;
   box-shadow: 0px 4px 4px rgb(122, 21, 21);
 }
@@ -563,7 +564,6 @@ padding-top: 25px;
   text-decoration: none;
 }
 
-
 .marquee {
   position: absolute;
   word-spacing: 95px;
@@ -589,8 +589,8 @@ h4 {
 /*Whatsapp share button */
 .whatsapp-share-button {
   display: inline-block;
-  background-color: #25D366;
-  color: #FFFFFF;
+  background-color: #25d366;
+  color: #ffffff;
   font-size: 16px;
   padding: 8px 13px;
   border-radius: 15px;
@@ -599,7 +599,7 @@ h4 {
 }
 
 .whatsapp-share-button:hover {
-  background-color: #128C7E;
+  background-color: #128c7e;
 }
 
 .whatsapp-share-button i {
@@ -614,13 +614,11 @@ h4 {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('../Images/whatsapp-logo.png');
+  background-image: url("../Images/whatsapp-logo.png");
   background-size: cover;
   vertical-align: middle;
   margin-right: 5px;
 }
-
-
 
 /*KEYFRAMES ANIMATION*/
 
@@ -721,8 +719,7 @@ h4 {
 }
 
 /*import font*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 /* cyrillic-ext */
 @font-face {
@@ -730,7 +727,8 @@ h4 {
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5gU1EQVg.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5gU1EQVg.woff2)
+    format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
     U+FE2E-FE2F;
 }
@@ -741,7 +739,8 @@ h4 {
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5pU1EQVg.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5pU1EQVg.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -751,7 +750,8 @@ h4 {
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5iU1EQVg.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5iU1EQVg.woff2)
+    format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
@@ -762,7 +762,8 @@ h4 {
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5jU1EQVg.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5jU1EQVg.woff2)
+    format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -773,7 +774,8 @@ h4 {
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5tU1E.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/nunitosans/v12/pe03MImSLYBIv1o4X1M8cc9yAs5tU1E.woff2)
+    format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
@@ -784,7 +786,8 @@ h4 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2)
+    format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
     U+FE2E-FE2F;
 }
@@ -794,7 +797,8 @@ h4 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCMPrEHJA.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCMPrEHJA.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -803,7 +807,8 @@ h4 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCHPrEHJA.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCHPrEHJA.woff2)
+    format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
@@ -813,7 +818,8 @@ h4 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCGPrEHJA.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCGPrEHJA.woff2)
+    format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -823,12 +829,12 @@ h4 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2)
+    format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
-
 
 /*Results*/
 
@@ -837,7 +843,7 @@ h4 {
   width: 100%;
   height: 25vh;
   display: flex;
-  background:#353535;
+  background: #353535;
   padding: 95px 5% 0;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -849,15 +855,15 @@ h4 {
 
 .SolutionHeader h1 {
   font-size: 3rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2em;
   font-family: "Dinero", sans-serif !important;
 }
 
 .SolutionHeader lord-icon {
-  width:120px;
-  height:120px;
+  width: 120px;
+  height: 120px;
 }
 
 .faqs h1 {
@@ -869,33 +875,32 @@ h4 {
   text-decoration: underline;
 }
 
-
 .faqs p {
   font-size: 1.8rem;
   font-weight: 400;
 }
 
-.faqs h4 span{
-    color: rgb(122, 21, 21);
-    font-weight: 700;
+.faqs h4 span {
+  color: rgb(122, 21, 21);
+  font-weight: 700;
 }
 
 .faqsend {
   padding: 8px 16px;
 }
-.faqsend i{
+.faqsend i {
   color: #353535;
 }
-.faqsend img{
-  max-width:20px; 
-  border-radius:25%;
+.faqsend img {
+  max-width: 20px;
+  border-radius: 25%;
 }
 
 .Solution p {
   color: rgb(122, 21, 21);
   font-weight: bold;
   font-size: 24px;
-  padding: 15px 10px
+  padding: 15px 10px;
 }
 
 .Solution ul {
@@ -912,7 +917,7 @@ h4 {
 }
 
 .Solution div img {
-  width:40vw;
+  width: 40vw;
   cursor: pointer;
 }
 
@@ -932,14 +937,11 @@ h4 {
   height: 100%;
 }
 
-
 @media (min-width: 450px) {
-
   /*breadcrumb*/
   .breadcrumb {
     width: 450px;
   }
-
 }
 
 ul.breadcrumb {
@@ -959,7 +961,7 @@ ul.breadcrumb li:last-child {
   color: red;
 }
 
-ul.breadcrumb li+li:before {
+ul.breadcrumb li + li:before {
   padding: 8px;
   color: rgb(0, 0, 0);
   content: ">";
@@ -975,15 +977,10 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-
 /* BreakPoints */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
-  }
-
-  .about-img img {
-    width: 35vw;
   }
 
 }
@@ -1043,14 +1040,14 @@ ul.breadcrumb li a:hover {
     margin-top: 4rem;
   }
   .Solution div img {
-    width: 100%
+    width: 100%;
   }
   .about {
     flex-direction: column-reverse;
   }
 
   .about-img img {
-    width: 70vw;
+    width: 50vw;
     margin-top: 4rem;
   }
 
@@ -1061,7 +1058,6 @@ ul.breadcrumb li a:hover {
   .portfolio h2 {
     margin-bottom: 3rem;
   }
-
 }
 
 @media (max-width: 450px) {
@@ -1089,15 +1085,10 @@ ul.breadcrumb li a:hover {
     display: inline;
     font-size: 14px;
   }
-  
 }
 
 @media (max-width: 400px) {
   .home-img img {
-    width: 90vw;
-  }
-
-  .about-img img {
     width: 90vw;
   }
 
@@ -1158,7 +1149,7 @@ ul.breadcrumb li a:hover {
 }
 
 .question-time {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-weight: normal;
   float: right;
   color: #666;
@@ -1166,7 +1157,7 @@ ul.breadcrumb li a:hover {
 
 .question-id {
   opacity: 0;
-  font-size: 2rem; 
+  font-size: 2rem;
   font-weight: normal;
   margin: 1rem;
   transition: opacity ease-in-out 0.15s;
@@ -1205,8 +1196,7 @@ ul.breadcrumb li a:hover {
 }
 
 body {
-  
-  counter-reset: section; 
+  counter-reset: section;
 }
 
 .answer-steps li::before {
