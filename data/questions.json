@@ -742,6 +742,23 @@
     ],
      "video":"",
     "modifiedDateTime": "2023-08-07T10:00:00"
+  },
+  {
+    "id": 36,
+    "requiresPermission": false,
+    "group":"System",
+    "abbr": "recover transaction",
+    "tag":"recover",
+    "q": "How to recover transactions that were accidentally deleted?",
+    "answer": [
+      "Navigate to System > Recover Transaction. Then, choose the 'Operation Type' and 'Operation Number' associated with the accidentally deleted transactions, and finally, click the <b>Recover</b> button."
+    ],
+    "notes": "This process can not recover charges or cheque information.",
+    "screenshots": [
+      "../screenshots/RecoverTransaction/01.jpg"
+    ],
+     "video":"",
+    "modifiedDateTime": "2023-08-08T14:00:00"
   }
   
   
