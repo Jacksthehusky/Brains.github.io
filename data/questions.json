@@ -704,7 +704,7 @@
     "group": "Operations",
     "abbr": "Sale Price",
     "tag": "Sale Price",
-    "q": "How to add two distinct sale prices for two separate customers?",
+    "q": "How to add two distinct sale prices for two separate customers? (Method 1)",
     "answer": [
       "To begin, create a <b>Type Of Sell</b> by following these steps: Go to Data Entry > Item > Type Of Sell. Click the <b>New</b> button and provide the required <b>Description</b> and <b>Currency rate</b> for this type of sell in the designated field. Lastly, click the <b>Save</b> button.",
       "Next, proceed to Data Entry > Item > Item and Locate the item for which you wish to assign two different sale prices to cater to individual customers. Then, access the 'Type of Sell.' tab.",
@@ -715,18 +715,43 @@
     ],
     "notes": "",
     "screenshots": [
-      "../screenshots/SalePriceForEachCustomer/01.jpg",
-      "../screenshots/SalePriceForEachCustomer/02.jpg",
-      "../screenshots/SalePriceForEachCustomer/03.jpg",
-      "../screenshots/SalePriceForEachCustomer/04.jpg",
-      "../screenshots/SalePriceForEachCustomer/05.jpg",
-      "../screenshots/SalePriceForEachCustomer/06.jpg"
+      "../screenshots/SalePriceForEachCustomerM1/01.jpg",
+      "../screenshots/SalePriceForEachCustomerM1/02.jpg",
+      "../screenshots/SalePriceForEachCustomerM1/03.jpg",
+      "../screenshots/SalePriceForEachCustomerM1/04.jpg",
+      "../screenshots/SalePriceForEachCustomerM1/05.jpg",
+      "../screenshots/SalePriceForEachCustomerM1/06.jpg"
     ],
     "video": "",
     "modifiedDateTime": "2023-08-03T15:30:00"
   },
   {
     "id": 35,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Sale Price",
+    "tag": "Sale Price",
+    "q": "How to add two distinct sale prices for two separate customers? (Method 2)",
+    "answer": [
+      "To begin, create 'two' <b>Type Of Sell</b> by following these steps: Go to Data Entry > Item > Type Of Sell. Click the <b>New</b> button and provide the required <b>Description</b> and <b>Currency rate</b> for each type of sell in the designated field. Lastly, click the <b>Save</b> button.",
+      "Next, proceed to Data Entry > Item > Item and Locate the item for which you wish to assign two different sale prices. Then, access the <b>Type of Sell.</b> tab.",
+      "Click the <b>Modify</b> button first, followed by clicking the <b>Add Row button</b>. This will show you all available 'type of sell'. Here you can modify each row containing a unique 'type of sell' with a specific 'sales price'. Once done, proceed to click the save button.",
+      "Navigate to data entry > customer. Locate the specific customer for whom you wish to incorporate a 'type of sell' along with a designated sales price. Click modify button and input the appropriate type of sell code into the designated field.",
+      "Subsequently, upon generating a new invoice and including the customer you recently made modifications to, the updated 'type of sell' code will become visible within its dedicated field. This signifies the implementation of a distinct sales price tailored to that particular customer."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/SalePriceForEachCustomerM2/01.jpg",
+      "../screenshots/SalePriceForEachCustomerM2/02.jpg",
+      "../screenshots/SalePriceForEachCustomerM2/03.jpg",
+      "../screenshots/SalePriceForEachCustomerM2/04.jpg",
+      "../screenshots/SalePriceForEachCustomerM2/05.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-08-10T9:30:00"
+  },
+  {
+    "id": 36,
     "requiresPermission": false,
     "group": "Operations",
     "abbr": "remove duplicate descriptions",
@@ -743,7 +768,7 @@
     "modifiedDateTime": "2023-08-07T10:00:00"
   },
   {
-    "id": 36,
+    "id": 37,
     "requiresPermission": false,
     "group": "System",
     "abbr": "recover transaction",
