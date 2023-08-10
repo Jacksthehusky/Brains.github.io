@@ -783,5 +783,31 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-08-08T14:00:00"
+  },
+  {
+    "id": 38,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "offer",
+    "tag": "offer",
+    "q": "How to create an offer that includes free items in an invoice when a customer buys the offer?",
+    "answer": [
+      "Go to 'Data Entry' > 'Item' > 'Item' > Locate the item you wish to make an offer for, and then select the 'Free' tab.",
+      "Click on 'Modify,' followed by the 'Add Row' button. For instance, we can configure an offer where a customer is entitled to receive 2 free items of the same kind upon purchasing 8 quantities of this item, or to receive 1 free item of the same kind upon purchasing 4 quantities of this item.",
+      "Let's test this offer by generating a new invoice. Include this item with a quantity of 8, and you'll receive a popup notification stating 'available free quantity, add now?' Simply click 'yes' to include the complimentary items.",
+      "As demonstrated, you can observe that 2 free items have been appended as a new entry in this invoice. To complete and save the invoice, click on the 'Save' button.",
+      "Note: To control the display of this popup notification, you have the option to activate or deactivate it. Begin by clicking on the invoice type, which will open the operation type window. From there, navigate to the preferences tab, click on 'Modify,' and mark the checkbox for 'Automatic free item.' Afterward, confirm your changes by clicking on 'Save.'"
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/OfferFree/01.jpg",
+      "../screenshots/OfferFree/02.jpg",
+      "../screenshots/OfferFree/03.jpg",
+      "../screenshots/OfferFree/04.jpg",
+      "../screenshots/OfferFree/05.jpg"
+
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-08-10T12:00:00"
   }
 ]
