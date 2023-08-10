@@ -798,7 +798,7 @@
       "As demonstrated, you can observe that 2 free items have been appended as a new entry in this invoice. To complete and save the invoice, click on the 'Save' button.",
       "Note: To control the display of this popup notification, you have the option to activate or deactivate it. Begin by clicking on the invoice type, which will open the operation type window. From there, navigate to the preferences tab, click on 'Modify,' and mark the checkbox for 'Automatic free item.' Afterward, confirm your changes by clicking on 'Save.'"
     ],
-    "notes": "",
+    "notes": "In Step 2: In the 'free C/U' field, consistently utilize 'U' (unit).",
     "screenshots": [
       "../screenshots/OfferFree/01.jpg",
       "../screenshots/OfferFree/02.jpg",
