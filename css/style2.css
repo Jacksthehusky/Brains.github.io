@@ -495,7 +495,7 @@ a {
   padding: 1rem 2.8rem;
   background: rgb(122, 21, 21);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem rgb(122, 21, 21);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 2px solid rgb(122, 21, 21);
   font-size: 1.6rem;
   color: white;
@@ -506,6 +506,7 @@ a {
   transition: 0.5s ease;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
+  
 }
 
 .btns:hover {
