@@ -289,11 +289,14 @@ pre code {
   word-break: normal;
 }
 code {
-  font-size: 0.875em;
-  color: var(--bs-code-color);
+  font-size: 0.75em;
+  color: #fff;
   word-wrap: break-word;
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
+  background: #333;
+  display: block;
+  padding: 1em;
 }
 a > code {
   color: inherit;

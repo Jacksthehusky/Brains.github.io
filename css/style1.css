@@ -1044,9 +1044,15 @@ a {
 .w3-animate-input:focus {
   width: 100% !important;
 }
-.w3-opacity,
-.w3-hover-opacity:hover {
+.w3-opacity{
   opacity: 0.6;
+}
+.w3-hover-opacity {
+  transition: filter ease-in-out 0.2s, transform ease-in-out 0.2s;
+}
+.w3-hover-opacity:hover {
+  filter: brightness(0.9) saturate(1.25);
+  transform: scale(1.025);
 }
 .w3-opacity-off,
 .w3-hover-opacity-off:hover {
