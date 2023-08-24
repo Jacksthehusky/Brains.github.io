@@ -230,21 +230,52 @@ a {
 .cardw {
   position: relative;
   max-width: 95%;
-  width: 375px;
-  height: 500px;
-  background: #000;
+  width: 400px;
+  height: 550px;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.poster {
-  position: relative;
+.cardw .poster {
+  position: revert;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background: linear-gradient(45deg, rgba(235, 235, 245, 0.7), rgba(250, 250, 255, 0.7));
+  transition: transform ease-in-out 0.2s;
+  padding: 1em 0.5em;
+  text-align: center;
+}
+
+.cardw .poster h1 {
+  font-weight: 900;
+  font-size: 3em;
+  margin: 0;
+  color: #d93737;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.cardw .poster p {
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 1.4em;
+  padding: 0 0.5em;
+}
+
+.cardw .poster .preview {
+  width: 350px;
+}
+
+.cardw .poster .card-icon {
+  /*width: 85px;*/
 }
 
 .poster::before {
@@ -262,17 +293,7 @@ a {
   bottom: 0;
 }
 
-.poster img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.3s;
-}
-
-.cardw:hover .poster img {
+.cardw:hover .poster {
   transform: scale(1.1);
 }
 
@@ -304,10 +325,10 @@ a {
 }
 
 .details h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.1em;
   margin-bottom: 10px;
-  color: #e3c414;
+  color: #ef5353;
 }
 .details .rating {
   position: relative;
@@ -317,7 +338,7 @@ a {
 }
 
 .details .rating i {
-  color: #e3c414;
+  color: #e31414;
 }
 
 .details .rating span {
@@ -332,9 +353,9 @@ a {
 }
 
 .details .tags span {
-  padding: 0.35rem 0.65rem;
+  padding: 0.45rem 1rem;
   color: #fff;
-  border: 1.5px solid rgba(255 255 255 / 0.4);
+  border: 2.5px solid rgba(255 255 255 / 0.4);
   border-radius: 4px;
   border-radius: 50px;
 }
@@ -357,7 +378,7 @@ a {
 }
 
 .details .features ul li::marker {
-  color: #e3c414;
+  color: #e31414;
 }
 
 /*Portfolio*/
@@ -727,7 +748,7 @@ a {
 .marquee span {
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 20s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 
 .h4,
@@ -1408,4 +1429,9 @@ body {
 
 .related-articles ul {
   font-size: 1.25em;
+}
+
+.moving-ad {
+  font-size: 2em;
+  text-transform: uppercase;
 }

@@ -1203,10 +1203,12 @@ a {
 .w3-padding-48 {
   padding-top: 48px !important;
   padding-bottom: 48px !important;
+  min-height: 96px;
 }
 .w3-padding-64 {
   padding-top: 64px !important;
   padding-bottom: 64px !important;
+  min-height: 124px;
 }
 .w3-padding-top-64 {
   padding-top: 64px !important;
