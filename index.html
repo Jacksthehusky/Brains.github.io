@@ -16,16 +16,18 @@
 
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
-    <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
-      <a href="#home" class="logobrains w3-bar-item w3-wide">Brains</a>
-      <a href="#home" aria-label="logobrains">
-        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-        <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
-          colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
-        </lord-icon>
-      </a>
+    <div class="topbar w3-bar w3-white w3-card" id="myNavbar" style="height: 60px;">
+      <div>
+        <a href="#home" class="logobrains w3-bar-item w3-wide">Brains</a>
+        <a href="#home" aria-label="logobrains">
+          <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+          <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
+            colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
+          </lord-icon>
+        </a>
+      </div>
       <!-- Right-sided navbar links -->
-      <div class="header w3-right w3-hide-small w3-hide-medium" style="margin-right: 15px">
+      <div class="header w3-right w3-hide-small w3-hide-medium">
         <a href="#home" class="navbartop w3-bar-item active" style="--i:1;">HOME</a>
         <a href="#about" class="navbartop w3-bar-item" style="--i:2;">ABOUT</a>
         <a href="#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
@@ -35,7 +37,7 @@
       </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"
+      <a href="javascript:void(0)" class="burger-menu w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"
         aria-label="menu">
         <i class="fa fa-bars"></i>
       </a>
@@ -44,7 +46,7 @@
 
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>
     <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
     <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
@@ -292,7 +294,7 @@
       <div class="center w3-row-padding w3-grayscale" style="margin-top:64px">
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="card w3-card">
-            <img src="./Images/Michel.jpg" alt="Michel" style="width:100%; border-radius: 50px;">
+            <img src="./Images/Michel.jpg" alt="Michel" style="width:100%; border-radius: 50px 50px 0 0;">
             <div class="w3-container">
               <h3 style="color: darkred">Michel Aynati</h3>
               <p class="w3-opacity">CEO & Founder</p>
@@ -307,7 +309,7 @@
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="card w3-card w4-card">
-            <img src="./Images/Nassar.jpg" alt="Nassar" style="width:100%; border-radius: 50px;">
+            <img src="./Images/Nassar.jpg" alt="Nassar" style="width:100%; border-radius: 50px 50px 0 0;">
             <div class="w3-container">
               <h3 style="color: darkred">Nassar Nassar</h3>
               <p class="w3-opacity">CEO & Founder</p>
