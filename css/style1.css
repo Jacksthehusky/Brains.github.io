@@ -432,6 +432,7 @@ a {
   z-index: 1;
   overflow: auto;
   color: darkred;
+  font-size: 1.5em;
 }
 
 .w3-bar-block .w3-dropdown-hover,
@@ -1076,7 +1077,7 @@ a {
 }
 .w3-greyscale-min,
 .w3-grayscale-min {
-  filter: grayscale(50%);
+  filter: grayscale(25%);
 }
 .w3-sepia {
   filter: sepia(75%);
