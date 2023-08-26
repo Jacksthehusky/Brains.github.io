@@ -1104,7 +1104,9 @@ a {
 }
 .caption{
   margin: 1.5rem;
-  background: #1B1C1E;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: rgb(55 35 35);
 }
 .w3-xlarge {
   font-size: 24px !important;
