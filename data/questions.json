@@ -809,5 +809,21 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-08-10T12:00:00"
+  },
+  {
+    "id": 39,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Below Cost",
+    "tag": "Below Cost",
+    "q": "How can I generate a report indicating whether there are items priced below their cost?",
+    "answer": [
+      "Go to 'Report' > 'Items, Prices & Qtys' > go to the 'Additional Info' tab and tick <b>Below Cost</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ItemBelowCost/01.jpg"],
+    "video": "",
+    "modifiedDateTime": "2023-08-30T15:00:00"
   }
 ]
