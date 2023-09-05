@@ -805,7 +805,6 @@
       "../screenshots/OfferFree/03.jpg",
       "../screenshots/OfferFree/04.jpg",
       "../screenshots/OfferFree/05.jpg"
-
     ],
     "video": "",
     "modifiedDateTime": "2023-08-10T12:00:00"
@@ -822,7 +821,8 @@
     ],
     "notes": "",
     "screenshots": [
-      "../screenshots/ItemBelowCost/01.jpg"],
+      "../screenshots/ItemBelowCost/01.jpg"
+    ],
     "video": "",
     "modifiedDateTime": "2023-08-30T15:00:00"
   },
@@ -840,7 +840,8 @@
     "notes": "",
     "screenshots": [
       "../screenshots/RenumberJV/01.jpg",
-      "../screenshots/RenumberJV/02.jpg"],
+      "../screenshots/RenumberJV/02.jpg"
+    ],
     "video": "",
     "modifiedDateTime": "2023-09-05T10:00:00"
   }
