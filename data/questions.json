@@ -825,5 +825,23 @@
       "../screenshots/ItemBelowCost/01.jpg"],
     "video": "",
     "modifiedDateTime": "2023-08-30T15:00:00"
+  },
+  {
+    "id": 40,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "renumbering",
+    "tag": "Journal voucher",
+    "q": "How can I perform the renumbering process for a journal voucher?",
+    "answer": [
+      "Go to 'Operations' > 'Accounting' > 'System Maintenance' > 'Sort Transaction'.",
+      "Choose <b>Jounral Voucher</b> from the operation's dropdown menu, input your journal voucher type in the specified field, than Click <b>Save</b> Button."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/RenumberJV/01.jpg",
+      "../screenshots/RenumberJV/02.jpg"],
+    "video": "",
+    "modifiedDateTime": "2023-09-05T10:00:00"
   }
 ]
