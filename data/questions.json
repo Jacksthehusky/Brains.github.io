@@ -845,4 +845,22 @@
     "video": "",
     "modifiedDateTime": "2023-09-05T10:00:00"
   }
+  ,
+  {
+    "id": 41,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Inactive Item Code",
+    "tag": "item",
+    "q": "How to set an item as inactive?",
+    "answer": [
+      "To set an item as inactive, navigate to the <b>Cost</b> tab, click on <b>Modify</b>, check the <b>Inactive</b> box, and then save your changes."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/InactiveItem/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-09-19T11:00:00"
+  }
 ]
