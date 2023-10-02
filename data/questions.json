@@ -844,8 +844,7 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-09-05T10:00:00"
-  }
-  ,
+  },
   {
     "id": 41,
     "requiresPermission": false,
@@ -862,5 +861,24 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-09-19T11:00:00"
+  },
+  {
+    "id": 42,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "Sale Price",
+    "tag": "Sale Price",
+    "q": "How to prevent a specific user from changing the sale price?",
+    "answer": [
+      "Navigate to System > Password > and Locate the user for whom you wish to revoke access to change the sale price. Access the <b>Search</b> tab and enter <b>No change Sale Price</b>. Click modify and <b>Check</b> the corresponding box for this option.",
+      "Than access the <b>Search</b> tab and enter <b>POS Supervisor</b> and <b>Check</b> the corresponding box for this option than click <b>Save</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NochangeSalePrice/01.jpg",
+      "../screenshots/NochangeSalePrice/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-02T11:00:00"
   }
 ]
