@@ -871,7 +871,7 @@
     "q": "How to prevent a specific user from changing the sale price?",
     "answer": [
       "Navigate to System > Password > and Locate the user for whom you wish to revoke access to change the sale price. Access the <b>Search</b> tab and enter <b>No change Sale Price</b>. Click modify and <b>Check</b> the corresponding box for this option.",
-      "Than access the <b>Search</b> tab and enter <b>POS Supervisor</b> and <b>Check</b> the corresponding box for this option than click <b>Save</b>."
+      "Than access the <b>Search</b> tab and enter <b>POS Supervisor</b> and <b>Un-Check</b> the corresponding box for this option than click <b>Save</b>."
     ],
     "notes": "",
     "screenshots": [
