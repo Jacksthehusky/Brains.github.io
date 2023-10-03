@@ -911,12 +911,12 @@
       "To activate or deactivate the price check feature in POS, you should follow these steps:",
       "Go to <b>System</b> > <b>Preferences</b> and look for the <b>Without Price Checker</b> option. Enabling this option will disable price checking in POS, while unchecking it will enable price checking in POS."
     ],
-    "notes": "",
+    "notes": "Please keep in mind that you should close the POS window and reopen it to ensure that the changes are applied.",
     "screenshots": [
       "../screenshots/PiceChekPOS/01.jpg",
       "../screenshots/PiceChekPOS/02.jpg"
     ],
-    "video": "Please keep in mind that you should close the POS window and reopen it to ensure that the changes are applied.",
+    "video": "",
     "modifiedDateTime": "2023-10-03T15:00:00"
   }
 ]
