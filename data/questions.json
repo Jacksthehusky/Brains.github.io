@@ -880,5 +880,24 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-10-02T11:00:00"
+  },
+  {
+    "id": 43,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Item",
+    "tag": "item",
+    "q": "How to remove an item from the POS grid view?",
+    "answer": [
+      "To eliminate an item from the POS grid view, please follow these steps:",
+      "Navigate to <b>Data Entry</b> > Item > Item. Locate the item you want to remove. Access the <b>Additional Info</b> tab, Click on <b>Modify</b>, and adjust the <b>P.O.S Position</b> to <b>-1</b>. Finally, click <b>Save</b>."
+    ],
+    "notes": "-1 will remove the item from POS grid view",
+    "screenshots": [
+      "../screenshots/RemoveItemFromPOSGrid/01.jpg",
+      "../screenshots/RemoveItemFromPOSGrid/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-03T11:00:00"
   }
 ]
