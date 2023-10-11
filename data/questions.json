@@ -918,5 +918,22 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-10-03T15:00:00"
+  },
+  {
+    "id": 45,
+    "requiresPermission": true,
+    "group": "Other",
+    "abbr": "Picture",
+    "tag": "Picture",
+    "q": "How can I configure the server's picture folder to be accessible on all computers?",
+    "answer": [
+      "Locate the system's configuration file and include the shared server path for the picture folder."
+    ],
+    "notes": "Please ensure that you set the server's picture folder as shared for everyone.",
+    "screenshots": [
+      "../screenshots/PictureFolder/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-11T10:00:00"
   }
 ]
