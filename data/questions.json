@@ -935,5 +935,24 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-10-11T10:00:00"
+  },
+  {
+    "id": 46,
+    "requiresPermission": false,
+    "group": "Other",
+    "abbr": "Connection error",
+    "tag": "Error",
+    "q": "How can I resolve the connection error that prevents connecting to the Brains server?",
+    "answer": [
+      "If you encounter this problem, consider attempting the following steps:",
+      "Find the Services application on your computer, then search for SQL Server (MSSQLSERVER), and click on <b>Start</b> to activate the service."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ConnectionError/01.jpg",
+      "../screenshots/ConnectionError/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-11T10:30:00"
   }
 ]
