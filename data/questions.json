@@ -954,5 +954,22 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-10-11T10:30:00"
+  },
+  {
+    "id": 47,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "Refresh",
+    "tag": "Invoice",
+    "q": "How can I make the invoice refresh every 50 lines instead of refreshing each line individually?",
+    "answer": [
+      "If you encounter system slowdown while generating an invoice with over 300 lines, consider adjusting the <b>Max Number of Lines to Refresh</b> setting from 0 to 50 under System > Preferences > Operations > Stock, than click Save button."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/RefreshMaxNumber/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-12T14:20:00"
   }
 ]
