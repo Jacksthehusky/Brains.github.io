@@ -971,5 +971,24 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-10-12T14:20:00"
+  },
+  {
+    "id": 48,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Item",
+    "tag": "item",
+    "q": " how to change the length of the item code?",
+    "answer": [
+      "To increase / decrease the length of the item code, you should follow these steps.",
+      "Navigate to <b>System</b> > <b>Preferences</b>, choose the <b>Item</b> tab, adjust the <b>Item Code length</b> to your preference, and then click <b>Save</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ItemCodeLength/01.jpg",
+      "../screenshots/ItemCodeLength/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-30T11:40:00"
   }
 ]
