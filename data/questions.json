@@ -1009,5 +1009,22 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-11-01T16:00:00"
+  },
+  {
+    "id": 50,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "On Account",
+    "tag": "Invoice",
+    "q": "How do I adjust an invoice to place it on account?",
+    "answer": [
+      "Modify the invoice, then navigate to the <b>Additional info</b> tab and select the <b>On Account</b> checkbox before saving it."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/OnAccount/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-11-01T16:00:00"
   }
 ]
