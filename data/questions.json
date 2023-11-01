@@ -1018,7 +1018,7 @@
     "tag": "Invoice",
     "q": "How do I adjust an invoice to place it on account?",
     "answer": [
-      "Modify the invoice, then navigate to the <b>Additional info</b> tab and select the <b>On Account</b> checkbox before saving it."
+      "Modify the invoice, then navigate to the <b>Additional info</b> tab and select the <b>On Account</b> checkbox than click Save."
     ],
     "notes": "",
     "screenshots": [
