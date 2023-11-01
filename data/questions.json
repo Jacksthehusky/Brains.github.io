@@ -1000,7 +1000,7 @@
     "q": "How to change an item to display as U instead of C when creating an invoice?",
     "answer": [
       "To achieve this, simply click on <b>Add Row</b> for the item you wish to display as <b>U</b> on the invoice. In the barcode field, append the same code with the letter <b>U</b> at the end. Ensure that the <b>B/C/U</b> field is configured to <b>U</b>. Than click Save.",
-      "Therefore, when adding the item to the invoice, utilize the item code you've generated. For instance, item code 123457 will appear as <b>C</b>, whereas 1234567U will be displayed as <b>U</b>."
+      "Therefore, when adding the item to the invoice, utilize the item code you've generated. For instance, item code '123457' will appear as <b>C</b>, whereas '1234567U' will be displayed as <b>U</b>."
     ],
     "notes": "",
     "screenshots": [
