@@ -1026,5 +1026,24 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-11-01T16:00:00"
+  },
+  {
+    "id": 51,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "On Account",
+    "tag": "Invoice",
+    "q": "How to do Closing Profit and Loss?",
+    "answer": [
+      "Go to Operations > Accounting > Periodic Operation > Closing Profit & Loss",
+      "Fill the type (i.e: PL), details (i.e: Profit and Loss) and date End of year (i.e: 31/12/202Y) accordingly enable <b>Detailed</b> Then save."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ClosingProfitAndLoss/01.jpg",
+      "../screenshots/ClosingProfitAndLoss/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-11-02T14:00:00"
   }
 ]
