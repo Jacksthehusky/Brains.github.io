@@ -4,7 +4,7 @@
     "requiresPermission": false,
     "group": "Operations",
     "abbr": "Closing / Opening steps",
-    "tag": "",
+    "tag": "Closing",
     "q": "How to do closing and opening from 2022 to 2023?",
     "answer": [
       "<b>PREPARING:</b> Go to the company for the year <b>2022</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end, it is normal for the system to not respond during Fix.</i>",
@@ -680,7 +680,7 @@
     "requiresPermission": false,
     "group": "Operations",
     "abbr": "Closing VAT",
-    "tag": "Vat",
+    "tag": "Closing",
     "q": "How to do Closing VAT for each quarter on brains?",
     "answer": [
       "To close the VAT for each quarter using the brains system, follow these steps:<br><br>1. Navigate to Operations > Accounting > Periodic Operation > Closing VAT.<br>2. Enter the type in the designated field.<br>3. For the first quarter, input <b>31/03/2023</b> in the date field and specify <b>First quarter</b> in the details field.<br>4. In the <b>Account No - From</b> and <b>Account No - To</b> fields, enter all accounts from the starting account to the last account.<br>5. In the <b>Account No VAT</b> field, enter the account number for which you want to close the VAT.<br>6. Finally, click the save button.",
@@ -1031,8 +1031,8 @@
     "id": 51,
     "requiresPermission": false,
     "group": "Operations",
-    "abbr": "On Account",
-    "tag": "Invoice",
+    "abbr": "profit and loss",
+    "tag": "Closing",
     "q": "How to do Closing Profit and Loss?",
     "answer": [
       "Go to Operations > Accounting > Periodic Operation > Closing Profit & Loss",
