@@ -3,14 +3,14 @@
     "id": 1,
     "requiresPermission": false,
     "group": "Operations",
-    "abbr": "Closing / Opening steps",
+    "abbr": "Closing Opening end of year",
     "tag": "Closing",
-    "q": "How to do closing and opening from 2022 to 2023?",
+    "q": "How to do closing and opening from 2023 to 2024?",
     "answer": [
-      "<b>PREPARING:</b> Go to the company for the year <b>2022</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end, it is normal for the system to not respond during Fix.</i>",
-      "<b>CURRENCY:</b> Now you have to create new currency rates for <b>01/01/2023</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2023</b> and Press Save.",
-      "<b>CLOSING END OF YEAR:</b> Make sure you are in this year <b>2022</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.",
-      "Go to the newly created company for the year <b>2023</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
+      "<b>PREPARING:</b> Go to the company for the year <b>2023</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end!</i>",
+      "<b>CURRENCY:</b> Now you have to create new currency rates for <b>01/01/2024</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2024</b> and Press Save.",
+      "<b>CLOSING END OF YEAR:</b> Make sure you are in this year <b>2023</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of Year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.<br><i>Wait for the operation to end!</i>",
+      "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
     ],
     "notes": "Wait for the operation to end, it is normal for the system to not respond during Closing.",
     "screenshots": [
@@ -20,9 +20,9 @@
       "../screenshots/ClosingOpening/04.jpg"
     ],
     "video": "",
-    "modifiedDateTime": "2023-01-08T10:30:00",
-    "helpfulCount": 1,
-    "unhelpfulCount": 1
+    "modifiedDateTime": "2023-11-27T10:30:00",
+    "helpfulCount": 10,
+    "unhelpfulCount": 0
   },
   {
     "id": 2,
