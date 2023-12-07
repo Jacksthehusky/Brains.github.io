@@ -1045,5 +1045,26 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-11-02T14:00:00"
+  },
+  {
+    "id": 52,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "non moved item",
+    "tag": "item",
+    "q": "How to create a report that displays non-moved items for a specific year?",
+    "answer": [
+      "Navigate to Reports > Stock Position, and mark the checkboxes for 'Av. Qty.' and 'Stock Position'.",
+      "Then, proceed to the 'Additional Info' tab, check the <b>Non-Moved Item</b> box, and click on 'Preview'.",
+      "Finally, you'll be able to view the report showing non-moved items."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NonMovedItem/01.jpg",
+      "../screenshots/NonMovedItem/02.jpg",
+      "../screenshots/NonMovedItem/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-12-07T10:55:00"
   }
 ]
