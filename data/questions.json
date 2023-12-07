@@ -1052,7 +1052,7 @@
     "group": "Reports",
     "abbr": "non moved item",
     "tag": "item",
-    "q": "How to create a report that displays non-moved items for a specific year?",
+    "q": "How to create a report that displays non moved items for a specific year?",
     "answer": [
       "Navigate to Reports > Stock Position, and mark the checkboxes for 'Av. Qty.' and 'Stock Position'.",
       "Then, proceed to the 'Additional Info' tab, check the <b>Non-Moved Item</b> box, and click on 'Preview'.",
