@@ -309,7 +309,7 @@
     "tag": "",
     "q": "What is the process to display the VAT amount separately in Lebanese Pound (LBP) and US Dollar ($) on the statements report?",
     "answer": [
-      "Go to Operation Type > <b>Account No.</b> Tab > Tick <b>Account Vat And Non Vat</b> and <b>Account No Vat Rate</b> checkbox.",
+      "Go to Operation Type > <b>Account No.</b> Tab > Tick <b>Account No Vat Rate</b> checkbox.",
       "To apply the new settings, simply click on <b>modify</b> to the invoice and then <b>save</b>.",
       "Proceed to the <b>reports</b> section, then select <b>statement of accounts</b> to view the VAT amount separately displayed in Lebanese Pound (LBP) and US Dollar ($) on the statements report."
     ],
