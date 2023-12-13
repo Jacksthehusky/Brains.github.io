@@ -3,9 +3,9 @@
     "id": 1,
     "requiresPermission": false,
     "group": "Operations",
-    "abbr": "Closing / Opening",
+    "abbr": "Closing / Opening Main Server",
     "tag": "Closing",
-    "q": "How to do closing and opening from 2023 to 2024?",
+    "q": "How to do closing and opening on Main Server from 2023 to 2024?",
     "answer": [
       "<b>PREPARING:</b><br>Go to the company for the year <b>2023</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end!</i>",
       "<b>CURRENCY:</b><br>Now you have to create new currency rates for <b>01/01/2024</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2024</b> and Press Save.",
@@ -14,34 +14,38 @@
     ],
     "notes": "Wait for the operation to end, it is normal for the system to not respond during Closing.",
     "screenshots": [
-      "../screenshots/ClosingOpening/01.jpg",
-      "../screenshots/ClosingOpening/02.jpg",
-      "../screenshots/ClosingOpening/03.jpg",
-      "../screenshots/ClosingOpening/04.jpg"
+      "../screenshots/ClosingOpeningMainServer/01.jpg",
+      "../screenshots/ClosingOpeningMainServer/02.jpg",
+      "../screenshots/ClosingOpeningMainServer/03.jpg",
+      "../screenshots/ClosingOpeningMainServer/04.jpg"
     ],
-    "video": "../screenshots/ClosingOpening/Closing.mp4",
-    "modifiedDateTime": "2023-11-27T10:30:00",
-    "helpfulCount": 10,
+    "video": "../screenshots/ClosingOpeningMainServer/ClosingMainServer.mp4",
+    "modifiedDateTime": "2023-12-01T10:30:00",
+    "helpfulCount": 23,
     "unhelpfulCount": 0
   },
   {
     "id": 2,
     "requiresPermission": false,
-    "group": "System",
-    "abbr": "invalid LICENSE",
-    "tag": "",
-    "q": "How to update license?",
+    "group": "Operations",
+    "abbr": "Closing / Opening POS",
+    "tag": "Closing",
+    "q": "How to do closing and opening on POS from 2023 to 2024?",
     "answer": [
-      "If you encounter any of these errors: <b>license expires soon</b> | <b>key is licensed to another computer</b> | <b>invalid license</b>.",
-      "Please contact Brains to update your license."
+      "<b>CURRENCY:</b><br>To create new currency rates for <b>01/01/2024</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2024</b> and Press Save.",
+      "<b>CLOSING END OF YEAR:</b><br>Make sure you are in this year <b>2023</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of Year > In the advanced section, mark the checkboxes for <b>'faster database creation', 'skip items, accounts & balances', 'lock all users in current year'</b>. Next, click  <b>Start Closing</b> button, confirm by clicking <b>Yes</b> and then click <b>Ok</b>.<br><i>Wait for the operation to end!</i>",
+      "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
     ],
-    "notes": "If your license is invalid or about to expire soon, you won't have access to our system.",
+    "notes": "If the checkboxes for 'faster database creation,' 'skip items, accounts & balances,' and 'lock all users in current year' are not available, please reach out to support for assistance in obtaining an updated version of Brains.",
     "screenshots": [
-      "../screenshots/License/01.jpg",
-      "../screenshots/License/02.jpg"
+      "../screenshots/ClosingOpeningPOS/01.jpg",
+      "../screenshots/ClosingOpeningPOS/02.jpg",
+      "../screenshots/ClosingOpeningPOS/03.jpg"
     ],
-    "video": "",
-    "modifiedDateTime": "2023-01-20T12:00:00"
+    "video": "../screenshots/ClosingOpeningPOS/ClosingPOS.mp4",
+    "modifiedDateTime": "2023-12-13T16:30:00",
+    "helpfulCount": 14,
+    "unhelpfulCount": 0
   },
   {
     "id": 3,
@@ -1066,5 +1070,24 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-12-07T10:55:00"
+  },
+  {
+    "id": 53,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "invalid LICENSE",
+    "tag": "",
+    "q": "How to update license?",
+    "answer": [
+      "If you encounter any of these errors: <b>license expires soon</b> | <b>key is licensed to another computer</b> | <b>invalid license</b>.",
+      "Please contact Brains to update your license."
+    ],
+    "notes": "If your license is invalid or about to expire soon, you won't have access to our system.",
+    "screenshots": [
+      "../screenshots/License/01.jpg",
+      "../screenshots/License/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-01-20T12:00:00"
   }
 ]
