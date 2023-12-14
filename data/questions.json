@@ -8,7 +8,6 @@
     "q": "How to do closing and opening on Main Server from 2023 to 2024?",
     "answer": [
       "<b>PREPARING:</b><br>Go to the company for the year <b>2023</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end!</i>",
-      "<b>CURRENCY:</b><br>Now you have to create new currency rates for <b>01/01/2024</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2024</b> and Press Save.",
       "<b>CLOSING END OF YEAR:</b><br>Make sure you are in this year <b>2023</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of Year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.<br><i>Wait for the operation to end!</i>",
       "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
     ],
@@ -16,8 +15,7 @@
     "screenshots": [
       "../screenshots/ClosingOpeningMainServer/01.jpg",
       "../screenshots/ClosingOpeningMainServer/02.jpg",
-      "../screenshots/ClosingOpeningMainServer/03.jpg",
-      "../screenshots/ClosingOpeningMainServer/04.jpg"
+      "../screenshots/ClosingOpeningMainServer/03.jpg"
     ],
     "video": "../screenshots/ClosingOpeningMainServer/ClosingMainServer.mp4",
     "modifiedDateTime": "2023-12-01T10:30:00",
@@ -32,8 +30,8 @@
     "tag": "Closing",
     "q": "How to do closing and opening on POS from 2023 to 2024?",
     "answer": [
-      "<b>CURRENCY:</b><br>To create new currency rates for <b>01/01/2024</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2024</b> and Press Save.",
-      "<b>CLOSING END OF YEAR:</b><br>Make sure you are in this year <b>2023</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of Year > In the advanced section, mark the checkboxes for <b>'faster database creation', 'skip items, accounts & balances', 'lock all users in current year'</b>. Next, click  <b>Start Closing</b> button, confirm by clicking <b>Yes</b> and then click <b>Ok</b>.<br><i>Wait for the operation to end!</i>",
+      "Make sure you are in year <b>2023</b>",
+      "<b>CLOSING END OF YEAR:</b><br>Go to Operations > Accounting > Periodic Operation > Closing End of Year > In the advanced section, mark the checkboxes for <b>'faster database creation', 'skip items, accounts & balances', 'lock all users in current year'</b>. Next, click  <b>Start Closing</b> button, confirm by clicking <b>Yes</b> and then click <b>Ok</b>.<br><i>Wait for the operation to end!</i>",
       "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
     ],
     "notes": "If the checkboxes for 'faster database creation,' 'skip items, accounts & balances,' and 'lock all users in current year' are not available, please reach out to support for assistance in obtaining an updated version of Brains.",
