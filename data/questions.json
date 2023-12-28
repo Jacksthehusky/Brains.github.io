@@ -18,7 +18,7 @@
       "../screenshots/ClosingOpeningMainServer/03.jpg"
     ],
     "video": "../screenshots/ClosingOpeningMainServer/ClosingMainServer.mp4",
-    "modifiedDateTime": "2023-12-01T10:30:00",
+    "modifiedDateTime": "2023-12-10T10:30:00",
     "helpfulCount": 23,
     "unhelpfulCount": 0
   },
@@ -49,6 +49,29 @@
     "id": 3,
     "requiresPermission": false,
     "group": "Operations",
+    "abbr": "Closing / Opening All Version",
+    "tag": "Closing",
+    "q": "How to do closing and opening for all version of Brains?",
+    "answer": [
+      "Make sure you are in year <b>2023</b>",
+      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.<br><i>Wait for the operation to end!</i>",
+      "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
+    ],
+    "notes": "Wait for the operation to end.",
+    "screenshots": [
+      "../screenshots/ClosingOpeningAllVersion/01.jpg",
+      "../screenshots/ClosingOpeningAllVersion/02.jpg",
+      "../screenshots/ClosingOpeningAllVersion/03.jpg"
+    ],
+    "video": "../screenshots/ClosingOpeningAllVersion/ClosingAllVersion.mp4",
+    "modifiedDateTime": "2023-12-01T16:30:00",
+    "helpfulCount": 41,
+    "unhelpfulCount": 0
+  },
+  {
+    "id": 4,
+    "requiresPermission": false,
+    "group": "Operations",
     "abbr": "5 digits rates",
     "tag": "rate",
     "q": "How to change rates to more than 5 digits?",
@@ -58,29 +81,6 @@
     "notes": "With brains v4.9+ at your disposal, you will have the capability to modify rates exceeding five digits.",
     "screenshots": [
       "../screenshots/CurrencyRates/01.jpg"
-    ],
-    "video": "",
-    "modifiedDateTime": "2023-02-20T12:00:00"
-  },
-  {
-    "id": 4,
-    "requiresPermission": false,
-    "group": "Other",
-    "abbr": "Single User Databse Error",
-    "tag": "",
-    "q": "How to Fix Sql Error? Cannot open database requested by the login.",
-    "answer": [
-      "If you encounter the error message <b>SQL Error</b> you will need to perform the following actions:",
-      "First open your SQL Server to check if your database is (Single User)",
-      "Go to services and restart SQL Server service.",
-      "Next open your SQL Server and create New Query on this Database and Execute the following Query: <br><code>ALTER DATABASE [YourDatabase] SET MULTI_USER</code>"
-    ],
-    "notes": "Don't forget to change [YourDatabase] to your current database name.",
-    "screenshots": [
-      "../screenshots/SingleUserDatabseError/01.jpg",
-      "../screenshots/SingleUserDatabseError/02.jpg",
-      "../screenshots/SingleUserDatabseError/03.jpg",
-      "../screenshots/SingleUserDatabseError/04.jpg"
     ],
     "video": "",
     "modifiedDateTime": "2023-02-20T12:00:00"
@@ -1087,5 +1087,28 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-01-20T12:00:00"
+  },
+  {
+    "id": 54,
+    "requiresPermission": false,
+    "group": "Other",
+    "abbr": "Single User Databse Error",
+    "tag": "",
+    "q": "How to Fix Sql Error? Cannot open database requested by the login.",
+    "answer": [
+      "If you encounter the error message <b>SQL Error</b> you will need to perform the following actions:",
+      "First open your SQL Server to check if your database is (Single User)",
+      "Go to services and restart SQL Server service.",
+      "Next open your SQL Server and create New Query on this Database and Execute the following Query: <br><code>ALTER DATABASE [YourDatabase] SET MULTI_USER</code>"
+    ],
+    "notes": "Don't forget to change [YourDatabase] to your current database name.",
+    "screenshots": [
+      "../screenshots/SingleUserDatabseError/01.jpg",
+      "../screenshots/SingleUserDatabseError/02.jpg",
+      "../screenshots/SingleUserDatabseError/03.jpg",
+      "../screenshots/SingleUserDatabseError/04.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-02-20T12:00:00"
   }
 ]
