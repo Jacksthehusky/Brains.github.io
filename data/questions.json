@@ -1110,5 +1110,26 @@
     ],
     "video": "",
     "modifiedDateTime": "2023-02-20T12:00:00"
+  },
+  {
+    "id": 55,
+    "requiresPermission": false,
+    "group": "Other",
+    "abbr": "Missing Report Files After Closing",
+    "tag": "Closing",
+    "q": "My custom reports are not working after doing the closing. What can I do?",
+    "answer": [
+      "First click on the 'Reports' button on the top-right.",
+      "Navigate to the previous year's folder, select all of the files and 'Copy' them.",
+      "Go back to the new year's folder and paste there."
+    ],
+    "notes": "Your reports should be working as usual now.",
+    "screenshots": [
+      "../screenshots/MissingReports/01.jpg",
+      "../screenshots/MissingReports/02.jpg",
+      "../screenshots/MissingReports/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-12-29T12:00:00"
   }
 ]
