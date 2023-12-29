@@ -3,48 +3,73 @@
     "id": 1,
     "requiresPermission": false,
     "group": "Operations",
-    "abbr": "Closing / Opening steps",
-    "tag": "",
-    "q": "How to do closing and opening from 2022 to 2023?",
+    "abbr": "Closing / Opening Main Server",
+    "tag": "Closing",
+    "q": "How to do closing and opening on Main Server from 2023 to 2024?",
     "answer": [
-      "<b>PREPARING:</b> Go to the company for the year <b>2022</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end, it is normal for the system to not respond during Fix.</i>",
-      "<b>CURRENCY:</b> Now you have to create new currency rates for <b>01/01/2023</b><br>Go to operations > Currency > Currency Rates > Press <b>New</b>.<br>Select the following date: <b>01/01/2023</b> and Press Save.",
-      "<b>CLOSING END OF YEAR:</b> Make sure you are in this year <b>2022</b>.<br>Go to Operations > Accounting > Periodic Operation > Closing End of year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.",
-      "Go to the newly created company for the year <b>2023</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
+      "Go to the company for the year <b>2023</b>.<br>Go to Operations > System Maintenance > Fix > press <b>save</b> button.<br><i>Wait for the operation to end!</i>",
+      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.<br><i>Wait for the operation to end!</i>",
+      "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
     ],
-    "notes": "Wait for the operation to end, it is normal for the system to not respond during Closing.",
+    "notes": "Wait for the operation to end.",
     "screenshots": [
-      "../screenshots/ClosingOpening/01.jpg",
-      "../screenshots/ClosingOpening/02.jpg",
-      "../screenshots/ClosingOpening/03.jpg",
-      "../screenshots/ClosingOpening/04.jpg"
+      "../screenshots/ClosingOpeningMainServer/01.jpg",
+      "../screenshots/ClosingOpeningMainServer/02.jpg",
+      "../screenshots/ClosingOpeningMainServer/03.jpg"
     ],
-    "video": "",
-    "modifiedDateTime": "2023-01-08T10:30:00",
-    "helpfulCount": 1,
-    "unhelpfulCount": 1
+    "video": "../screenshots/ClosingOpeningMainServer/ClosingMainServer.mp4",
+    "modifiedDateTime": "2023-12-10T10:30:00",
+    "helpfulCount": 23,
+    "unhelpfulCount": 0
   },
   {
     "id": 2,
     "requiresPermission": false,
-    "group": "System",
-    "abbr": "invalid LICENSE",
-    "tag": "",
-    "q": "How to update license?",
+    "group": "Operations",
+    "abbr": "Closing / Opening POS",
+    "tag": "Closing",
+    "q": "How to do closing and opening on POS from 2023 to 2024?",
     "answer": [
-      "If you encounter any of these errors: <b>license expires soon</b> | <b>key is licensed to another computer</b> | <b>invalid license</b>.",
-      "Please contact Brains to update your license."
+      "Make sure you are in year <b>2023</b>",
+      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > In the advanced section, mark the checkboxes for <b>'faster database creation', 'skip items, accounts & balances', 'lock all users in current year'</b>. Next, click  <b>Start Closing</b> button, confirm by clicking <b>Yes</b> and then click <b>Ok</b>.<br><i>Wait for the operation to end!</i>",
+      "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
     ],
-    "notes": "If your license is invalid or about to expire soon, you won't have access to our system.",
+    "notes": "If the checkboxes for 'faster database creation,' 'skip items, accounts & balances,' and 'lock all users in current year' are not available, please reach out to support for assistance in obtaining an updated version of Brains.",
     "screenshots": [
-      "../screenshots/License/01.jpg",
-      "../screenshots/License/02.jpg"
+      "../screenshots/ClosingOpeningPOS/01.jpg",
+      "../screenshots/ClosingOpeningPOS/02.jpg",
+      "../screenshots/ClosingOpeningPOS/03.jpg"
     ],
-    "video": "",
-    "modifiedDateTime": "2023-01-20T12:00:00"
+    "video": "../screenshots/ClosingOpeningPOS/ClosingPOS.mp4",
+    "modifiedDateTime": "2023-12-13T16:30:00",
+    "helpfulCount": 14,
+    "unhelpfulCount": 0
   },
   {
     "id": 3,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Closing / Opening All Version",
+    "tag": "Closing",
+    "q": "How to do closing and opening for all version of Brains?",
+    "answer": [
+      "Make sure you are in year <b>2023</b>",
+      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.<br><i>Wait for the operation to end!</i>",
+      "Go to the newly created company for the year <b>2024</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
+    ],
+    "notes": "Wait for the operation to end.",
+    "screenshots": [
+      "../screenshots/ClosingOpeningAllVersion/01.jpg",
+      "../screenshots/ClosingOpeningAllVersion/02.jpg",
+      "../screenshots/ClosingOpeningAllVersion/03.jpg"
+    ],
+    "video": "../screenshots/ClosingOpeningAllVersion/ClosingAllVersion.mp4",
+    "modifiedDateTime": "2023-12-28T20:35:00",
+    "helpfulCount": 4,
+    "unhelpfulCount": 0
+  },
+  {
+    "id": 4,
     "requiresPermission": false,
     "group": "Operations",
     "abbr": "5 digits rates",
@@ -56,29 +81,6 @@
     "notes": "With brains v4.9+ at your disposal, you will have the capability to modify rates exceeding five digits.",
     "screenshots": [
       "../screenshots/CurrencyRates/01.jpg"
-    ],
-    "video": "",
-    "modifiedDateTime": "2023-02-20T12:00:00"
-  },
-  {
-    "id": 4,
-    "requiresPermission": false,
-    "group": "Other",
-    "abbr": "Single User Databse Error",
-    "tag": "",
-    "q": "How to Fix Sql Error? Cannot open database requested by the login.",
-    "answer": [
-      "If you encounter the error message <b>SQL Error</b> you will need to perform the following actions:",
-      "First open your SQL Server to check if your database is (Single User)",
-      "Go to services and restart SQL Server service.",
-      "Next open your SQL Server and create New Query on this Database and Execute the following Query: <br><code>ALTER DATABASE [YourDatabase] SET MULTI_USER</code>"
-    ],
-    "notes": "Don't forget to change [YourDatabase] to your current database name.",
-    "screenshots": [
-      "../screenshots/SingleUserDatabseError/01.jpg",
-      "../screenshots/SingleUserDatabseError/02.jpg",
-      "../screenshots/SingleUserDatabseError/03.jpg",
-      "../screenshots/SingleUserDatabseError/04.jpg"
     ],
     "video": "",
     "modifiedDateTime": "2023-02-20T12:00:00"
@@ -309,7 +311,7 @@
     "tag": "",
     "q": "What is the process to display the VAT amount separately in Lebanese Pound (LBP) and US Dollar ($) on the statements report?",
     "answer": [
-      "Go to Operation Type > <b>Account No.</b> Tab > Tick <b>Account Vat And Non Vat</b> and <b>Account No Vat Rate</b> checkbox.",
+      "Go to Operation Type > <b>Account No.</b> Tab > Tick <b>Account No Vat Rate</b> checkbox.",
       "To apply the new settings, simply click on <b>modify</b> to the invoice and then <b>save</b>.",
       "Proceed to the <b>reports</b> section, then select <b>statement of accounts</b> to view the VAT amount separately displayed in Lebanese Pound (LBP) and US Dollar ($) on the statements report."
     ],
@@ -680,7 +682,7 @@
     "requiresPermission": false,
     "group": "Operations",
     "abbr": "Closing VAT",
-    "tag": "Vat",
+    "tag": "Closing",
     "q": "How to do Closing VAT for each quarter on brains?",
     "answer": [
       "To close the VAT for each quarter using the brains system, follow these steps:<br><br>1. Navigate to Operations > Accounting > Periodic Operation > Closing VAT.<br>2. Enter the type in the designated field.<br>3. For the first quarter, input <b>31/03/2023</b> in the date field and specify <b>First quarter</b> in the details field.<br>4. In the <b>Account No - From</b> and <b>Account No - To</b> fields, enter all accounts from the starting account to the last account.<br>5. In the <b>Account No VAT</b> field, enter the account number for which you want to close the VAT.<br>6. Finally, click the save button.",
@@ -805,9 +807,308 @@
       "../screenshots/OfferFree/03.jpg",
       "../screenshots/OfferFree/04.jpg",
       "../screenshots/OfferFree/05.jpg"
-
     ],
     "video": "",
     "modifiedDateTime": "2023-08-10T12:00:00"
+  },
+  {
+    "id": 39,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Below Cost",
+    "tag": "Below Cost",
+    "q": "How can I generate a report indicating whether there are items priced below their cost?",
+    "answer": [
+      "Go to 'Report' > 'Items, Prices & Qtys' > go to the 'Additional Info' tab and tick <b>Below Cost</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ItemBelowCost/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-08-30T15:00:00"
+  },
+  {
+    "id": 40,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "renumbering",
+    "tag": "Journal voucher",
+    "q": "How can I perform the renumbering process for a journal voucher?",
+    "answer": [
+      "Go to 'Operations' > 'Accounting' > 'System Maintenance' > 'Sort Transaction'.",
+      "Choose <b>Jounral Voucher</b> from the operation's dropdown menu, input your journal voucher type in the specified field, than Click <b>Save</b> Button."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/RenumberJV/01.jpg",
+      "../screenshots/RenumberJV/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-09-05T10:00:00"
+  },
+  {
+    "id": 41,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Inactive Item Code",
+    "tag": "item",
+    "q": "How to set an item as inactive?",
+    "answer": [
+      "To set an item as inactive, navigate to the <b>Cost</b> tab, click on <b>Modify</b>, check the <b>Inactive</b> box, and then save your changes."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/InactiveItem/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-09-19T11:00:00"
+  },
+  {
+    "id": 42,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "Sale Price",
+    "tag": "Sale Price",
+    "q": "How to prevent a specific user from changing the sale price?",
+    "answer": [
+      "Navigate to System > Password > and Locate the user for whom you wish to revoke access to change the sale price. Access the <b>Search</b> tab and enter <b>No change Sale Price</b>. Click modify and <b>Check</b> the corresponding box for this option.",
+      "Than access the <b>Search</b> tab and enter <b>POS Supervisor</b> and <b>Un-Check</b> the corresponding box for this option than click <b>Save</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NochangeSalePrice/01.jpg",
+      "../screenshots/NochangeSalePrice/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-02T11:00:00"
+  },
+  {
+    "id": 43,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Item",
+    "tag": "item",
+    "q": "How to remove an item from the POS grid view?",
+    "answer": [
+      "To eliminate an item from the POS grid view, please follow these steps:",
+      "Navigate to <b>Data Entry</b> > Item > Item. Locate the item you want to remove. Access the <b>Additional Info</b> tab, Click on <b>Modify</b>, and adjust the <b>P.O.S Position</b> to <b>-1</b>. Finally, click <b>Save</b>."
+    ],
+    "notes": "-1 will remove the item from POS grid view",
+    "screenshots": [
+      "../screenshots/RemoveItemFromPOSGrid/01.jpg",
+      "../screenshots/RemoveItemFromPOSGrid/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-03T11:00:00"
+  },
+  {
+    "id": 44,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "POS",
+    "tag": "POS",
+    "q": "How to enable / disable the price checker feature in the POS?",
+    "answer": [
+      "To activate or deactivate the price check feature in POS, you should follow these steps:",
+      "Go to <b>System</b> > <b>Preferences</b> and look for the <b>Without Price Checker</b> option. Enabling this option will disable price checking in POS, while unchecking it will enable price checking in POS."
+    ],
+    "notes": "Please keep in mind that you should close the POS window and reopen it to ensure that the changes are applied.",
+    "screenshots": [
+      "../screenshots/PiceChekPOS/01.jpg",
+      "../screenshots/PiceChekPOS/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-03T15:00:00"
+  },
+  {
+    "id": 45,
+    "requiresPermission": true,
+    "group": "Other",
+    "abbr": "Picture",
+    "tag": "Picture",
+    "q": "How can I configure the server's picture folder to be accessible on all computers?",
+    "answer": [
+      "Locate the system's configuration file and include the shared server path for the picture folder."
+    ],
+    "notes": "Please ensure that you set the server's picture folder as shared for everyone.",
+    "screenshots": [
+      "../screenshots/PictureFolder/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-11T10:00:00"
+  },
+  {
+    "id": 46,
+    "requiresPermission": false,
+    "group": "Other",
+    "abbr": "Connection error",
+    "tag": "Error",
+    "q": "How can I resolve the connection error that prevents connecting to the Brains server?",
+    "answer": [
+      "If you encounter this problem, consider attempting the following steps:",
+      "Find the Services application on your computer, then search for SQL Server (MSSQLSERVER), and click on <b>Start</b> to activate the service."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ConnectionError/01.jpg",
+      "../screenshots/ConnectionError/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-11T10:30:00"
+  },
+  {
+    "id": 47,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "Refresh",
+    "tag": "Invoice",
+    "q": "How can I make the invoice refresh every 50 lines instead of refreshing each line individually?",
+    "answer": [
+      "If you encounter system slowdown while generating an invoice with over 300 lines, consider adjusting the <b>Max Number of Lines to Refresh</b> setting from 0 to 50 under System > Preferences > Operations > Stock, than click Save button."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/RefreshMaxNumber/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-12T14:20:00"
+  },
+  {
+    "id": 48,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Item",
+    "tag": "item",
+    "q": "How to change the length of the item code?",
+    "answer": [
+      "To increase / decrease the length of the item code, you should follow these steps.",
+      "Navigate to <b>System</b> > <b>Preferences</b>, choose the <b>Item</b> tab, adjust the <b>Item Code length</b> to your preference, and then click <b>Save</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ItemCodeLength/01.jpg",
+      "../screenshots/ItemCodeLength/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-10-30T11:40:00"
+  },
+  {
+    "id": 49,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Item",
+    "tag": "item",
+    "q": "How to change an item to display as U instead of C when creating an invoice?",
+    "answer": [
+      "To achieve this, simply click on <b>Add Row</b> for the item you wish to display as <b>U</b> on the invoice. In the barcode field, append the same code with the letter <b>U</b> at the end. Ensure that the <b>B/C/U</b> field is configured to <b>U</b>. Than click Save.",
+      "Therefore, when adding the item to the invoice, utilize the item code you've generated. For instance, item code '123457' will appear as <b>C</b>, whereas '1234567U' will be displayed as <b>U</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ItemAsU/01.jpg",
+      "../screenshots/ItemAsU/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-11-01T16:00:00"
+  },
+  {
+    "id": 50,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "On Account",
+    "tag": "Invoice",
+    "q": "How do I adjust an invoice to place it on account?",
+    "answer": [
+      "Modify the invoice, then navigate to the <b>Additional info</b> tab and select the <b>On Account</b> checkbox than click Save."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/OnAccount/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-11-01T16:00:00"
+  },
+  {
+    "id": 51,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "profit and loss",
+    "tag": "Closing",
+    "q": "How to do Closing Profit and Loss?",
+    "answer": [
+      "Go to Operations > Accounting > Periodic Operation > Closing Profit & Loss",
+      "Fill the type (i.e: PL), details (i.e: Profit and Loss) and date End of year (i.e: 31/12/202Y) accordingly enable <b>Detailed</b> Then save."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ClosingProfitAndLoss/01.jpg",
+      "../screenshots/ClosingProfitAndLoss/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-11-02T14:00:00"
+  },
+  {
+    "id": 52,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "non moved item",
+    "tag": "item",
+    "q": "How to create a report that displays non moved items for a specific year?",
+    "answer": [
+      "Navigate to Reports > Stock Position, and mark the checkboxes for 'Av. Qty.' and 'Stock Position'.",
+      "Then, proceed to the 'Additional Info' tab, check the <b>Non-Moved Item</b> box, and click on 'Preview'.",
+      "Finally, you'll be able to view the report showing non-moved items."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NonMovedItem/01.jpg",
+      "../screenshots/NonMovedItem/02.jpg",
+      "../screenshots/NonMovedItem/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-12-07T10:55:00"
+  },
+  {
+    "id": 53,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "invalid LICENSE",
+    "tag": "",
+    "q": "How to update license?",
+    "answer": [
+      "If you encounter any of these errors: <b>license expires soon</b> | <b>key is licensed to another computer</b> | <b>invalid license</b>.",
+      "Please contact Brains to update your license."
+    ],
+    "notes": "If your license is invalid or about to expire soon, you won't have access to our system.",
+    "screenshots": [
+      "../screenshots/License/01.jpg",
+      "../screenshots/License/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-01-20T12:00:00"
+  },
+  {
+    "id": 54,
+    "requiresPermission": false,
+    "group": "Other",
+    "abbr": "Single User Databse Error",
+    "tag": "",
+    "q": "How to Fix Sql Error? Cannot open database requested by the login.",
+    "answer": [
+      "If you encounter the error message <b>SQL Error</b> you will need to perform the following actions:",
+      "First open your SQL Server to check if your database is (Single User)",
+      "Go to services and restart SQL Server service.",
+      "Next open your SQL Server and create New Query on this Database and Execute the following Query: <br><code>ALTER DATABASE [YourDatabase] SET MULTI_USER</code>"
+    ],
+    "notes": "Don't forget to change [YourDatabase] to your current database name.",
+    "screenshots": [
+      "../screenshots/SingleUserDatabseError/01.jpg",
+      "../screenshots/SingleUserDatabseError/02.jpg",
+      "../screenshots/SingleUserDatabseError/03.jpg",
+      "../screenshots/SingleUserDatabseError/04.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2023-02-20T12:00:00"
   }
 ]
