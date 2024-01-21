@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>Brains Help Center</title>
+  <title>Brains Demo</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/style1.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -19,8 +19,8 @@
   <div class="w3-top">
     <div class="topbar w3-bar w3-white w3-card" id="myNavbar" style="height: 60px;">
       <div>
-        <a href="/index.html" class="logobrains w3-bar-item w3-wide">Brains</a>
-        <a href="/index.html" aria-label="logobrains">
+        <a href="/index.html#home" class="logobrains w3-bar-item w3-wide">Brains</a>
+        <a href="/index.html#home" aria-label="logobrains">
           <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
           <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
             colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
@@ -34,8 +34,8 @@
         <a href="/index.html#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
         <a href="/index.html#work" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
         <a href="/index.html#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
-        <a href="/Demo/Products.html" class="navbartop w3-bar-item" style="--i:6;">DEMO</a>
-        <a href="HelpCenter.html" class="navbartop w3-bar-item active" style="--i:7;">HELP CENTER</a>
+        <a href="Products.html" class="navbartop w3-bar-item" style="--i:6;">DEMO</a>
+        <a href="/hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>
       </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -54,66 +54,100 @@
     <a href="/index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
     <a href="/index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
     <a href="/index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="/Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
-    <a href="HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
+    <a href="Products.html" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
+    <a href="/hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
   </nav>
 
-  <!-- header section -->
-  <header class="w3-display-container" id="HelpCenter">
-    <div class="HelpSearch">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6 m-auto">
-            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-            <div style="
-                  display: flex;
-                  justify-content: center;">
-              <lord-icon src="https://cdn.lordicon.com/vlupvdhl.json" trigger="loop" delay="1000"
-                colors="primary:#ffffff,secondary:red" style="width:70px;height:70px">
-              </lord-icon>
-            </div>
-            <h3 class="text-center mb-3">How can we help?</h3>
-            <p class="digitalized text-center">The Help Center has the answers you need to succeed using
-              <span>Brains</span></p>
-            <div class="form-group search">
-              <div class="input-group search">
-                <input type="text" id="search" class="form-control form-control-lg" placeholder="Search"
-                  autocomplete="new-password" />
-                <div class="input-group-append">
-                  <span class="input-group-text"><i class="fas fa-search"></i></span>
-                </div>
-              </div>
-              <div id="match-list" class="cards"></div>
-            </div>
 
-          </div>
+  <!-- header section -->
+  <header class="w3-display-container w3-grayscale-min">
+    <div class="SolutionHeader">
+      <div class="row">
+        <div>
+          <ul class="breadcrumb">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="Products.html">Brains Demo</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="faqs">
-    <div class="w3-container w3-light-grey">
-      <h1>FAQ</h1>
-      <h4>General FAQs about <span>Brains</span></h4>
-      <br>
-      <div id="faqs"></div>
+
+  <!-- Demo -->
+   <!-- services-->
+   <section class="services" id="services">
+    <h2 class="heading" style="color: black">Our <span>Services</span></h2>
+    <div class="wrapper">
+  
+      <div class="cardw">
+        <a href="GeneralAccounting.html">
+          <div class="poster">
+            <div>
+              <h1>GENERAL ACCOUNTING</h1>
+              <p>Simple, reliable, and secure. There to help you easily manage your cash flow</p>
+            </div>
+            <img src="/Images/icon-accounting.png" class="card-icon">
+            <img src="/Images/AccountingSystem.png" class="preview">
+          </div>
+          <div class="details">
+            <h1>Learn more about Accounting</h1>
+            <h2>Click here for</h2>
+            <div class="tags">
+              <span class="tag">Online Demo</span>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+  
+      <div class="cardw">
+        <a href="StockSystem.html">
+        <div class="poster">
+          <div>
+            <h1>STOCK SYSTEM</h1>
+            <p>Track your stock as it is bought, manufactured, stored, and used</p>
+          </div>
+          <img src="/Images/icon-stock.png" class="card-icon">
+          <img src="/Images/InventoryManagment.png" class="preview">
+        </div>
+        <div class="details">
+          <h1>Learn more about Stock System</h1>
+          <h2>Click here for</h2>
+          <div class="tags">
+            <span class="tag">Online Demo</span>
+          </div>
+        </div>
+        </a>
+      </div>
+  
+      <div class="cardw">
+        <a href="PayrollSystem.html">
+        <div class="poster">
+          <div>
+            <h1>PAYROLL SYSTEM</h1>
+            <p>System designed to assist all types of organisations' human resources</p>
+          </div>
+          <img src="/Images/icon-payroll.png" class="card-icon">
+          <img src="/Images/PayrollSystem.png" class="preview">
+        </div>
+        <div class="details">
+          <h1>Learn more about Payroll System</h1>
+          <h2>Click here for</h2>
+          <div class="tags">
+            <span class="tag">Online Demo</span>
+          </div>
+        </div>
+        </a>
+      </div>
+  
     </div>
   </section>
 
-  <div class="faqsend">
-    <img src='/Images/brains.ico' alt="icon">
-    <i>: Kindly reach out to our customer services for assistance in accessing this answer.</i>
-  </div>
-
-  <div class="w3-light-grey text-center w3-padding-64">
-    <h4>Can’t find the answers you’re looking for? We’re here to help.</h4>
-    <p class="w3-padding-32">
-      <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" class="btns" id="ContactSupport"
-        target="_blank" aria-label="whatsapp">
-        <i class="fa fa-whatsapp w3-hover-opacity"></i> Contact Brains Support </a>
-    </p>
-  </div>
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
@@ -125,6 +159,7 @@
       From 9:00 A.M.<br>
       To 4:30 P.M.
     </div>
+
     <div class="footer w3-xlarge w3-section">
       <ul>
         <div></div>
@@ -147,14 +182,13 @@
         <div></div>
       </ul>
     </div>
+
     <p class="w3-small">
       Copyright &copy; Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL
     </p>
   </footer>
-
-  <script src="main.js"></script>
-  <script src="script.js"></script>
-  <script src="helpcenter.js"></script>
+  <script src="/hc/results.js"></script>
+  <script src="/hc/script.js"></script>
 </body>
 
 </html>
