@@ -77,13 +77,6 @@
             </li>
           </ul>
         </div>
-        <ul class="tabs">
-          <li><a class="tab" onclick="showTab('menu1')">DATA ENTRY</a></li>
-          <li><a class="tab" onclick="showTab('menu2')">OPERATIONS</a></li>
-          <li><a class="tab" onclick="showTab('menu3')">REPORTS</a></li>
-          <li><a class="tab" onclick="showTab('menu4')">END OF SESSION</a></li>
-          <li><a class="tab" onclick="showTab('menu5')">SYSTEM</a></li>
-        </ul>
       </div>
     </div>
   </header>
@@ -91,6 +84,16 @@
 
   <!-- Demo -->
   <section>
+  
+    <div class="w3-container w3-light-gray" style="margin-bottom: 5rem;">
+      <div class="tabs">
+        <a class="tab" id="tab-menu1" onclick="showTab('menu1')">DATA ENTRY</a>
+        <a class="tab" id="tab-menu2" onclick="showTab('menu2')">OPERATIONS</a>
+        <a class="tab" id="tab-menu3" onclick="showTab('menu3')">REPORTS</a>
+        <a class="tab" id="tab-menu4" onclick="showTab('menu4')">END OF SESSION</a>
+        <a class="tab" id="tab-menu5" onclick="showTab('menu5')">SYSTEM</a>
+      </div>
+    </div>
     <div class="w3-container w3-light-grey">
 
       <div id="home" class="tab-content active">
@@ -158,11 +161,7 @@
           </ul>
         </div>
         <!-- to continue demo -->
-        <br><code>To Explore more, select DATA ENTRY at the top of this page:</code>
-        <div style="display: flex;justify-content: center;">
-          <img src="../Images/ContinueDemo.jpg" alt="To Explore more select DATA ENTRY" class="w3-hover-opacity"
-            onclick="onClick(this, 0)" style="max-width: 100%;">
-        </div>
+        <center><i>Continue the demo by selecting the Data Entry menu:</i></center>
       </div>
 
       <div id="menu1" class="tab-content">
@@ -404,6 +403,16 @@
         </div>
       </div>
 
+    </div>
+  
+    <div class="w3-container w3-light-gray" style="margin-top: 5rem;">
+      <div class="tabs">
+        <a class="tab" id="tab-menu1" onclick="showTab('menu1')">DATA ENTRY</a>
+        <a class="tab" id="tab-menu2" onclick="showTab('menu2')">OPERATIONS</a>
+        <a class="tab" id="tab-menu3" onclick="showTab('menu3')">REPORTS</a>
+        <a class="tab" id="tab-menu4" onclick="showTab('menu4')">END OF SESSION</a>
+        <a class="tab" id="tab-menu5" onclick="showTab('menu5')">SYSTEM</a>
+      </div>
     </div>
   </section>
 
