@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="css/style2.css">
   <link rel="shortcut icon" type="image/x-icon" href="Images/brains.ico">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    code {
+      font-size: 0.9em;
+      color: #fff;
+      word-wrap: break-word;
+      border-radius: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      background: #333;
+      display: block;
+      padding: 1em;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,7 +45,8 @@
         <a href="#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
         <a href="#work" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
         <a href="#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
-        <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:6;">HELP CENTER</a>
+        <a href="Demo/Products.html" class="navbartop w3-bar-item" style="--i:6;">DEMO</a>
+        <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>
       </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -52,6 +65,7 @@
     <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
     <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
     <a href="hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
   </nav>
 
@@ -75,12 +89,17 @@
             <i class="fa fa-linkedin w3-hover-opacity"></i>
           </a>
         </div>
-        <a href="#about" class="btns">Tell me more</a>
+        <a href="Demo/Products.html" class="btns"><i class="fa fa-wpforms w3-margin-right" aria-hidden="true"></i>Online
+          Demo</a>
       </div>
+
       <!-- Home img -->
       <div class="home-img">
         <img src="Images/mockup.png" alt="">
       </div>
+      <a href="#about" class="scroll-down-link">
+        <img src="Images/ScrollDown.png" alt="">
+      </a>
     </section>
   </header>
 
@@ -91,10 +110,18 @@
     </div>
     <div class="about-content">
       <h2 class="heading">About <span>Brains</span></h2>
-      <h3>Brains: Innovative Solutions, Satisfied Clients</h3>
-      <p>Discover our integrated ERP solution developed using Visual Studio .NET and powered by SQL Server.
-        <span>Brains</span> offers practical and creative software solutions. Our dedicated team stays ahead of industry
-        trends, providing expertise in development, implementation, and training.<br> Experience the difference today.
+      <p>Throughout the years, <span>Brains</span> has developed practical and creative solutions. A young, dedicated
+        team keeping up with future trends in the software industry, offer their expertise to develop, implement and
+        train customers. Their know-how is always at the service of the client's needs.<br>
+        The foundation of <span>Brains</span> success is our human resources committed to excellent service, efficient
+        original software development, and a satisfied client.<br>
+        Since the establishment of our company several years ago, we have hundreds of clients and are continously
+        expanding our base. Brains covers all sectors, wherever a creative software solution is needed.<br>
+        <b>Modules:</b>
+        General Ledger, Account Receivable,
+        Account Payable, Inventory, Purchase Orders, Sales Quotes,
+        Sales Orders, Sales Invoices, P.O.S, Payroll,
+        Bank Reconciliation, Warehouse Management...
       </p>
     </div>
   </section>
@@ -104,6 +131,39 @@
   <section class="services" id="services">
     <h2 class="heading">Our <span>Services</span></h2>
     <div class="wrapper">
+
+      <div class="cardw">
+        <div class="poster">
+          <div>
+            <h1>ACCOUNTING</h1>
+            <p>Simple, reliable, and secure. There to help you easily manage your cash flow</p>
+          </div>
+          <img src="Images/icon-accounting.png" class="card-icon">
+          <img src="Images/AccountingSystem.png" class="preview">
+        </div>
+        <div class="details">
+          <h1>Accounting</h1>
+          <h2>Be ready for tax time</h2>
+          <div class="tags">
+            <span class="tag">Journal Voucher</span>
+            <span class="tag">Cost Analysis</span>
+            <span class="tag">Statements</span>
+          </div>
+          <div class="features">
+            <h3>Features</h3>
+            <ul>
+              <li>Multiple currency accounts.</li>
+              <li>View revenue, average sale and profit.</li>
+              <li>General ledger.</li>
+              <li>Trial Balance.</li>
+              <li>Payable and receivable accounts.</li>
+              <li>Detailed cost analysis.</li>
+              <li>Allows reviewing and modifying existing vouchers, and updates balances accordingly.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="cardw">
         <div class="poster">
           <div>
@@ -129,34 +189,6 @@
               <li>Keep recording sales even when offline.</li>
               <li>Connect a receipt printer, barcode scanner, and cash drawer.</li>
               <li>supports multi-currency payments.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardw">
-        <div class="poster">
-          <div>
-            <h1>PAYROLL</h1>
-            <p>System designed to assist all types of organisations' human resources</p>
-          </div>
-          <img src="Images/icon-payroll.png" class="card-icon">
-          <img src="Images/PayrollSystem.png" class="preview">
-        </div>
-        <div class="details">
-          <h1>Payroll</h1>
-          <h2>Aids various organizations' HR needs</h2>
-          <div class="tags">
-            <span class="tag">Leave</span>
-            <span class="tag">HR</span>
-            <span class="tag">PayrollAdministration</span>
-          </div>
-          <div class="features">
-            <h3>Features</h3>
-            <ul>
-              <li>Easily manage your staff and make balanced decisions.</li>
-              <li>Employees clock in and out and their total work hours are calculated automatically.</li>
-              <li>Grant different levels of access to protect sensitive information.</li>
             </ul>
           </div>
         </div>
@@ -192,36 +224,35 @@
         </div>
       </div>
 
-
       <div class="cardw">
         <div class="poster">
           <div>
-            <h1>ACCOUNTING</h1>
-            <p>Simple, reliable, and secure. There to help you easily manage your cash flow</p>
+            <h1>PAYROLL</h1>
+            <p>System designed to assist all types of organisations' human resources</p>
           </div>
-          <img src="Images/icon-accounting.png" class="card-icon">
-          <img src="Images/AccountingSystem.png" class="preview">
+          <img src="Images/icon-payroll.png" class="card-icon">
+          <img src="Images/PayrollSystem.png" class="preview">
         </div>
         <div class="details">
-          <h1>Accounting</h1>
-          <h2>Be ready for tax time</h2>
+          <h1>Payroll</h1>
+          <h2>Aids various organizations' HR needs</h2>
           <div class="tags">
-            <span class="tag">Reports</span>
-            <span class="tag">DailyJournal</span>
-            <span class="tag">Statements</span>
+            <span class="tag">Leave</span>
+            <span class="tag">HR</span>
+            <span class="tag">PayrollAdministration</span>
           </div>
           <div class="features">
             <h3>Features</h3>
             <ul>
-              <li>View revenue, average sale and profit.</li>
-              <li>Track sales trends and react to changes promptly.</li>
-              <li>Determine best-selling items and categories.</li>
-              <li>View complete sales history.</li>
-              <li>Export sales data to the spreadsheets.</li>
+              <li>Easily manage your staff and make balanced decisions.</li>
+              <li>Employees clock in and out and their total work hours are calculated automatically.</li>
+              <li>Grant different levels of access to protect sensitive information.</li>
             </ul>
           </div>
         </div>
       </div>
+
+    </div>
   </section>
 
 
@@ -240,7 +271,8 @@
     <h2 class="heading"><span>POS software</span> fits just right for your business</h2>
     <div class="w3-row w3-center w3-dark-grey w3-padding-64">
       <div class="marquee w3-quarter" style="position: relative;">
-        <span class="moving-ad">Food drink Restaurant bar Coffee-shop Retail Grocery-store Boutique Fashion Services
+        <span class="moving-ad">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes
+          Fashion-Services Car-Dealers Catering-Factories
           Salon Hotels Rentals Bakery Fast-food Café Jewelry</span>
       </div>
     </div>
@@ -327,6 +359,34 @@
   </section>
 
 
+
+  <!-- HelpCenter Section -->
+  <section class="careers" style=" min-height: 50vh" id="help">
+    <div>
+      <h2 class="heading"><span>Brains </span>Help Center!</h2>
+      <p class="w3-center w3-xlarge">The place to get answers to your questions...</p>
+      <p class="w3-center w3-padding-64">
+        <a href="hc/HelpCenter.html" class="btns">
+          <i class="fa fa-comments w3-margin-right"></i>Get Help</a>
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- demo Section -->
+  <section class="contact" style=" min-height: 50vh" id="demo">
+    <div>
+      <h2 class="heading"><span>Brains </span>Demo!</h2>
+      <p class="w3-center w3-xlarge">Take a tour through our software's features with our online demo...</p>
+      <p class="w3-center w3-padding-64">
+        <a href="Demo/Products.html" class="btns">
+          <i class="fa fa-wpforms w3-margin-right" aria-hidden="true"></i>Explore Demo</a>
+      </p>
+    </div>
+  </section>
+
+
   <!-- Work Section -->
   <section class="careers" style=" min-height: 50vh" id="work">
     <div>
@@ -355,19 +415,10 @@
       </div>
       <textarea id="messageInput" cols="30" rows="10" placeholder="Message" required name="Message"></textarea>
       <input type="submit" value="SEND MESSAGE" class="btns">
-    </form>
-  </section>
-
-  <!-- HelpCenter Section -->
-  <section class="careers" style=" min-height: 50vh" id="help">
-    <div>
-      <h2 class="heading"><span>Brains </span>Help Center</h2>
-      <p class="w3-center w3-xlarge">The place to get answers to your questions...</p>
-      <p class="w3-center w3-padding-64">
-        <a href="hc/HelpCenter.html" class="btns">
-          <i class="fa fa-comments w3-margin-right"></i>Get Help</a>
-      </p>
-    </div>
+    </form><br>
+    E-mail:<code>presale@brains-lb.com</code><br>
+    Email Support:<code>support@brains-lb.com</code><br>
+    Tel:<code>+961 1 872 376</code><br>
   </section>
 
   <!-- map -->

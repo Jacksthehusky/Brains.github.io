@@ -153,11 +153,11 @@ a {
 }
 
 .about-content h3 {
-  font-size: 2.6rem;
+  font-size: 3.6rem;
 }
 
 .about-content p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 2rem 0 3rem;
 }
 
@@ -680,6 +680,18 @@ a {
   box-shadow: 0 0 1rem rgb(122, 21, 21);
 }
 
+.scroll-down-link {
+  position: absolute;
+  bottom: 30px; /* Adjust this value to control the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+}
+
+
 .btns {
   display: inline-block;
   padding: 1rem 2.8rem;
@@ -1025,7 +1037,7 @@ h4 {
   background: #353535;
   padding: 95px 5% 0;
   padding-top: 72px;
-  padding-bottom: 72px;
+  padding-bottom: 110px;
 }
 
 .SolutionHeader li {

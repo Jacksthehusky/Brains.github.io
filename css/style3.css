@@ -1,0 +1,32 @@
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+
+  section {
+  transition: background-color 1s ease; /* Adjust the duration and timing function as needed */
+}
+
+  .tab {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    color: aliceblue;
+    font-size: 1.6rem;
+  }
+
+  .maintab {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }

@@ -3,7 +3,7 @@ var typed = new Typed(".multiple-text", {
     strings: [
       "Accounting.",
       "Stock Control.",
-      "Payroll.",
+      "Payroll Systems.",
       "Inventory Management.",
       "POS.",
       "Invoicing.",
@@ -14,11 +14,14 @@ var typed = new Typed(".multiple-text", {
       "Purchase Orders.",
       "Reports.",
       "Car Dealers.",
+      "Foodstuff.",
       "Catering Factories.",
       "Auditing Firms.",
       "Spare Parts.",
-      "Schools.",
+      "Point of Sales Systems.",
       "Libraries.",
+      "Clothes.",
+      "Fashion."
     ],
     typeSpeed: 90,
     backSpeed: 40,
@@ -30,8 +33,8 @@ var typed = new Typed(".multiple-text", {
   ScrollReveal({
     //reset: true,
     distance: '80px',
-    duration: 2000,
-    delay: 200
+    duration: 1000,
+    delay: 100
   });
   
   ScrollReveal().reveal('.home-content, .map, .heading', { origin:'top' });
