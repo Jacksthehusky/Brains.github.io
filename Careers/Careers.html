@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Brains Help Center</title>
+  <title>Brains Demo</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
@@ -32,10 +32,10 @@
         <a href="../index.html#home" class="navbartop w3-bar-item" style="--i:1;">HOME</a>
         <a href="../index.html#about" class="navbartop w3-bar-item" style="--i:2;">ABOUT</a>
         <a href="../index.html#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
-        <a href="../Careers/Careers.html" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
+        <a href="Careers.html" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
         <a href="../index.html#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
         <a href="../Demo/Products.html" class="navbartop w3-bar-item" style="--i:6;">DEMO</a>
-        <a href="results.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>
+        <a href="../hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>
       </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -52,10 +52,10 @@
     <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
     <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
     <a href="../index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="../Careers/Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
+    <a href="Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
     <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     <a href="../Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
-    <a href="HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
+    <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
   </nav>
 
 
@@ -66,73 +66,42 @@
         <div>
           <ul class="breadcrumb">
             <li>
-              <a href="HelpCenter.html">Brains Help Center</a>
+              <a href="../index.html">Home</a>
             </li>
             <li>
-              Search Results
+              <a href="Careers.html">Careers</a>
             </li>
           </ul>
         </div>
       </div>
-      <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-      <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop" delay="4000"
-        colors="primary:white,secondary:red">
-      </lord-icon>
     </div>
   </header>
 
-
-  <!-- html output after clicking on card search -->
-  <section>
-    <div class="Solution w3-container w3-light-grey">
-      <div class="question-header">
-        <div><span class="question-title" id="abbr"></span> <span class="question-id" id="id"></span></div>
-        <span class="question-time" id="modified-date-time"></span>
+  <!-- Careers Section -->
+<section class="contact" id="careers" style="color: black">
+    <h2 class="heading">Join <span>Our Team!</span></h2>
+    <form action="mailto:hadi.moukamal@gmail.com" method="post" enctype="text/plain">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" required name="Name" autocomplete="new-password">
+        <input type="email" placeholder="Email Address" required name="Email">
       </div>
-      <div style="display: flex;justify-content: space-between;align-items: baseline;">
-        <p id="question"></p>
-        <button class="whatsapp-share-button" id="share-button">Share</button>
+      <div class="input-box">
+        <input type="tel" placeholder="Phone Number" required name="Phone">
+        <input type="text" placeholder="Position Applying For" required name="Position" autocomplete="new-password">
       </div>
-      <div id="video-container" class="video-wrapper"></div>
-      <ul id="answers-container" class="answer-steps">
-      </ul>
-      <i id="notes"></i>
-      <div style="display: flex;justify-content: center;">
-        <div class="w3-right" id="feedback-section" style="padding:5em 0 1em 0">
-          <h4 style="font-size: 15px; font-weight: bold;">Was this article helpful?</h4>
-          <button class="fas fa-thumbs-up w3-hover-opacity w3-xlarge" style="padding:10px 30px" aria-hidden="true"
-            id="like-btn" onclick="handleLike()"></button>
-          <button class="fas fa-thumbs-down w3-hover-opacity w3-xlarge" style="padding:10px 30px" aria-hidden="true" id="dislike-btn"
-            onclick="handleDislike()"></button><br>
-          <span style="font-size: 15px; font-weight: normal; text-transform:none" id="helpful-count"></span>
-        </div>
+      <div class="input-box">
+        <input type="file" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required name="Resume" id="resume">
+        <label for="resume" class="file-label">Choose Resume (PDF or Word document)</label>
       </div>
-    </div>
-    <div style="color: #000;" id="related-articles" class="related-articles">
-      <ul id="related-articles-list"></ul>
-    </div>
+      <textarea id="coverLetter" cols="30" rows="10" placeholder="Cover Letter" required name="CoverLetter"></textarea>
+      <input type="submit" value="APPLY NOW" class="btns">
+    </form><br>
+    Email: <code>michel@brains-lb.com</code><br>
   </section>
-
-
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image" alt="">
-      <p id="caption" class="w3-large caption"></p>
-    </div>
-  </div>
-
-
-  <!--after result section-->
-  <div class="w3-container" style="padding:128px 16px" id="team">
-  </div>
+  
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
-    <a href="HelpCenter.html" class="btns w3-light-grey">
-      <i class="fa fa-search w3-margin-right"></i>Search</a>
     <div>
       <h4>Working Hours</h4>
     </div>
@@ -169,8 +138,8 @@
       Copyright &copy; Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL
     </p>
   </footer>
-  <script src="results.js"></script>
-  <script src="script.js"></script>
+  <script src="../hc/results.js"></script>
+  <script src="../hc/script.js"></script>
 </body>
 
 </html>
