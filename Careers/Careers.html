@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="shortcut icon" type="image/x-icon" href="../Images/brains.ico" />
 </head>
-
 <body>
 
   <!-- Navbar (sit on top) -->
@@ -78,9 +77,10 @@
   </header>
 
   <!-- Careers Section -->
-<section class="contact" id="careers" style="color: black">
+  <section class="contact" id="careers" style="color: black">
     <h2 class="heading">Join <span>Our Team!</span></h2>
-    <form action="submit_careers_form.php" method="post" enctype="multipart/form-data">
+
+    <form action="mailto:michel@brains-lb.com" method="post" enctype="text/plain">
       <div class="input-box">
         <input type="text" placeholder="Full Name" required name="Name" autocomplete="new-password">
         <input type="email" placeholder="Email Address" required name="Email">
@@ -89,16 +89,13 @@
         <input type="tel" placeholder="Phone Number" required name="Phone">
         <input type="text" placeholder="Position Applying For" required name="Position" autocomplete="new-password">
       </div>
-      <div class="input-box">
-        <input type="file" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required name="Resume" id="resume">
-        <label for="resume" class="file-label">Choose Resume (PDF or Word document)</label>
-      </div>
+
       <textarea id="coverLetter" cols="30" rows="10" placeholder="Cover Letter" required name="CoverLetter"></textarea>
       <input type="submit" value="APPLY NOW" class="btns">
     </form><br>
-    Email: <code>michel@brains-lb.com</code><br>
+    Interested in joining our team? Email your resume/CV to apply.<code>Email: michel@brains-lb.com</code><br>
   </section>
-  
+
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
