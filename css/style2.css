@@ -63,10 +63,9 @@ a {
 .HelpSearch {
   position: relative;
   width: 100%;
-  height: 45vh;
   display: flex;
   background: #252525;
-  padding: 60px 5% 0;
+  padding: 60px 5% 2em 5%;
   background-image: radial-gradient(rgb(77 67 67 / 23%) 3px, transparent 0);
   background-size: 25px 25px;
   background-position: -12.5px -12.5px;
