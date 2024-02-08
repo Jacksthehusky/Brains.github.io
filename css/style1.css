@@ -784,7 +784,7 @@ a {
 .w3-top,
 .w3-bottom {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
 }
 .w3-top {
@@ -1641,4 +1641,8 @@ a {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
+}
+section {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
