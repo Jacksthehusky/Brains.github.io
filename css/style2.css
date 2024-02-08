@@ -35,6 +35,7 @@ section {
   outline: none;
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 /*background-color*/
