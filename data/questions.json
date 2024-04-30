@@ -508,18 +508,20 @@
     "group": "Data Entry",
     "abbr": "Sales Category",
     "tag": "",
-    "q": "How can I add an automatic discount for this specific client on each invoice?",
+    "q": "How to apply an automatic discount to every invoice for this particular client?",
     "answer": [
       "To create a new category, go to <b>Data Entry</b> > <b>Sales Category</b>, then enter a <b>description</b> and <b>percentage</b> in the designated fields, Than click <b>Save</b>.",
-      "Next, navigate to <b>Data Entry</b> > <b>Customer</b> and find the customer to whom you want to apply the automatic discount. Click on <b>Modify</b> and add the recently created <b>sales category</b> in the designated field. Finally, click <b>Save</b>."
+      "Next, navigate to <b>Data Entry</b> > <b>Customer</b> and find the customer to whom you want to apply the automatic discount. Click on <b>Modify</b> and add the recently created <b>sales category</b> in the designated field. Finally, click <b>Save</b>.",
+      "Ensure that you Check <b>Aut.Disc. From Customer</b> in System > Preference then click on save."
     ],
     "notes": "This will apply an automatic discount to each invoice specifically for this particular client.",
     "screenshots": [
       "../screenshots/SalesCategory/01.jpg",
-      "../screenshots/SalesCategory/02.jpg"
+      "../screenshots/SalesCategory/02.jpg",
+      "../screenshots/SalesCategory/03.jpg"
     ],
     "video": "",
-    "modifiedDateTime": "2023-06-08T11:50:00"
+    "modifiedDateTime": "2024-04-30T11:50:00"
   },
   {
     "id": 25,
