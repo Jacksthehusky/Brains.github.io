@@ -1185,5 +1185,24 @@
     ],
     "video": "",
     "modifiedDateTime": "2024-06-13T15:00:00"
+  },
+  {
+    "id": 58,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Change currency rate",
+    "tag": "rate",
+    "q": "How do you change the currency rate for a specific day and apply the same rate for the rest of the year?",
+    "answer": [
+      "Navigate to Operations > Currency > Currency Rates, and press <b>Locate</b>. Select a specific date, for example: <b>15/05/2024</b>, and press <b>Modify</b>. Enter the new rate and press <b>Save</b>.",
+      "Then go to Operations > Currency > Currency Rates Auto. Import the date you just updated. Set the range from the updated date + 1 to the end of the year, then click <b>Save</b>."
+    ],
+    "notes": "If you manage multiple companies, you will need to adjust the rate for each company individually.",
+    "screenshots": [
+      "../screenshots/ChangeCurrencyRate/01.jpg",
+      "../screenshots/ChangeCurrencyRate/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2024-06-18T12:00:00"
   }
 ]
