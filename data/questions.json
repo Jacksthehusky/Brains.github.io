@@ -1204,5 +1204,30 @@
     ],
     "video": "",
     "modifiedDateTime": "2024-06-18T12:00:00"
+  },
+  {
+    "id": 59,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Change Item Code",
+    "tag": "duplicate",
+    "q": "How to change the item code? ",
+    "answer": [
+      "If you have an item code with a special character that cannot be used for invoicing, such as the code shown below that contains a '*': 'Example-40*40', and you wish to replace the '*' with 'x' or another character, here’s how you can do it.",
+      "Navigate to Operations > System Maintenance > Change Item Code.",
+      "On this screen, input the item code you want to change in the 'From' field and the new item code in the 'To' field. Then press Save.",
+      "This action will update the item code.",
+      "The Item Code has been successfully changed."
+    ],
+    "notes": "If the item has an initial quantity, it will not be deleted. Instead, it will be marked as inactive, satisfying the condition for its non-deletion.",
+    "screenshots": [
+      "../screenshots/ChangeItemCode/01.jpg",
+      "../screenshots/ChangeItemCode/02.jpg",
+      "../screenshots/ChangeItemCode/03.jpg",
+      "../screenshots/ChangeItemCode/04.jpg",
+      "../screenshots/ChangeItemCode/05.jpg"    
+    ],
+    "video": "",
+    "modifiedDateTime": "2024-07-02T15:30:00"
   }
 ]
