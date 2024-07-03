@@ -246,17 +246,23 @@
     "group": "Operations",
     "abbr": "VAT Sayrafa",
     "tag": "rate",
-    "q": "How to change VAT rate to Sayrafa?",
+    "q": "How can I change the VAT rate to Sayrafa and set a specific VAT rate different from the daily rate?",
     "answer": [
       "Ensure that you have installed our most recent version +V4.9.",
       "Go to operations > Currency > Currency Rates > Press <b>Locate</b> Select the following date: <b>03/01/2000</b> and Press <b>Modify</b>.<b>Enter new VAT rate and Press <b>Save</b>.",
+      "If the date <b>03/01/2000</b> is not available, click <b>New</b> to create it.",
+      "After creating the date, enter the new VAT rate and press <b>Save</b>.",
+      "To ensure it works, you need to activate the 'Account No. VAT Rate' option in the 'Operation Type' within the 'Account No.' tab. Please make sure to enable this option.",
       "To verify if this will function, attempt to generate a new invoice, navigate to the accounting tab, and examine the VAT rate."
     ],
-    "notes": "If the date of <b>03/01/2000</b> is not present, you will need to create new currency rates for that specific date.",
+    "notes": "The date 03/01/2000 is used to apply a specific VAT rate. For example, if you want to set the VAT rate at 89,500 LBP and have a different daily rate, such as 90,000 LBP, which can be modified based on the current day's rate, simply follow the steps mentioned above.",
     "screenshots": [
       "../screenshots/VATSayrafa/01.jpg",
       "../screenshots/VATSayrafa/02.jpg",
-      "../screenshots/VATSayrafa/03.jpg"
+      "../screenshots/VATSayrafa/03.jpg",
+      "../screenshots/VATSayrafa/04.jpg",
+      "../screenshots/VATSayrafa/05.jpg",
+      "../screenshots/VATSayrafa/06.jpg"
     ],
     "video": "",
     "modifiedDateTime": "2023-07-04T12:00:00"
