@@ -1219,7 +1219,7 @@
     "group": "Operations",
     "abbr": "Change Item Code",
     "tag": "duplicate",
-    "q": "How to change the item code? ",
+    "q": "How to change the item code?",
     "answer": [
       "If you have an item code with a special character that cannot be used for invoicing, such as the code shown below that contains a '*': 'Example-40*40', and you wish to replace the '*' with 'x' or another character, here’s how you can do it.",
       "Navigate to Operations > System Maintenance > Change Item Code.",
@@ -1237,5 +1237,26 @@
     ],
     "video": "",
     "modifiedDateTime": "2024-07-02T15:30:00"
+  },
+  {
+    "id": 60,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Supplier",
+    "tag": "Excel",
+    "q": "How to export all suppliers from Brains Software into Excel?",
+    "answer": [
+      "Navigate to Data Entry > <b>Supplier</b>, then click the <b>Excel</b> button at the top of the Supplier Panel.",
+      "After that, Click <b>Export Full Data</b>.",
+      "An Excel sheet will open, exporting all saved suppliers along with their complete information."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ExportSupplierToExcel/01.jpg",
+      "../screenshots/ExportSupplierToExcel/02.jpg",
+      "../screenshots/ExportSupplierToExcel/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2024-07-11T10:53:00"
   }
 ]
