@@ -15,7 +15,7 @@
       "Go operations > Currency > Currency Rates Auto > press <b>save</b>.",
       "Confirm by clicking <b>Yes</b>"
     ],
-    "notes": "Wait for the operation to end.",
+    "notes": "",
     "screenshots": [
       "../screenshots/ClosingOpeningOnlyAccounting/01.jpg",
       "../screenshots/ClosingOpeningOnlyAccounting/02.jpg",
@@ -70,17 +70,25 @@
     "q": "How to do closing and opening on Server from {{CURRENT_YEAR}} to {{NEXT_YEAR}}?",
     "answer": [
       "Make sure you are in year <b>{{CURRENT_YEAR}}</b>",
-      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.<br><i>Wait for the operation to end!</i>",
-      "Go to the newly created company for the year <b>{{NEXT_YEAR}}</b>.<br>Than Go operations > Currency > Currency Rates Auto > press <b>save</b>."
+      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > Just press <b>Start Closing</b>. <br>These options come pre-selected you don't need to change anything.",
+      "Confirm by clicking <b>Yes</b>",
+      "<i>Wait for the operation to end...</i><br>Click <b>Ok</b>",
+      "Go to the newly created company for the year <b>{{NEXT_YEAR}}</b>.",
+      "Go operations > Currency > Currency Rates Auto > press <b>save</b>.",
+      "Confirm by clicking <b>Yes</b>"
     ],
-    "notes": "Wait for the operation to end.",
+    "notes": "",
     "screenshots": [
       "../screenshots/ClosingOpeningServer/01.jpg",
       "../screenshots/ClosingOpeningServer/02.jpg",
-      "../screenshots/ClosingOpeningServer/03.jpg"
+      "../screenshots/ClosingOpeningServer/03.jpg",
+      "../screenshots/ClosingOpeningServer/04.jpg",
+      "../screenshots/ClosingOpeningServer/05.jpg",
+      "../screenshots/ClosingOpeningServer/06.jpg",
+      "../screenshots/ClosingOpeningServer/07.jpg"
     ],
     "video": "../screenshots/ClosingOpeningServer/ClosingServer.mp4",
-    "modifiedDateTime": "2024-12-28T15:35:00",
+    "modifiedDateTime": "2024-12-19T10:35:00",
     "helpfulCount": 94,
     "unhelpfulCount": 0
   },
