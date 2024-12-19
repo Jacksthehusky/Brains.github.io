@@ -6,7 +6,26 @@ var matchList = document.getElementById("match-list");
 const getQuestions = async () => {
   const res = await fetch("../data/questions.json");
   questions = await res.json();
-};
+
+   // Current year and next year dynamically
+   const currentYear = Math.floor(new Date().getFullYear() - 0.75 + new Date().getMonth() / 12);
+   const nextYear = currentYear + 1;
+ 
+   // Replace placeholders in each question
+   questions = questions.map((question) => {
+     return {
+       ...question,
+       q: question.q
+         .replace("{{CURRENT_YEAR}}", currentYear)
+         .replace("{{NEXT_YEAR}}", nextYear),
+       answer: question.answer.map((answer) =>
+         answer
+           .replace("{{CURRENT_YEAR}}", currentYear)
+           .replace("{{NEXT_YEAR}}", nextYear)
+       ),
+     };
+   });
+ };
 
 // Filter questions
 const searchQuestions = (searchText) => {
@@ -89,3 +108,4 @@ search.addEventListener(
   "input",
   debounce(() => searchQuestions(search.value), 300)
 );
+

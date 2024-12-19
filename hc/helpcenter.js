@@ -1,6 +1,26 @@
 fetch("../data/questions.json")
   .then((response) => response.json())
   .then((questions) => {
+
+     // Current year and next year dynamically
+     const currentYear = Math.floor(new Date().getFullYear() - 0.75 + new Date().getMonth() / 12);
+     const nextYear = currentYear + 1;
+ 
+     // Replace placeholders in questions
+     questions = questions.map((question) => {
+       return {
+         ...question,
+         q: question.q
+           .replace("{{CURRENT_YEAR}}", currentYear)
+           .replace("{{NEXT_YEAR}}", nextYear),
+         answer: question.answer.map((answer) =>
+           answer
+             .replace("{{CURRENT_YEAR}}", currentYear)
+             .replace("{{NEXT_YEAR}}", nextYear)
+         ),
+       };
+     });
+
     const faqsContainer = document.getElementById("faqs");
     const searchInput = document.getElementById("search");
 
@@ -66,3 +86,5 @@ fetch("../data/questions.json")
     }
   })
   .catch((error) => console.error(error));
+
+  

@@ -8,6 +8,19 @@ fetch("../data/questions.json")
     questions = data;
     const question = questions.find((q) => q.id == id);
 
+     // Current year and next year dynamically
+     const currentYear = Math.floor(new Date().getFullYear() - 0.75 + new Date().getMonth() / 12);
+     const nextYear = currentYear + 1;
+ 
+     // Replace placeholders in the question and answers
+     question.q = question.q
+       .replace("{{CURRENT_YEAR}}", currentYear)
+       .replace("{{NEXT_YEAR}}", nextYear);
+ 
+     question.answer = question.answer.map((answer) =>
+       answer.replace("{{CURRENT_YEAR}}", currentYear).replace("{{NEXT_YEAR}}", nextYear)
+     );
+
     //id
     document.getElementById("id").innerHTML = "(ID: " + question.id + ")";
 
