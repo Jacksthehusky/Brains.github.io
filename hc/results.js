@@ -142,7 +142,9 @@ fetch("../data/questions.json")
       relatedQuestions.forEach((relatedQuestion) => {
         const relatedArticleItem = document.createElement("li");
         const relatedArticleLink = document.createElement("a");
-        relatedArticleLink.textContent = relatedQuestion.q;
+        relatedArticleLink.textContent = relatedQuestion.q
+        .replace("{{CURRENT_YEAR}}", currentYear)
+        .replace("{{NEXT_YEAR}}", nextYear);
         relatedArticleLink.href = `results.html?id=${relatedQuestion.id}`;
 
         relatedArticleItem.appendChild(relatedArticleLink);
