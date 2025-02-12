@@ -581,7 +581,7 @@
     "requiresPermission": false,
     "group": "Data Entry",
     "abbr": "Customer",
-    "tag": "",
+    "tag": "Customer",
     "q": "How to create new customer on brains?",
     "answer": [
       "To add a new customer on brains, navigate to <b>Data Entry</b> tab, select <b>Customer</b>, and click <b>New</b> Button. Then proceed to input the required customer details into the appropriate fields provided, Than Click <b>Save</b> Button."
@@ -1316,5 +1316,45 @@
     ],
     "video": "",
     "modifiedDateTime": "2024-10-14T10:40:00"
+  },
+  {
+    "id": 63,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "Lock Date",
+    "tag": "Restrict",
+    "q": "How to set a lock date for users to prevent them from modifying transactions beyond that date?",
+    "answer": [
+      "This <b>Access Denied</b> message, <b>This operation is beyond your lock date</b>, will appear for restricted users, preventing them from modifying operations past their lock date.",
+      "To restrict a specific user, go to Company Year <b>{{CURRENT_YEAR}}</b> > System > Passwords > Locate the User > Click Modify > enter the desired Lock Date (e.g., 31/12/202Y) in the Lock Date field, press Enter, and then click Save.",
+      "To restrict all users, go to Company Year <b>{{CURRENT_YEAR}}</b> > System > Passwords > Users List. Enter the desired Lock Date (e.g., 31/12/202Y) in the Lock Date Field and click the <b>Set All Lockdates</b> button."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/LockDate/01.jpg",
+      "../screenshots/LockDate/02.jpg",
+      "../screenshots/LockDate/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-01-08T10:10:00"
+  },
+  {
+    "id": 64,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Date of Birth",
+    "tag": "Customer",
+    "q": "How to add a customer's date of birth and generate a report for all customers with birthdates within a specific month?",
+    "answer": [
+      "To add a customer's date of birth, go to the <b>Data Entry</b> tab, select Customer, and click the Additional Info tab. Click 'Modify,' enter the DOB in the designated field, and then click 'Save.",
+      "To generate a birthdate range for a specific month, Go to Reports > <b>Customer, Supplier, or Salesperson</b> > Select 'Customer' > select the desired day and month, but set the year to 1900. For example, to retrieve all customers with birthdays in April, enter the range from 01/04/1900 to 30/04/1900, and you will get all customers with birthdays in April."
+    ],
+    "notes": "Keep the year to 1900",
+    "screenshots": [
+      "../screenshots/CustomerDOB/01.jpg",
+      "../screenshots/CustomerDOB/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-01-14T11:50:00"
   }
 ]
