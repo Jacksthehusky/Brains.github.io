@@ -21,11 +21,45 @@
       display: block;
       padding: 1em;
     }
+
+    /* Chatbot Icon Styling */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: darkred;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.chatbot-icon:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-icon i {
+  font-size: 24px;
+}
+
+df-messenger {
+  --df-messenger-button-titlebar-color: rgb(170, 26, 26);
+  --df-messenger-chat-background-color: #f9f9f9;
+  --df-messenger-font-color: #000000;
+}
+
   </style>
 </head>
 
 <body>
-
+  
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
@@ -491,6 +525,17 @@
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   <script src="hc/script.js"></script>
   <script src="hc/typed.js"></script>
+
+ 
+ <!-- Dialogflow Messenger -->
+ <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+ <df-messenger
+   chat-icon="https://png.pngtree.com/png-vector/20220611/ourmid/pngtree-chatbot-icon-chat-bot-robot-png-image_4841963.png"
+   intent="WELCOME"
+   chat-title="Brains Assistant"
+   agent-id="749f115e-db73-495e-8de0-a48a00e72366"
+   language-code="en"
+ ></df-messenger>
 
 </body>
 
