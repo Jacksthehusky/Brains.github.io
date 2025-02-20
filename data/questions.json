@@ -1356,5 +1356,28 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-01-14T11:50:00"
+  },
+  {
+    "id": 65,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Label",
+    "tag": "Barecode Label",
+    "q": "How to Print Labels from a TXT File with Barcodes and Quantities?",
+    "answer": [
+      "Create a TXT file in Notepad, listing barcodes and quantities in the format: `5281234567890,2` (to print two labels for barcode `5281234567890`). Save the file for later import.",
+      "Navigate to Reports > Labels and click <b>Import Excel/TXT.</b>",
+      "Click <b>Yes</b> to print the labels now.",
+      "Or click <b>No</b> for print preview."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/LabelsFromTXTFile/01.jpg",
+      "../screenshots/LabelsFromTXTFile/02.jpg",
+      "../screenshots/LabelsFromTXTFile/03.jpg",
+      "../screenshots/LabelsFromTXTFile/04.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-02-20T12:30:00"
   }
 ]
