@@ -44,14 +44,14 @@ fetch("../data/questions.json")
         questionContainer.classList.add("question-container");
 
         // Add the question
-        const questionElement = document.createElement("p");
-        questionElement.innerHTML = `<strong>${question.q}</strong>`;
+        const questionElement = document.createElement("h3"); // Use <h3> for questions
+        questionElement.textContent = question.q;
         questionContainer.appendChild(questionElement);
 
         // Add the answer(s) as a single string separated by commas
         const answerText = document.createElement("p");
         const cleanedAnswers = question.answer.map((answer) => stripHtmlTags(answer)); // Remove HTML tags
-        answerText.textContent = cleanedAnswers.join(", "); // Join answers with a comma
+        answerText.textContent = cleanedAnswers.join("... "); // Join answers with a comma
         questionContainer.appendChild(answerText);
 
         faqsContainer.appendChild(questionContainer);
