@@ -38,37 +38,24 @@ fetch("../data/questions.json")
       // Clear previous questions
       faqsContainer.innerHTML = "";
 
-      // Group questions by group field
-      const groupedQuestions = filteredQuestions.reduce((acc, question) => {
-        acc[question.group] = acc[question.group] || [];
-        acc[question.group].push(question);
-        return acc;
-      }, {});
+      // Append all questions without grouping
+      filteredQuestions.forEach((question) => {
+        const questionContainer = document.createElement("div");
+        questionContainer.classList.add("question-container");
 
-      // Append questions by group
-      for (const group in groupedQuestions) {
-        const groupTitle = document.createElement("h1");
-        groupTitle.innerText = group;
-        faqsContainer.appendChild(groupTitle);
+        // Add the question
+        const questionElement = document.createElement("p");
+        questionElement.innerHTML = `<strong>${question.q}</strong>`;
+        questionContainer.appendChild(questionElement);
 
-        groupedQuestions[group].forEach((question) => {
-          const questionContainer = document.createElement("div");
-          questionContainer.classList.add("question-container");
+        // Add the answer(s) as a single string separated by commas
+        const answerText = document.createElement("p");
+        const cleanedAnswers = question.answer.map((answer) => stripHtmlTags(answer)); // Remove HTML tags
+        answerText.textContent = cleanedAnswers.join(", "); // Join answers with a comma
+        questionContainer.appendChild(answerText);
 
-          // Add the question
-          const questionElement = document.createElement("p");
-          questionElement.innerHTML = `<strong>${question.q}</strong>`;
-          questionContainer.appendChild(questionElement);
-
-          // Add the answer(s) as a single string separated by commas
-          const answerText = document.createElement("p");
-          const cleanedAnswers = question.answer.map((answer) => stripHtmlTags(answer)); // Remove HTML tags
-          answerText.textContent = cleanedAnswers.join(" . . . "); // Join answers with a comma
-          questionContainer.appendChild(answerText);
-
-          faqsContainer.appendChild(questionContainer);
-        });
-      }
+        faqsContainer.appendChild(questionContainer);
+      });
     }
   })
   .catch((error) => console.error(error));
