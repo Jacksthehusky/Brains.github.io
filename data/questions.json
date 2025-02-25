@@ -39,7 +39,7 @@
     "q": "How to do closing and opening on POS from {{CURRENT_YEAR}} to {{NEXT_YEAR}}?",
     "answer": [
       "Make sure you are in year <b>{{CURRENT_YEAR}}</b>",
-      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > In the advanced section, mark the checkboxes for <b>'faster database creation' and 'skip items, accounts & balances'</b>. Next, click  <b>Start Closing</b> button.<br><i>If the checkboxes for 'faster database creation' and 'skip items, accounts & balances,' are not available, please reach out to support for assistance in obtaining an updated version of Brains.</i>",
+      "Go to Operations > Accounting > Periodic Operation > Closing End of Year > In the advanced section, mark the checkboxes for <b>'faster database creation' and 'skip items, accounts & balances'</b>. Next, click <b>Start Closing</b> button.<br><i>If the checkboxes for 'faster database creation' and 'skip items, accounts & balances,' are not available, please reach out to support for assistance in obtaining an updated version of Brains.</i>",
       "Confirm by clicking <b>Yes</b>",
       "<i>Wait for the operation to end...</i><br>Click <b>Ok</b>",
       "Go to the newly created company for the year <b>{{NEXT_YEAR}}</b>.",

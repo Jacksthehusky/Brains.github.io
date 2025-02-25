@@ -55,14 +55,10 @@ fetch("../data/questions.json")
           questionElement.innerHTML = `<strong>${question.q}</strong>`;
           questionContainer.appendChild(questionElement);
 
-          // Add the answer(s)
-          const answerList = document.createElement("ol");
-          question.answer.forEach((answer, index) => {
-            const answerItem = document.createElement("li");
-            answerItem.innerHTML = answer;
-            answerList.appendChild(answerItem);
-          });
-          questionContainer.appendChild(answerList);
+          // Add the answer(s) as a single string separated by commas
+          const answerText = document.createElement("p");
+          answerText.innerHTML = question.answer.join(", "); // Join answers with a comma
+          questionContainer.appendChild(answerText);
 
           faqsContainer.appendChild(questionContainer);
         });
