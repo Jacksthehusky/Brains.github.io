@@ -26,6 +26,11 @@ fetch("../data/questions.json")
 
     const faqsContainer = document.getElementById("faqs");
 
+    // Function to remove HTML tags from a string
+    function stripHtmlTags(str) {
+      return str.replace(/<[^>]*>/g, ""); // Remove all HTML tags
+    }
+
     // Initial load of filtered questions
     updateQuestions(filteredQuestions);
 
@@ -42,7 +47,7 @@ fetch("../data/questions.json")
 
       // Append questions by group
       for (const group in groupedQuestions) {
-        const groupTitle = document.createElement("h2");
+        const groupTitle = document.createElement("h1");
         groupTitle.innerText = group;
         faqsContainer.appendChild(groupTitle);
 
@@ -57,7 +62,8 @@ fetch("../data/questions.json")
 
           // Add the answer(s) as a single string separated by commas
           const answerText = document.createElement("p");
-          answerText.innerHTML = question.answer.join(", "); // Join answers with a comma
+          const cleanedAnswers = question.answer.map((answer) => stripHtmlTags(answer)); // Remove HTML tags
+          answerText.textContent = cleanedAnswers.join(" . . . "); // Join answers with a comma
           questionContainer.appendChild(answerText);
 
           faqsContainer.appendChild(questionContainer);
