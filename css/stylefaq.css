@@ -1,9 +1,10 @@
 /* FAQ Container */
 #faqs {
   width: 100%;
-  max-width: 800px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 20px;
+  font-size:medium;
 }
 
 /* FAQ Table */
