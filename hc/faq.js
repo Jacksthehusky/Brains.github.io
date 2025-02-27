@@ -38,24 +38,49 @@ fetch("../data/questions.json")
       // Clear previous questions
       faqsContainer.innerHTML = "";
 
+      // Create a table element
+      const table = document.createElement("table");
+      table.classList.add("faq-table");
+
+      // Add table headers
+      const headerRow = document.createElement("tr");
+      headerRow.classList.add("header-row");
+
+      const questionHeader = document.createElement("th");
+      questionHeader.textContent = "Question";
+      headerRow.appendChild(questionHeader);
+
+      const answerHeader = document.createElement("th");
+      answerHeader.textContent = "Answer";
+      headerRow.appendChild(answerHeader);
+
+      table.appendChild(headerRow);
+
       // Append all questions without grouping
       filteredQuestions.forEach((question) => {
-        const questionContainer = document.createElement("div");
-        questionContainer.classList.add("question-container");
+        // Create a table row for each question
+        const row = document.createElement("tr");
+        row.classList.add("faq-row");
 
-        // Add the question
-        const questionElement = document.createElement("h3"); // Use <h3> for questions
-        questionElement.textContent = question.q;
-        questionContainer.appendChild(questionElement);
+        // Add the question cell
+        const questionCell = document.createElement("td");
+        questionCell.classList.add("question-cell");
+        questionCell.textContent = question.q; // Remove "Question:" label
+        row.appendChild(questionCell);
 
-        // Add the answer(s) as a single string separated by commas
-        const answerText = document.createElement("p");
+        // Add the answer cell
+        const answerCell = document.createElement("td");
+        answerCell.classList.add("answer-cell");
         const cleanedAnswers = question.answer.map((answer) => stripHtmlTags(answer)); // Remove HTML tags
-        answerText.textContent = cleanedAnswers.join("... "); // Join answers with a comma
-        questionContainer.appendChild(answerText);
+        answerCell.textContent = cleanedAnswers.join("; "); // Use semicolons instead of commas
+        row.appendChild(answerCell);
 
-        faqsContainer.appendChild(questionContainer);
+        // Append the row to the table
+        table.appendChild(row);
       });
+
+      // Append the table to the FAQ container
+      faqsContainer.appendChild(table);
     }
   })
   .catch((error) => console.error(error));

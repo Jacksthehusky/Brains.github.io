@@ -1,17 +1,56 @@
-.question-container {
-  margin-bottom: 20px;
-  padding: 10px;
+/* FAQ Container */
+#faqs {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* FAQ Table */
+.faq-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table Header Row */
+.header-row {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table Header Cells */
+th {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Table Row */
+.faq-row {
   border-bottom: 1px solid #ddd;
 }
 
-.question-container h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #333;
+/* Table Cells */
+.question-cell,
+.answer-cell {
+  padding: 15px;
+  vertical-align: top;
 }
 
-.question-container p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
+/* Question Cell */
+.question-cell {
+  width: 30%;
+  background-color: #f9f9f9;
+}
+
+/* Answer Cell */
+.answer-cell {
+  width: 70%;
+  background-color: #fff;
+}
+
+/* Hover Effect */
+.faq-row:hover {
+  background-color: #f1f1f1;
 }
