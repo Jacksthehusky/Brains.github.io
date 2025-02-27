@@ -1245,7 +1245,7 @@
     "tag": "duplicate",
     "q": "How to change the item code?",
     "answer": [
-      "If you have an item code with a special character that cannot be used for invoicing, such as the code shown below that contains a '*': 'Example-40*40', and you wish to replace the '*' with 'x' or another character, here’s how you can do it.",
+      "If you have an item code with a special character that cannot be used for invoicing, such as the code shown below that contains a '*': 'Example-40*40', and you wish to replace the '*' with 'x' or another character, here's how you can do it.",
       "Navigate to Operations > System Maintenance > Change Item Code.",
       "On this screen, input the item code you want to change in the 'From' field and the new item code in the 'To' field. Then press Save.",
       "This action will update the item code.",
@@ -1291,7 +1291,7 @@
     "tag": "Item Sales",
     "q": "How to generate a monthly sales report for each salesperson?",
     "answer": [
-      "To generate a report showing monthly sales for each salesperson, navigate to Report > Item Sales. From the left panel, select Salesperson, then enter the date range—for example, to view sales for July, choose 01/07/2024 to 31/07/2024—and click Preview.<br><br> If the salesperson is associated with a specific customer, you can select the Salesperson Customer option. Additionally, you can choose the Summary option to view a summary of the report."
+      "To generate a report showing monthly sales for each salesperson, navigate to Report > Item Sales. From the left panel, select Salesperson, then enter the date range - for example, to view sales for July, choose 01/07/2024 to 31/07/2024 - and click Preview.<br><br> If the salesperson is associated with a specific customer, you can select the Salesperson Customer option. Additionally, you can choose the Summary option to view a summary of the report."
     ],
     "notes": "",
     "screenshots": [
