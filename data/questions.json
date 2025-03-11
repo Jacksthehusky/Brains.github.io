@@ -430,14 +430,18 @@
       "If you encounter a situation where an inactive item is being processed in the POS system, despite its inactive status, you should follow these steps:",
       "Let me provide you with an example of an inactive code that is being processed during cash sales.",
       "To prevent the processing of this inactive code, navigate to the <b>Types</b> section and access the <b>Preferences</b> tab. Proceed to modify the settings and ensure that the option <b>Without inactive item</b> is selected or checked.",
-      "With the modification in place, inactive items will no longer be processed and will not be added to this cash sale."
+      "With the modification in place, inactive items will no longer be processed and will not be added to this cash sale.",
+      "If you have multiple POS systems, you need to apply the same process for each POS type and ensure that the <b>Without inactive item</b> option is checked individually for each POS.",
+      "With this modification, inactive items will no longer be processed on any POS."
     ],
     "notes": "",
     "screenshots": [
       "../screenshots/InactiveCode/01.jpg",
       "../screenshots/InactiveCode/02.jpg",
       "../screenshots/InactiveCode/03.jpg",
-      "../screenshots/InactiveCode/04.jpg"
+      "../screenshots/InactiveCode/04.jpg",
+      "../screenshots/InactiveCode/05.jpg",
+      "../screenshots/InactiveCode/06.jpg"
     ],
     "video": "",
     "modifiedDateTime": "2023-05-18T12:00:00"
@@ -617,7 +621,7 @@
     "requiresPermission": false,
     "group": "Operations",
     "abbr": "Purchases",
-    "tag": "",
+    "tag": "Supplier",
     "q": "How to create a Purchases on brains?",
     "answer": [
       "Navigate to <b>Operations</b> > <b>Purchases</b> To create a new <b>Purchases</b> on brains.",
@@ -1379,5 +1383,109 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-02-20T12:30:00"
+  }
+  ,
+  {
+    "id": 66,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Item",
+    "tag": "item",
+    "q": "How to add an item to the POS grid view?",
+    "answer": [
+      "To add an item to the POS grid view, please follow these steps:",
+      "Go to <b>Data Entry</b> > <b>Item</b> > <b>Item Category</b>. Click <b>New</b> to create a new Item Category, enter a description, and then click <b>Save</b>.",
+      "Assign an Item Category to any item you want to display on the POS grid view."
+
+    ],
+    "notes": "In Item Category, set the POS Position to <b>-1</b> to hide all associated items from the POS grid view.",
+    "screenshots": [
+      "../screenshots/AddItemToPOSGrid/01.jpg",
+      "../screenshots/AddItemToPOSGrid/02.jpg",
+      "../screenshots/AddItemToPOSGrid/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-10T14:00:00"
+  },
+  {
+    "id": 67,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Supplier Credit Note",
+    "tag": "Supplier",
+    "q": "How to reduce an item's cost after receiving a supplier discount?",
+    "answer": [
+      "After completing a purchase and receiving a supplier discount, you may need to reduce the item's cost.",
+      "For example, if the item was originally priced at $10, follow these steps to adjust its cost accordingly:",
+      "Navigate to <b>Operation</b> > <b>Supplier Credit Note</b> > Click <b>New</b>, then add the item and set the unit price to the amount you want to reduce. For example, to lower the cost by <b>$1</b>, set the unit price to <b>$1</b>. This will adjust the item's cost to <b>$9</b>. Ensure that the <b>Supplier Credit Note</b> is marked as <b>Confirmed</b>.",
+      "As shown in this picture, the item's cost has been successfully reduced to <b>$9</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ReduceItemCost/01.jpg",
+      "../screenshots/ReduceItemCost/02.jpg",
+      "../screenshots/ReduceItemCost/03.jpg",
+      "../screenshots/ReduceItemCost/04.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-11T13:00:00"
+  },
+  {
+    "id": 68,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Minimum qty",
+    "tag": "item",
+    "q": "How to generate a report showing all items with a defined minimum quantity?",
+    "answer": [
+      "To generate a report of items with a defined minimum quantity, Follow these steps:",
+      "Ensure that the item's <b>Minimum Qty</b> field is set.",
+      "Navigate to <b>Reports</b> > <b>Items, Price & Qtys</b>, then select both <b>Minimum</b> and <b>Check Min. Qty.</b> to generate a report of items whose quantity has fallen below the suggested minimum, indicating they need restocking.",
+      "Select only <b>Minimum</b> to view a report of all items with a defined minimum quantity."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ReportMinimumQty/01.jpg",
+      "../screenshots/ReportMinimumQty/02.jpg",
+      "../screenshots/ReportMinimumQty/03.jpg",
+      "../screenshots/ReportMinimumQty/04.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-11T13:00:00"
+  },
+  {
+    "id": 69,
+    "requiresPermission": false,
+    "group": "Data Entry",
+    "abbr": "Min qty Max qty",
+    "tag": "item",
+    "q": "How to set a minimum or maximum quantity for a specific item?",
+    "answer": 
+    [
+      "Navigate to <b>Data Entry</b> > <b>Item</b> > <b>Item</b>, locate the item you want to update, then click <b>Modify</b> to set the minimum and maximum quantity. For example, in this picture, the minimum is set to <b>20</b> and the maximum to <b>60</b>."      
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/AddMinMaxQty/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-11T13:00:00"
+  },
+  {
+    "id": 70,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Invoice",
+    "tag": "item",
+    "q": "How to import multiple items simultaneously when creating a new invoice?",
+    "answer": [
+      "To import multiple items, click the import button at the bottom of the invoice, select multiple item codes, and then click <b>Import</b>. You also have the option to select a group and import all items from that group at once."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ImportMultipleItemInvoice/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-11T13:00:00"
   }
 ]
