@@ -1487,5 +1487,94 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-03-11T13:00:00"
+  },
+  {
+    "id": 71,
+    "requiresPermission": false,
+    "group": "EndOfSession",
+    "abbr": "Backup",
+    "tag": "",
+    "q": "How to create a backup?",
+    "answer": [
+      "To create a backup for your current company year, first, ensure you are logged into the correct company year. Navigate to <b>End Of Session</b> > <b>Backup</b>, select the desired backup location by clicking <b>Browse</b>, and then click <b>Backup</b> to complete the process."
+    ],
+    "notes": "Backups protect your data from loss, ensuring business continuity and preventing accidental deletions or system failures.",
+    "screenshots": [
+      "../screenshots/Backup/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-12T13:00:00"
+  },
+  {
+    "id": 72,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Sale Price",
+    "tag": "item",
+    "q": "How to increase the sale price of specific item groups/subgroups by a set percentage?",
+    "answer": [
+      "You can adjust sale prices in the <b>Sale Price</b> screen. Navigate to <b>Operations</b> > <b>Periodic Operation</b> > <b>Sale Price</b>, select the item from the left panel, and choose the desired groups/subgroups. For a 4% increase, use a multiplication rate of <b>1.04</b>. Click <b>View</b> to verify the <b>New Sale Price</b> in the grid, then press <b>Save</b>."
+    ],
+    "notes": "It is always recommended to create a backup before proceeding.",
+    "screenshots": [
+      "../screenshots/SalePriceIncreaseByGroup/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-12T13:00:00"
+  },
+  {
+    "id": 73,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "item without group",
+    "tag": "item",
+    "q": "How to generate a report of items missing a group or subgroup?",
+    "answer": [
+      "To generate a report of items without a group or subgroup, navigate to <b>Reports</b> > <b>Item, Price & Qty</b>, enter <b>space, comma, space (' , ')</b> in the group field, then click the <b>Excel</b> button.",
+      "An Excel sheet will be generated listing all items without a group or subgroup."
+        ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/ItemWithoutGroup/01.jpg",
+      "../screenshots/ItemWithoutGroup/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-12T13:00:00"
+  },
+  {
+    "id": 74,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "daily journal",
+    "tag": "Daily Journal",
+    "q": "How to generate a Daily Journal report for a specific date?",
+    "answer": [
+      "Navigate to <b>Reports</b> > <b>Daily Journal</b>, enter the desired date in the <b>From</b> and <b>To</b> fields. Select <b>Only New</b> to view new operations or <b>Only Modified</b> to see modified operations for that day, then click <b>Preview</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/DailyJournalOnlyNewOnlyModified/01.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-12T14:00:00"
+  },
+  {
+    "id": 75,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Return",
+    "tag": "",
+    "q": "How to process a return for an existing invoice?",
+    "answer": [
+      "To create a return, go to <b>Operations</b> > <b>Return</b> and click <b>New</b>. Select the invoice from the dropdown menu, press <b>F2</b> to locate the invoice, and click <b>Import</b> to proceed.",
+      "If a customer is returning only a specific item from a transaction, you can remove the unwanted items after clicking <b>Import</b>. Select the unwanted row and click <b>Delete Row</b>, keeping only the item to be returned."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/InvoiceReturn/01.jpg",
+      "../screenshots/InvoiceReturn/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-03-12T14:00:00"
   }
 ]
