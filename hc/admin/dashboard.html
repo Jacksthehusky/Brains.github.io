@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/admin.css">
+</head>
+<body>
+    <header>
+        <h1>FAQ Management</h1>
+        <a href="logout.php" class="logout">Logout</a>
+    </header>
+    
+    <div class="admin-container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="add">Add New FAQ</button>
+            <button class="tab-btn" data-tab="edit">Edit Existing</button>
+        </div>
+        
+        <div id="add" class="tab-content active">
+            <form id="addFaqForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="faqGroup">Group</label>
+                    <select id="faqGroup" required>
+                        <option value="">Select Group</option>
+                        <option value="Operations">Operations</option>
+                        <option value="System">System</option>
+                        <option value="Data Entry">Data Entry</option>
+                        <option value="Reports">Reports</option>
+                        <option value="Other">Other</option>
+                        <option value="RDLC Report">RDLC Report</option>
+                        <option value="EndOfSession">EndOfSession</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="faqAbbr">Abbreviation</label>
+                    <input type="text" id="faqAbbr" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="faqTag">Tag</label>
+                    <input type="text" id="faqTag">
+                </div>
+                
+                <div class="form-group">
+                    <label for="faqQuestion">Question</label>
+                    <textarea id="faqQuestion" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="faqAnswer">Answer Steps (one per line)</label>
+                    <textarea id="faqAnswer" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="faqNotes">Notes</label>
+                    <textarea id="faqNotes"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="faqScreenshots">Screenshots</label>
+                    <input type="file" id="faqScreenshots" multiple accept="image/*">
+                    <div id="previewContainer"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="faqVideo">Video (optional)</label>
+                    <input type="file" id="faqVideo" accept="video/*">
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="faqRequiresPermission">
+                        Requires Permission
+                    </label>
+                </div>
+                
+                <button type="submit">Add FAQ</button>
+            </form>
+        </div>
+        
+        <div id="edit" class="tab-content">
+            <div class="search-container">
+                <input type="text" id="searchFaqs" placeholder="Search FAQs...">
+                <select id="filterGroup">
+                    <option value="">All Groups</option>
+                    <option value="Operations">Operations</option>
+                    <option value="System">System</option>
+                    <option value="Data Entry">Data Entry</option>
+                    <option value="Reports">Reports</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="faq-list-container">
+                <table id="faqList">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Question</th>
+                            <th>Group</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="editFormContainer" class="hidden">
+                <!-- Edit form will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="../assets/admin.js"></script>
+</body>
+</html>
