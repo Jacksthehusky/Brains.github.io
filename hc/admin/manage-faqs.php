@@ -1,53 +1,52 @@
 <?php
 session_start();
-require_once '../config.php';
+require_once __DIR__ . '/../config.php';
 
 // Check authentication
-if (!isset($_SESSION['authenticated']) {
-    header("HTTP/1.1 403 Forbidden");
-    exit("Access denied");
+if (!isset($_SESSION['authenticated'])) {
+    header('Content-Type: application/json');
+    http_response_code(403);
+    die(json_encode(['success' => false, 'error' => 'Access denied']));
 }
 
 // Set JSON header
 header('Content-Type: application/json');
 
-// Get FAQs
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    $faqs = json_decode(file_get_contents('../data/questions.json'), true);
-    echo json_encode($faqs);
-    exit;
-}
+// CORRECT PATH to questions.json
+$jsonFile = __DIR__ . '/../../data/questions.json';
 
-// Add/Update FAQ
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $action = $_POST['action'] ?? '';
-    $data = json_decode($_POST['data'], true);
+try {
+    // Get existing FAQs
+    $faqs = json_decode(file_get_contents($jsonFile), true) ?: [];
     
-    $faqs = json_decode(file_get_contents('../data/questions.json'), true);
-    
-    if ($action === 'add') {
-        // Generate new ID
-        $newId = max(array_column($faqs, 'id')) + 1;
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $input = json_decode(file_get_contents('php://input'), true);
+        $action = $_POST['action'] ?? '';
+        $data = json_decode($_POST['data'] ?? '[]', true);
         
-        // Create new FAQ
-        $newFaq = [
-            'id' => $newId,
-            'requiresPermission' => $data['requiresPermission'] ?? false,
-            'group' => $data['group'],
-            'abbr' => $data['abbr'],
-            'tag' => $data['tag'],
-            'q' => $data['q'],
-            'answer' => $data['answer'],
-            'notes' => $data['notes'],
-            'screenshots' => $data['screenshots'] ?? [],
-            'video' => $data['video'] ?? '',
-            'modifiedDateTime' => date('Y-m-d\TH:i:s'),
-            'helpfulCount' => 0,
-            'unhelpfulCount' => 0
-        ];
-        
-        array_push($faqs, $newFaq);
-    } elseif ($action === 'update') {
+        if ($action === 'add') {
+            // Generate new ID
+            $newId = !empty($faqs) ? max(array_column($faqs, 'id')) + 1 : 1;
+            
+            $newFaq = [
+                'id' => $newId,
+                'requiresPermission' => $data['requiresPermission'] ?? false,
+                'group' => $data['group'] ?? '',
+                'abbr' => $data['abbr'] ?? '',
+                'tag' => $data['tag'] ?? '',
+                'q' => $data['q'] ?? '',
+                'answer' => $data['answer'] ?? [],
+                'notes' => $data['notes'] ?? '',
+                'screenshots' => $data['screenshots'] ?? [],
+                'video' => $data['video'] ?? '',
+                'modifiedDateTime' => date('Y-m-d\TH:i:s'),
+                'helpfulCount' => 0,
+                'unhelpfulCount' => 0
+            ];
+            
+            $faqs[] = $newFaq;
+        }
+    elseif ($action === 'update') {
         // Update existing FAQ
         foreach ($faqs as &$faq) {
             if ($faq['id'] == $data['id']) {
@@ -75,11 +74,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // Save back to file
-    if (file_put_contents('../data/questions.json', json_encode($faqs, JSON_PRETTY_PRINT))) {
+    if (file_put_contents($jsonFile, json_encode($faqs, JSON_PRETTY_PRINT))) {
         echo json_encode(['success' => true]);
     } else {
-        echo json_encode(['success' => false, 'error' => 'Failed to save data']);
+        throw new Exception('Failed to save data');
     }
     exit;
+}
+
+// For GET requests
+echo json_encode($faqs);
+
+} catch (Exception $e) {
+http_response_code(500);
+echo json_encode(['success' => false, 'error' => $e->getMessage()]);
 }
 ?>

@@ -17,57 +17,54 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle add FAQ form
     const addFaqForm = document.getElementById('addFaqForm');
     if (addFaqForm) {
-        addFaqForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                group: document.getElementById('faqGroup').value,
-                abbr: document.getElementById('faqAbbr').value,
-                tag: document.getElementById('faqTag').value,
-                q: document.getElementById('faqQuestion').value,
-                answer: document.getElementById('faqAnswer').value.split('\n').filter(step => step.trim() !== ''),
-                notes: document.getElementById('faqNotes').value,
-                requiresPermission: document.getElementById('faqRequiresPermission').checked
-            };
-            
-            // Get files and subfolder name
-            const screenshotFiles = document.getElementById('faqScreenshots').files;
-            const videoFile = document.getElementById('faqVideo').files[0];
-            const subfolder = formData.abbr.replace(/\s+/g, '');
-            
-            // First upload screenshots if any
-            const uploadPromises = [];
-            
-            if (screenshotFiles.length > 0) {
-                uploadPromises.push(
-                    uploadFiles(screenshotFiles, subfolder).then(screenshots => {
-                        formData.screenshots = screenshots.map(file => `../screenshots/${subfolder}/${file.name}`);
-                    }).catch(error => {
-                        console.error('Screenshot upload failed:', error);
-                        throw error;
-                    })
-                );
-            }
-            
-            // Then upload video if any
-            if (videoFile) {
-                uploadPromises.push(
-                    uploadFiles([videoFile], subfolder).then(videos => {
-                        formData.video = `../screenshots/${subfolder}/${videos[0].name}`;
-                    }).catch(error => {
-                        console.error('Video upload failed:', error);
-                        throw error;
-                    })
-                );
-            }
-            
-            // When all uploads complete, save FAQ
-            Promise.all(uploadPromises)
-                .then(() => saveFAQ(formData, 'add'))
-                .catch(error => {
-                    alert('Error uploading files: ' + error.message);
-                });
-        });
+// Inside your form submit event handler
+addFaqForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = {
+        group: document.getElementById('faqGroup').value,
+        abbr: document.getElementById('faqAbbr').value,
+        tag: document.getElementById('faqTag').value,
+        q: document.getElementById('faqQuestion').value,
+        answer: document.getElementById('faqAnswer').value.split('\n').filter(step => step.trim() !== ''),
+        notes: document.getElementById('faqNotes').value,
+        requiresPermission: document.getElementById('faqRequiresPermission').checked
+    };
+    
+    const screenshotFiles = document.getElementById('faqScreenshots').files;
+    const videoFile = document.getElementById('faqVideo').files[0];
+    const subfolder = formData.abbr.replace(/\s+/g, '');
+    
+    // Upload screenshots first if any
+    if (screenshotFiles.length > 0) {
+        uploadFiles(screenshotFiles, subfolder, formData.answer)
+            .then(screenshots => {
+                formData.screenshots = screenshots;
+                if (videoFile) {
+                    return uploadFiles([videoFile], subfolder).then(videos => {
+                        formData.video = videos[0];
+                        return saveFAQ(formData, 'add');
+                    });
+                } else {
+                    return saveFAQ(formData, 'add');
+                }
+            })
+            .catch(error => {
+                alert('Error uploading screenshots: ' + error.message);
+            });
+    } else if (videoFile) {
+        uploadFiles([videoFile], subfolder)
+            .then(videos => {
+                formData.video = videos[0];
+                return saveFAQ(formData, 'add');
+            })
+            .catch(error => {
+                alert('Error uploading video: ' + error.message);
+            });
+    } else {
+        saveFAQ(formData, 'add');
+    }
+});
     }
     
     // Load FAQs for editing
@@ -85,13 +82,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function uploadFiles(files, subfolder) {
+function uploadFiles(files, subfolder, answerSteps) {
     const promises = [];
     
+    // Upload each file with corresponding step number
     for (let i = 0; i < files.length; i++) {
         const formData = new FormData();
         formData.append('file', files[i]);
         formData.append('subfolder', subfolder);
+        formData.append('stepNumber', i + 1); // Start from 01
         
         promises.push(
             fetch('upload.php', {
@@ -99,15 +98,22 @@ function uploadFiles(files, subfolder) {
                 body: formData
             })
             .then(response => {
-                if (!response.ok) throw new Error('Network response was not ok');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 return response.json();
             })
             .then(data => {
                 if (data.success) {
-                    return { name: data.filename, path: data.path };
+                    // Return path relative to your website root
+                    return `../screenshots/${subfolder}/${data.filename}`;
                 } else {
                     throw new Error(data.error || 'Upload failed');
                 }
+            })
+            .catch(error => {
+                console.error('Upload error:', error);
+                throw error;
             })
         );
     }
@@ -115,30 +121,56 @@ function uploadFiles(files, subfolder) {
     return Promise.all(promises);
 }
 
+// Add this to your file input change event
+document.getElementById('faqScreenshots').addEventListener('change', function(e) {
+    const previewContainer = document.getElementById('previewContainer');
+    previewContainer.innerHTML = '';
+    
+    Array.from(this.files).forEach((file, index) => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const preview = document.createElement('div');
+            preview.className = 'preview-item';
+            preview.innerHTML = `
+                <img src="${e.target.result}" alt="Preview">
+                <div class="preview-label">Step ${index + 1}</div>
+            `;
+            previewContainer.appendChild(preview);
+        };
+        reader.readAsDataURL(file);
+    });
+});
+
 function saveFAQ(data, action) {
+    const formData = new FormData();
+    formData.append('action', action);
+    formData.append('data', JSON.stringify(data));
+    
     fetch('manage-faqs.php', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: `action=${action}&data=${encodeURIComponent(JSON.stringify(data))}`
+        body: formData
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
     .then(data => {
         if (data.success) {
             alert('FAQ saved successfully!');
             document.getElementById('addFaqForm').reset();
             document.getElementById('previewContainer').innerHTML = '';
             
-            // Refresh edit list if we're on that tab
             if (document.querySelector('.tab-btn[data-tab="edit"]').classList.contains('active')) {
                 loadFAQsForEditing();
             }
         } else {
-            alert('Error: ' + (data.error || 'Failed to save FAQ'));
+            throw new Error(data.error || 'Failed to save FAQ');
         }
     })
     .catch(error => {
+        console.error('Error:', error);
         alert('Error: ' + error.message);
     });
 }
