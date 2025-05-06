@@ -5,41 +5,36 @@ require_once '../config.php';
 // Check authentication
 if (!isset($_SESSION['authenticated'])) {
     header("HTTP/1.1 403 Forbidden");
-    exit("Access denied");
+    exit(json_encode(['success' => false, 'error' => 'Access denied']));
 }
 
 // Handle file upload
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
-    $uploadDir = '../../screenshots/';
-    $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
+    $uploadDir = '../screenshots/';
+    $subfolder = isset($_POST['subfolder']) ? preg_replace('/[^a-zA-Z0-9]/', '', $_POST['subfolder']) : 'general';
+    $fullDir = $uploadDir . $subfolder . '/';
     
-    // Create directory if it doesn't exist
-    if (!file_exists($uploadDir)) {
-        mkdir($uploadDir, 0777, true);
+    // Create directory if needed
+    if (!file_exists($fullDir)) {
+        mkdir($fullDir, 0777, true);
     }
     
     $file = $_FILES['file'];
-    
-    // Validate file type
-    if (!in_array($file['type'], $allowedTypes)) {
-        echo json_encode(['success' => false, 'error' => 'Invalid file type']);
-        exit;
-    }
-    
-    // Generate unique filename
     $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
     $filename = uniqid() . '.' . $extension;
-    $destination = $uploadDir . $filename;
+    $destination = $fullDir . $filename;
     
     if (move_uploaded_file($file['tmp_name'], $destination)) {
-        // Return relative path
-        echo json_encode(['success' => true, 'path' => '../../screenshots/' . $filename]);
+        echo json_encode([
+            'success' => true,
+            'filename' => $filename,
+            'path' => "../screenshots/$subfolder/$filename"
+        ]);
     } else {
-        echo json_encode(['success' => false, 'error' => 'Upload failed']);
+        echo json_encode(['success' => false, 'error' => 'File upload failed']);
     }
     exit;
 }
 
-header("HTTP/1.1 400 Bad Request");
-exit("Invalid request");
+echo json_encode(['success' => false, 'error' => 'Invalid request']);
 ?>

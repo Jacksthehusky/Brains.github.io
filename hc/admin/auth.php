@@ -1,16 +1,16 @@
 <?php
 session_start();
-require_once '../config.php';
 
-// Hardcoded admin credentials (in production, use database with password hashing)
-$valid_username = "admin";
-$valid_password = "Br@ins0000"; 
+// Configuration - CHANGE THESE TO YOUR SECURE CREDENTIALS
+$ADMIN_USERNAME = "admin123";         // Change this to your desired username
+$ADMIN_PASSWORD = "Br@insFAQ2024!";     // Change this to a strong password
 
+// Simple authentication
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
     
-    if ($username === $valid_username && $password === $valid_password) {
+    if ($username === $ADMIN_USERNAME && $password === $ADMIN_PASSWORD) {
         $_SESSION['authenticated'] = true;
         $_SESSION['username'] = $username;
         header("Location: dashboard.html");

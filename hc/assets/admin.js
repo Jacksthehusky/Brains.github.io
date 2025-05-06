@@ -30,30 +30,43 @@ document.addEventListener('DOMContentLoaded', function() {
                 requiresPermission: document.getElementById('faqRequiresPermission').checked
             };
             
-            // Handle file uploads first
+            // Get files and subfolder name
             const screenshotFiles = document.getElementById('faqScreenshots').files;
             const videoFile = document.getElementById('faqVideo').files[0];
+            const subfolder = formData.abbr.replace(/\s+/g, '');
+            
+            // First upload screenshots if any
+            const uploadPromises = [];
             
             if (screenshotFiles.length > 0) {
-                uploadFiles(screenshotFiles).then(screenshots => {
-                    formData.screenshots = screenshots;
-                    if (videoFile) {
-                        uploadFiles([videoFile]).then(videos => {
-                            formData.video = videos[0];
-                            saveFAQ(formData, 'add');
-                        });
-                    } else {
-                        saveFAQ(formData, 'add');
-                    }
-                });
-            } else if (videoFile) {
-                uploadFiles([videoFile]).then(videos => {
-                    formData.video = videos[0];
-                    saveFAQ(formData, 'add');
-                });
-            } else {
-                saveFAQ(formData, 'add');
+                uploadPromises.push(
+                    uploadFiles(screenshotFiles, subfolder).then(screenshots => {
+                        formData.screenshots = screenshots.map(file => `../screenshots/${subfolder}/${file.name}`);
+                    }).catch(error => {
+                        console.error('Screenshot upload failed:', error);
+                        throw error;
+                    })
+                );
             }
+            
+            // Then upload video if any
+            if (videoFile) {
+                uploadPromises.push(
+                    uploadFiles([videoFile], subfolder).then(videos => {
+                        formData.video = `../screenshots/${subfolder}/${videos[0].name}`;
+                    }).catch(error => {
+                        console.error('Video upload failed:', error);
+                        throw error;
+                    })
+                );
+            }
+            
+            // When all uploads complete, save FAQ
+            Promise.all(uploadPromises)
+                .then(() => saveFAQ(formData, 'add'))
+                .catch(error => {
+                    alert('Error uploading files: ' + error.message);
+                });
         });
     }
     
@@ -72,22 +85,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function uploadFiles(files) {
+function uploadFiles(files, subfolder) {
     const promises = [];
     
     for (let i = 0; i < files.length; i++) {
         const formData = new FormData();
         formData.append('file', files[i]);
+        formData.append('subfolder', subfolder);
         
         promises.push(
             fetch('upload.php', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
             .then(data => {
                 if (data.success) {
-                    return data.path;
+                    return { name: data.filename, path: data.path };
                 } else {
                     throw new Error(data.error || 'Upload failed');
                 }

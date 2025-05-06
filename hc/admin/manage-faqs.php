@@ -13,7 +13,7 @@ header('Content-Type: application/json');
 
 // Get FAQs
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    $faqs = json_decode(file_get_contents('../../data/questions.json'), true);
+    $faqs = json_decode(file_get_contents('../data/questions.json'), true);
     echo json_encode($faqs);
     exit;
 }
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $action = $_POST['action'] ?? '';
     $data = json_decode($_POST['data'], true);
     
-    $faqs = json_decode(file_get_contents('../../data/questions.json'), true);
+    $faqs = json_decode(file_get_contents('../data/questions.json'), true);
     
     if ($action === 'add') {
         // Generate new ID
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // Save back to file
-    if (file_put_contents('../../data/questions.json', json_encode($faqs, JSON_PRETTY_PRINT))) {
+    if (file_put_contents('../data/questions.json', json_encode($faqs, JSON_PRETTY_PRINT))) {
         echo json_encode(['success' => true]);
     } else {
         echo json_encode(['success' => false, 'error' => 'Failed to save data']);
