@@ -3,7 +3,7 @@ session_start();
 
 // Configuration - CHANGE THESE TO YOUR SECURE CREDENTIALS
 $ADMIN_USERNAME = "admin123";         // Change this to your desired username
-$ADMIN_PASSWORD = "Br@insFAQ2024!";     // Change this to a strong password
+$ADMIN_PASSWORD = "admin123";     // Change this to a strong password
 
 // Simple authentication
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

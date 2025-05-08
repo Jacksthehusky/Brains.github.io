@@ -14,59 +14,72 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Handle add FAQ form
-    const addFaqForm = document.getElementById('addFaqForm');
-    if (addFaqForm) {
-// Inside your form submit event handler
-addFaqForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const formData = {
-        group: document.getElementById('faqGroup').value,
-        abbr: document.getElementById('faqAbbr').value,
-        tag: document.getElementById('faqTag').value,
-        q: document.getElementById('faqQuestion').value,
-        answer: document.getElementById('faqAnswer').value.split('\n').filter(step => step.trim() !== ''),
-        notes: document.getElementById('faqNotes').value,
-        requiresPermission: document.getElementById('faqRequiresPermission').checked
-    };
-    
-    const screenshotFiles = document.getElementById('faqScreenshots').files;
-    const videoFile = document.getElementById('faqVideo').files[0];
-    const subfolder = formData.abbr.replace(/\s+/g, '');
-    
-    // Upload screenshots first if any
-    if (screenshotFiles.length > 0) {
-        uploadFiles(screenshotFiles, subfolder, formData.answer)
-            .then(screenshots => {
-                formData.screenshots = screenshots;
-                if (videoFile) {
-                    return uploadFiles([videoFile], subfolder).then(videos => {
-                        formData.video = videos[0];
-                        return saveFAQ(formData, 'add');
-                    });
-                } else {
-                    return saveFAQ(formData, 'add');
+   // Update the form submission handler in the DOMContentLoaded event
+const addFaqForm = document.getElementById('addFaqForm');
+if (addFaqForm) {
+    addFaqForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = {
+            group: document.getElementById('faqGroup').value,
+            abbr: document.getElementById('faqAbbr').value,
+            tag: document.getElementById('faqTag').value,
+            q: document.getElementById('faqQuestion').value,
+            answer: document.getElementById('faqAnswer').value.split('\n').filter(step => step.trim() !== ''),
+            notes: document.getElementById('faqNotes').value,
+            requiresPermission: document.getElementById('faqRequiresPermission').checked
+        };
+        
+        const screenshotFiles = document.getElementById('faqScreenshots').files;
+        const videoFile = document.getElementById('faqVideo').files[0];
+        const subfolder = formData.abbr.replace(/\s+/g, '');
+        
+        try {
+            // Reset uploadedFiles array
+            uploadedFiles = [];
+            
+            // Populate uploadedFiles from selected files
+            Array.from(screenshotFiles).forEach((file, index) => {
+                uploadedFiles.push({
+                    file: file,
+                    stepNumber: index + 1,
+                    previewElement: null // Will be set in preview creation
+                });
+            });
+            
+            // Upload screenshots if any
+            if (uploadedFiles.length > 0) {
+                formData.screenshots = await uploadFiles(subfolder);
+            }
+            
+            // Upload video if any
+            if (videoFile) {
+                const videoResults = await uploadFiles([videoFile], subfolder);
+                formData.video = videoResults[0];
+            }
+            
+            // Save FAQ data
+            const saveResponse = await saveFAQ(formData, 'add');
+            
+            if (saveResponse && saveResponse.success) {
+                alert('FAQ saved successfully!');
+                document.getElementById('addFaqForm').reset();
+                document.getElementById('previewContainer').innerHTML = '';
+                uploadedFiles = [];
+                
+                if (document.querySelector('.tab-btn[data-tab="edit"]').classList.contains('active')) {
+                    loadFAQsForEditing();
                 }
-            })
-            .catch(error => {
-                alert('Error uploading screenshots: ' + error.message);
-            });
-    } else if (videoFile) {
-        uploadFiles([videoFile], subfolder)
-            .then(videos => {
-                formData.video = videos[0];
-                return saveFAQ(formData, 'add');
-            })
-            .catch(error => {
-                alert('Error uploading video: ' + error.message);
-            });
-    } else {
-        saveFAQ(formData, 'add');
-    }
-});
-    }
-    
+            } else {
+                throw new Error(saveResponse?.error || 'Failed to save FAQ');
+            }
+            
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('Error: ' + error.message);
+        }
+    });
+}
     // Load FAQs for editing
     if (document.getElementById('faqList')) {
         loadFAQsForEditing();
@@ -82,97 +95,212 @@ addFaqForm.addEventListener('submit', function(e) {
     }
 });
 
-function uploadFiles(files, subfolder, answerSteps) {
-    const promises = [];
+async function uploadFiles(files, subfolder) {  // Add files parameter
+    const results = [];
     
-    // Upload each file with corresponding step number
     for (let i = 0; i < files.length; i++) {
+        const file = files[i];
         const formData = new FormData();
-        formData.append('file', files[i]);
+        formData.append('file', file);
         formData.append('subfolder', subfolder);
-        formData.append('stepNumber', i + 1); // Start from 01
+        formData.append('stepNumber', i + 1); // Use index + 1 as step number
         
-        promises.push(
-            fetch('upload.php', {
+        try {
+            const response = await fetch('upload.php', {
                 method: 'POST',
                 body: formData
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.success) {
-                    // Return path relative to your website root
-                    return `../screenshots/${subfolder}/${data.filename}`;
-                } else {
-                    throw new Error(data.error || 'Upload failed');
-                }
-            })
-            .catch(error => {
-                console.error('Upload error:', error);
-                throw error;
-            })
-        );
+            });
+            
+            const data = await response.json();
+            
+            if (!response.ok || !data.success) {
+                throw new Error(data.error || `Upload failed for step ${i + 1}`);
+            }
+            
+            results.push({
+                stepNumber: i + 1,
+                path: data.path
+            });
+            
+        } catch (error) {
+            console.error(`Error uploading file for step ${i + 1}:`, error);
+            throw error;
+        }
     }
     
-    return Promise.all(promises);
+    return results.map(item => item.path);
 }
 
-// Add this to your file input change event
+// Global variable to track uploaded files with their order
+let uploadedFiles = [];
+
+// Single uploadFiles function that handles drag-and-drop ordering
+async function uploadFiles(subfolder) {
+    const results = [];
+    
+    for (let i = 0; i < uploadedFiles.length; i++) {
+        const fileData = uploadedFiles[i];
+        const formData = new FormData();
+        formData.append('file', fileData.file);
+        formData.append('subfolder', subfolder);
+        formData.append('stepNumber', fileData.stepNumber);
+        
+        try {
+            const response = await fetch('../admin/upload.php', {  // Fixed path
+                method: 'POST',
+                body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (!response.ok || !data.success) {
+                throw new Error(data.error || `Upload failed for step ${fileData.stepNumber}`);
+            }
+            
+            results.push({
+                stepNumber: fileData.stepNumber,
+                path: data.path
+            });
+            
+        } catch (error) {
+            console.error(`Error uploading file for step ${fileData.stepNumber}:`, error);
+            throw error;
+        }
+    }
+    
+    // Sort by step number before returning
+    return results.sort((a, b) => a.stepNumber - b.stepNumber).map(item => item.path);
+}
+
+// File input change handler with preview and drag-and-drop setup
 document.getElementById('faqScreenshots').addEventListener('change', function(e) {
     const previewContainer = document.getElementById('previewContainer');
     previewContainer.innerHTML = '';
+    uploadedFiles = [];
     
     Array.from(this.files).forEach((file, index) => {
         const reader = new FileReader();
         reader.onload = function(e) {
             const preview = document.createElement('div');
             preview.className = 'preview-item';
+            preview.draggable = true;
+            preview.dataset.index = index;
+            
             preview.innerHTML = `
                 <img src="${e.target.result}" alt="Preview">
-                <div class="preview-label">Step ${index + 1}</div>
+                <div class="step-number">Step ${index + 1}</div>
+                <button class="remove-btn" data-index="${index}">×</button>
             `;
+            
+            // Add drag event listeners
+            preview.addEventListener('dragstart', handleDragStart);
+            preview.addEventListener('dragover', handleDragOver);
+            preview.addEventListener('drop', handleDrop);
+            preview.addEventListener('dragend', handleDragEnd);
+            
             previewContainer.appendChild(preview);
+            
+            // Store file reference with initial order
+            uploadedFiles.push({
+                file: file,
+                stepNumber: index + 1,
+                previewElement: preview
+            });
         };
         reader.readAsDataURL(file);
     });
 });
 
-function saveFAQ(data, action) {
-    const formData = new FormData();
-    formData.append('action', action);
-    formData.append('data', JSON.stringify(data));
+// Drag and Drop Handlers
+function handleDragStart(e) {
+    e.dataTransfer.setData('text/plain', this.dataset.index);
+    this.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+}
+
+function handleDragOver(e) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    this.classList.add('drag-over');
+}
+
+function handleDrop(e) {
+    e.preventDefault();
+    this.classList.remove('drag-over');
     
-    fetch('manage-faqs.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
+    const fromIndex = e.dataTransfer.getData('text/plain');
+    const toIndex = this.dataset.index;
+    
+    if (fromIndex !== toIndex) {
+        // Swap files in our array
+        const movedFile = uploadedFiles[fromIndex];
+        uploadedFiles.splice(fromIndex, 1);
+        uploadedFiles.splice(toIndex, 0, movedFile);
+        
+        // Update UI and step numbers
+        updatePreviewOrder();
+    }
+}
+
+function handleDragEnd() {
+    this.classList.remove('dragging');
+    document.querySelectorAll('.preview-item').forEach(el => {
+        el.classList.remove('drag-over');
+    });
+}
+
+// Update preview order after drag-and-drop
+function updatePreviewOrder() {
+    const previewContainer = document.getElementById('previewContainer');
+    previewContainer.innerHTML = '';
+    
+    uploadedFiles.forEach((fileData, index) => {
+        // Update step number to reflect new position
+        fileData.stepNumber = index + 1;
+        fileData.previewElement.dataset.index = index;
+        fileData.previewElement.querySelector('.step-number').textContent = `Step ${index + 1}`;
+        previewContainer.appendChild(fileData.previewElement);
+    });
+}
+
+// Handle remove button clicks
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('remove-btn')) {
+        e.preventDefault();
+        const index = e.target.dataset.index;
+        uploadedFiles.splice(index, 1);
+        updatePreviewOrder();
+        
+        // Update the file input to reflect removed files
+        const fileInput = document.getElementById('faqScreenshots');
+        const newFileList = new DataTransfer();
+        uploadedFiles.forEach(fileData => {
+            newFileList.items.add(fileData.file);
+        });
+        fileInput.files = newFileList.files;
+    }
+});
+
+// Update the saveFAQ function to properly handle the response
+async function saveFAQ(data, action) {
+    try {
+        const response = await fetch('../admin/manage-faqs.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `action=${encodeURIComponent(action)}&data=${encodeURIComponent(JSON.stringify(data))}`
+        });
+        
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        return response.json();
-    })
-    .then(data => {
-        if (data.success) {
-            alert('FAQ saved successfully!');
-            document.getElementById('addFaqForm').reset();
-            document.getElementById('previewContainer').innerHTML = '';
-            
-            if (document.querySelector('.tab-btn[data-tab="edit"]').classList.contains('active')) {
-                loadFAQsForEditing();
-            }
-        } else {
-            throw new Error(data.error || 'Failed to save FAQ');
-        }
-    })
-    .catch(error => {
+        
+        return await response.json();
+    } catch (error) {
         console.error('Error:', error);
-        alert('Error: ' + error.message);
-    });
+        throw error;
+    }
 }
 
 function loadFAQsForEditing() {

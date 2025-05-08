@@ -20,7 +20,6 @@ try {
     $faqs = json_decode(file_get_contents($jsonFile), true) ?: [];
     
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $input = json_decode(file_get_contents('php://input'), true);
         $action = $_POST['action'] ?? '';
         $data = json_decode($_POST['data'] ?? '[]', true);
         
@@ -46,47 +45,51 @@ try {
             
             $faqs[] = $newFaq;
         }
-    elseif ($action === 'update') {
-        // Update existing FAQ
-        foreach ($faqs as &$faq) {
-            if ($faq['id'] == $data['id']) {
-                $faq = array_merge($faq, [
-                    'requiresPermission' => $data['requiresPermission'] ?? false,
-                    'group' => $data['group'],
-                    'abbr' => $data['abbr'],
-                    'tag' => $data['tag'],
-                    'q' => $data['q'],
-                    'answer' => $data['answer'],
-                    'notes' => $data['notes'],
-                    'modifiedDateTime' => date('Y-m-d\TH:i:s')
-                ]);
-                
-                // Handle screenshots and video updates if needed
-                break;
+        elseif ($action === 'update') {
+            foreach ($faqs as &$faq) {
+                if ($faq['id'] == $data['id']) {
+                    $faq = array_merge($faq, [
+                        'requiresPermission' => $data['requiresPermission'] ?? false,
+                        'group' => $data['group'],
+                        'abbr' => $data['abbr'],
+                        'tag' => $data['tag'],
+                        'q' => $data['q'],
+                        'answer' => $data['answer'],
+                        'notes' => $data['notes'],
+                        'modifiedDateTime' => date('Y-m-d\TH:i:s')
+                    ]);
+                    break;
+                }
             }
+        } elseif ($action === 'delete') {
+            $faqs = array_filter($faqs, function($faq) use ($data) {
+                return $faq['id'] != $data['id'];
+            });
+            $faqs = array_values($faqs);
         }
-    } elseif ($action === 'delete') {
-        // Delete FAQ
-        $faqs = array_filter($faqs, function($faq) use ($data) {
-            return $faq['id'] != $data['id'];
-        });
-        $faqs = array_values($faqs); // Reindex array
+        
+         // Save back to file
+         if (file_put_contents($jsonFile, json_encode($faqs, JSON_PRETTY_PRINT))) {
+            echo json_encode([
+                'success' => true,
+                'message' => 'FAQ saved successfully',
+                'data' => $action === 'add' ? end($faqs) : null
+            ]);
+        } else {
+            throw new Exception('Failed to save data');
+        }
+        exit;
     }
     
-    // Save back to file
-    if (file_put_contents($jsonFile, json_encode($faqs, JSON_PRETTY_PRINT))) {
-        echo json_encode(['success' => true]);
-    } else {
-        throw new Exception('Failed to save data');
-    }
-    exit;
-}
-
-// For GET requests
-echo json_encode($faqs);
+    // For GET requests
+    echo json_encode($faqs);
 
 } catch (Exception $e) {
-http_response_code(500);
-echo json_encode(['success' => false, 'error' => $e->getMessage()]);
+    http_response_code(500);
+    echo json_encode([
+        'success' => false,
+        'error' => $e->getMessage(),
+        'trace' => $e->getTrace()
+    ]);
 }
 ?>
