@@ -1595,5 +1595,37 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-03-20T09:00:00"
+  },
+  {
+    "id": 77,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Cash on Budget",
+    "tag": "Cash on Budget",
+    "q": "Cash Budget Manual 1",
+    "answer": [
+    ],
+    "notes": "",
+    "screenshots": [
+
+    ],
+    "video": "../screenshots/CashOnBudget/01.mp4",
+    "modifiedDateTime": "2025-05-22T15:45:00"
+  },
+  {
+    "id": 78,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Cash on Budget",
+    "tag": "Cash on Budget",
+    "q": "Cash Budget Manual 2",
+    "answer": [
+    ],
+    "notes": "",
+    "screenshots": [
+
+    ],
+    "video": "../screenshots/CashOnBudget/02.mp4",
+    "modifiedDateTime": "2025-05-22T15:45:00"
   }
 ]
