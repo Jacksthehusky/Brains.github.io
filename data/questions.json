@@ -1627,5 +1627,28 @@
     ],
     "video": "../screenshots/CashOnBudget/02.mp4",
     "modifiedDateTime": "2025-05-22T15:45:00"
+  },
+  {
+    "id": 79,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Deduct Offer Qty",
+    "tag": "Offer",
+    "q": "How to deduct offer quantity and mark it as closed when imported into an invoice?",
+    "answer": [
+    "To change the offer status from <b>In Process</b> to <b>Closed</b> when imported into an invoice, follow these steps.",
+    "Go to System > Preference, Go to Search tab, find the <b>Deduct Offer Qty</b> checkbox, check it, then click Save.",
+    "Then go to Operation > System Maintenance > Fix, check the <b>Qty Order</b> box, select <b>Offer</b> from the dropdown, and click Save.",
+    "The offer should now appear as Closed."
+    ],
+    "notes": "It is always recommended to create a backup before proceeding.",
+    "screenshots": [
+      "../screenshots/DeductOfferQty/01.jpg",
+      "../screenshots/DeductOfferQty/02.jpg",
+      "../screenshots/DeductOfferQty/03.jpg",
+      "../screenshots/DeductOfferQty/04.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-06-09T15:32:00"
   }
 ]
