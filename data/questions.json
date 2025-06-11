@@ -1650,5 +1650,26 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-06-09T15:32:00"
+  },
+  {
+    "id": 80,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Group By Transaction",
+    "tag": "Statement Of account",
+    "q": "How to show each transaction number only once on the Statement of Account?",
+    "answer": [
+      "Preview the Statement of Account — note the repeated transaction numbers.",
+      "Enable <b>Group by Transaction</b> for each type to ensure the transaction number appears only once on the statement of account",
+      "Preview the updated statement — each transaction number now appears only once <b>(no duplicates)</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/GroupByTransaction/01.jpg",
+      "../screenshots/GroupByTransaction/02.jpg",
+      "../screenshots/GroupByTransaction/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-06-10T15:50:00"
   }
 ]
