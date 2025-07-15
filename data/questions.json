@@ -1671,5 +1671,43 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-06-10T15:50:00"
+  },
+  {
+    "id": 81,
+    "requiresPermission": false,
+    "group": "Reports",
+    "abbr": "Customer Balance Points",
+    "tag": "Customer",
+    "q": "How to generate a customer points balance report?",
+    "answer": [
+      "Go to <b>Reports</b> > <b>Customers, Supplier or Salesperson</b>, check <b>Points</b> checkbox, and click Preview. To view a specific customer, select their name in the Customer field.",
+      "In this preview, you'll see the gained points, redeemed points, and the remaining balance."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/CustomerBalancePoints/01.jpg",
+      "../screenshots/CustomerBalancePoints/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-06-25T12:50:00"
+  },
+  {
+    "id": 82,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Write Off",
+    "tag": "",
+    "q": "How to perform a Write-Off operation?",
+    "answer": [
+    "Go to Operations > Accounting > Periodic Operation > Write Off.",
+    "<b>Write-Off Steps:</b><br><br><b>1. Select Voucher Type:</b> Choose the voucher type that will handle the write-off automatically.<br><b>2. Add Description:</b> Enter a label like <b>Write-Off</b> or <b>Closing Balance</b> for the voucher.<br><b>3. Set Account Range:</b> Define the accounts involved (e.g., from 4111 to 4111zzz to include all customers).<br><b>4. Specify Write-Off Account:</b> Choose the account where small differences will be posted.<br><b>5. Set Amount Range:</b> For example, select currency LBP and set range from -5000 to +5000. Balances within this range will be zeroed out and written off to the account set in step 4.<br>"
+    ],
+    "notes": "It is always recommended to create a backup before proceeding.",
+    "screenshots": [
+      "../screenshots/WriteOff/01.jpg",
+      "../screenshots/WriteOff/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-06-25T12:55:00"
   }
 ]
