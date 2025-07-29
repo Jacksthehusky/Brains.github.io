@@ -1709,5 +1709,32 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-06-25T12:55:00"
+  },
+  {
+    "id": 83,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "consignment",
+    "tag": "",
+    "q": "How to prepare items for consignment?",
+    "answer": [
+    "First, create a <b>new warehouse</b> for consignment by going to <b>Data Entry > Item > Warehouse</b>, then click <b>New</b>. Make sure to check the <b>Consignment Warehouse</b> option before saving.",
+    "Navigate to <b>Operation > Transfer</b> and click <b>New</b> to create a transfer for the <b>consignment warehouse</b>. Select the <b>customer</b>, enter the <b>items</b> and their <b>quantities</b>, and ensure the <b>Warehouse To</b> field is set to the <b>Consignment</b> warehouse. Then click <b>Save</b>.",
+    "To generate a report showing the <b>Consignment Transfer</b> for a specific customer, go to <b>Reports > Operations List Status</b>, check the <b>Consignment</b> checkbox, select the <b>Customer</b> in the designated field, and click <b>Preview</b>.",
+    "Here is a report showing the <b>Consignment Transfer</b> with the <b>Customer</b>, <b>Items</b>, and their respective <b>Quantities</b>.",
+    "To <b>invoice a consignment</b> for a customer:<br>1. Go to <b>Operation > Invoice</b> and click <b>New</b>.<br>2. From the <b>Type</b> dropdown, select <b>Consignment</b>.<br>3. Select the appropriate <b>Consignment Warehouse</b> and the <b>Customer</b> for whom the consignment transfer was created.<br>4. Press <b>F2</b> to open the item locate form — it will display only items transferred in the consignment.<br>5. Choose the item, enter the <b>invoiced quantity</b>, then click <b>Save</b>.<br>",
+    "Here is a report showing the <b>Consignment Transfer</b> with the <b>Customer</b>, <b>Items</b>, and their respective <b>Quantities</b>, reflecting the invoiced quantity (e.g., 2 out of 5) and the <b>remaining quantity</b> (e.g., 3).<br>Follow the same steps as in <b>Step 3</b> to generate this report."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/Consignment/01.jpg",
+      "../screenshots/Consignment/02.jpg",
+      "../screenshots/Consignment/03.jpg",
+      "../screenshots/Consignment/04.jpg",
+      "../screenshots/Consignment/05.jpg",
+      "../screenshots/Consignment/06.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-07-23T12:55:00"
   }
 ]
