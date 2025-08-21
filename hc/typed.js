@@ -37,8 +37,8 @@ var typed = new Typed(".multiple-text", {
     delay: 100
   });
   
-  ScrollReveal().reveal('.home-content, .map, .heading', { origin:'top' });
+  ScrollReveal().reveal('.home-content, .map, .heading, .section-title', { origin:'top' });
   ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .team, .about-content, .sys-icons', { origin:'bottom' });
   ScrollReveal().reveal('.home-content h1, .about-img', { origin:'left' });
-  ScrollReveal().reveal('.home-content p, .systemreq-content, .careers p, .contact p', { origin:'right' });
+  ScrollReveal().reveal('.home-content p, .systemreq-content, .system-requirements, .industries-section, .careers p, .contact p', { origin:'right' });
   
