@@ -1310,16 +1310,20 @@
     "group": "Data Entry",
     "abbr": "Skip Difference Of Exchange",
     "tag": "Difference Of Exchange",
-    "q": "How to exclude the exchange rate difference for a specific general ledger code?",
+    "q": "How to exclude the exchange rate difference for a specific general ledger code? (Skip Difference Of Exchange)",
     "answer": [
-      "Go to Data Entry > Accounting > General Ledger. Locate the general ledger code that you wish to exclude. Click the <b>Modify</b> button first, followed by clicking the <b>Skip Difference of Exchange</b>. Than click <b>Save</b> button."
+      "To exclude a ledger, such as 442, from the Difference of Exchange calculation, go to Data Entry > Accounting > General Ledger",
+      "Locate the ledger you wish to exclude from DOE",
+      "Click modify and check the <b>Skip Difference of Exchange</b> option. Than click <b>Save</b> button."
     ],
-    "notes": "",
+    "notes": "Now, when you perform the Difference of Exchange, ledger 442 will be automatically excluded",
     "screenshots": [
-      "../screenshots/SkipDifferenceOfExchange/01.jpg"
+      "../screenshots/SkipDifferenceOfExchange/01.jpg",
+      "../screenshots/SkipDifferenceOfExchange/02.jpg",
+      "../screenshots/SkipDifferenceOfExchange/03.jpg"
     ],
     "video": "",
-    "modifiedDateTime": "2024-10-14T10:40:00"
+    "modifiedDateTime": "2025-09-15T10:00:00"
   },
   {
     "id": 63,
