@@ -1,7 +1,7 @@
 function sendWhatsAppMessageFooter() {
   // Replace this with your WhatsApp number and message text
   var whatsappNumber = "+96171492657";
-  var messageText = "Hello, I'm encountering an issue and would appreciate your support.";
+  var messageText = "Hello, I'm reaching out through your website. I'd like to inquire about your services.";
 
   // Generate the WhatsApp message URL
   var whatsappUrl =
@@ -17,7 +17,7 @@ function sendWhatsAppMessageFooter() {
 function sendWhatsAppMessageHome() {
   // Replace this with your WhatsApp number and message text
   var whatsappNumber = "+96171492657";
-  var messageText = "Hello, I would like to inquire about your services.";
+  var messageText = "Hi, I found your website and I'm interested in learning more about your services. Could you please assist me?";
 
   // Generate the WhatsApp message URL
   var whatsappUrl =

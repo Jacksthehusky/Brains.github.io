@@ -906,7 +906,7 @@
     "id": 42,
     "requiresPermission": false,
     "group": "System",
-    "abbr": "Sale Price",
+    "abbr": "No change Sale Price",
     "tag": "Sale Price",
     "q": "How to prevent a specific user from changing the sale price?",
     "answer": [
@@ -1740,5 +1740,68 @@
     ],
     "video": "",
     "modifiedDateTime": "2025-07-23T12:55:00"
+  },
+  {
+    "id": 84,
+    "requiresPermission": false,
+    "group": "Operations",
+    "abbr": "Unpaid Invoice",
+    "tag": "Payment",
+    "q": "How to create a new Customer/Supplier payment in Brains?",
+    "answer": [
+      "To create a new Customer/Supplier payment, Navigate to <b>Operation > Payment & Receivables > Click New</b>",
+      "First select the Customer/Supplier. Then, you can manually enter the amount paid and click <b>Quick Pay</b>",
+      "Alternatively, you can go to the <b>Unpaid Invoices</b> tab, select a specific invoice, and either click <b>Collected</b> if the total amount was paid, or manually enter the amount paid, click the <b>Go</b> button, and then click <b>Save</b>."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/UnpaidInvoice/01.jpg",
+      "../screenshots/UnpaidInvoice/02.jpg",
+      "../screenshots/UnpaidInvoice/03.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-09-17T14:15:00"
+  },
+  {
+    "id": 85,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "Restrict User",
+    "tag": "Password",
+    "q": "How to block a user from accessing a specific account number?",
+    "answer": [
+      "Go to <b>System > Password</b>",
+      "Locate and select the desired user",
+      "Go to the <b>Features</b> tab > <b>Accounting</b><br><b>General Ledger:</b> Controls statement accounts and trial balance<br><b>Entry Ledger:</b> Controls Journal Vouchers, Payment & Receivables",
+      "Enable the <b>Restrict User</b> option and use the <b><></b> buttons to move the specific account number to the restricted list"
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/RestrictUser/01.jpg",
+      "../screenshots/RestrictUser/02.jpg",      
+      "../screenshots/RestrictUser/03.jpg",
+      "../screenshots/RestrictUser/04.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-09-24T11:00:00"
+  },
+  {
+    "id": 86,
+    "requiresPermission": false,
+    "group": "System",
+    "abbr": "No change qty price",
+    "tag": "Sale Price",
+    "q": "How to restrict users from modifying item quantity or price in POS sales operations?",
+    "answer": [
+      "You can enable <b>Disable Line Modifications</b> in System Preferences. This will prevent users from changing the quantity or price of any item line. Note that if users need to sell multiple identical items (e.g., 5 units), they must enter each item separately.",
+      "Alternatively, for more flexibility, you can:<br>- Enable <b>Do not allow changing prices</b><br>- Disable <b>Change Qty</b> and <b>Disable Line Modifications</b><br><br>This setup allows users to increase quantities (e.g., scan once and set qty to 5), but prevents reducing them without supervisor approval. Price changes will also be blocked."
+    ],
+    "notes": "",
+    "screenshots": [
+      "../screenshots/NoChangeQtyPrice/01.jpg",
+      "../screenshots/NoChangeQtyPrice/02.jpg"
+    ],
+    "video": "",
+    "modifiedDateTime": "2025-09-25T15:00:00"
   }
 ]
