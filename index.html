@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Brains</title>
   <meta charset="UTF-8">
@@ -8,36 +9,41 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/styleMain.css">
   <link rel="stylesheet" href="css/style4.css">
-  <link rel="stylesheet" href="css/style5.css">
   <link rel="shortcut icon" type="image/x-icon" href="Images/brains.ico">
 </head>
 
 <body>
-  
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
-      <div>
-        <a href="#home" class="logobrains w3-bar-item w3-wide">Brains</a>
+  <!-- Navbar/Header (sit on top) -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
         <a href="#home" aria-label="logobrains">
-          <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-          <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
-            colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
-          </lord-icon>
+          <h1>Brains
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
+              colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
+            </lord-icon>
+          </h1>
         </a>
       </div>
       <!-- Right-sided navbar links -->
-      <div class="header w3-right w3-hide-small w3-hide-medium">
-        <a href="#home" class="navbartop w3-bar-item active" style="--i:1;">HOME</a>
-        <a href="#about" class="navbartop w3-bar-item" style="--i:2;">ABOUT</a>
-        <a href="#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
-        <a href="Careers/Careers.html" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
-        <a href="#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
-        <a href="Demo/Products.html" class="navbartop w3-bar-item" style="--i:6;">DEMO</a>
-        <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active" style="--i:1;">Home</a></li>
+          <li><a href="#about" style="--i:2;">About</a></li>
+          <li><a href="#features" style="--i:3;">Features</a></li>
+          <li><a href="Careers/Careers.html" style="--i:4;">Careers</a></li>
+          <li><a href="#contact" style="--i:5;">Contact</a></li>
+          <li><a href="Demo/Products.html" style="--i:6;">Demo</a></li>
+          <!--  <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>-->
+        </ul>
+      </nav>
+      <div class="navhelpcenter">
+        <a href="hc/HelpCenter.html" class="btns">Help Center</a>
       </div>
+
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
       <a href="javascript:void(0)" class="burger-menu w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"
@@ -45,53 +51,51 @@
         <i class="fas fa-bars"></i>
       </a>
     </div>
-  </div>
+  </header>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>
-    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="Careers/Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
-    <a href="hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
+    <a href="Careers/Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
+    <a href="hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
   </nav>
 
   <!-- Home Section -->
-  <header class="w3-display-container w3-grayscale-min">
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Experience the New Technology in computer system with our</h3>
-        <h1>Cutting-edge software</h1>
-        <h3>For <span class="multiple-text"></span></h3>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Experience the New Technology in computer system with our</h3>
+      <h1>Cutting-edge software</h1>
+      <h3>For <span class="multiple-text"></span></h3>
 
-        <div class="social-media w3-text-grey w3-large">
-          <a href="javascript:void(0)" style="--i:7;" onclick="sendWhatsAppMessageHome()" aria-label="whatsapp">
-            <i class="fab fa-whatsapp w3-hover-opacity"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" style="--i:8;"
-            target="_blank" aria-label="facebook">
-            <i class="fab fa-facebook w3-hover-opacity"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/brains-sarl-lb/" style="--i:9;" target="_blank" aria-label="linkedin">
-            <i class="fab fa-linkedin w3-hover-opacity"></i>
-          </a>
-        </div>
-        <a href="Demo/Products.html" class="btns"><i class="fab fa-wpforms w3-margin-right" aria-hidden="true"></i>Online
-          Demo</a>
+      <div class="social-media w3-text-grey w3-large">
+        <a href="javascript:void(0)" style="--i:7;" onclick="sendWhatsAppMessageHome()" aria-label="whatsapp">
+          <i class="fab fa-whatsapp w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" style="--i:8;" target="_blank"
+          aria-label="facebook">
+          <i class="fab fa-facebook w3-hover-opacity"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/brains-sarl-lb/" style="--i:9;" target="_blank" aria-label="linkedin">
+          <i class="fab fa-linkedin w3-hover-opacity"></i>
+        </a>
       </div>
+      <a href="Demo/Products.html" class="btns"><i class="fab fa-wpforms w3-margin-right" aria-hidden="true"></i>Online
+        Demo</a>
+    </div>
 
-      <!-- Home img -->
-      <div class="home-img">
-        <img src="Images/mockup.png" alt="">
-      </div>
-      <a href="#about" class="scroll-down-link">
-        <img src="Images/ScrollDown.png" alt="">
-      </a>
-    </section>
-  </header>
+    <!-- Home img -->
+    <div class="home-img">
+      <img src="Images/mockup.png" alt="">
+    </div>
+    <a href="#about" class="scroll-down-link">
+      <img src="Images/ScrollDown.png" alt="">
+    </a>
+  </section>
 
   <!-- About Section-->
   <section class="about" id="about">
@@ -139,7 +143,7 @@
             <span class="tag">Cost Analysis</span>
             <span class="tag">Statements</span>
           </div>
-          <div class="features">
+          <div class="cardfeatures">
             <h3>Features</h3>
             <ul>
               <li>Multiple currency accounts.</li>
@@ -171,7 +175,7 @@
             <span class="tag">Transfer</span>
             <span class="tag">Sales</span>
           </div>
-          <div class="features">
+          <div class="cardfeatures">
             <h3>Features</h3>
             <ul>
               <li>Track stock levels in real time.</li>
@@ -201,7 +205,7 @@
             <span class="tag">BarcodeScanner</span>
             <span class="tag">CashDrawer</span>
           </div>
-          <div class="features">
+          <div class="cardfeatures">
             <h3>Features</h3>
             <ul>
               <li>Issue printed or electronic receipts.</li>
@@ -213,8 +217,6 @@
           </div>
         </div>
       </div>
-
-
 
       <div class="cardw">
         <div class="poster">
@@ -233,7 +235,7 @@
             <span class="tag">HR</span>
             <span class="tag">PayrollAdministration</span>
           </div>
-          <div class="features">
+          <div class="cardfeatures">
             <h3>Features</h3>
             <ul>
               <li>Easily manage your staff and make balanced decisions.</li>
@@ -243,10 +245,8 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
-
 
 
   <!-- Modal for full size images on click-->
@@ -259,85 +259,83 @@
   </div>
 
 
-
   <!-- Modern Business Types Section -->
-<section class="industries-section">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Perfect POS Solution for <span>Your Business</span></h2>
-      <p class="section-subtitle">Trusted by businesses across diverse industries</p>
+  <section class="industries-section" id="industries">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Perfect POS Solution for <span>Your Business</span></h2>
+        <p class="section-subtitle">Trusted by businesses across diverse industries</p>
+      </div>
+
+      <div class="industry-grid">
+        <div class="industry-card">
+          <div class="industry-icon">🛒</div>
+          <h3>Supermarkets</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🔧</div>
+          <h3>Auto Parts</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">📚</div>
+          <h3>Libraries</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">☕</div>
+          <h3>Coffee Shops</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">👗</div>
+          <h3>Fashion Boutiques</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🍽️</div>
+          <h3>Restaurants</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">💎</div>
+          <h3>Jewelry Stores</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">💇</div>
+          <h3>Salons & Spas</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏨</div>
+          <h3>Hotels</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🏢</div>
+          <h3>Rental Services</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🍞</div>
+          <h3>Bakeries</h3>
+        </div>
+        <div class="industry-card">
+          <div class="industry-icon">🚗</div>
+          <h3>Car Dealers</h3>
+        </div>
+      </div>
     </div>
 
-    <div class="industry-grid">
-      <div class="industry-card">
-        <div class="industry-icon">🛒</div>
-        <h3>Supermarkets</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">🔧</div>
-        <h3>Auto Parts</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">📚</div>
-        <h3>Libraries</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">☕</div>
-        <h3>Coffee Shops</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">👗</div>
-        <h3>Fashion Boutiques</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">🍽️</div>
-        <h3>Restaurants</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">💎</div>
-        <h3>Jewelry Stores</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">💇</div>
-        <h3>Salons & Spas</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">🏨</div>
-        <h3>Hotels</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">🏢</div>
-        <h3>Rental Services</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">🍞</div>
-        <h3>Bakeries</h3>
-      </div>
-      <div class="industry-card">
-        <div class="industry-icon">🚗</div>
-        <h3>Car Dealers</h3>
+    <div class="w3-padding-64">
+      <div class="w3-row w3-center w3-dark-grey w3-padding-32">
+        <div class="marquee w3-quarter" style="position: relative;">
+          <span class="moving-ad">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes
+            Fashion-Services Car-Dealers Catering-Factories
+            Salon Hotels Rentals Bakery Fast-food Café Jewelry</span>
+        </div>
       </div>
     </div>
-  </div>
-   <!-- Promo Section "Statistics" 
-  <div class="team">
-    <h2 class="heading"><span>POS software</span> fits just right for your business</h2>-->
-    <div class="w3-padding-64"></div>
-    <div class="w3-row w3-center w3-dark-grey w3-padding-32">
-      <div class="marquee w3-quarter" style="position: relative;">
-        <span class="moving-ad">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes
-          Fashion-Services Car-Dealers Catering-Factories
-          Salon Hotels Rentals Bakery Fast-food Café Jewelry</span>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- small and large" -->
   <div class="about-content w3-container" style="padding:128px 16px">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <h2 class="section-header section-title">Built for <span>small</span> and <span>large</span> business owners</h2>
+        <h2 class="section-header section-title">Built for <span>small</span> and <span>large</span> business owners
+        </h2>
         <p class="section-subtitle">Brains: The go-to accounting software for businesses of all sizes.</p>
         <p>Streamline your finances with features like invoicing, inventory tracking, and more. Scale effortlessly as
           your business grows. Customize <span>Brains</span> to fit your specific needs. <br>Experience the versatility
@@ -350,223 +348,220 @@
     </div>
   </div>
 
-  <!-- System Requirements Section 
-  <div class="systemreq">
-    <h2 class="section-header section-title">System Requirements Of <span>Brains</span> V5</h2>
-    <div class="sys-icons"><i class="fa fa-brands fa-windows"></i><i class="fa fa-microchip "></i><i
-        class="fa fa-solid fa-server "></i></div>
-    <div class="systemreq-content">
-      <b>Minimum:</b>
-      <ul>
-        <li>OS: Windows 10 </li>
-        <li>Processor: Intel Core i5 7th generation </li>
-        <li>Memory: 16 GB RAM </li>
-        <li>Storage: 100 GB available space</li>
-      </ul>
-      <br>
-      <b>Recommended:</b>
-      <ul>
-        <li>OS: Windows 10+ 64bit </li>
-        <li>Processor: Intel Core i7 8th generation </li>
-        <li>Memory: 32 GB+ RAM </li>
-        <li>Storage: SSD with 1 Terabyte available space</li>
-      </ul>
-    </div>
-  </div>-->
-
- <!-- Modern System Requirements Section -->
-        <section class="system-requirements">
-            <div class="decorative-circle"></div>
-            <div class="decorative-circle"></div>
-            
-            <div class="section-header">
-                <h2 class="section-title">System Requirements for <span>Brains</span> V6</h2>
-                <p class="section-subtitle">Ensure your hardware meets the specifications for optimal performance</p>
-                <div class="sys-icons"><i class="fa fa-brands fa-windows"></i><i class="fa fa-microchip "></i><i
-        class="fa fa-solid fa-server "></i></div>
-            </div>
-            
-            <div class="requirements-grid">
-                <div class="minimal">
-                    <div class="requirement-card">
-                        <div class="card-header">
-                            <div class="card-icon">
-                                <i class="fas fa-desktop"></i>
-                            </div>
-                            <h3 class="card-title">Minimal Configuration</h3>
-                        </div>
-                        
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-window-restore"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Operating System</div>
-                                    <div class="spec-value">Windows 10 (64-bit)</div>
-                                </div>
-                            </li>
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-microchip"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Processor</div>
-                                    <div class="spec-value">Intel Core i5 (7th Gen)</div>
-                                </div>
-                            </li>
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-memory"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Memory</div>
-                                    <div class="spec-value">16 GB RAM</div>
-                                </div>
-                            </li>
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-hdd"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Storage</div>
-                                    <div class="spec-value">100 GB available space</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="recommended">
-                    <div class="requirement-card">
-                        <div class="recommended-badge">Recommended</div>
-                        <div class="card-header">
-                            <div class="card-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <h3 class="card-title">Recommended Configuration</h3>
-                        </div>
-                        
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-window-restore"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Operating System</div>
-                                    <div class="spec-value">Windows 10/11 (64-bit)</div>
-                                </div>
-                            </li>
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-microchip"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Processor</div>
-                                    <div class="spec-value">Intel Core i7 (8th Gen+)</div>
-                                </div>
-                            </li>
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-memory"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Memory</div>
-                                    <div class="spec-value">32 GB RAM or higher</div>
-                                </div>
-                            </li>
-                            <li class="spec-item">
-                                <div class="spec-icon">
-                                    <i class="fas fa-hdd"></i>
-                                </div>
-                                <div class="spec-details">
-                                    <div class="spec-category">Storage</div>
-                                    <div class="spec-value">1 TB SSD available space</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comparison-table">
-                <h3 class="table-title">Specification Comparison</h3>
-                <table class="spec-table">
-                    <thead>
-                        <tr>
-                            <th>Component</th>
-                            <th>Minimal</th>
-                            <th>Recommended</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Operating System</td>
-                            <td class="min-value">Windows 10 (64-bit)</td>
-                            <td class="rec-value">Windows 10/11 (64-bit)</td>
-                        </tr>
-                        <tr>
-                            <td>Processor</td>
-                            <td class="min-value">Intel Core i5 (7th Gen)</td>
-                            <td class="rec-value">Intel Core i7 (8th Gen+)</td>
-                        </tr>
-                        <tr>
-                            <td>Memory</td>
-                            <td class="min-value">16 GB RAM</td>
-                            <td class="rec-value">32 GB RAM or higher</td>
-                        </tr>
-                        <tr>
-                            <td>Storage</td>
-                            <td class="min-value">100 GB HDD</td>
-                            <td class="rec-value">1 TB SSD</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <div class="note">
-                <strong>Note:</strong> For multi-location businesses with high transaction volumes, we recommend enterprise-grade hardware and a dedicated database server. SSD storage is highly recommended for optimal performance and faster data processing.
-            </div>
-        </section>
-
-  <!-- Team Section-->
-  <section class="team w3-light-grey" id="team">
-    <div>
-      <h2 class="section-header section-title">The <span>ones</span> who runs this company</h2>
-      <div class="center w3-row-padding w3-grayscale" style="margin-top:64px">
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="card w3-card" style="border-radius: 50px;">
-            <img src="./Images/Michel.jpg" alt="Michel" style="width:100%; border-radius: 50px 50px 0 0;">
-            <div class="w3-container">
-              <h3 style="color: darkred">Michel Aynati</h3>
-              <p class="w3-opacity">CEO & Founder</p>
-              <p>Feel free to get in touch with us if you wish to gain additional information about our product.</p>
-              <div class="social-media w3-text-grey">
-                <a href="javascript:void(0)" onclick="sendWhatsAppMessageMichel()" aria-label="whatsapp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything You Need to <span>Succeed</span></h2>
+        <p class="section-subtitle">Brains POS provides a comprehensive solution for managing all aspects of your
+          business</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-cash-register"></i>
           </div>
+          <h3>Intuitive POS</h3>
+          <p>Easy-to-use interface with lightning-fast transactions and customizable workflows.</p>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="card w3-card" style="border-radius: 50px;">
-            <img src="./Images/Nassar.jpg" alt="Nassar" style="width:100%; border-radius: 50px 50px 0 0;">
-            <div class="w3-container">
-              <h3 style="color: darkred">Nassar Nassar</h3>
-              <p class="w3-opacity">CEO & Founder</p>
-              <p>For more information or inquiries about our product, please contact us.</p>
-              <div class="social-media w3-text-grey">
-                <a href="javascript:void(0)" onclick="sendWhatsAppMessageNassar()" aria-label="whatsapp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              </div>
-            </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
           </div>
+          <h3>Real-Time Analytics</h3>
+          <p>Make data-driven decisions with comprehensive sales reports and analytics.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <h3>Inventory Management</h3>
+          <p>Track stock levels, set reorder points, and manage suppliers efficiently.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Customer Management</h3>
+          <p>Build customer loyalty with profiles, purchase history, and targeted promotions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>Custom Reports</h3>
+          <p>We build customizable RDLC reports tailored to your needs. Add your logo and choose from POS, A4, A5, or
+            Letter sizes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3>Multi-Store Sync</h3>
+          <p>Manage multiple locations from a single dashboard with real-time synchronization.</p>
         </div>
       </div>
     </div>
   </section>
+
+
+  <!-- Modern System Requirements Section -->
+  <section class="system-requirements" id="system-requirements">
+    <div class="decorative-circle"></div>
+    <div class="decorative-circle"></div>
+
+    <div class="section-header">
+      <h2 class="section-title">System Requirements for <span>Brains</span> V6</h2>
+      <p class="section-subtitle">Ensure your hardware meets the specifications for optimal performance</p>
+      <div class="sys-icons"><i class="fa fa-brands fa-windows"></i><i class="fa fa-microchip "></i><i
+          class="fa fa-solid fa-server "></i></div>
+    </div>
+
+    <div class="requirements-grid">
+      <div class="minimal">
+        <div class="requirement-card">
+          <div class="card-header">
+            <div class="card-ficon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3 class="card-title">Minimal Configuration</h3>
+          </div>
+
+          <ul class="spec-list">
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-window-restore"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Operating System</div>
+                <div class="spec-value">Windows 10 (64-bit)</div>
+              </div>
+            </li>
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Processor</div>
+                <div class="spec-value">Intel Core i5 (7th Gen)</div>
+              </div>
+            </li>
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-memory"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Memory</div>
+                <div class="spec-value">16 GB RAM</div>
+              </div>
+            </li>
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-hdd"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Storage</div>
+                <div class="spec-value">100 GB available space</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="recommended">
+        <div class="requirement-card">
+          <div class="recommended-badge">Recommended</div>
+          <div class="card-header">
+            <div class="card-ficon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="card-title">Recommended Configuration</h3>
+          </div>
+
+          <ul class="spec-list">
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-window-restore"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Operating System</div>
+                <div class="spec-value">Windows 10/11 (64-bit)</div>
+              </div>
+            </li>
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Processor</div>
+                <div class="spec-value">Intel Core i7 (8th Gen+)</div>
+              </div>
+            </li>
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-memory"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Memory</div>
+                <div class="spec-value">32 GB RAM or higher</div>
+              </div>
+            </li>
+            <li class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-hdd"></i>
+              </div>
+              <div class="spec-details">
+                <div class="spec-category">Storage</div>
+                <div class="spec-value">1 TB SSD available space</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="comparison-table">
+      <h3 class="table-title">Specification Comparison</h3>
+      <table class="spec-table">
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Minimal</th>
+            <th>Recommended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Operating System</td>
+            <td class="min-value">Windows 10 (64-bit)</td>
+            <td class="rec-value">Windows 10/11 (64-bit)</td>
+          </tr>
+          <tr>
+            <td>Processor</td>
+            <td class="min-value">Intel Core i5 (7th Gen)</td>
+            <td class="rec-value">Intel Core i7 (8th Gen+)</td>
+          </tr>
+          <tr>
+            <td>Memory</td>
+            <td class="min-value">16 GB RAM</td>
+            <td class="rec-value">32 GB RAM or higher</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td class="min-value">100 GB HDD</td>
+            <td class="rec-value">1 TB SSD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <strong>Note:</strong> For multi-location businesses with high transaction volumes, we recommend enterprise-grade
+      hardware and a dedicated database server. SSD storage is highly recommended for optimal performance and faster
+      data processing.
+    </div>
+  </section>
+
 
   <!-- HelpCenter Section -->
   <section class="careers" style=" min-height: 50vh" id="help">
@@ -585,7 +580,6 @@
       </p>
     </div>
   </section>
-
 
 
   <!-- demo Section -->
@@ -626,8 +620,47 @@
     </div>
   </section>
 
+  <!-- Team Section-->
+  <section class="team w3-light-grey" id="contact">
+    <div>
+      <h2 class="section-header section-title">The <span>ones</span> who runs this company</h2>
+      <div class="center w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="card w3-card" style="border-radius: 50px;">
+            <img src="./Images/Michel.jpg" alt="Michel" style="width:100%; border-radius: 50px 50px 0 0;">
+            <div class="w3-container">
+              <h3 style="color: darkred">Michel Aynati</h3>
+              <p class="w3-opacity">CEO & Founder</p>
+              <p>Feel free to get in touch with us if you wish to gain additional information about our product.</p>
+              <div class="social-media w3-text-grey">
+                <a href="javascript:void(0)" onclick="sendWhatsAppMessageMichel()" aria-label="whatsapp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="card w3-card" style="border-radius: 50px;">
+            <img src="./Images/Nassar.jpg" alt="Nassar" style="width:100%; border-radius: 50px 50px 0 0;">
+            <div class="w3-container">
+              <h3 style="color: darkred">Nassar Nassar</h3>
+              <p class="w3-opacity">CEO & Founder</p>
+              <p>For more information or inquiries about our product, please contact us.</p>
+              <div class="social-media w3-text-grey">
+                <a href="javascript:void(0)" onclick="sendWhatsAppMessageNassar()" aria-label="whatsapp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
-  <section class="contact" id="contact">
+  <section class="contact w3-light-grey">
     <h2 class="section-header section-title">Contact <span>Us!</span></h2>
     <form action="contact-form-handler.php" method="post" name="Contact Form">
       <div class="input-box">
@@ -642,13 +675,11 @@
       <input type="hidden" name="redirect" value="index.html">
       <input type="hidden" name="recipient" value="michel@brains-lb.com">
       <input type="submit" value="SEND MESSAGE" class="btns">
-    </form><br>
-    E-mail:<code>michel@brains-lb.com</code><br>
-    Tel:<code>+961 1 872 376</code><br>
+    </form>
   </section>
 
   <!-- map -->
-  <div class="map">
+  <div class="map w3-light-grey">
     <p class="w3-center">
       <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
       <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
@@ -664,35 +695,54 @@
     </p>
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64">
-    <a href="#home" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div>
-      <h4>Working Hours</h4>
-    </div>
-    <div>
-      Monday to Friday<br>
-      From 9:00 A.M.<br>
-      To 4:30 P.M.
-    </div>
 
-    <div class="footer w3-xlarge w3-section">
-      <ul>
-        <div></div>
-        <li><a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp">
-            <i class="fab fa-whatsapp w3-hover-opacity"></i>
-          </a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
-            aria-label="facebook">
-            <i class="fab fa-facebook w3-hover-opacity"></i>
-          </a></li>
-        <li><a href="https://www.linkedin.com/company/brains-sarl-lb/" target="_blank" aria-label="linkedin">
-            <i class="fab fa-linkedin w3-hover-opacity"></i>
-          </a></li>
-        <div></div>
-      </ul>
+  <!-- Footer -->
+  <footer>
+    <div class="w3-center">
+      <a href="#home" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
     </div>
-    <p class="w3-small">Copyright &copy; Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Brains POS</h3>
+          <p>Powerful point of sale software designed to help businesses of all sizes streamline operations and increase
+            profitability.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
+              aria-label="facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/brains-sarl-lb/" target="_blank" aria-label="linkedin"
+              class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp"
+              class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
+            <li><a href="tel:+96112345678"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
+            <li><a href="mailto:info@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2025 Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -700,16 +750,13 @@
   <script src="hc/script.js"></script>
   <script src="hc/typed.js"></script>
 
- 
- <!-- Dialogflow Messenger -->
- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
- <df-messenger
-   chat-icon="https://raw.githubusercontent.com/Jacksthehusky/Brains.github.io/refs/heads/main/Images/AiBot.png"
-   intent="WELCOME"
-   chat-title="Brains Assistant"
-   agent-id="749f115e-db73-495e-8de0-a48a00e72366"
-   language-code="en"
- ></df-messenger>
+
+  <!-- Dialogflow Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    chat-icon="https://raw.githubusercontent.com/Jacksthehusky/Brains.github.io/refs/heads/main/Images/AiBot.png"
+    intent="WELCOME" chat-title="Brains Assistant" agent-id="749f115e-db73-495e-8de0-a48a00e72366"
+    language-code="en"></df-messenger>
 
 </body>
 

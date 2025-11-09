@@ -1,0 +1,327 @@
+.HelpSearch {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  background: #252525;
+  padding: 60px 5% 0;
+  background-image: radial-gradient(rgb(77 67 67 / 23%) 3px, transparent 0);
+  background-size: 25px 25px;
+  background-position: -12.5px -12.5px;
+}
+
+
+/*Results*/
+
+.SolutionHeader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #353535;
+  padding: 72px 5% 0 5%;
+}
+
+.SolutionHeader li {
+  list-style: none;
+}
+
+.SolutionHeader h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  font-family: "Dinero", sans-serif !important;
+}
+
+.SolutionHeader lord-icon {
+  width: 120px;
+  height: 120px;
+}
+
+.faqs h1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.faqs h2 {
+  text-decoration: underline;
+}
+
+.faqs p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.faqs h4 span {
+  color: rgb(122, 21, 21);
+  font-weight: 700;
+}
+
+.faqsend {
+  padding: 8px 16px;
+}
+
+.faqsend i {
+  color: #353535;
+}
+
+.faqsend img {
+  max-width: 20px;
+  border-radius: 25%;
+}
+
+.Solution p {
+  color: rgb(122, 21, 21);
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px 10px;
+}
+
+.Solution ul {
+  font-size: 18px;
+}
+
+.Solution li {
+  list-style: none;
+}
+
+.Solution i {
+  color: #353535;
+  font-size: 16px;
+}
+
+.Solution div img {
+  width: 40vw;
+  cursor: pointer;
+}
+
+/*Video*/
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio (change this value according to your video's aspect ratio) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #ffffff;
+  color: #353535;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li:last-child {
+  display: inline;
+  color: red;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  content: ">";
+}
+
+ul.breadcrumb li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-title {
+  text-transform: uppercase;
+  color: #252525;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.question-time {
+  font-size: 1.5rem;
+  font-weight: normal;
+  float: right;
+  color: #666;
+}
+
+.question-id {
+  opacity: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 1rem;
+  transition: opacity ease-in-out 0.15s;
+}
+
+.question-header:hover .question-id {
+  opacity: 1;
+}
+
+/* To add some spacing between the icon and the input */
+.input-group .input-group-text {
+  padding: 1rem 1rem;
+  font-size: 15px;
+}
+
+.form-group.search {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.35em;
+  box-shadow: 0 0 20px 0 rgb(255 255 255 / 20%);
+  transition: transform ease-in-out 0.2s;
+  transform: scale(0.95);
+  margin-top: 1.5em;
+}
+
+.form-group.search input {
+  box-shadow: none !important;
+}
+
+.form-group.search:focus-within {
+  box-shadow: 0 0 20px 0 rgba(180, 25, 25, 0.5);
+  transform: scale(1);
+}
+
+.form-group.search:focus-within .cards {
+  display: block !important;
+}
+
+.form-group.search span.input-group-text {
+  font-size: 1.5em;
+  text-shadow: 0 0 6px #cd373775;
+  color: #cb1616;
+}
+
+.input-group.search .input-group-text {
+  background: inherit;
+}
+
+.video-wrapper video {
+  border-radius: 2em;
+}
+
+.answer-steps {
+  padding-left: 2em;
+}
+
+.answer-steps li {
+  margin: 2em 0.5em 0.5em 0.5em;
+}
+
+body {
+  counter-reset: section;
+}
+
+.answer-steps li::before {
+  counter-increment: section;
+  content: counter(section);
+  height: 30px;
+  width: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #cb1616;
+  border-width: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+  display: block;
+  float: left;
+  margin-left: -50px;
+  position: relative;
+  top: -2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.answer-steps li img {
+  margin-top: 1em;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.related-articles {
+  padding: 2em;
+}
+
+.related-articles h2 {
+  color: #8b0000;
+  padding: 0 0 0.25em 0;
+  margin: 0 0 0.5em 0;
+  border-bottom: 2px solid #8b0000;
+}
+
+.related-articles ul {
+  font-size: 1.25em;
+}
+
+.answer-block {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+
+/*Whatsapp share button */
+.whatsapp-share-button {
+  display: inline-block;
+  background-color: #25d366;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px 13px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.whatsapp-share-button:hover {
+  background-color: #128c7e;
+}
+
+.whatsapp-share-button i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* WhatsApp logo icon */
+.whatsapp-share-button::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../Images/whatsapp-logo.png");
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.h4,
+h4 {
+  font-size: calc(1.325rem + 0.9vw);
+}
