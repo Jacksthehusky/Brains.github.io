@@ -5,6 +5,15 @@
   <title>Brains</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Add these meta tags for SEO and social sharing -->
+  <meta name="description"
+    content="Brains POS - Modern accounting and inventory management software for businesses of all sizes. Streamline operations with cutting-edge technology.">
+  <meta property="og:title" content="Brains POS - Modern Accounting Software">
+  <meta property="og:description"
+    content="Transform your business with Brains POS. Comprehensive accounting, inventory, and point of sale solutions.">
+  <meta property="og:image" content="Images/BLogo.png">
+  <meta property="og:url" content="https://brains-lb.com">
+
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,12 +28,13 @@
   <header>
     <div class="container nav-container">
       <div class="logo">
-        <a href="#home" aria-label="logobrains">
+        <a href="#home" aria-label="logo">
+          <img src="Images/BLogo.png" alt="Brains POS Logo">
           <h1>Brains
-            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <!-- <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
             <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
               colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
-            </lord-icon>
+            </lord-icon>-->
           </h1>
         </a>
       </div>
@@ -40,13 +50,21 @@
           <!--  <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>-->
         </ul>
       </nav>
+      
+ <div class="nav-right">
       <div class="navhelpcenter">
         <a href="hc/HelpCenter.html" class="btns">Help Center</a>
       </div>
 
+        <!-- Theme Toggle Button -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0)" class="burger-menu w3-bar-item w3-right w3-hide-large" onclick="w3_open()"
+      <a href="javascript:void(0)" class="burger-menu" onclick="w3_open()"
         aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
@@ -90,10 +108,16 @@
 
     <!-- Home img -->
     <div class="home-img">
-      <img src="Images/mockup.png" alt="">
+      <img src="Images/mockup.png" alt="Brains POS Software Interface" loading="lazy">
     </div>
-    <a href="#about" class="scroll-down-link">
-      <img src="Images/ScrollDown.png" alt="">
+    <a href="#about">
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-chevron-down text-accent w-8 h-8">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
     </a>
   </section>
 
@@ -570,7 +594,7 @@
       <p class="w3-center">
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
         <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger="loop" delay="4000"
-          colors="primary:#121331,secondary:#8B0000" style="width:100px;height:100px">
+        style="width:100px;height:100px">
         </lord-icon>
       </p>
       <p class="w3-center w3-xlarge">The place to get answers to your questions...</p>
@@ -589,7 +613,7 @@
       <p class="w3-center">
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
         <lord-icon src="https://cdn.lordicon.com/wzwygmng.json" trigger="loop" delay="4000"
-          colors="primary:#121331,secondary:#8B0000" style="width:100px;height:100px">
+          style="width:100px;height:100px">
         </lord-icon>
       </p>
       <p class="w3-center w3-xlarge">Take a tour through our software's features with our online demo...</p>
@@ -607,8 +631,8 @@
       <h2 class="section-header section-title">Career opportunities at <span>Brains</span></h2>
       <p class="w3-center">
         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-        <lord-icon src="https://cdn.lordicon.com/uukerzzv.json" trigger="loop" delay="4000"
-          colors="primary:#121331,secondary:darkred" style="width:100px;height:100px">
+        <lord-icon data-icon-type="careers" src="https://cdn.lordicon.com/uukerzzv.json" trigger="loop" delay="4000"
+          style="width:100px;height:100px" colors="secondary:darkred">
         </lord-icon>
       </p>
       <p class="w3-center w3-xlarge">Brains is an exciting company whose business focuses on developing complex
@@ -682,8 +706,13 @@
   <div class="map w3-light-grey" id="map">
     <p class="w3-center">
       <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-      <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
-        colors="primary:#121331,secondary:darkred" style="width:100px;height:100px">
+      <lord-icon 
+      data-icon-type="map" 
+      src="https://cdn.lordicon.com/zzcjjxew.json" 
+      trigger="loop" 
+      delay="4000"
+      style="width:100px;height:100px"
+      colors="secondary:darkred">
       </lord-icon>
     </p>
     <p class="w3-center w3-xlarge section-title">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</p>

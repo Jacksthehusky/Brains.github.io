@@ -325,3 +325,77 @@ body {
 h4 {
   font-size: calc(1.325rem + 0.9vw);
 }
+
+@media (max-width: 480px) {
+  .row {
+    width: 100%;
+  }
+
+  .SolutionHeader lord-icon {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+  }
+
+}
+
+/* Add specific CSS styles for landscape orientation */
+@media (max-height: 450px) {
+  .home {
+    height: auto;
+  }
+
+  .home-img img {
+    width: 40vw;
+  }
+
+  .home-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.6rem;
+    margin: auto;
+  }
+
+  .mt-5 {
+    margin-top: auto;
+  }
+
+  .HelpSearch {
+    height: 80vh;
+    padding: 45px 5% 0;
+  }
+
+  .SolutionHeader {
+    height: 50vh;
+  }
+
+  .SolutionHeader lord-icon {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1140px) and (min-width: 769px) {
+  .home-img img {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 450px) {
+  /*breadcrumb*/
+  .breadcrumb {
+    width: 450px;
+  }
+}

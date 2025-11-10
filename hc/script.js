@@ -107,3 +107,87 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+// Dark Mode Functionality
+class ThemeManager {
+  constructor() {
+    this.themeToggle = document.getElementById('themeToggle');
+    this.currentTheme = localStorage.getItem('theme') || 'light';
+    
+    this.init();
+  }
+  
+  init() {
+    // Set initial theme
+    this.setTheme(this.currentTheme);
+    
+    // Add event listener
+    this.themeToggle.addEventListener('click', () => {
+      this.toggleTheme();
+    });
+    
+    // Listen for system theme changes
+    this.watchSystemTheme();
+  }
+  
+  setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    this.updateToggleIcon(theme);
+  }
+  
+  toggleTheme() {
+    this.currentTheme = this.currentTheme === 'light' ? 'dark' : 'light';
+    this.setTheme(this.currentTheme);
+  }
+  
+  updateToggleIcon(theme) {
+    const sunIcon = this.themeToggle.querySelector('.fa-sun');
+    const moonIcon = this.themeToggle.querySelector('.fa-moon');
+    
+    if (theme === 'dark') {
+      sunIcon.style.opacity = '0.5';
+      moonIcon.style.opacity = '1';
+    } else {
+      sunIcon.style.opacity = '1';
+      moonIcon.style.opacity = '0.5';
+    }
+  }
+  
+  watchSystemTheme() {
+    // Check if user prefers dark mode
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Set initial theme based on system preference if no user preference exists
+    if (!localStorage.getItem('theme') && systemPrefersDark.matches) {
+      this.setTheme('dark');
+    }
+    
+    // Listen for system theme changes
+    systemPrefersDark.addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        this.setTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+  }
+}
+
+// Initialize theme manager when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  new ThemeManager();
+});
+
+// Alternative simple implementation if you prefer:
+/*
+const themeToggle = document.getElementById('themeToggle');
+const currentTheme = localStorage.getItem('theme') || 'light';
+
+document.documentElement.setAttribute('data-theme', currentTheme);
+
+themeToggle.addEventListener('click', () => {
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+});
+*/
