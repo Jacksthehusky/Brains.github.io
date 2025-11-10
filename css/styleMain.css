@@ -87,9 +87,13 @@ header {
 }
 
 .logo h1 {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* optional: space between text and icon */
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--primary);
+  padding-left: 10px;
 }
 
 .logo span {
@@ -328,6 +332,17 @@ section {
   position: absolute;
   top: 0;
   right: 0;
+    border: none;
+    display: inline-block;
+    padding: 22px 24px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 /*Wrapper cardw*/
@@ -418,7 +433,7 @@ section {
   left: 0;
   width: 100%;
   height: auto;
-  padding: 1.5em 1.5em 2em;
+  padding: 1.2em 1.2em 1.7em;
   background: #000a;
   backdrop-filter: blur(16px) saturate(120%);
   transition: 0.3s;
@@ -1327,7 +1342,7 @@ footer {
   }
 
   .services h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2.3rem;
   }
 
   .industry-grid {
@@ -1363,7 +1378,7 @@ footer {
   .spec-table th,
   .spec-table td {
     padding: 12px 15px;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1371,6 +1386,42 @@ footer {
   .section-title {
     font-size: 2rem;
   }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+
+  .btns {
+font-size: 0.8rem;
+  }
+
+  .social-media a {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    border: 0.12rem solid var(--primary);
+  }
+
+  .about-content p {
+  font-size: 1rem;
+  }
+
+  .details h1 {
+    font-size: 1.6em;
+  }
+  
+  .details h2 {
+    font-size: 1em;
+  }
+
+.details .tags {
+  font-size: 0.7em;
+}
+
+.details .cardfeatures ul li{
+font-size: 0.8em;
+}
+
   .contact form .input-box input {
     width: 100%;
   }

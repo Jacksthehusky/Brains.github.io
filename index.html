@@ -46,7 +46,7 @@
 
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0)" class="burger-menu w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"
+      <a href="javascript:void(0)" class="burger-menu w3-bar-item w3-right w3-hide-large" onclick="w3_open()"
         aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
@@ -55,7 +55,7 @@
 
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>
+    <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>-->
     <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
     <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
@@ -679,7 +679,7 @@
   </section>
 
   <!-- map -->
-  <div class="map w3-light-grey">
+  <div class="map w3-light-grey" id="map">
     <p class="w3-center">
       <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
       <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
@@ -731,9 +731,9 @@
         <div class="footer-column">
           <h3>Contact Us</h3>
           <ul class="footer-links">
-            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
-            <li><a href="tel:+96112345678"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
-            <li><a href="mailto:info@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
+            <li><a href="#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
+            <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
+            <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
             <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
           </ul>
         </div>
