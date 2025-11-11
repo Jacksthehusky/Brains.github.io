@@ -2,62 +2,79 @@
 <html lang="en">
 
 <head>
-  <title>Brains Demo</title>
+  <title>Brains Careers</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style1.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="../css/style2.css" />
-  <link rel="stylesheet" href="../css/style2.css" />
+  <link rel="stylesheet" href="../css/styleMain.css" />
   <link rel="stylesheet" href="../css/style4.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="shortcut icon" type="image/x-icon" href="../Images/brains.ico" />
 </head>
 <body>
 
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
-      <div>
-        <a href="../index.html#home" class="logobrains w3-bar-item w3-wide">Brains</a>
-        <a href="../index.html#home" aria-label="logobrains">
-          <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-          <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
-            colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
-          </lord-icon>
+  <!-- Navbar/Header (sit on top) -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html#home" aria-label="logo">
+          <img src="../Images/BLogo.png" alt="Brains POS Logo">
+          <h1>Brains
+            <!-- <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
+              colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
+            </lord-icon>-->
+          </h1>
         </a>
       </div>
       <!-- Right-sided navbar links -->
-      <div class="header w3-right w3-hide-small w3-hide-medium">
-        <a href="../index.html#home" class="navbartop w3-bar-item" style="--i:1;">HOME</a>
-        <a href="../index.html#about" class="navbartop w3-bar-item" style="--i:2;">ABOUT</a>
-        <a href="../index.html#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
-        <a href="Careers.html" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
-        <a href="../index.html#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
-        <a href="../Demo/Products.html" class="navbartop w3-bar-item" style="--i:6;">DEMO</a>
-        <a href="../hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html#home" class="active" style="--i:1;">Home</a></li>
+          <li><a href="../index.html#about" style="--i:2;">About</a></li>
+          <li><a href="../index.html#features" style="--i:3;">Features</a></li>
+          <li><a href="Careers.html" style="--i:4;">Careers</a></li>
+          <li><a href="../index.html#contact" style="--i:5;">Contact</a></li>
+          <li><a href="../Demo/Products.html" style="--i:6;">Demo</a></li>
+          <!--  <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>-->
+        </ul>
+      </nav>
+
+<div class="nav-right">
+      <div class="navhelpcenter">
+        <a href="../hc/HelpCenter.html" class="btns">Help Center</a>
       </div>
 
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0)" class="burger-menu w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"
-        aria-label="menu">
-        <i class="fa fa-bars"></i>
-      </a>
+        <!-- Theme Toggle Button -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
     </div>
-  </div>
 
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display: none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="../index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
-    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="../Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
-    <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="burger-menu" onclick="w3_open()"
+        aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </a>
+        </div>
+    </header>
+
+   <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
+    <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>-->
+    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
+    <a href="Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
+    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="../Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
+    <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
   </nav>
+
 
 
   <!-- header section -->
@@ -101,42 +118,52 @@
 
 
   <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64">
-    <div>
-      <h4>Working Hours</h4>
+  <footer>
+    <div class="w3-center">
+      <a href="#home" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
     </div>
-    <div>
-      Monday to Friday<br>
-      From 9:00 A.M.<br>
-      To 4:30 P.M.
-    </div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Brains POS</h3>
+          <p>Powerful point of sale software designed to help businesses of all sizes streamline operations and increase
+            profitability.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
+              aria-label="facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/brains-sarl-lb/" target="_blank" aria-label="linkedin"
+              class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp"
+              class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
 
-    <div class="footer w3-xlarge w3-section">
-      <ul>
-        <div></div>
-        <li>
-          <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp">
-            <i class="fa fa-whatsapp w3-hover-opacity"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
-            aria-label="facebook">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/brains-lb/" target="_blank" aria-label="linkedin">
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-          </a>
-        </li>
-        <div></div>
-      </ul>
-    </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
 
-    <p class="w3-small">
-      Copyright &copy; Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL
-    </p>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul class="footer-links">
+            <li><a href="#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
+            <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
+            <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2025 Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL.</p>
+      </div>
+    </div>
   </footer>
   <script src="../hc/results.js"></script>
   <script src="../hc/script.js"></script>
