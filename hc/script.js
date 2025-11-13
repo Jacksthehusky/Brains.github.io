@@ -1,7 +1,8 @@
 function sendWhatsAppMessageFooter() {
   // Replace this with your WhatsApp number and message text
   var whatsappNumber = "+96171492657";
-  var messageText = "Hello, I'm reaching out through your website. I'd like to inquire about your services.";
+  var messageText =
+    "Hello, I'm reaching out through your website. I'd like to inquire about your services.";
 
   // Generate the WhatsApp message URL
   var whatsappUrl =
@@ -17,7 +18,8 @@ function sendWhatsAppMessageFooter() {
 function sendWhatsAppMessageHome() {
   // Replace this with your WhatsApp number and message text
   var whatsappNumber = "+96171492657";
-  var messageText = "Hi, I found your website and I'm interested in learning more about your services. Could you please assist me?";
+  var messageText =
+    "Hi, I found your website and I'm interested in learning more about your services. Could you please assist me?";
 
   // Generate the WhatsApp message URL
   var whatsappUrl =
@@ -108,86 +110,126 @@ window.addEventListener("scroll", () => {
   });
 });
 
-
 // Dark Mode Functionality
 class ThemeManager {
   constructor() {
-    this.themeToggle = document.getElementById('themeToggle');
-    this.currentTheme = localStorage.getItem('theme') || 'light';
-    
+    this.themeToggle = document.getElementById("themeToggle");
+    this.currentTheme = localStorage.getItem("theme") || "light";
+
     this.init();
   }
-  
+
   init() {
     // Set initial theme
     this.setTheme(this.currentTheme);
-    
+
     // Add event listener
-    this.themeToggle.addEventListener('click', () => {
+    this.themeToggle.addEventListener("click", () => {
       this.toggleTheme();
     });
-    
+
     // Listen for system theme changes
     this.watchSystemTheme();
   }
-  
+
   setTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
     this.updateToggleIcon(theme);
   }
-  
+
   toggleTheme() {
-    this.currentTheme = this.currentTheme === 'light' ? 'dark' : 'light';
+    this.currentTheme = this.currentTheme === "light" ? "dark" : "light";
     this.setTheme(this.currentTheme);
   }
-  
+
   updateToggleIcon(theme) {
-    const sunIcon = this.themeToggle.querySelector('.fa-sun');
-    const moonIcon = this.themeToggle.querySelector('.fa-moon');
-    
-    if (theme === 'dark') {
-      sunIcon.style.opacity = '0.5';
-      moonIcon.style.opacity = '1';
+    const sunIcon = this.themeToggle.querySelector(".fa-sun");
+    const moonIcon = this.themeToggle.querySelector(".fa-moon");
+
+    if (theme === "dark") {
+      sunIcon.style.opacity = "0.5";
+      moonIcon.style.opacity = "1";
     } else {
-      sunIcon.style.opacity = '1';
-      moonIcon.style.opacity = '0.5';
+      sunIcon.style.opacity = "1";
+      moonIcon.style.opacity = "0.5";
     }
   }
-  
+
   watchSystemTheme() {
     // Check if user prefers dark mode
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+
     // Set initial theme based on system preference if no user preference exists
-    if (!localStorage.getItem('theme') && systemPrefersDark.matches) {
-      this.setTheme('dark');
+    if (!localStorage.getItem("theme") && systemPrefersDark.matches) {
+      this.setTheme("dark");
     }
-    
+
     // Listen for system theme changes
-    systemPrefersDark.addEventListener('change', (e) => {
-      if (!localStorage.getItem('theme')) {
-        this.setTheme(e.matches ? 'dark' : 'light');
+    systemPrefersDark.addEventListener("change", (e) => {
+      if (!localStorage.getItem("theme")) {
+        this.setTheme(e.matches ? "dark" : "light");
       }
     });
   }
 }
 
 // Initialize theme manager when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   new ThemeManager();
 });
 
-// Alternative simple implementation if you prefer:
-/*
-const themeToggle = document.getElementById('themeToggle');
-const currentTheme = localStorage.getItem('theme') || 'light';
 
-document.documentElement.setAttribute('data-theme', currentTheme);
+// Mouse Follow Effect
+class GradientEffect {
+  constructor() {
+    this.gradient = document.querySelector(".effect-gradient");
+    this.cardWrapper = document.querySelector(".gradient-card-wrapper");
+    this.isActive = false;
 
-themeToggle.addEventListener('click', () => {
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
+    this.init();
+  }
+
+  init() {
+    if (!this.gradient || !this.cardWrapper) return;
+
+    this.cardWrapper.addEventListener("mouseenter", () => {
+      this.isActive = true;
+      this.gradient.style.opacity = "0.3";
+    });
+
+    this.cardWrapper.addEventListener("mouseleave", () => {
+      this.isActive = false;
+      this.gradient.style.opacity = "0";
+      this.resetGradientPosition();
+    });
+
+    this.cardWrapper.addEventListener("mousemove", (e) => {
+      if (!this.isActive) return;
+      this.updateGradientPosition(e);
+    });
+  }
+
+  updateGradientPosition(e) {
+    const rect = this.cardWrapper.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const posX = (x / rect.width) * 100;
+    const posY = (y / rect.height) * 100;
+
+    this.gradient.style.left = `${posX}%`;
+    this.gradient.style.top = `${posY}%`;
+    this.gradient.style.transform = `translate(-50%, -50%) scale(1.5)`;
+  }
+
+  resetGradientPosition() {
+    this.gradient.style.left = "50%";
+    this.gradient.style.top = "50%";
+    this.gradient.style.transform = "translate(-50%, -50%) scale(0.2)";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  new GradientEffect();
 });
-*/

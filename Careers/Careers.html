@@ -8,12 +8,13 @@
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style1.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../css/style2.css" />
   <link rel="stylesheet" href="../css/styleMain.css" />
-  <link rel="stylesheet" href="../css/style4.css" />
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/careers.css" />
+  <link rel="stylesheet" href="../css/chatbot.css">
+
   <link rel="shortcut icon" type="image/x-icon" href="../Images/brains.ico" />
 </head>
+
 <body>
 
   <!-- Navbar/Header (sit on top) -->
@@ -22,105 +23,182 @@
       <div class="logo">
         <a href="../index.html#home" aria-label="logo">
           <img src="../Images/BLogo.png" alt="Brains POS Logo">
-          <h1>Brains
-            <!-- <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-            <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
-              colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
-            </lord-icon>-->
-          </h1>
+          <h1>Brains</h1>
         </a>
       </div>
       <!-- Right-sided navbar links -->
       <nav>
         <ul>
-          <li><a href="../index.html#home" class="active" style="--i:1;">Home</a></li>
+          <li><a href="../index.html#home" style="--i:1;">Home</a></li>
           <li><a href="../index.html#about" style="--i:2;">About</a></li>
           <li><a href="../index.html#features" style="--i:3;">Features</a></li>
-          <li><a href="Careers.html" style="--i:4;">Careers</a></li>
+          <li><a href="careers.html" style="--i:4;">Careers</a></li>
           <li><a href="../index.html#contact" style="--i:5;">Contact</a></li>
           <li><a href="../Demo/Products.html" style="--i:6;">Demo</a></li>
-          <!--  <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>-->
-        </ul>
       </nav>
 
-<div class="nav-right">
-      <div class="navhelpcenter">
-        <a href="../hc/HelpCenter.html" class="btns">Help Center</a>
-      </div>
+      <div class="nav-right">
+        <div class="navhelpcenter">
+          <a href="../hc/HelpCenter.html" class="btns">Help Center</a>
+        </div>
 
         <!-- Theme Toggle Button -->
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0)" class="burger-menu" onclick="w3_open()"
-        aria-label="menu">
+      <a href="javascript:void(0)" class="burger-menu" onclick="w3_open()" aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
-        </div>
-    </header>
+    </div>
+  </header>
 
-   <!-- Sidebar on small screens when clicking the menu icon -->
+  <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
     <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>-->
     <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
     <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
     <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-    <a href="Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
+    <a href="careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
     <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
     <a href="../Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
     <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
   </nav>
 
+  <!-- Modern Breadcrumb -->
+<nav class="breadcrumb-nav">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="../index.html" class="breadcrumb-link">
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+      </li>
+      <li class="breadcrumb-item breadcrumb-active">
+        <span class="breadcrumb-current">
+          <i class="fas fa-chevron-right"></i>
+          Careers
+        </span>
+      </li>
+    </ul>
+  </div>
+</nav>
 
+<!-- Modern careers Section -->
+<section class="careers-section" id="careers">
+  <div class="container">
+    <div class="careers-header">
+      <h2 class="section-title">Join <span>Our Team!</span></h2>
+      <p class="section-subtitle">Be part of an innovative team shaping the future of business software solutions</p>
+    </div>
 
-  <!-- header section -->
-  <header class="w3-display-container w3-grayscale-min">
-    <div class="SolutionHeader">
-      <div class="row">
-        <div>
-          <ul class="breadcrumb">
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li>
-              <a href="Careers.html">Careers</a>
-            </li>
-          </ul>
+    <div class="careers-content">
+      <div class="careers-form-wrapper">
+        <div class="form-header">
+          <h3>Apply Now</h3>
+          <p>Fill out the form below and we'll get back to you soon</p>
+        </div>
+
+        <form action="../contact-form-handler.php" method="post" name="Career Form" class="modern-form">
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" placeholder="Enter your full name" required name="fullname">
+              <i class="fas fa-user input-icon"></i>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" required name="emailaddress">
+              <i class="fas fa-envelope input-icon"></i>
+            </div>
+
+            <div class="input-group">
+              <label for="telephone">Mobile Number</label>
+              <input type="tel" id="telephone" placeholder="Enter your mobile number" required name="telephone">
+              <i class="fas fa-phone input-icon"></i>
+            </div>
+
+            <div class="input-group">
+              <label for="position">Position Applying For</label>
+              <input type="text" id="position" placeholder="Enter desired position" required name="subject">
+              <i class="fas fa-briefcase input-icon"></i>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="message">Cover Letter / Message</label>
+            <textarea id="message" cols="30" rows="6" placeholder="Tell us why you're interested in joining our team..." required name="message"></textarea>
+            <i class="fas fa-comment input-icon textarea-icon"></i>
+          </div>
+
+          <input type="hidden" name="redirect" value="/careers/careers.html">
+          <input type="hidden" name="recipient" value="michel@brains-lb.com">
+          
+          <button type="submit" class="modern-btn">
+            <span class="btn-content">
+              <i class="fas fa-paper-plane"></i>
+              Submit Application
+            </span>
+            <div class="btn-loader">
+              <div class="loader"></div>
+            </div>
+          </button>
+        </form>
+
+        <div class="alternative-apply">
+          <div class="divider">
+            <span>Or Apply Via</span>
+          </div>
+          <div class="email-apply">
+            <i class="fas fa-envelope-open-text"></i>
+            <div>
+              <p>Prefer to email directly?</p>
+              <a href="mailto:michel@brains-lb.com" class="email-link">
+                michel@brains-lb.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="careers-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h4>Why Join Brains?</h4>
+          <p>Be part of a dynamic team creating cutting-edge software solutions that transform businesses across multiple industries.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4>Our Culture</h4>
+          <p>Collaborative environment where innovation meets expertise. We value creativity, teamwork, and continuous learning.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h4>Growth Opportunities</h4>
+          <p>Continuous learning and professional development opportunities to help you grow your career with us.</p>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Careers Section -->
-  <section class="contact" id="careers" style="color: black">
-    <h2 class="heading">Join <span>Our Team!</span></h2>
-
-    <form action="../contact-form-handler.php" method="post" name="Career Form">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name" required name="fullname">
-        <input type="email" placeholder="Email Address" required name="emailaddress">
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Mobile Number" required name="telephone">
-        <input type="text" placeholder="Position Applying For" required name="subject">
-      </div>
-      <textarea id="messageInput" cols="30" rows="10" placeholder="Message" required name="message"></textarea>
-      <input type="hidden" name="redirect" value="/Careers/Careers.html">
-      <input type="hidden" name="recipient" value="michel@brains-lb.com">
-      <input type="submit" value="SEND MESSAGE" class="btns">
-    </form><br>
-    Interested in joining our team? Email your resume/CV to apply.<code>Email: michel@brains-lb.com</code><br>
-  </section>
-
-
-  <!-- Footer -->
+   <!-- Footer -->
   <footer>
     <div class="w3-center">
-      <a href="#home" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
+      <a href="#careers" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
     </div>
     <div class="container">
       <div class="footer-content">
@@ -141,18 +219,18 @@
         <div class="footer-column">
           <h3>Quick Links</h3>
           <ul class="footer-links">
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
-            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
-            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="../index.html#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+            <li><a href="../hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+            <li><a href="../index.html#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+            <li><a href="../index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
           <h3>Contact Us</h3>
           <ul class="footer-links">
-            <li><a href="#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
+            <li><a href="../index.html#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
             <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
             <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
             <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
@@ -165,18 +243,94 @@
       </div>
     </div>
   </footer>
-  <script src="../hc/results.js"></script>
-  <script src="../hc/script.js"></script>
 
- <!-- Dialogflow Messenger -->
- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
- <df-messenger
-   chat-icon="https://raw.githubusercontent.com/Jacksthehusky/Brains.github.io/refs/heads/main/Images/AiBot.png"
-   intent="WELCOME"
-   chat-title="Brains Assistant"
-   agent-id="749f115e-db73-495e-8de0-a48a00e72366"
-   language-code="en"
- ></df-messenger>
+  <script src="../hc/script.js"></script>
+  <script src="careers.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+  <!-- n8n Chat -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    // Chat Manager with Dark Mode Support
+    class BrainsChatManager {
+      constructor() {
+        this.chatInstance = null;
+        this.currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        this.init();
+      }
+
+      init() {
+        this.createChat();
+        this.watchThemeChanges();
+      }
+
+      createChat() {
+        this.chatInstance = createChat({
+          webhookUrl: 'http://localhost:5678/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+          //webhookUrl: 'http://ma2fd0fnv.localto.net/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+
+
+          target: '#brains-chatbot',
+          mode: 'window',
+
+          showWelcomeScreen: true,
+          defaultLanguage: 'en',
+
+          initialMessages: [
+            '👋 Welcome to Brains Accounting Assistant!',
+            'I can help you with software features, troubleshooting, and guides. What would you like to know?'
+          ],
+
+          i18n: {
+            en: {
+              title: 'Brains Assistant',
+              subtitle: 'Your 24/7 Accounting Software Expert',
+              footer: '',
+              getStarted: 'Start New Conversation',
+              inputPlaceholder: 'Get help with Brains AI...',
+              waiting: 'Consulting knowledge base...',
+              messageError: 'Sorry, please try again',
+              messageRetry: 'Retry'
+            }
+          },
+
+          theme: {
+            style: {
+              primaryColor: '#2c5aa0',
+              secondaryColor: '#20b69e',
+              backgroundColor: this.currentTheme === 'dark' ? '#1a1d23' : '#ffffff',
+              textColor: this.currentTheme === 'dark' ? '#e9ecef' : '#343a40',
+              borderRadius: '0.5rem'
+            }
+          }
+        });
+      }
+
+      watchThemeChanges() {
+        // Watch for theme changes
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+              this.currentTheme = document.documentElement.getAttribute('data-theme');
+              console.log('Theme changed to:', this.currentTheme);
+            }
+          });
+        });
+
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['data-theme']
+        });
+      }
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      new BrainsChatManager();
+    });
+  </script>
 
 </body>
 

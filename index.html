@@ -31,54 +31,47 @@
       <div class="logo">
         <a href="#home" aria-label="logo">
           <img src="Images/BLogo.png" alt="Brains POS Logo">
-          <h1>Brains
-            <!-- <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-            <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
-              colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
-            </lord-icon>-->
-          </h1>
+          <h1>Brains</h1>
         </a>
       </div>
       <!-- Right-sided navbar links -->
       <nav>
         <ul>
-          <li><a href="#home" class="active" style="--i:1;">Home</a></li>
+          <li><a href="#home" style="--i:1;">Home</a></li>
           <li><a href="#about" style="--i:2;">About</a></li>
           <li><a href="#features" style="--i:3;">Features</a></li>
-          <li><a href="Careers/Careers.html" style="--i:4;">Careers</a></li>
+          <li><a href="careers/careers.html" style="--i:4;">Careers</a></li>
           <li><a href="#contact" style="--i:5;">Contact</a></li>
           <li><a href="Demo/Products.html" style="--i:6;">Demo</a></li>
-          <!--  <a href="hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>-->
         </ul>
       </nav>
-      
- <div class="nav-right">
-      <div class="navhelpcenter">
-        <a href="hc/HelpCenter.html" class="btns">Help Center</a>
-      </div>
+
+      <div class="nav-right">
+        <div class="navhelpcenter">
+          <a href="hc/HelpCenter.html" class="btns">Help Center</a>
+        </div>
 
         <!-- Theme Toggle Button -->
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0)" class="burger-menu" onclick="w3_open()"
-        aria-label="menu">
+      <a href="javascript:void(0)" class="burger-menu" onclick="w3_open()" aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
     </div>
   </header>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
+  <nav class="sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
     <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>-->
     <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
     <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-    <a href="Careers/Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
+    <a href="careers/careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
     <a href="Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
     <a href="hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
@@ -86,39 +79,58 @@
 
   <!-- Home Section -->
   <section class="home" id="home">
-    <div class="home-content">
-      <h3>Experience the New Technology in computer system with our</h3>
-      <h1>Cutting-edge software</h1>
-      <h3>For <span class="multiple-text"></span></h3>
-
-      <div class="social-media w3-text-grey w3-large">
-        <a href="javascript:void(0)" style="--i:7;" onclick="sendWhatsAppMessageHome()" aria-label="whatsapp">
-          <i class="fab fa-whatsapp w3-hover-opacity"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" style="--i:8;" target="_blank"
-          aria-label="facebook">
-          <i class="fab fa-facebook w3-hover-opacity"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/brains-sarl-lb/" style="--i:9;" target="_blank" aria-label="linkedin">
-          <i class="fab fa-linkedin w3-hover-opacity"></i>
-        </a>
-      </div>
-      <a href="Demo/Products.html" class="btns"><i class="fab fa-wpforms w3-margin-right" aria-hidden="true"></i>Online
-        Demo</a>
+    <!-- Background Video -->
+    <div class="bg-video">
+      <video preload="auto" loop autoplay muted playsinline>
+        <source src="Images/galaxy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
     </div>
 
-    <!-- Home img -->
-    <div class="home-img">
-      <img src="Images/mockup.png" alt="Brains POS Software Interface" loading="lazy">
-    </div>
-    <a href="#about">
-      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-chevron-down text-accent w-8 h-8">
-          <polyline points="6 9 12 15 18 9"></polyline>
-        </svg>
+    <!-- Gradient Card Container -->
+    <div class="gradient-card-wrapper">
+      <span class="effect-gradient"></span>
+      <div class="gradient-card">
+        <div class="gradient-card-content">
+          <!-- Home Content Inside Card -->
+          <div class="home-content">
+            <h3>Experience the New Technology in computer system with our</h3>
+            <h1>Cutting-edge software</h1>
+            <h3>For <span class="multiple-text"></span></h3>
+
+            <div class="social-media w3-text-grey w3-large">
+              <a href="javascript:void(0)" style="--i:7;" onclick="sendWhatsAppMessageHome()" aria-label="whatsapp">
+                <i class="fab fa-whatsapp w3-hover-opacity"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" style="--i:8;"
+                target="_blank" aria-label="facebook">
+                <i class="fab fa-facebook w3-hover-opacity"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/brains-sarl-lb/" style="--i:9;" target="_blank"
+                aria-label="linkedin">
+                <i class="fab fa-linkedin w3-hover-opacity"></i>
+              </a>
+            </div>
+            <a href="Demo/Products.html" class="btns">
+              <i class="fab fa-wpforms w3-margin-right" aria-hidden="true"></i>Online Demo
+            </a>
+          </div>
+
+          <!-- Home Image Inside Card -->
+          <div class="home-img">
+            <img src="Images/mockup.png" alt="Brains POS Software Interface" loading="lazy">
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Scroll Indicator (Outside Card) -->
+    <a href="#about" class="scroll-indicator">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
     </a>
   </section>
 
@@ -345,11 +357,11 @@
     </div>
 
     <div class="w3-padding-32">
-        <div class="marquee">
-          <span class="moving-ad">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes
-            Fashion-Services Car-Dealers Catering-Factories
-            Salon Hotels Rentals Bakery Fast-food Café Jewelry</span>
-        </div>
+      <div class="marquee">
+        <span class="moving-ad">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes
+          Fashion-Services Car-Dealers Catering-Factories
+          Salon Hotels Rentals Bakery Fast-food Café Jewelry</span>
+      </div>
     </div>
   </section>
 
@@ -593,7 +605,7 @@
       <p class="w3-center">
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
         <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger="loop" delay="4000"
-        style="width:100px;height:100px">
+          style="width:100px;height:100px">
         </lord-icon>
       </p>
       <p class="w3-center w3-xlarge">The place to get answers to your questions...</p>
@@ -637,7 +649,7 @@
       <p class="w3-center w3-xlarge">Brains is an exciting company whose business focuses on developing complex
         solutions for the market. <br>We are always interrested in new and motivated people.</p>
       <p class="w3-center w3-padding-64">
-        <a href="Careers/Careers.html" class="btns">
+        <a href="careers/careers.html" class="btns">
           <i class="far fa-plus-square w3-margin-right" aria-hidden="true"></i>Apply Here</a>
       </p>
     </div>
@@ -705,13 +717,8 @@
   <div class="map w3-light-grey" id="map">
     <p class="w3-center">
       <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-      <lord-icon 
-      data-icon-type="map" 
-      src="https://cdn.lordicon.com/zzcjjxew.json" 
-      trigger="loop" 
-      delay="4000"
-      style="width:100px;height:100px"
-      colors="secondary:darkred">
+      <lord-icon data-icon-type="map" src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
+        style="width:100px;height:100px" colors="secondary:darkred">
       </lord-icon>
     </p>
     <p class="w3-center w3-xlarge section-title">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</p>
@@ -786,90 +793,90 @@
     intent="WELCOME" chat-title="Brains Assistant" agent-id="749f115e-db73-495e-8de0-a48a00e72366"
     language-code="en"></df-messenger>-->
 
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-<!-- n8n Chat -->
-<script type="module">
+  <!-- n8n Chat -->
+  <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
     // Chat Manager with Dark Mode Support
     class BrainsChatManager {
-        constructor() {
-            this.chatInstance = null;
-            this.currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-            this.init();
-        }
-        
-        init() {
-            this.createChat();
-            this.watchThemeChanges();
-        }
-        
-        createChat() {
-            this.chatInstance = createChat({
-               // webhookUrl: 'http://localhost:5678/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
-                webhookUrl: 'https://ma2f@fmv.localto.net/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+      constructor() {
+        this.chatInstance = null;
+        this.currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        this.init();
+      }
 
-                
-                target: '#brains-chatbot',
-                mode: 'window',
-                
-                showWelcomeScreen: true,
-                defaultLanguage: 'en',
-                
-                initialMessages: [
-                    '👋 Welcome to Brains Accounting Assistant!',
-                    'I can help you with software features, troubleshooting, and guides. What would you like to know?'
-                ],
-                
-                i18n: {
-                    en: {
-                        title: 'Brains Assistant',
-                        subtitle: 'Your 24/7 Accounting Software Expert',
-                        footer: '',
-                        getStarted: 'Start New Conversation',
-                        inputPlaceholder: 'Get help with Brains AI...',
-                        waiting: 'Consulting knowledge base...',
-                        messageError: 'Sorry, please try again',
-                        messageRetry: 'Retry'
-                    }
-                },
-                
-                theme: {
-                    style: {
-                        primaryColor: '#2c5aa0',
-                        secondaryColor: '#20b69e',
-                        backgroundColor: this.currentTheme === 'dark' ? '#1a1d23' : '#ffffff',
-                        textColor: this.currentTheme === 'dark' ? '#e9ecef' : '#343a40',
-                        borderRadius: '0.5rem'
-                    }
-                }
-            });
-        }
-        
-        watchThemeChanges() {
-            // Watch for theme changes
-            const observer = new MutationObserver((mutations) => {
-                mutations.forEach((mutation) => {
-                    if (mutation.attributeName === 'data-theme') {
-                        this.currentTheme = document.documentElement.getAttribute('data-theme');
-                        console.log('Theme changed to:', this.currentTheme);
-                    }
-                });
-            });
-            
-            observer.observe(document.documentElement, {
-                attributes: true,
-                attributeFilter: ['data-theme']
-            });
-        }
+      init() {
+        this.createChat();
+        this.watchThemeChanges();
+      }
+
+      createChat() {
+        this.chatInstance = createChat({
+          webhookUrl: 'http://localhost:5678/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+          //webhookUrl: 'http://ma2fd0fnv.localto.net/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+
+
+          target: '#brains-chatbot',
+          mode: 'window',
+
+          showWelcomeScreen: true,
+          defaultLanguage: 'en',
+
+          initialMessages: [
+            '👋 Welcome to Brains Accounting Assistant!',
+            'I can help you with software features, troubleshooting, and guides. What would you like to know?'
+          ],
+
+          i18n: {
+            en: {
+              title: 'Brains Assistant',
+              subtitle: 'Your 24/7 Accounting Software Expert',
+              footer: '',
+              getStarted: 'Start New Conversation',
+              inputPlaceholder: 'Get help with Brains AI...',
+              waiting: 'Consulting knowledge base...',
+              messageError: 'Sorry, please try again',
+              messageRetry: 'Retry'
+            }
+          },
+
+          theme: {
+            style: {
+              primaryColor: '#2c5aa0',
+              secondaryColor: '#20b69e',
+              backgroundColor: this.currentTheme === 'dark' ? '#1a1d23' : '#ffffff',
+              textColor: this.currentTheme === 'dark' ? '#e9ecef' : '#343a40',
+              borderRadius: '0.5rem'
+            }
+          }
+        });
+      }
+
+      watchThemeChanges() {
+        // Watch for theme changes
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+              this.currentTheme = document.documentElement.getAttribute('data-theme');
+              console.log('Theme changed to:', this.currentTheme);
+            }
+          });
+        });
+
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['data-theme']
+        });
+      }
     }
 
     // Initialize when DOM is ready
     document.addEventListener('DOMContentLoaded', () => {
-        new BrainsChatManager();
+      new BrainsChatManager();
     });
-</script>
+  </script>
 
 </body>
 
