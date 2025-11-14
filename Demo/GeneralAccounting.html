@@ -7,83 +7,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/style1.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../css/style2.css" />
-  <link rel="stylesheet" href="../css/style3.css" />
-  <link rel="stylesheet" href="../css/style4.css">
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styleMain.css" />
+  <link rel="stylesheet" href="../css/responsiveDesign.css" />
+  <link rel="stylesheet" href="../css/accounting.css">
+  <link rel="stylesheet" href="../css/chatbot.css">
+
   <link rel="shortcut icon" type="image/x-icon" href="../Images/brains.ico" />
 </head>
 
 <body>
 
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="topbar w3-bar w3-white w3-card" id="myNavbar">
-      <div>
-        <a href="../index.html#home" class="logobrains w3-bar-item w3-wide">Brains</a>
-        <a href="../index.html#home" aria-label="logobrains">
-          <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-          <lord-icon src="https://cdn.lordicon.com/qhgmphtg.json" trigger="loop" delay="2000"
-            colors="primary:#121331,secondary:#911710" style="width:50px;height:50px">
-          </lord-icon>
+  <!-- Navbar/Header (sit on top) -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../index.html#home" aria-label="logo">
+          <img src="../Images/BLogo.png" alt="Brains POS Logo">
+          <h1>Brains</h1>
         </a>
       </div>
       <!-- Right-sided navbar links -->
-      <div class="header w3-right w3-hide-small w3-hide-medium">
-        <a href="../index.html#home" class="navbartop w3-bar-item" style="--i:1;">HOME</a>
-        <a href="../index.html#about" class="navbartop w3-bar-item" style="--i:2;">ABOUT</a>
-        <a href="../index.html#team" class="navbartop w3-bar-item" style="--i:3;">TEAM</a>
-        <a href="../Careers/Careers.html" class="navbartop w3-bar-item" style="--i:4;">CAREERS</a>
-        <a href="../index.html#contact" class="navbartop w3-bar-item" style="--i:5;">CONTACT</a>
-        <a href="Products.html" class="navbartop w3-bar-item" style="--i:6;">DEMO</a>
-        <a href="../hc/HelpCenter.html" class="navbartop w3-bar-item" style="--i:7;">HELP CENTER</a>
+      <nav>
+        <ul>
+          <li><a href="../index.html#home" class="active" style="--i:1;">Home</a></li>
+          <li><a href="../index.html#about" style="--i:2;">About</a></li>
+          <li><a href="../index.html#features" style="--i:3;">Features</a></li>
+          <li><a href="../Careers/careers.html" style="--i:4;">Careers</a></li>
+          <li><a href="../index.html#contact" style="--i:5;">Contact</a></li>
+          <li><a href="Products.html" style="--i:6;">Demo</a></li>
+      </nav>
+
+      <div class="nav-right">
+        <div class="navhelpcenter">
+          <a href="../hc/HelpCenter.html" class="btns">Help Center</a>
+        </div>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
 
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <a href="javascript:void(0)" class="burger-menu w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()"
-        aria-label="menu">
-        <i class="fa fa-bars"></i>
+      <a href="javascript:void(0)" class="burger-menu" onclick="w3_open()" aria-label="menu">
+        <i class="fas fa-bars"></i>
       </a>
-    </div>
-  </div>
-
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display: none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="../index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-    <a href="../Careers/Careers.html" onclick="w3_close()" class="w3-bar-item w3-button">CAREERS</a>
-    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    <a href="Products.html" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
-    <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">HELP CENTER</a>
-  </nav>
-
-
-  <!-- header section -->
-  <header class="w3-display-container w3-grayscale-min">
-    <div class="SolutionHeader">
-      <div class="row">
-        <div>
-          <ul class="breadcrumb">
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li>
-              <a href="Products.html">Demo</a>
-            </li>
-            <li>
-              <a class="maintab" onclick="showTab('home')">General Accounting</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </header>
 
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
+    <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding-16">Close ×</a>-->
+    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
+    <a href="../Careers/careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
+    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
+    <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
+  </nav>
 
-  <!-- Demo -->
+  <!-- Demo 
   <section>
 
     <div class="w3-container w3-light-gray" style="margin-bottom: 5rem;">
@@ -99,7 +84,7 @@
 
       <div id="home" class="tab-content active">
 
-        <!-- Content for General Accounting tab -->
+
         <div class="Solution">
           <h3>Required System</h3>
           <p>The system software is developed under Visual Studio .NET Framework Using Sql Server Database.
@@ -161,14 +146,14 @@
               with fiscal and evaluation amounts.</li>
           </ul>
         </div>
-        <!-- to continue demo -->
+
         <center><i>Continue the demo by selecting the Data Entry menu:</i></center>
       </div>
 
       <div id="menu1" class="tab-content">
-        <!-- Content for A. DATA ENTRY Menu tab -->
+
         <h3>Data Entry</h3>
-        <!-- to continue demo -->
+
         <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
         <div style="display: flex;justify-content: center;">
           <img src="../Images/GeneralAccountingDataEntry.gif"
@@ -215,9 +200,9 @@
       </div>
 
       <div id="menu2" class="tab-content">
-        <!-- Content for B. OPERATIONS Menu tab -->
+
         <h3>OPERATIONS Menu</h3>
-        <!-- to continue demo -->
+
         <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
         <div style="display: flex;justify-content: center;">
           <img src="../Images/GeneralAccountingOperations.gif"
@@ -271,9 +256,9 @@
       </div>
 
       <div id="menu3" class="tab-content">
-        <!-- Content for C. REPORTS Menu tab -->
+
         <h3>REPORTS Menu</h3>
-        <!-- to continue demo -->
+
         <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
         <div style="display: flex;justify-content: center;">
           <img src="../Images/GeneralAccountingReports.gif"
@@ -337,9 +322,9 @@
       </div>
 
       <div id="menu4" class="tab-content">
-        <!-- Content for D. END OF SESSION Menu tab -->
+
         <h3>END OF SESSION Menu</h3>
-        <!-- to continue demo -->
+
         <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
         <div style="display: flex;justify-content: center;">
           <img src="../Images/GeneralAccountingEndOfSession.gif"
@@ -362,9 +347,9 @@
       </div>
 
       <div id="menu5" class="tab-content">
-        <!-- Content for E. SYSTEM Menu tab -->
+
         <h3>SYSTEM Menu</h3>
-        <!-- to continue demo -->
+
         <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
         <div style="display: flex;justify-content: center;">
           <img src="../Images/GeneralAccountingSystem.gif"
@@ -410,70 +395,825 @@
       </div>
     </div>
   </section>
+-->
 
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image" alt="">
-      <p id="caption" class="w3-large caption"></p>
+  <!-- Modern Breadcrumb -->
+  <nav class="breadcrumb-nav">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="../index.html" class="breadcrumb-link">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="Products.html" class="breadcrumb-link">
+            <i class="fas fa-chevron-right"></i>
+            Demo
+          </a>
+        </li>
+        <li class="breadcrumb-item breadcrumb-active">
+          <span class="breadcrumb-current">
+            <i class="fas fa-chevron-right"></i>
+            General Accounting
+          </span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Modern Demo Header -->
+  <section class="demo-header">
+    <div class="container">
+      <div class="demo-hero">
+        <div class="demo-hero-content">
+          <h1 class="demo-title">General Accounting System</h1>
+          <p class="demo-subtitle">Comprehensive financial management solution with multi-currency support, real-time
+            reporting, and enterprise-grade security</p>
+          <div class="demo-features">
+            <span class="feature-badge"><i class="fas fa-check"></i> Multi-currency</span>
+            <span class="feature-badge"><i class="fas fa-check"></i> Real-time Reports</span>
+            <span class="feature-badge"><i class="fas fa-check"></i> Multi-company</span>
+            <span class="feature-badge"><i class="fas fa-check"></i> Secure</span>
+          </div>
+        </div>
+        <div class="demo-hero-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Tabs Navigation -->
+  <section class="demo-tabs-section">
+    <div class="container">
+      <div class="modern-tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="overview">
+            <i class="fas fa-info-circle"></i>
+            Overview
+          </button>
+          <button class="tab-btn" data-tab="data-entry">
+            <i class="fas fa-keyboard"></i>
+            Data Entry
+          </button>
+          <button class="tab-btn" data-tab="operations">
+            <i class="fas fa-cogs"></i>
+            Operations
+          </button>
+          <button class="tab-btn" data-tab="reports">
+            <i class="fas fa-chart-bar"></i>
+            Reports
+          </button>
+          <button class="tab-btn" data-tab="session">
+            <i class="fas fa-power-off"></i>
+            Session
+          </button>
+          <button class="tab-btn" data-tab="system">
+            <i class="fas fa-sliders-h"></i>
+            System
+          </button>
+        </div>
+
+        <div class="tab-content-wrapper">
+          <!-- Overview Tab -->
+          <div class="tab-content active" id="overview">
+            <div class="tab-header">
+              <h2>System Overview</h2>
+              <p>Built with Visual Studio .NET Framework and SQL Server Database</p>
+            </div>
+
+            <div class="overview-grid">
+              <div class="overview-card">
+                <i class="fas fa-sync-alt"></i>
+                <h4>Integrated System</h4>
+                <p>Seamlessly connects all accounting modules for unified financial management</p>
+              </div>
+              <div class="overview-card">
+                <i class="fas fa-building"></i>
+                <h4>Multi-Company</h4>
+                <p>Manage multiple companies and consolidate financial data effortlessly</p>
+              </div>
+              <div class="overview-card">
+                <i class="fas fa-money-bill-wave"></i>
+                <h4>Multi-Currency</h4>
+                <p>Handle transactions in multiple currencies with automatic exchange rate calculations</p>
+              </div>
+              <div class="overview-card">
+                <i class="fas fa-shield-alt"></i>
+                <h4>High Security</h4>
+                <p>Advanced access control and user permission management</p>
+              </div>
+            </div>
+
+            <div class="features-section">
+              <h3>Core Features</h3>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i class="fas fa-database"></i>
+                  <div>
+                    <h5>Data Management</h5>
+                    <p>Create, delete, modify, and search entries with intuitive mouse and keyboard navigation</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-print"></i>
+                  <div>
+                    <h5>Flexible Reporting</h5>
+                    <p>Generate reports on both printer and screen with customizable formats</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-language"></i>
+                  <div>
+                    <h5>Multi-Language</h5>
+                    <p>Available in Arabic, French, and English versions</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-user-lock"></i>
+                  <div>
+                    <h5>Access Control</h5>
+                    <p>Unlimited users with role-based permissions and password management</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-section">
+              <p>Ready to explore the features? Continue to the next sections to see the system in action.</p>
+              <button class="next-tab-btn" data-next-tab="data-entry">
+                Start with Data Entry <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Data Entry Tab -->
+          <div class="tab-content" id="data-entry">
+            <div class="tab-header">
+              <h2>Data Entry Modules</h2>
+              <p>Foundation modules for setting up and managing your accounting structure</p>
+            </div>
+
+            <div class="demo-preview">
+              <div class="preview-header">
+                <h4>Data Entry Walkthrough</h4>
+                <p>See how to set up currencies, accounts, and voucher types</p>
+              </div>
+              <div class="gif-container">
+                <img src="../Images/GeneralAccountingDataEntry.gif" alt="General Accounting Data Entry Demo"
+                  loading="lazy">
+                <div class="gif-overlay">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="modules-grid">
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-money-bill-alt"></i>
+                </div>
+                <h4>Currency Management</h4>
+                <p>Input currency codes, descriptions, and symbols for all transactions</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-sitemap"></i>
+                </div>
+                <h4>Chapters & Sub-Chapters</h4>
+                <p>Create and manage government-recognized accounting chapters</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h4>General Ledger</h4>
+                <p>Manage data related to the general ledger accounts</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-user-friends"></i>
+                </div>
+                <h4>Auxiliary Accounts</h4>
+                <p>Show total account numbers with auxiliary codes</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-receipt"></i>
+                </div>
+                <h4>Voucher Types</h4>
+                <p>Define different voucher types (bank, journal, credit/debit notes)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Operations Tab -->
+          <div class="tab-content" id="operations">
+            <div class="tab-header">
+              <h2>Operations Modules</h2>
+              <p>Daily transaction processing and financial operations management</p>
+            </div>
+
+            <div class="demo-preview">
+              <div class="preview-header">
+                <h4>Operations Walkthrough</h4>
+                <p>See daily transaction processing and financial operations</p>
+              </div>
+              <div class="gif-container">
+                <img src="../Images/GeneralAccountingOperations.gif" alt="General Accounting Operations Demo"
+                  loading="lazy">
+                <div class="gif-overlay">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="modules-grid">
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+                <h4>Entry Voucher</h4>
+                <p>Input daily transactions including payments, receipts, and journal vouchers</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Currency Rates</h4>
+                <p>Enter daily currency rates for accurate transaction calculations</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h4>Difference of Exchange</h4>
+                <p>Calculate value differences caused by currency rate changes</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-balance-scale"></i>
+                </div>
+                <h4>Profit & Loss Closing</h4>
+                <p>Generate profit/loss vouchers at any point during the fiscal year</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Reports Tab -->
+          <div class="tab-content" id="reports">
+            <div class="tab-header">
+              <h2>Reporting Modules</h2>
+              <p>Comprehensive financial reporting and analysis tools</p>
+            </div>
+
+            <div class="demo-preview">
+              <div class="preview-header">
+                <h4>Reports Walkthrough</h4>
+                <p>See how to generate comprehensive financial reports</p>
+              </div>
+              <div class="gif-container">
+                <img src="../Images/GeneralAccountingReports.gif" alt="General Accounting Reports Demo" loading="lazy">
+                <div class="gif-overlay">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="modules-grid">
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-file-invoice"></i>
+                </div>
+                <h4>Statement of Account</h4>
+                <p>List transactions for specific accounts with date range filtering</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-chart-column"></i>
+                </div>
+                <h4>Daily Journal</h4>
+                <p>Produce government-compliant daily transaction reports</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-chart-pie"></i>
+                </div>
+                <h4>Trial Balance</h4>
+                <p>Generate balance by currency, date, chapters, and ledgers</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-money-bills"></i>
+                </div>
+                <h4>Income Statement</h4>
+                <p>Lebanese accounting rule-compliant profit/loss statements</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-balance-scale"></i>
+                </div>
+                <h4>Balance Sheet</h4>
+                <p>Comprehensive financial position reporting</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Of Session Tab 
+          <div class="tab-content" id="session">
+            <div class="tab-header">
+              <h2>End Of Session Menu</h2>
+              <p>Comprehensive financial reporting and analysis tools</p>
+            </div>
+
+            <div class="demo-preview">
+              <div class="preview-header">
+              </div>
+              <div class="gif-container">
+                <img src="../Images/GeneralAccountingEndOfSession.gif" alt="General Accounting End Of Session Demo"
+                  loading="lazy">
+                <div class="gif-overlay">
+                  <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="modules-grid">
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h4>Backup Feature</h4>
+                <p>It is very important to store data on tapes for later use in case of probable damage</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-circle-xmark"></i>
+                </div>
+                <h4>Quit</h4>
+                <p>To close Brains system</p>
+              </div>
+            </div>
+          </div>-->
+
+          <!-- Session Tab -->
+<div class="tab-content" id="session">
+  <div class="tab-header">
+    <h2>Session Management</h2>
+    <p>End-of-session procedures and data protection features</p>
+  </div>
+
+  <div class="demo-preview">
+    <div class="preview-header">
+      <h4>Session Management Walkthrough</h4>
+      <p>See how to properly close sessions and backup data</p>
+    </div>
+    <div class="gif-container">
+      <img src="../Images/GeneralAccountingEndOfSession.gif" alt="General Accounting Session Management Demo" loading="lazy">
+      <div class="gif-overlay">
+        <button class="play-btn">
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
     </div>
   </div>
 
+  <div class="session-features">
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="feature-content">
+          <h4>Automated Backup System</h4>
+          <p>Secure your financial data with automated backup procedures that run directly from the system without requiring exit</p>
+          <ul class="feature-sublist">
+            <li><i class="fas fa-check"></i> Scheduled backup operations</li>
+            <li><i class="fas fa-check"></i> Multiple backup destinations</li>
+            <li><i class="fas fa-check"></i> Backup verification</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-power-off"></i>
+        </div>
+        <div class="feature-content">
+          <h4>Safe Session Closure</h4>
+          <p>Properly close Brains system with data integrity checks and automatic save procedures</p>
+          <ul class="feature-sublist">
+            <li><i class="fas fa-check"></i> Data validation before closure</li>
+            <li><i class="fas fa-check"></i> Automatic transaction completion</li>
+            <li><i class="fas fa-check"></i> Session recovery options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="security-section">
+      <h3>Data Protection Features</h3>
+      <div class="security-grid">
+        <div class="security-item">
+          <i class="fas fa-shield-alt"></i>
+          <h5>Data Integrity</h5>
+          <p>Automatic validation ensures all transactions are properly recorded before session closure</p>
+        </div>
+        <div class="security-item">
+          <i class="fas fa-history"></i>
+          <h5>Session Recovery</h5>
+          <p>Recover interrupted sessions with complete transaction history intact</p>
+        </div>
+        <div class="security-item">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <h5>Cloud Backup</h5>
+          <p>Optional cloud backup integration for additional data protection</p>
+        </div>
+        <div class="security-item">
+          <i class="fas fa-clock"></i>
+          <h5>Auto-Save</h5>
+          <p>Regular auto-save functionality prevents data loss during extended sessions</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="procedure-section">
+      <h3>Session Procedures</h3>
+      <div class="procedure-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h5>Daily Backup</h5>
+            <p>Perform regular backups to protect against data loss. The system allows backup operations without interrupting workflow.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h5>Session Review</h5>
+            <p>Review completed transactions and verify data integrity before closing the session.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h5>Safe Closure</h5>
+            <p>Close the system with confidence knowing all data is properly saved and secured.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+             <!-- System Tab -->
+<div class="tab-content" id="system">
+  <div class="tab-header">
+    <h2>System Configuration</h2>
+    <p>Advanced system settings and customization options</p>
+  </div>
+
+  <div class="demo-preview">
+    <div class="preview-header">
+      <h4>System Configuration Walkthrough</h4>
+      <p>See how to customize system settings and manage companies</p>
+    </div>
+    <div class="gif-container">
+      <img src="../Images/GeneralAccountingSystem.gif" alt="General Accounting System Configuration Demo" loading="lazy">
+      <div class="gif-overlay">
+        <button class="play-btn">
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="system-features">
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="system-icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <h4>Multi-Company Management</h4>
+        <p>Seamlessly switch between different companies while maintaining separate financial records and configurations</p>
+        <div class="system-details">
+          <span class="detail-tag">Company Profiles</span>
+          <span class="detail-tag">Shared Data</span>
+          <span class="detail-tag">Consolidation</span>
+        </div>
+      </div>
+
+      <div class="system-card">
+        <div class="system-icon">
+          <i class="fas fa-user-cog"></i>
+        </div>
+        <h4>User Management</h4>
+        <p>Comprehensive user access control with customizable permissions and security settings</p>
+        <div class="system-details">
+          <span class="detail-tag">Role-Based Access</span>
+          <span class="detail-tag">Password Policies</span>
+          <span class="detail-tag">Audit Trail</span>
+        </div>
+      </div>
+
+      <div class="system-card">
+        <div class="system-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h4>Multi-Language Support</h4>
+        <p>Full interface localization in Arabic, French, English, and Portuguese languages</p>
+        <div class="system-details">
+          <span class="detail-tag">Arabic</span>
+          <span class="detail-tag">French</span>
+          <span class="detail-tag">English</span>
+          <span class="detail-tag">Portuguese</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="configuration-section">
+      <h3>System Configuration Options</h3>
+      <div class="config-grid">
+        <div class="config-item">
+          <i class="fas fa-key"></i>
+          <div class="config-content">
+            <h5>Password Management</h5>
+            <p>Change system passwords with advanced security options and encryption</p>
+          </div>
+        </div>
+        <div class="config-item">
+          <i class="fas fa-sort-alpha-down"></i>
+          <div class="config-content">
+            <h5>Account Sorting</h5>
+            <p>Choose to list auxiliary accounts by code or description for optimal organization</p>
+          </div>
+        </div>
+        <div class="config-item">
+          <i class="fas fa-language"></i>
+          <div class="config-content">
+            <h5>Language Selection</h5>
+            <p>Switch between supported languages without restarting the application</p>
+          </div>
+        </div>
+        <div class="config-item">
+          <i class="fas fa-file-alt"></i>
+          <div class="config-content">
+            <h5>Journal Numbering</h5>
+            <p>Automatically number daily journal pages for government submission and stamping</p>
+          </div>
+        </div>
+        <div class="config-item">
+          <i class="fas fa-calculator"></i>
+          <div class="config-content">
+            <h5>Integrated Tools</h5>
+            <p>Access calculator and calendar functions directly within the application</p>
+          </div>
+        </div>
+        <div class="config-item">
+          <i class="fas fa-exchange-alt"></i>
+          <div class="config-content">
+            <h5>Company Switching</h5>
+            <p>Instant switching between companies with automatic file management</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enterprise-features">
+      <h3>Enterprise Features</h3>
+      <div class="enterprise-grid">
+        <div class="enterprise-card">
+          <h5>Scalable Architecture</h5>
+          <p>Built to handle growing business needs with unlimited user support and data capacity</p>
+          <ul>
+            <li>Unlimited concurrent users</li>
+            <li>Growing data volume support</li>
+            <li>Multi-company expansion</li>
+          </ul>
+        </div>
+        <div class="enterprise-card">
+          <h5>Security Framework</h5>
+          <p>Enterprise-grade security with comprehensive access controls and audit capabilities</p>
+          <ul>
+            <li>Advanced user permissions</li>
+            <li>Complete audit trails</li>
+            <li>Data encryption</li>
+          </ul>
+        </div>
+        <div class="enterprise-card">
+          <h5>Compliance Ready</h5>
+          <p>Designed to meet regulatory requirements with built-in compliance features</p>
+          <ul>
+            <li>Government reporting</li>
+            <li>Tax compliance tools</li>
+            <li>Audit preparation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="integration-section">
+      <h3>System Integration</h3>
+      <div class="integration-features">
+        <div class="integration-item">
+          <i class="fas fa-plug"></i>
+          <div>
+            <h5>Database Connectivity</h5>
+            <p>Robust SQL Server integration with optimized performance and reliability</p>
+          </div>
+        </div>
+        <div class="integration-item">
+          <i class="fas fa-network-wired"></i>
+          <div>
+            <h5>Network Ready</h5>
+            <p>Multi-user network deployment with centralized data management</p>
+          </div>
+        </div>
+        <div class="integration-item">
+          <i class="fas fa-sync-alt"></i>
+          <div>
+            <h5>Data Synchronization</h5>
+            <p>Real-time data synchronization across multiple company databases</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <section class="demo-navigation">
+    <div class="container">
+      <div class="nav-buttons">
+        <button class="nav-btn prev-btn">
+          <i class="fas fa-arrow-left"></i>
+          Previous
+        </button>
+        <button class="nav-btn next-btn">
+          Next
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-64">
-    <div>
-      <h4>Working Hours</h4>
+  <footer>
+    <div class="w3-center">
+      <a href="#products" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
     </div>
-    <div>
-      Monday to Friday<br>
-      From 9:00 A.M.<br>
-      To 4:30 P.M.
-    </div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Brains POS</h3>
+          <p>Powerful point of sale software designed to help businesses of all sizes streamline operations and increase
+            profitability.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
+              aria-label="facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/brains-sarl-lb/" target="_blank" aria-label="linkedin"
+              class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp"
+              class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
 
-    <div class="footer w3-xlarge w3-section">
-      <ul>
-        <div></div>
-        <li>
-          <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp">
-            <i class="fa fa-whatsapp w3-hover-opacity"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
-            aria-label="facebook">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/brains-lb/" target="_blank" aria-label="linkedin">
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-          </a>
-        </li>
-        <div></div>
-      </ul>
-    </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="../index.html#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+            <li><a href="../hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+            <li><a href="../index.html#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+            <li><a href="../index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
 
-    <p class="w3-small">
-      Copyright &copy; Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL
-    </p>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd
+                floor</a></li>
+            <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
+            <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2025 Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL.</p>
+      </div>
+    </div>
   </footer>
 
-  <script src="../hc/results.js"></script>
   <script src="../hc/script.js"></script>
   <script src="demo.js"></script>
+  <script src="accounting.js"></script>
 
-   <!-- Dialogflow Messenger -->
- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
- <df-messenger
-   chat-icon="https://raw.githubusercontent.com/Jacksthehusky/Brains.github.io/refs/heads/main/Images/AiBot.png"
-   intent="WELCOME"
-   chat-title="Brains Assistant"
-   agent-id="749f115e-db73-495e-8de0-a48a00e72366"
-   language-code="en"
- ></df-messenger>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
+  <!-- n8n Chat -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    // Chat Manager with Dark Mode Support
+    class BrainsChatManager {
+      constructor() {
+        this.chatInstance = null;
+        this.currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        this.init();
+      }
+
+      init() {
+        this.createChat();
+        this.watchThemeChanges();
+      }
+
+      createChat() {
+        this.chatInstance = createChat({
+          webhookUrl: 'http://localhost:5678/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+          //webhookUrl: 'http://ma2fd0fnv.localto.net/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+
+
+          target: '#brains-chatbot',
+          mode: 'window',
+
+          showWelcomeScreen: true,
+          defaultLanguage: 'en',
+
+          initialMessages: [
+            '👋 Welcome to Brains Accounting Assistant!',
+            'I can help you with software features, troubleshooting, and guides. What would you like to know?'
+          ],
+
+          i18n: {
+            en: {
+              title: 'Brains Assistant',
+              subtitle: 'Your 24/7 Accounting Software Expert',
+              footer: '',
+              getStarted: 'Start New Conversation',
+              inputPlaceholder: 'Get help with Brains AI...',
+              waiting: 'Consulting knowledge base...',
+              messageError: 'Sorry, please try again',
+              messageRetry: 'Retry'
+            }
+          },
+
+          theme: {
+            style: {
+              primaryColor: '#2c5aa0',
+              secondaryColor: '#20b69e',
+              backgroundColor: this.currentTheme === 'dark' ? '#1a1d23' : '#ffffff',
+              textColor: this.currentTheme === 'dark' ? '#e9ecef' : '#343a40',
+              borderRadius: '0.5rem'
+            }
+          }
+        });
+      }
+
+      watchThemeChanges() {
+        // Watch for theme changes
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+              this.currentTheme = document.documentElement.getAttribute('data-theme');
+              console.log('Theme changed to:', this.currentTheme);
+            }
+          });
+        });
+
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['data-theme']
+        });
+      }
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      new BrainsChatManager();
+    });
+  </script>
 
 </body>
 
