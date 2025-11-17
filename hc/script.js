@@ -75,7 +75,7 @@ function onClick(element) {
 }
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
-function w3_open() {
+/*function w3_open() {
   var mySidebar = document.getElementById("mySidebar");
   if (mySidebar.style.display === "block") {
     mySidebar.style.display = "none";
@@ -86,7 +86,28 @@ function w3_open() {
 function w3_close() {
   var mySidebar = document.getElementById("mySidebar");
   mySidebar.style.display = "none";
-}
+}*/
+const burgerMenu = document.querySelector('.burger-menu');
+const navMenu = document.querySelector('header nav ul');
+
+burgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+
+// Optional: Close menu when clicking on a link
+const navLinks = document.querySelectorAll('header nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
+
+// Optional: Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !burgerMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+    }
+});
 
 /*===============  Scroll sections active link ===============*/
 let sections = document.querySelectorAll("section");

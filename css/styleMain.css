@@ -21,6 +21,10 @@ html {
   --card-bg: #ffffff;
   --border-color: #e2e8f0;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --shadow-light: 0 5px 20px rgba(0, 0, 0, 0.08);
+  --border-radius: 16px;
+  --transition: all 0.3s ease;
 
   /* LordIcon specific CSS variables */
   --lord-icon-primary: #121331;
@@ -220,7 +224,6 @@ header {
   background: transparent;
   border: none;
   padding: 1rem;
-  cursor: pointer;
   display: none;
 }
 
@@ -284,16 +287,16 @@ header {
   color: var(--dark);
 }
 
-nav ul {
+header nav ul {
   display: flex;
   list-style: none;
 }
 
-nav ul li {
+header nav ul li {
   margin-left: 30px;
 }
 
-nav ul li a {
+header nav ul li a {
   display: inline-block;
   text-decoration: none;
   margin: auto;
@@ -307,11 +310,11 @@ nav ul li a {
   animation-delay: calc(0.2s * var(--i));
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: var(--primary);
 }
 
-nav ul li a::after {
+header nav ul li a::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -322,13 +325,13 @@ nav ul li a::after {
   transition: width 0.3s;
 }
 
-nav ul li a:hover::after {
+header nav ul li a:hover::after {
   width: 100%;
 }
 
 /* 4. Professional focus states for accessibility */
 .btns:focus-visible,
-nav ul li a:focus-visible {
+header nav ul li a:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
@@ -550,5 +553,3 @@ footer {
   background: var(--primary);
   color: white;
 }
-
-

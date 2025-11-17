@@ -8,18 +8,22 @@ fetch("../data/questions.json")
     questions = data;
     const question = questions.find((q) => q.id == id);
 
-     // Current year and next year dynamically
-     const currentYear = Math.floor(new Date().getFullYear() - 0.75 + new Date().getMonth() / 12);
-     const nextYear = currentYear + 1;
- 
-     // Replace placeholders in the question and answers
-     question.q = question.q
-       .replace("{{CURRENT_YEAR}}", currentYear)
-       .replace("{{NEXT_YEAR}}", nextYear);
- 
-     question.answer = question.answer.map((answer) =>
-       answer.replace("{{CURRENT_YEAR}}", currentYear).replace("{{NEXT_YEAR}}", nextYear)
-     );
+    // Current year and next year dynamically
+    const currentYear = Math.floor(
+      new Date().getFullYear() - 0.75 + new Date().getMonth() / 12
+    );
+    const nextYear = currentYear + 1;
+
+    // Replace placeholders in the question and answers
+    question.q = question.q
+      .replace("{{CURRENT_YEAR}}", currentYear)
+      .replace("{{NEXT_YEAR}}", nextYear);
+
+    question.answer = question.answer.map((answer) =>
+      answer
+        .replace("{{CURRENT_YEAR}}", currentYear)
+        .replace("{{NEXT_YEAR}}", nextYear)
+    );
 
     //id
     document.getElementById("id").innerHTML = "(ID: " + question.id + ")";
@@ -34,17 +38,20 @@ fetch("../data/questions.json")
     const answersContainer = document.getElementById("answers-container");
 
     // loop through the answers array and display each answer and its corresponding image
-    for (let i = 0; i < question.answer.length; i++) {
-      const answer = question.answer[i];
-      const url = question.screenshots[i];
-      const answerElement = document.createElement("li");
-      answerElement.innerHTML = `
-      <div class="answer-block"><span>${answer}</span>
-      <div style="display: flex;justify-content: center;"><img src="${url}" alt="${answer}" class="w3-hover-opacity" onclick="onClick(this, ${i})"><div>
-      </div>
-    `;
-      answersContainer.appendChild(answerElement);
-    }
+for (let i = 0; i < question.answer.length; i++) {
+  const answer = question.answer[i];
+  const url = question.screenshots[i];
+  const answerElement = document.createElement("li");
+  answerElement.innerHTML = `
+    <div class="answer-block">
+        <span>${answer}</span>
+        <div class="answer-image">
+            <img src="${url}" alt="${answer}" class="clickable-image" onclick="onClick(this, ${i})">
+        </div>
+    </div>
+  `;
+  answersContainer.appendChild(answerElement);
+}
 
     //notes
     document.getElementById("notes").innerHTML = question.notes;
@@ -126,38 +133,31 @@ fetch("../data/questions.json")
     const relatedArticlesContainer =
       document.getElementById("related-articles");
 
-    var relatedQuestions = questions.filter(
-      (q) =>
-        question.tag != "" && q.tag === question.tag && q.id !== question.id
-    );
-    console.log(relatedQuestions.length);
-    if (relatedQuestions.length > 0) {
-      const relatedArticlesTitle = document.createElement("h2");
-      relatedArticlesTitle.textContent = "Check out other related articles";
+var relatedQuestions = questions.filter(
+  (q) => question.tag != "" && q.tag === question.tag && q.id !== question.id
+);
 
-      relatedArticlesContainer.appendChild(relatedArticlesTitle);
+if (relatedQuestions.length > 0) {
+  const relatedArticlesList = document.getElementById("related-articles-list");
+  
+  relatedQuestions.forEach((relatedQuestion) => {
+    const relatedArticleItem = document.createElement("li");
+    relatedArticleItem.className = "related-item"; // ADD THIS LINE
+    
+    const relatedArticleLink = document.createElement("a");
+    relatedArticleLink.className = "related-link"; // ADD THIS LINE
+    relatedArticleLink.textContent = relatedQuestion.q
+      .replace("{{CURRENT_YEAR}}", currentYear)
+      .replace("{{NEXT_YEAR}}", nextYear);
+    relatedArticleLink.href = `results.html?id=${relatedQuestion.id}`;
 
-      const relatedArticlesList = document.createElement("ul");
-
-      relatedQuestions.forEach((relatedQuestion) => {
-        const relatedArticleItem = document.createElement("li");
-        const relatedArticleLink = document.createElement("a");
-        relatedArticleLink.textContent = relatedQuestion.q
-        .replace("{{CURRENT_YEAR}}", currentYear)
-        .replace("{{NEXT_YEAR}}", nextYear);
-        relatedArticleLink.href = `results.html?id=${relatedQuestion.id}`;
-
-        relatedArticleItem.appendChild(relatedArticleLink);
-        relatedArticlesList.appendChild(relatedArticleItem);
-      });
-
-      relatedArticlesContainer.appendChild(relatedArticlesList);
-    } else {
-      const noRelatedArticlesMessage = document.createElement("p");
-      noRelatedArticlesMessage.textContent = "";
-
-      relatedArticlesContainer.appendChild(noRelatedArticlesMessage);
-    }
+    relatedArticleItem.appendChild(relatedArticleLink);
+    relatedArticlesList.appendChild(relatedArticleItem);
+  });
+} else {
+  // Hide the entire related section if no related articles
+  document.querySelector('.related-section').style.display = 'none'; // ADD THIS LINE
+}
   })
   .catch((error) => {
     console.log("An error occurred while fetching data:", error);
@@ -174,3 +174,16 @@ shareButton.addEventListener("click", () => {
   const whatsappUrl = `https://wa.me/?text=${caption}%0A${pageUrl}`;
   window.open(whatsappUrl, "_blank");
 });
+
+
+
+// ADD THIS FUNCTION FOR MODAL (if not already in your HTML):
+function onClick(element, index) {
+  const modal = document.getElementById("modal01");
+  const modalImg = document.getElementById("img01");
+  const captionText = document.getElementById("caption");
+  
+  modal.style.display = "block";
+  modalImg.src = element.src;
+  captionText.innerHTML = element.alt;
+}
