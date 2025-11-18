@@ -322,7 +322,10 @@
   }
 
   .btns {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    padding: 0.6rem 0.5rem;
+        margin-left: 0.6rem;
+        border-radius: 1rem;
   }
 
   .gradient-card-content .btns {
