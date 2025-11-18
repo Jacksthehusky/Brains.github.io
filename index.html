@@ -15,9 +15,8 @@
   <meta property="og:url" content="https://brains-lb.com">
 
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/styleMain.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/responsiveDesign.css">
@@ -59,23 +58,12 @@
         </button>
       </div>
 
-     <!-- burger menu-->
-    <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
-      <i class="fas fa-bars"></i>
-    </a>
-  </div>
-</header>
-
-  <!-- Sidebar on small screens when clicking the menu icon 
-  <nav class="sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
-    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-    <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-    <a href="careers/careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
-    <a href="Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
-    <a href="hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
-  </nav>-->
+      <!-- burger menu-->
+      <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </header>
 
   <!-- Home Section -->
   <section class="home" id="home">
@@ -99,21 +87,21 @@
             <h1>Cutting-edge software</h1>
             <h3>For <span class="multiple-text"></span></h3>
 
-            <div class="social-media w3-text-grey w3-large">
+            <div class="social-media">
               <a href="javascript:void(0)" style="--i:7;" onclick="sendWhatsAppMessageHome()" aria-label="whatsapp">
-                <i class="fab fa-whatsapp w3-hover-opacity"></i>
+                <i class="fab fa-whatsapp"></i>
               </a>
               <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" style="--i:8;"
                 target="_blank" aria-label="facebook">
-                <i class="fab fa-facebook w3-hover-opacity"></i>
+                <i class="fab fa-facebook"></i>
               </a>
               <a href="https://www.linkedin.com/company/brains-sarl-lb/" style="--i:9;" target="_blank"
                 aria-label="linkedin">
-                <i class="fab fa-linkedin w3-hover-opacity"></i>
+                <i class="fab fa-linkedin"></i>
               </a>
             </div>
             <a href="Demo/Products.html" class="btns">
-              <i class="fab fa-wpforms w3-margin-right" aria-hidden="true"></i>Online Demo
+              <i class="fab fa-wpforms style-margin-right" aria-hidden="true"></i>Online Demo
             </a>
           </div>
 
@@ -285,17 +273,6 @@
     </div>
   </section>
 
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image" alt="">
-      <p id="caption" class="w3-opacity w3-large caption"></p>
-    </div>
-  </div>
-
-
   <!-- Modern Business Types Section -->
   <section class="industries-section" id="industries">
     <div class="container">
@@ -356,7 +333,7 @@
       </div>
     </div>
 
-    <div class="w3-padding-32">
+    <div class="style-padding-top-bottom-32">
       <div class="marquee">
         <span class="moving-ad">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes
           Fashion-Services Car-Dealers Catering-Factories
@@ -366,22 +343,17 @@
   </section>
 
   <!-- small and large" -->
-  <div class="about-content w3-container" style="padding:128px 16px">
-    <div class="w3-row-padding">
-      <div class="w3-col m6">
-        <h2 class="section-header section-title">Built for <span>small</span> and <span>large</span> business owners
-        </h2>
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Built for <span>small</span> and <span>large</span> business owners</h2>
         <p class="section-subtitle">Brains: The go-to accounting software for businesses of all sizes.</p>
-        <p>Streamline your finances with features like invoicing, inventory tracking, and more. Scale effortlessly as
-          your business grows. Customize <span>Brains</span> to fit your specific needs. <br>Experience the versatility
-          today.</p>
       </div>
-      <div class="w3-col m6">
-        <img class="w3-image w3-round-large w3-grayscale-min" src="./Images/companies.jpg" alt="Buildings" width="700"
-          height="394">
+      <div class="about-img">
+        <img src="./Images/companies.jpg" alt="Buildings">
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Features Section -->
   <section class="features" id="features">
@@ -599,75 +571,77 @@
 
 
   <!-- HelpCenter Section -->
-  <section class="careers" style=" min-height: 50vh" id="help">
-    <div>
-      <h2 class="section-header section-title"><span>Brains </span>Help Center!</h2>
-      <p class="w3-center">
+  <section class="careers" style="min-height: 50vh" id="help">
+
+    <div class="section-header">
+      <h2 class="section-title"><span>Brains </span>Help Center!</h2>
+      <p class="style-center">
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
         <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger="loop" delay="4000"
           style="width:100px;height:100px">
         </lord-icon>
       </p>
-      <p class="w3-center w3-xlarge">The place to get answers to your questions...</p>
-      <p class="w3-center w3-padding-64">
+      <p class="style-center section-subtitle">The place to get answers to your questions...</p>
+      <p class="style-center style-padding-top-bottom-32">
         <a href="hc/HelpCenter.html" class="btns">
-          <i class="far fa-comments w3-margin-right"></i>Get Help</a>
+          <i class="far fa-comments style-margin-right"></i>Get Help</a>
       </p>
     </div>
   </section>
 
 
   <!-- demo Section -->
-  <section class="contact" style=" min-height: 50vh" id="demo">
+  <section class="contact" style="min-height: 50vh" id="demo">
     <div>
       <h2 class="section-header section-title"><span>Brains </span>Demo!</h2>
-      <p class="w3-center">
+      <p class="style-center">
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
         <lord-icon src="https://cdn.lordicon.com/wzwygmng.json" trigger="loop" delay="4000"
           style="width:100px;height:100px">
         </lord-icon>
       </p>
-      <p class="w3-center w3-xlarge">Take a tour through our software's features with our online demo...</p>
-      <p class="w3-center w3-padding-64">
+      <p class="style-center section-subtitle">Take a tour through our software's features with our online demo...</p>
+      <p class="style-center style-padding-top-bottom-32">
         <a href="Demo/Products.html" class="btns">
-          <i class="fab fa-wpforms w3-margin-right" aria-hidden="true"></i>Explore Demo</a>
+          <i class="fab fa-wpforms style-margin-right" aria-hidden="true"></i>Explore Demo</a>
       </p>
     </div>
   </section>
 
 
   <!-- Work Section -->
-  <section class="careers" style=" min-height: 50vh" id="work">
+  <section class="careers" style="min-height: 50vh" id="work">
     <div>
       <h2 class="section-header section-title">Career opportunities at <span>Brains</span></h2>
-      <p class="w3-center">
+      <p class="style-center">
         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
         <lord-icon data-icon-type="careers" src="https://cdn.lordicon.com/uukerzzv.json" trigger="loop" delay="4000"
           style="width:100px;height:100px" colors="secondary:darkred">
         </lord-icon>
       </p>
-      <p class="w3-center w3-xlarge">Brains is an exciting company whose business focuses on developing complex
+      <p class="style-center section-subtitle">Brains is an exciting company whose business focuses on developing
+        complex
         solutions for the market. <br>We are always interrested in new and motivated people.</p>
-      <p class="w3-center w3-padding-64">
+      <p class="style-center style-padding-top-bottom-32">
         <a href="careers/careers.html" class="btns">
-          <i class="far fa-plus-square w3-margin-right" aria-hidden="true"></i>Apply Here</a>
+          <i class="far fa-plus-square style-margin-right" aria-hidden="true"></i>Apply Here</a>
       </p>
     </div>
   </section>
 
   <!-- Team Section-->
-  <section class="team w3-light-grey" id="contact">
+  <section class="team" id="contact">
     <div>
       <h2 class="section-header section-title">The <span>ones</span> who runs this company</h2>
-      <div class="center w3-row-padding" style="margin-top:64px">
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="card w3-card" style="border-radius: 50px;">
+      <div class="center style-row-padding" style="margin-top:64px">
+        <div class="style-col l3 m6">
+          <div class="card style-card" style="border-radius: 50px;">
             <img src="./Images/Michel.jpg" alt="Michel" style="width:100%; border-radius: 50px 50px 0 0;">
-            <div class="w3-container">
-              <h3 style="color: darkred">Michel Aynati</h3>
-              <p class="w3-opacity">CEO & Founder</p>
+            <div class="container">
+              <h3>Michel Aynati</h3>
+              <p class="style-opacity">CEO & Founder</p>
               <p>Feel free to get in touch with us if you wish to gain additional information about our product.</p>
-              <div class="social-media w3-text-grey">
+              <div class="social-media">
                 <a href="javascript:void(0)" onclick="sendWhatsAppMessageMichel()" aria-label="whatsapp">
                   <i class="fab fa-whatsapp"></i>
                 </a>
@@ -675,14 +649,14 @@
             </div>
           </div>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="card w3-card" style="border-radius: 50px;">
+        <div class="style-col l3 m6">
+          <div class="card style-card" style="border-radius: 50px;">
             <img src="./Images/Nassar.jpg" alt="Nassar" style="width:100%; border-radius: 50px 50px 0 0;">
-            <div class="w3-container">
-              <h3 style="color: darkred">Nassar Nassar</h3>
-              <p class="w3-opacity">CEO & Founder</p>
+            <div class="container">
+              <h3>Nassar Nassar</h3>
+              <p class="style-opacity">CEO & Founder</p>
               <p>For more information or inquiries about our product, please contact us.</p>
-              <div class="social-media w3-text-grey">
+              <div class="social-media">
                 <a href="javascript:void(0)" onclick="sendWhatsAppMessageNassar()" aria-label="whatsapp">
                   <i class="fab fa-whatsapp"></i>
                 </a>
@@ -695,7 +669,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact w3-light-grey">
+  <section class="contact">
     <h2 class="section-header section-title">Contact <span>Us!</span></h2>
     <form action="contact-form-handler.php" method="post" name="Contact Form">
       <div class="input-box">
@@ -714,15 +688,15 @@
   </section>
 
   <!-- map -->
-  <div class="map w3-light-grey" id="map">
-    <p class="w3-center">
+  <div class="map" id="map">
+    <p class="style-center">
       <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
       <lord-icon data-icon-type="map" src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
         style="width:100px;height:100px" colors="secondary:darkred">
       </lord-icon>
     </p>
-    <p class="w3-center w3-xlarge section-title">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</p>
-    <p class="w3-center" style="margin-top:48px">
+    <p class="style-center section-subtitle section-title">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</p>
+    <p class="style-center" style="margin-top:48px">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3312.002323540315!2d35.562044!3d33.889593999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDUzJzIyLjUiTiAzNcKwMzMnNDMuNCJF!5e0!3m2!1sen!2slb!4v1679157298394!5m2!1sen!2slb"
         width="100%" height="450" style="border: 0; border-radius: 25px;" allowfullscreen="" loading="lazy" title="map"
@@ -733,8 +707,8 @@
 
   <!-- Footer -->
   <footer>
-    <div class="w3-center">
-      <a href="#home" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="style-center">
+      <a href="#home" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
     </div>
     <div class="container">
       <div class="footer-content">

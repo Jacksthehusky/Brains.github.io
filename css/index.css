@@ -249,11 +249,10 @@ section {
 .about-content h2 span {
   text-transform: capitalize;
   font-weight: bold;
-  color: rgb(122, 21, 21);
 }
 
 .about-content p span {
-  color: rgb(122, 21, 21);
+  color: var(--primary)
 }
 
 .about-content h3 {
@@ -279,13 +278,7 @@ section {
 }
 
 .services h2 {
-  margin-bottom: 5rem;
-}
-
-.services h2 span {
-  text-transform: capitalize;
-  font-weight: bold;
-  color: rgb(122, 21, 21);
+  margin-bottom: 3rem;
 }
 
 .services-container {
@@ -540,24 +533,6 @@ section {
   overflow: hidden;
 }
 
-.section-title span::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary), var(--primary-light));
-  border-radius: 3px;
-}
-
-.section-subtitle {
-  font-size: 1.2rem;
-  color: var(--gray);
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 .industry-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -672,7 +647,7 @@ section {
 
 /*-----------------------------------System Requirements Section-----------------------------------*/
 .system-requirements {
-  background: white;
+  background: var(--white);
   border-radius: 20px;
   box-shadow: 0 15px 50px rgba(122, 21, 21, 0.15);
   padding: 60px 40px;
@@ -939,7 +914,11 @@ section {
 .team h2 span {
   text-transform: capitalize;
   font-weight: bold;
-  color: rgb(122, 21, 21);
+  color: var(--primary);
+}
+
+.team h3 {
+  color: var(--primary);
 }
 
 .card {
@@ -951,6 +930,10 @@ section {
   box-shadow: 0px 2px 4px rgb(122, 21, 21);
 }
 
+.style-card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
 .contact h2 {
   margin-bottom: 3rem;
 }
@@ -958,7 +941,6 @@ section {
 .contact h2 span {
   text-transform: capitalize;
   font-weight: bold;
-  color: rgb(122, 21, 21);
 }
 
 .contact form {
@@ -1011,7 +993,6 @@ section {
 .careers h2 span {
   text-transform: capitalize;
   font-weight: bold;
-  color: rgb(122, 21, 21);
 }
 
 /*-----------------------------------Dark mode Home Section-----------------------------------*/
@@ -1154,12 +1135,12 @@ section {
   );
 }
 
-[data-theme="dark"] .w3-light-grey {
+[data-theme="dark"] .style-light-grey {
   background-color: var(--second-bg-color) !important;
   color: var(--text-color);
 }
 
-[data-theme="dark"] .w3-card {
+[data-theme="dark"] .card {
   background-color: var(--card-bg) !important;
   color: var(--text-color);
 }
@@ -1173,7 +1154,8 @@ section {
 }
 
 /* Map and iframe adjustments */
-[data-theme="dark"] .map {
+[data-theme="dark"] .map,
+ [data-theme="dark"] .team{
   background: var(--second-bg-color);
 }
 
@@ -1182,9 +1164,7 @@ section {
 }
 
 /* Smooth theme transition for specific elements */
-[data-theme="dark"] .logo h1 {
-  color: var(--primary-light);
-}
+
 
 [data-theme="dark"] .section-title {
   color: var(--text-color);

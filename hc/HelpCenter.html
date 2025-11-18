@@ -6,7 +6,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/style1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../css/styleMain.css" />
   <link rel="stylesheet" href="../css/responsiveDesign.css" />
   <link rel="stylesheet" href="../css/helpcenterhero.css" />
@@ -17,7 +18,7 @@
 
 <body>
 
-   <!-- Navbar/Header (sit on top) -->
+  <!-- Navbar/Header (sit on top) -->
   <header>
     <div class="container nav-container">
       <div class="logo">
@@ -50,12 +51,12 @@
         </button>
       </div>
 
-     <!-- burger menu-->
-    <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
-      <i class="fas fa-bars"></i>
-    </a>
-  </div>
-</header>
+      <!-- burger menu-->
+      <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </header>
 
   <!-- Sidebar on small screens when clicking the menu icon
   <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
@@ -155,280 +156,274 @@
   </div>-->
 
   <!-- Modern Breadcrumb -->
-<nav class="breadcrumb-nav">
-  <div class="container">
-    <ul class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="../index.html" class="breadcrumb-link">
-          <i class="fas fa-home"></i>
-          Home
-        </a>
-      </li>
-      <li class="breadcrumb-item breadcrumb-active">
-        <span class="breadcrumb-current">
-          <i class="fas fa-chevron-right"></i>
-          Help Center
-        </span>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Modern Hero Search Section -->
-<section class="help-hero" id="help-hero">
-  <div class="container">
-    <div class="help-hero-content">
-      <div class="help-icon">
-        <lord-icon 
-          data-icon-type="help"
-          src="https://cdn.lordicon.com/vlupvdhl.json" 
-          trigger="loop" 
-          delay="1000"
-          style="width:100px;height:100px">
-        </lord-icon>
-      </div>
-      <h1 class="help-title">How can we help you?</h1>
-      <p class="help-subtitle">Find answers, guides, and tutorials for <span>Brains</span> software solutions</p>
-      
-      <div class="search-container">
-        <div class="search-box">
-          <i class="fas fa-search search-icon"></i>
-          <input type="text" id="search" class="search-input" placeholder="Search for answers..." autocomplete="off">
-          <button class="search-clear" id="clearSearch">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div id="search-results" class="search-results"></div>
-      </div>
-
-      <div class="quick-links">
-        <div class="quick-link">
-          <i class="fas fa-book"></i>
-          <span>Getting Started</span>
-        </div>
-        <div class="quick-link">
-          <i class="fas fa-cog"></i>
-          <span>Installation</span>
-        </div>
-        <div class="quick-link">
-          <i class="fas fa-chart-line"></i>
-          <span>Troubleshooting</span>
-        </div>
-        <div class="quick-link">
-          <i class="fas fa-file-invoice"></i>
-          <span>Reports</span>
-        </div>
-      </div>
+  <nav class="breadcrumb-nav">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="../index.html" class="breadcrumb-link">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+        <li class="breadcrumb-item breadcrumb-active">
+          <span class="breadcrumb-current">
+            <i class="fas fa-chevron-right"></i>
+            Help Center
+          </span>
+        </li>
+      </ul>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- Featured Articles Section -->
-<section class="featured-articles">
-  <div class="container">
-    <h2 class="section-title">Popular Articles</h2>
-    <div class="articles-grid">
-      <article class="article-card">
-        <div class="article-icon">
-          <i class="fas fa-download"></i>
+  <!-- Modern Hero Search Section -->
+  <section class="help-hero" id="help-hero">
+    <div class="container">
+      <div class="help-hero-content">
+        <div class="help-icon">
+          <lord-icon data-icon-type="help" src="https://cdn.lordicon.com/vlupvdhl.json" trigger="loop" delay="1000"
+            style="width:100px;height:100px">
+          </lord-icon>
         </div>
-        <h3>Software Installation Guide</h3>
-        <p>Step-by-step instructions for installing Brains software on your system</p>
-        <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
-      </article>
+        <h1 class="help-title">How can we help you?</h1>
+        <p class="help-subtitle">Find answers, guides, and tutorials for <span>Brains</span> software solutions</p>
 
-      <article class="article-card">
-        <div class="article-icon">
-          <i class="fas fa-database"></i>
-        </div>
-        <h3>Database Setup & Configuration</h3>
-        <p>Configure SQL Server database connections and optimize performance</p>
-        <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
-      </article>
-
-      <article class="article-card">
-        <div class="article-icon">
-          <i class="fas fa-users"></i>
-        </div>
-        <h3>User Management & Permissions</h3>
-        <p>Set up user accounts, roles, and access permissions for your team</p>
-        <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
-      </article>
-
-      <article class="article-card">
-        <div class="article-icon">
-          <i class="fas fa-file-export"></i>
-        </div>
-        <h3>Backup & Data Recovery</h3>
-        <p>Learn how to backup your data and recover from system failures</p>
-        <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="modern-faqs">
-  <div class="container">
-    <div class="faqs-header">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-subtitle">Quick answers to common questions about <span>Brains</span> software</p>
-    </div>
-
-    <div class="faqs-container">
-      <div class="faq-categories">
-        <button class="category-btn active" data-category="all">All Questions</button>
-        <button class="category-btn" data-category="installation">Installation</button>
-        <button class="category-btn" data-category="accounting">Accounting</button>
-        <button class="category-btn" data-category="inventory">Inventory</button>
-        <button class="category-btn" data-category="technical">Technical</button>
-      </div>
-
-      <div class="faq-list" id="faq-list">
-        <!-- FAQ items will be dynamically loaded here -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Support Section -->
-<section class="modern-support">
-  <div class="container">
-    <div class="support-grid">
-      <div class="support-content">
-        <h2 class="section-title">Still Need <span>Help?</span></h2>
-        <p class="support-description">Our dedicated support team is ready to assist you with any questions or issues you may encounter.</p>
-        
-        <div class="support-features">
-          <div class="support-feature">
-            <i class="fas fa-clock"></i>
-            <div>
-              <h4>Quick Response</h4>
-              <p>Typically respond within 2 business hours</p>
-            </div>
-          </div>
-          <div class="support-feature">
-            <i class="fas fa-expertise"></i>
-            <div>
-              <h4>Expert Assistance</h4>
-              <p>Get help from our certified technicians</p>
-            </div>
-          </div>
-          <div class="support-feature">
-            <i class="fas fa-shield-alt"></i>
-            <div>
-              <h4>Secure Support</h4>
-              <p>Your data and privacy are always protected</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="support-form-container">
-        <div class="support-form">
-          <h3>Contact Support</h3>
-          <form action="/contact-form-handler.php" method="post" name="Contact Form" class="modern-form">
-            <div class="form-grid">
-              <div class="input-group">
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" placeholder="Enter your full name" required name="fullname">
-                <i class="fas fa-user input-icon"></i>
-              </div>
-
-              <div class="input-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter your email" required name="emailaddress">
-                <i class="fas fa-envelope input-icon"></i>
-              </div>
-
-              <div class="input-group">
-                <label for="telephone">Mobile Number</label>
-                <input type="tel" id="telephone" placeholder="Enter your mobile number" required name="telephone">
-                <i class="fas fa-phone input-icon"></i>
-              </div>
-
-              <div class="input-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Brief description of your issue" required name="subject">
-                <i class="fas fa-tag input-icon"></i>
-              </div>
-            </div>
-
-            <div class="input-group">
-              <label for="message">Detailed Description</label>
-              <textarea id="message" cols="30" rows="6" placeholder="Please describe your issue in detail..." required name="message"></textarea>
-              <i class="fas fa-comment input-icon textarea-icon"></i>
-            </div>
-
-            <input type="hidden" name="redirect" value="/hc/HelpCenter.html">
-            <input type="hidden" name="recipient" value="michel@brains-lb.com">
-            
-            <button type="submit" class="modern-btn">
-              <i class="fas fa-paper-plane"></i>
-              Send Message
+        <div class="search-container">
+          <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search" class="search-input" placeholder="Search for answers..." autocomplete="off">
+            <button class="search-clear" id="clearSearch">
+              <i class="fas fa-times"></i>
             </button>
-          </form>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+
+        <div class="quick-links">
+          <div class="quick-link">
+            <i class="fas fa-book"></i>
+            <span>Getting Started</span>
+          </div>
+          <div class="quick-link">
+            <i class="fas fa-cog"></i>
+            <span>Installation</span>
+          </div>
+          <div class="quick-link">
+            <i class="fas fa-chart-line"></i>
+            <span>Troubleshooting</span>
+          </div>
+          <div class="quick-link">
+            <i class="fas fa-file-invoice"></i>
+            <span>Reports</span>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="contact-methods">
-      <div class="contact-method">
-        <i class="fas fa-envelope"></i>
-        <div>
-          <h4>Email Support</h4>
-          <a href="mailto:michel@brains-lb.com">michel@brains-lb.com</a>
-        </div>
+  <!-- Featured Articles Section -->
+  <section class="featured-articles">
+    <div class="container">
+      <h2 class="section-title">Popular Articles</h2>
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-icon">
+            <i class="fas fa-download"></i>
+          </div>
+          <h3>Software Installation Guide</h3>
+          <p>Step-by-step instructions for installing Brains software on your system</p>
+          <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="article-card">
+          <div class="article-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Database Setup & Configuration</h3>
+          <p>Configure SQL Server database connections and optimize performance</p>
+          <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="article-card">
+          <div class="article-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>User Management & Permissions</h3>
+          <p>Set up user accounts, roles, and access permissions for your team</p>
+          <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="article-card">
+          <div class="article-icon">
+            <i class="fas fa-file-export"></i>
+          </div>
+          <h3>Backup & Data Recovery</h3>
+          <p>Learn how to backup your data and recover from system failures</p>
+          <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+        </article>
       </div>
-      <div class="contact-method">
-        <i class="fas fa-phone"></i>
-        <div>
-          <h4>Phone Support</h4>
-          <a href="tel:+9611872376">+961 1 872 376</a>
-        </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="modern-faqs">
+    <div class="container">
+      <div class="faqs-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions about <span>Brains</span> software</p>
       </div>
-      <div class="contact-method">
-        <i class="fab fa-whatsapp"></i>
-        <div>
-          <h4>WhatsApp</h4>
-          <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()">Chat with Support</a>
+
+      <div class="faqs-container">
+        <div class="faq-categories">
+          <button class="category-btn active" data-category="all">All Questions</button>
+          <button class="category-btn" data-category="installation">Installation</button>
+          <button class="category-btn" data-category="accounting">Accounting</button>
+          <button class="category-btn" data-category="inventory">Inventory</button>
+          <button class="category-btn" data-category="technical">Technical</button>
+        </div>
+
+        <div class="faq-list" id="faq-list">
+          <!-- FAQ items will be dynamically loaded here -->
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA Section -->
-<section class="help-cta">
-  <div class="container">
-    <div class="cta-content">
-      <lord-icon 
-        data-icon-type="help"
-        src="https://cdn.lordicon.com/wzrwaorf.json" 
-        trigger="loop" 
-        delay="2000"
-        style="width:120px;height:120px">
-      </lord-icon>
-      <h2>Can't find what you're looking for?</h2>
-      <p>Our support team is always ready to provide personalized assistance</p>
-      <div class="cta-buttons">
-        <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" class="cta-btn primary">
-          <i class="fab fa-whatsapp"></i>
-          Chat on WhatsApp
-        </a>
-        <a href="mailto:michel@brains-lb.com" class="cta-btn secondary">
+  <!-- Support Section -->
+  <section class="modern-support">
+    <div class="container">
+      <div class="support-grid">
+        <div class="support-content">
+          <h2 class="section-title">Still Need <span>Help?</span></h2>
+          <p class="support-description">Our dedicated support team is ready to assist you with any questions or issues
+            you may encounter.</p>
+
+          <div class="support-features">
+            <div class="support-feature">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Quick Response</h4>
+                <p>Typically respond within 2 business hours</p>
+              </div>
+            </div>
+            <div class="support-feature">
+              <i class="fas fa-expertise"></i>
+              <div>
+                <h4>Expert Assistance</h4>
+                <p>Get help from our certified technicians</p>
+              </div>
+            </div>
+            <div class="support-feature">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <h4>Secure Support</h4>
+                <p>Your data and privacy are always protected</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-form-container">
+          <div class="support-form">
+            <h3>Contact Support</h3>
+            <form action="/contact-form-handler.php" method="post" name="Contact Form" class="modern-form">
+              <div class="form-grid">
+                <div class="input-group">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" id="fullname" placeholder="Enter your full name" required name="fullname">
+                  <i class="fas fa-user input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" placeholder="Enter your email" required name="emailaddress">
+                  <i class="fas fa-envelope input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                  <label for="telephone">Mobile Number</label>
+                  <input type="tel" id="telephone" placeholder="Enter your mobile number" required name="telephone">
+                  <i class="fas fa-phone input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" placeholder="Brief description of your issue" required name="subject">
+                  <i class="fas fa-tag input-icon"></i>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="message">Detailed Description</label>
+                <textarea id="message" cols="30" rows="6" placeholder="Please describe your issue in detail..." required
+                  name="message"></textarea>
+                <i class="fas fa-comment input-icon textarea-icon"></i>
+              </div>
+
+              <input type="hidden" name="redirect" value="/hc/HelpCenter.html">
+              <input type="hidden" name="recipient" value="michel@brains-lb.com">
+
+              <button type="submit" class="modern-btn">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-methods">
+        <div class="contact-method">
           <i class="fas fa-envelope"></i>
-          Send Email
-        </a>
+          <div>
+            <h4>Email Support</h4>
+            <a href="mailto:michel@brains-lb.com">michel@brains-lb.com</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone Support</h4>
+            <a href="tel:+9611872376">+961 1 872 376</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <h4>WhatsApp</h4>
+            <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()">Chat with Support</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
- <!-- Footer -->
+  <!-- CTA Section -->
+  <section class="help-cta">
+    <div class="container">
+      <div class="cta-content">
+        <lord-icon data-icon-type="help" src="https://cdn.lordicon.com/wzrwaorf.json" trigger="loop" delay="2000"
+          style="width:120px;height:120px">
+        </lord-icon>
+        <h2>Can't find what you're looking for?</h2>
+        <p>Our support team is always ready to provide personalized assistance</p>
+        <div class="cta-buttons">
+          <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" class="cta-btn primary">
+            <i class="fab fa-whatsapp"></i>
+            Chat on WhatsApp
+          </a>
+          <a href="mailto:michel@brains-lb.com" class="cta-btn secondary">
+            <i class="fas fa-envelope"></i>
+            Send Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <div class="w3-center">
-      <a href="#help-hero" class="btns"><i class="fas fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="style-center">
+      <a href="#help-hero" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
     </div>
     <div class="container">
       <div class="footer-content">
@@ -460,7 +455,8 @@
         <div class="footer-column">
           <h3>Contact Us</h3>
           <ul class="footer-links">
-            <li><a href="../index.html#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
+            <li><a href="../index.html#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd
+                floor</a></li>
             <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
             <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
             <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
@@ -476,7 +472,7 @@
 
   <script src="helpcenterhero.js"></script>
   <script src="script.js"></script>
-  
+
 
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 

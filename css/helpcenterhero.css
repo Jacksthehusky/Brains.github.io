@@ -534,7 +534,7 @@ color: var(--primary);
 }
 
 .cta-btn.primary {
-  background: #25D366;
+  background: linear-gradient(135deg, var(--success) 0%, var(--success2) 100%);
   color: white;
 }
 

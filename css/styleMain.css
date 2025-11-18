@@ -32,6 +32,7 @@ html {
 
   /* Success colors */
   --success: #10b981;
+  --success2: #41ce9f;
   --warning: #f59e0b;
   --info: #3b82f6;
   --error: #ef4444;
@@ -110,6 +111,40 @@ lord-icon[data-icon-type="map"] {
   background: var(--primary-light);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+}
+
+.style-center {
+  text-align: center !important;
+}
+
+.style-margin-right {
+  margin-right: 16px !important;
+}
+
+.style-padding-top-bottom-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.style-opacity {
+  opacity: 0.6;
+}
+
+.style-row-padding > .style-col {
+  padding: 0 8px;
+}
+
+.style-col.l3 {
+  width: 24.99999%;
+}
+
 /*  Professional loading skeleton */
 .skeleton {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
@@ -186,6 +221,24 @@ lord-icon[data-icon-type="map"] {
   position: relative;
 }
 
+.section-title span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  border-radius: 3px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--gray);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 body {
   background-color: #f9f9f9;
   line-height: 1.6;
@@ -258,9 +311,9 @@ header {
   box-shadow: 0 0 1rem var(--primary);*/
 }
 
-.logo > a:hover > img {  
-    filter: brightness(1.3) drop-shadow(0 0 0.4rem var(--primary-light));
-    transition: var(--transition);
+.logo > a:hover > img {
+  filter: brightness(1.3) drop-shadow(0 0 0.4rem var(--primary-light));
+  transition: var(--transition);
 }
 
 .logo h1 {
@@ -430,10 +483,6 @@ footer {
   font-size: 0.9rem;
 }
 
-.w3-bar .w3-button {
-  padding: 16px 22px;
-}
-
 .social-media a {
   display: inline-flex;
   justify-content: center;
@@ -443,7 +492,10 @@ footer {
   border: 0.18rem solid;
   border-radius: 50%;
   font-size: 1.5rem;
-  text-decoration: none;
+    border-color: var(--gray);
+    color: var(--dark);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);  text-decoration: none;
   margin: 0.5rem 1rem 1.5rem 0;
   transition: 0.5s ease;
   opacity: 0;
@@ -452,9 +504,8 @@ footer {
 }
 
 .social-media a:hover {
-  background: rgb(122, 21, 21);
-  color: white;
-  box-shadow: 0 0 1rem rgb(122, 21, 21);
+  background: var(--primary);
+  box-shadow: var(--shadow);
 }
 
 .btns {

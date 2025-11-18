@@ -55,3 +55,35 @@ th {
 .faq-row:hover {
   background-color: #f1f1f1;
 }
+
+.faqs h1 {
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.faqs h2 {
+  text-decoration: underline;
+}
+
+.faqs p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.faqs h4 span {
+  color: rgb(122, 21, 21);
+  font-weight: 700;
+}
+
+.faqsend {
+  padding: 8px 16px;
+}
+
+.faqsend i {
+  color: #353535;
+}
+
+.faqsend img {
+  max-width: 20px;
+  border-radius: 25%;
+}
