@@ -67,26 +67,37 @@ function sendWhatsAppMessageNassar() {
 }
 
 // Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
+function onClick(element, index) {
+  const modal = document.getElementById("modal01");
+  const modalImg = document.getElementById("img01");
+  const captionText = document.getElementById("caption");
+
+  if (!modal || !modalImg || !captionText) return; // <- SAFETY CHECK
+
+  modal.style.display = "block";
+  modalImg.src = element.src;
   captionText.innerHTML = element.alt;
 }
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-/*function w3_open() {
-  var mySidebar = document.getElementById("mySidebar");
-  if (mySidebar.style.display === "block") {
-    mySidebar.style.display = "none";
-  } else {
-    mySidebar.style.display = "block";
-  }
+// Close modal when clicking the X
+const closeModalBtn = document.querySelector(".close-modal");
+if (closeModalBtn) {
+  closeModalBtn.addEventListener("click", () => {
+    document.getElementById("modal01").style.display = "none";
+  });
 }
-function w3_close() {
-  var mySidebar = document.getElementById("mySidebar");
-  mySidebar.style.display = "none";
-}*/
+
+// Close modal when clicking outside the image
+const modalContainer = document.getElementById("modal01");
+if (modalContainer) {
+  modalContainer.addEventListener("click", (e) => {
+    if (e.target.id === "modal01") {
+      document.getElementById("modal01").style.display = "none";
+    }
+  });
+}
+
+//Burger Menu
 const burgerMenu = document.querySelector('.burger-menu');
 const navMenu = document.querySelector('header nav ul');
 

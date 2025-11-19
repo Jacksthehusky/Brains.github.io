@@ -145,6 +145,10 @@ h6 {
   width: 24.99999%;
 }
 
+.fa-bars {
+    color: var(--primary);
+}
+
 /*  Professional loading skeleton */
 .skeleton {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
@@ -237,6 +241,11 @@ h6 {
   color: var(--gray);
   max-width: 700px;
   margin: 0 auto;
+}
+
+.section-subtitle span{
+  color: var(--primary);
+  font-weight: 800;
 }
 
 body {
@@ -512,7 +521,7 @@ footer {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
   color: white;
   border: none;
-  padding: 0.6rem 0.5rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 2rem;
   display: inline-block;
   font-weight: 600;

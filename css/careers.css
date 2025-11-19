@@ -81,7 +81,7 @@
   border-radius: 12px;
   font-size: 1rem;
   transition: all 0.3s ease;
-  background: var(--white);
+  background: var(--bg-color);
   color: var(--dark);
 }
 
@@ -100,14 +100,14 @@
 .input-icon {
   position: absolute;
   left: 1rem;
-  top: 2.6rem;
+  top: 3rem;
   color: var(--gray);
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .textarea-icon {
-  top: 2.2rem;
+  top: 3rem;
 }
 
 .input-group input:focus + .input-icon,

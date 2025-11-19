@@ -4,7 +4,6 @@ section {
   padding: 5rem 5% 5em 5%;
 }
 
-
 /*-----------------------------------Home Section-----------------------------------*/
 .home {
   position: relative;
@@ -252,7 +251,7 @@ section {
 }
 
 .about-content p span {
-  color: var(--primary)
+  color: var(--primary);
 }
 
 .about-content h3 {
@@ -682,7 +681,7 @@ section {
 }
 
 .requirement-card {
-  background: white;
+  background: var(--white);
   border-radius: 16px;
   padding: 35px 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -897,6 +896,360 @@ section {
   );
 }
 
+/*-----------------------------------Featured Articles-----------------------------------*/
+.featured-articles {
+  padding: 2rem 0;
+  background: var(--white);
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.article-card {
+  background: var(--card-bg);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--light-gray);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.article-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.article-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(
+    135deg,
+    rgba(122, 21, 21, 0.1),
+    rgba(197, 48, 48, 0.1)
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.article-card h3 {
+  font-size: 1.3rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.article-card p {
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.article-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.article-link:hover {
+  gap: 0.75rem;
+}
+
+/*-----------------------------------New Contact-----------------------------------*/
+/* Owner Cards Section */
+.owner-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Single Owner Card */
+.owner-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: var(--white);
+  padding: 1.2rem;
+  border-radius: 16px;
+  border: 1px solid var(--light-gray);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.owner-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Round Profile Image */
+.owner-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+}
+
+/* Text beside picture */
+.owner-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  color: var(--dark);
+}
+
+.owner-info .role {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.owner-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.4;
+}
+
+/* WhatsApp button */
+.owner-whatsapp {
+  margin-top: 0.5rem;
+}
+
+.owner-whatsapp a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.45rem 0.9rem;
+  background: #25d366;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.owner-whatsapp a i {
+  font-size: 1rem;
+}
+
+.owner-whatsapp a:hover {
+  background: #1eb85a;
+}
+
+/* Responsive Fix */
+@media (max-width: 850px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .owner-card {
+    flex-direction: row;
+  }
+
+  .owner-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .owner-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .owner-whatsapp a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.modern-support {
+  padding: 4rem 0;
+  background: var(--bg-color);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: end;
+}
+
+.support-content {
+  max-width: 480px;
+}
+
+.support-description {
+  font-size: 1.1rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.support-features {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.support-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.support-feature i {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-top: 0.25rem;
+}
+/* Support Form */
+.support-form-container {
+  background: var(--white);
+  padding: 1.8rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--light-gray);
+  max-width: 550px;
+}
+
+.support-form h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.modern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Grid: Desktop = 2 columns, Mobile = 1 */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 0.8rem 1rem 0.8rem 2.4rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background: var(--bg-color);
+  color: var(--dark);
+}
+
+.input-group textarea {
+  min-height: 100px;
+}
+
+/* Input icons */
+.input-icon {
+  position: absolute;
+  left: 0.9rem;
+  top: 2.8rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.textarea-icon {
+  top: 2.8rem;
+}
+
+/* Button */
+.modern-btn {
+  position: relative;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(122, 21, 21, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Contact Methods */
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--light-gray);
+  transition: transform 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+}
+
+.contact-method i {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.contact-method h4 {
+  font-size: 1.2rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.contact-method a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-method a:hover {
+  text-decoration: underline;
+}
+
 /*-----------------------------------Contact-----------------------------------*/
 .team {
   overflow: hidden;
@@ -1079,7 +1432,6 @@ section {
 }
 
 [data-theme="dark"] .requirement-card {
-  background: var(--card-bg);
   border: 1px solid var(--border-color);
 }
 
@@ -1155,7 +1507,7 @@ section {
 
 /* Map and iframe adjustments */
 [data-theme="dark"] .map,
- [data-theme="dark"] .team{
+[data-theme="dark"] .team {
   background: var(--second-bg-color);
 }
 
@@ -1164,7 +1516,6 @@ section {
 }
 
 /* Smooth theme transition for specific elements */
-
 
 [data-theme="dark"] .section-title {
   color: var(--text-color);
@@ -1180,3 +1531,75 @@ section {
   color: var(--gray);
 }
 
+/* ---------- RESPONSIVE FIXES ---------- */
+
+@media (max-width: 968px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .articles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .modern-support {
+    padding: 2.5rem 0;
+  }
+
+  .support-form-container {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr; /* One column on phones */
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding-left: 2.1rem;
+  }
+
+  .input-icon {
+    top: 2.8rem;
+  }
+
+  .modern-btn {
+    width: 100%;
+  }
+
+  .help-title {
+    font-size: 2.5rem;
+  }
+
+  .quick-link {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .faq-categories {
+    gap: 0.5rem;
+  }
+
+  .category-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}

@@ -24,6 +24,32 @@ code {
   border: 1px solid var(--light-gray);
 }
 
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2rem 3rem 1rem;
+  background: transparent;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.back-button i {
+  font-size: 1rem;
+}
+
+.back-button:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-light);
+}
+
 /* Question Header */
 .question-header {
   display: flex;
@@ -91,7 +117,7 @@ code {
 }
 
 .share-button {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--success) 0%, var(--success2) 100%);
   color: white;
   border: none;
   border-radius: 12px;
@@ -414,6 +440,12 @@ code {
     flex-direction: column;
     align-items: flex-start;
     padding: 1.5rem;
+  }
+
+  .back-button {
+    margin: 1rem;
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 
   .question-content {

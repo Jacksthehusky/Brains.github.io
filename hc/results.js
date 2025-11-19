@@ -164,7 +164,6 @@ if (relatedQuestions.length > 0) {
   });
 
 // Assuming you have retrieved the 'question' object from the JSON data and stored it in a variable named 'question'
-
 const shareButton = document.getElementById("share-button");
 shareButton.addEventListener("click", () => {
   const pageUrl = encodeURIComponent(window.location.href);
@@ -176,14 +175,7 @@ shareButton.addEventListener("click", () => {
 });
 
 
-
-// ADD THIS FUNCTION FOR MODAL (if not already in your HTML):
-function onClick(element, index) {
-  const modal = document.getElementById("modal01");
-  const modalImg = document.getElementById("img01");
-  const captionText = document.getElementById("caption");
-  
-  modal.style.display = "block";
-  modalImg.src = element.src;
-  captionText.innerHTML = element.alt;
-}
+//go one step back in browser history
+document.getElementById("back-to-help").addEventListener("click", () => {
+    window.history.back();
+});

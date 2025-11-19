@@ -569,8 +569,59 @@
     </div>
   </section>
 
+  <!-- Featured Articles Section -->
+  <section class="featured-articles">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span>Brains </span>Helpful Links</h2>
+      </div>
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-icon">
+            <p class="style-center">
+              <script src="https://cdn.lordicon.com/lordicon.js"></script>
+              <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger="loop" delay="4000"
+                style="width:80px;height:80px">
+              </lord-icon>
+            </p>
+          </div>
+          <h3><span>Brains </span>Help Center!</h3>
+          <p>The place to get answers to your questions...</p>
+          <a href="hc/HelpCenter.html" class="article-link">Get Help <i class="fas fa-arrow-right"></i></a>
+        </article>
 
-  <!-- HelpCenter Section -->
+        <article class="article-card">
+          <div class="article-icon">
+            <p class="style-center">
+              <script src="https://cdn.lordicon.com/lordicon.js"></script>
+              <lord-icon src="https://cdn.lordicon.com/wzwygmng.json" trigger="loop" delay="4000"
+                style="width:80px;height:80px">
+              </lord-icon>
+            </p>
+          </div>
+          <h3><span>Brains </span>Demo!</h3>
+          <p>Take a tour through our software's features with our online demo...</p>
+          <a href="Demo/Products.html" class="article-link">Explore Demo <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="article-card">
+          <div class="article-icon">
+            <p class="style-center">
+              <script src="https://cdn.lordicon.com/lordicon.js"></script>
+              <lord-icon data-icon-type="careers" src="https://cdn.lordicon.com/fqbvgezn.json" trigger="loop"
+                delay="4000" style="width:80px;height:80px" colors="primary:white,secondary:darkred">
+              </lord-icon>
+            </p>
+          </div>
+          <h3>Career opportunities at <span>Brains</span></h3>
+          <p>We are always interrested in new and motivated people...</p>
+          <a href="careers/careers.html" class="article-link">Apply Here <i class="fas fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HelpCenter Section 
   <section class="careers" style="min-height: 50vh" id="help">
 
     <div class="section-header">
@@ -587,11 +638,11 @@
           <i class="far fa-comments style-margin-right"></i>Get Help</a>
       </p>
     </div>
-  </section>
+  </section>-->
 
 
-  <!-- demo Section -->
-  <section class="contact" style="min-height: 50vh" id="demo">
+  <!-- demo Section 
+  <section class="careers" style="min-height: 50vh" id="demo">
     <div>
       <h2 class="section-header section-title"><span>Brains </span>Demo!</h2>
       <p class="style-center">
@@ -606,10 +657,10 @@
           <i class="fab fa-wpforms style-margin-right" aria-hidden="true"></i>Explore Demo</a>
       </p>
     </div>
-  </section>
+  </section>-->
 
 
-  <!-- Work Section -->
+  <!-- Work Section 
   <section class="careers" style="min-height: 50vh" id="work">
     <div>
       <h2 class="section-header section-title">Career opportunities at <span>Brains</span></h2>
@@ -619,17 +670,15 @@
           style="width:100px;height:100px" colors="secondary:darkred">
         </lord-icon>
       </p>
-      <p class="style-center section-subtitle">Brains is an exciting company whose business focuses on developing
-        complex
-        solutions for the market. <br>We are always interrested in new and motivated people.</p>
+      <p class="style-center section-subtitle">Brains is an exciting company whose business focuses on developing complex solutions for the market. <br>We are always interrested in new and motivated people.</p>
       <p class="style-center style-padding-top-bottom-32">
         <a href="careers/careers.html" class="btns">
           <i class="far fa-plus-square style-margin-right" aria-hidden="true"></i>Apply Here</a>
       </p>
     </div>
-  </section>
+  </section>-->
 
-  <!-- Team Section-->
+  <!-- Team Section
   <section class="team" id="contact">
     <div>
       <h2 class="section-header section-title">The <span>ones</span> who runs this company</h2>
@@ -666,9 +715,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <!-- Contact Section -->
+  <!-- Contact Section
   <section class="contact">
     <h2 class="section-header section-title">Contact <span>Us!</span></h2>
     <form action="contact-form-handler.php" method="post" name="Contact Form">
@@ -685,25 +734,135 @@
       <input type="hidden" name="recipient" value="michel@brains-lb.com">
       <input type="submit" value="SEND MESSAGE" class="btns">
     </form>
+  </section> -->
+
+  <!-- Support Section -->
+  <section class="modern-support" id="contact">
+    <div class="container">
+      <div class="support-grid">
+        <div class="support-content">
+          <h2 class="section-header section-title">Contact <span>Us!</span></h2>
+          <p class="support-description section-header section-subtitle">The <span>ones</span> who runs this company</p>
+          <div class="owner-cards">
+
+            <!-- Michel -->
+            <div class="owner-card">
+              <img src="./Images/Michel.jpg" class="owner-photo" alt="Michel Aynati">
+              <div class="owner-info">
+                <h3>Michel Aynati</h3>
+                <div class="role">CEO & Founder</div>
+                <p>Feel free to reach out if you need more information about our product.</p>
+
+                <div class="owner-whatsapp">
+                  <a href="javascript:void(0)" onclick="sendWhatsAppMessageMichel()">
+                    <i class="fab fa-whatsapp"></i> Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nassar -->
+            <div class="owner-card">
+              <img src="./Images/Nassar.jpg" class="owner-photo" alt="Nassar Nassar">
+              <div class="owner-info">
+                <h3>Nassar Nassar</h3>
+                <div class="role">CEO & Founder</div>
+                <p>For inquiries or details about our solutions, feel free to contact us.</p>
+
+                <div class="owner-whatsapp">
+                  <a href="javascript:void(0)" onclick="sendWhatsAppMessageNassar()">
+                    <i class="fab fa-whatsapp"></i> Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="support-form-container">
+          <div class="support-form">
+            <h3>Contact Us!</h3>
+            <form action="/contact-form-handler.php" method="post" name="Contact Form" class="modern-form">
+              <div class="form-grid">
+                <div class="input-group">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" id="fullname" placeholder="fullname" required name="fullname">
+                  <i class="fas fa-user input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" placeholder="email" required name="emailaddress">
+                  <i class="fas fa-envelope input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                  <label for="telephone">Mobile Number</label>
+                  <input type="tel" id="telephone" placeholder="phone" required name="telephone">
+                  <i class="fas fa-phone input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" placeholder="subject" required name="subject">
+                  <i class="fas fa-tag input-icon"></i>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="message">Detailed Description</label>
+                <textarea id="message" cols="30" rows="6" placeholder="Please describe your request..." required
+                  name="message"></textarea>
+                <i class="fas fa-comment input-icon textarea-icon"></i>
+              </div>
+
+              <input type="hidden" name="redirect" value="/hc/HelpCenter.html">
+              <input type="hidden" name="recipient" value="michel@brains-lb.com">
+
+              <button type="submit" class="modern-btn">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-methods">
+        <div class="contact-method">
+          <i class="fa fa-phone"></i>
+          <div>
+            <h4>Phone Support</h4>
+            <a href="tel:+9611872376">+961 1 872 376</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <i class="fa fa-map"></i>
+          <div>
+            <h4>Address</h4>
+            <a href="#map">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="style-center">
+      <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+      <lord-icon data-icon-type="map" src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
+        style="width:100px;height:100px" colors="primary:darkred,secondary:white">
+      </lord-icon>
+    </p>
   </section>
 
   <!-- map -->
   <div class="map" id="map">
     <p class="style-center">
-      <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-      <lord-icon data-icon-type="map" src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" delay="4000"
-        style="width:100px;height:100px" colors="secondary:darkred">
-      </lord-icon>
-    </p>
-    <p class="style-center section-subtitle section-title">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</p>
-    <p class="style-center" style="margin-top:48px">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3312.002323540315!2d35.562044!3d33.889593999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDUzJzIyLjUiTiAzNcKwMzMnNDMuNCJF!5e0!3m2!1sen!2slb!4v1679157298394!5m2!1sen!2slb"
         width="100%" height="450" style="border: 0; border-radius: 25px;" allowfullscreen="" loading="lazy" title="map"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </p>
   </div>
-
 
   <!-- Footer -->
   <footer>
