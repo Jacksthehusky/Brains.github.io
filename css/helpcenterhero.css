@@ -2,17 +2,12 @@
 .help-hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   color: white;
-  padding: 5rem 0;
   text-align: center;
 }
 
 .help-hero-content {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.help-icon {
-  margin-bottom: 2rem;
 }
 
 .help-title {
@@ -174,7 +169,7 @@
   margin-bottom: 1rem;
 }
 
-/* Quick Links */
+/* Quick Links 
 .quick-links {
   display: flex;
   justify-content: center;
@@ -193,7 +188,7 @@
   text-decoration: none;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
+}*/
 
 .quick-link:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -306,10 +301,19 @@
   transition: all 0.3s ease;
 }
 
+.category-btn span{
+    margin-left: 0.75rem;
+}
+
+.category-btn i {
+  font-size: 1.1rem;
+}
+
 .category-btn:hover {
-  background: var(--primary);
+  background: var(--gradient-primary);
   color: white;
   border-color: var(--primary);
+  transform: translateY(-2px);
 }
 
 .category-btn.active {
@@ -324,7 +328,12 @@
 }
 
 .faq-group h3{
-color: var(--primary);
+    color: var(--white);
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: var(--gradient-primary);
+    border-radius: 12px;
 }
 
 .faq-item {
@@ -607,10 +616,6 @@ color: var(--primary);
 @media (max-width: 768px) {
   .help-title {
     font-size: 2.5rem;
-  }
-  
-  .quick-links {
-    gap: 1rem;
   }
   
   .quick-link {

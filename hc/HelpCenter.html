@@ -179,10 +179,11 @@
   <section class="help-hero" id="help-hero">
     <div class="container">
       <div class="help-hero-content">
-        <div class="help-icon">
-          <lord-icon data-icon-type="help" src="https://cdn.lordicon.com/vlupvdhl.json" trigger="loop" delay="1000"
-            style="width:100px;height:100px">
-          </lord-icon>
+         <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>              
+            <div style=" display: flex; justify-content: center;">
+              <lord-icon src="https://cdn.lordicon.com/vlupvdhl.json" trigger="loop" delay="1000"
+                colors="primary:#ffffff,secondary:red" style="width:70px;height:70px">
+              </lord-icon>
         </div>
         <h1 class="help-title">How can we help you?</h1>
         <p class="help-subtitle">Find answers, guides, and tutorials for <span>Brains</span> software solutions</p>
@@ -198,29 +199,53 @@
           <div id="search-results" class="search-results"></div>
         </div>
 
-        <div class="quick-links">
+         <!-- <div class="quick-links">
           <div class="quick-link">
             <i class="fas fa-book"></i>
-            <span>Getting Started</span>
+            <span>Getting Started </span>
           </div>
           <div class="quick-link">
             <i class="fas fa-cog"></i>
-            <span>Installation</span>
+            <span>Installation </span>
           </div>
           <div class="quick-link">
             <i class="fas fa-chart-line"></i>
-            <span>Troubleshooting</span>
+            <span>Troubleshooting </span>
           </div>
           <div class="quick-link">
             <i class="fas fa-file-invoice"></i>
             <span>Reports</span>
           </div>
+        </div>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="modern-faqs">
+    <div class="container">
+      <div class="faqs-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions about <span>Brains</span> software</p>
+      </div>
+
+      <div class="faqs-container">
+        <div class="faq-categories">
+          <button class="category-btn active" data-category="all"><i class="fas fa-list"></i><span>All Questions</span></button>
+          <button class="category-btn" data-category="Data Entry"><i class="fas fa-book"></i><span>Data Entry</span></button>
+          <button class="category-btn" data-category="Operations"><i class="fas fa-chart-line"></i><span>Operations</span></button>
+          <button class="category-btn" data-category="Reports"><i class="fas fa-file-invoice"></i><span>Reports</span></button>
+          <button class="category-btn" data-category="System"><i class="fas fa-cog"></i><span>System</span></button>
+        </div>
+
+        <div class="faq-list" id="faq-list">
+          <!-- FAQ items will be dynamically loaded here -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Featured Articles Section -->
+   <!-- Featured Articles Section -->
   <section class="featured-articles">
     <div class="container">
       <h2 class="section-title">Popular Articles</h2>
@@ -264,25 +289,24 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="modern-faqs">
+   <!-- CTA Section -->
+  <section class="help-cta">
     <div class="container">
-      <div class="faqs-header">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-subtitle">Quick answers to common questions about <span>Brains</span> software</p>
-      </div>
-
-      <div class="faqs-container">
-        <div class="faq-categories">
-          <button class="category-btn active" data-category="all">All Questions</button>
-          <button class="category-btn" data-category="installation">Installation</button>
-          <button class="category-btn" data-category="accounting">Accounting</button>
-          <button class="category-btn" data-category="inventory">Inventory</button>
-          <button class="category-btn" data-category="technical">Technical</button>
-        </div>
-
-        <div class="faq-list" id="faq-list">
-          <!-- FAQ items will be dynamically loaded here -->
+      <div class="cta-content">
+        <lord-icon data-icon-type="help" src="https://cdn.lordicon.com/wzrwaorf.json" trigger="loop" delay="2000"
+          style="width:120px;height:120px" colors="secondary:white">
+        </lord-icon>
+        <h2>Can't find what you're looking for?</h2>
+        <p>Our support team is always ready to provide personalized assistance</p>
+        <div class="cta-buttons">
+          <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" class="cta-btn primary">
+            <i class="fab fa-whatsapp"></i>
+            Chat on WhatsApp
+          </a>
+          <a href="mailto:michel@brains-lb.com" class="cta-btn secondary">
+            <i class="fas fa-envelope"></i>
+            Send Email
+          </a>
         </div>
       </div>
     </div>
@@ -306,7 +330,7 @@
               </div>
             </div>
             <div class="support-feature">
-              <i class="fas fa-expertise"></i>
+              <i class="fas fa-user"></i>
               <div>
                 <h4>Expert Assistance</h4>
                 <p>Get help from our certified technicians</p>
@@ -392,29 +416,6 @@
             <h4>WhatsApp</h4>
             <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()">Chat with Support</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="help-cta">
-    <div class="container">
-      <div class="cta-content">
-        <lord-icon data-icon-type="help" src="https://cdn.lordicon.com/wzrwaorf.json" trigger="loop" delay="2000"
-          style="width:120px;height:120px">
-        </lord-icon>
-        <h2>Can't find what you're looking for?</h2>
-        <p>Our support team is always ready to provide personalized assistance</p>
-        <div class="cta-buttons">
-          <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" class="cta-btn primary">
-            <i class="fab fa-whatsapp"></i>
-            Chat on WhatsApp
-          </a>
-          <a href="mailto:michel@brains-lb.com" class="cta-btn secondary">
-            <i class="fas fa-envelope"></i>
-            Send Email
-          </a>
         </div>
       </div>
     </div>
