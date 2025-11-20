@@ -85,7 +85,7 @@ for (let i = 0; i < question.answer.length; i++) {
       videoContainer.remove();
     }
 
-    // Feedback section
+    /* Feedback section
     const helpfulCountElement = document.getElementById("helpful-count");
     const likeBtn = document.getElementById("like-btn");
     const dislikeBtn = document.getElementById("dislike-btn");
@@ -127,7 +127,7 @@ for (let i = 0; i < question.answer.length; i++) {
     dislikeBtn.addEventListener("click", handleDislike);
 
     // Initialize the helpful count
-    updateHelpfulCount();
+    updateHelpfulCount(); */
 
     // Check out other related articles
     const relatedArticlesContainer =
