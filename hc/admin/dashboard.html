@@ -1,121 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Admin Dashboard</title>
-    <link rel="stylesheet" href="../assets/admin.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brains - Admin Dashboard Help Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../css/styleMain.css">
+  <link rel="stylesheet" href="../../css/responsiveDesign.css" />
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/admin.css">
+  <link rel="stylesheet" href="../../css/chatbot.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../../../Images/brains.ico" />
+
 </head>
+
 <body>
-    <header>
-        <h1>FAQ Management</h1>
-        <a href="logout.php" class="logout">Logout</a>
-    </header>
-    
-    <div class="admin-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="add">Add New FAQ</button>
-            <button class="tab-btn" data-tab="edit">Edit Existing</button>
+
+  <!-- Navbar/Header (sit on top) -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="../../index.html#home" aria-label="logo">
+          <img src="../../Images/BLogo.png" alt="Brains POS Logo">
+          <h1>Brains</h1>
+        </a>
+      </div>
+      <!-- Right-sided navbar links -->
+      <nav>
+        <ul>
+          <li><a href="../../index.html#home" class="active" style="--i:1;">Home</a></li>
+          <li><a href="../../index.html#about" style="--i:2;">About</a></li>
+          <li><a href="../../index.html#features" style="--i:3;">Features</a></li>
+          <li><a href="../../Careers/careers.html" style="--i:4;">Careers</a></li>
+          <li><a href="../../index.html" style="--i:5;">Contact</a></li>
+          <li><a href="../../Demo/Products.html" style="--i:6;">Demo</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <div class="navhelpcenter">
+          <a href="/hc/HelpCenter.html" class="btns">Help Center</a>
         </div>
-        
-        <div id="add" class="tab-content active">
-            <form id="addFaqForm" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="faqGroup">Group</label>
-                    <select id="faqGroup" required>
-                        <option value="">Select Group</option>
-                        <option value="Operations">Operations</option>
-                        <option value="System">System</option>
-                        <option value="Data Entry">Data Entry</option>
-                        <option value="Reports">Reports</option>
-                        <option value="Other">Other</option>
-                        <option value="RDLC Report">RDLC Report</option>
-                        <option value="EndOfSession">EndOfSession</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="faqAbbr">Abbreviation</label>
-                    <input type="text" id="faqAbbr" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="faqTag">Tag</label>
-                    <input type="text" id="faqTag">
-                </div>
-                
-                <div class="form-group">
-                    <label for="faqQuestion">Question</label>
-                    <textarea id="faqQuestion" required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="faqAnswer">Answer Steps (one per line)</label>
-                    <textarea id="faqAnswer" rows="6" required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="faqNotes">Notes</label>
-                    <textarea id="faqNotes"></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="faqScreenshots">Screenshots</label>
-                    <input type="file" id="faqScreenshots" multiple accept="image/*">
-                    <div id="previewContainer" class="sortable-container"></div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="faqVideo">Video (optional)</label>
-                    <input type="file" id="faqVideo" accept="video/*">
-                </div>
-                
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" id="faqRequiresPermission">
-                        Requires Permission
-                    </label>
-                </div>
-                
-                <button type="submit">Add FAQ</button>
-            </form>
-        </div>
-        
-        <div id="edit" class="tab-content">
-            <div class="search-container">
-                <input type="text" id="searchFaqs" placeholder="Search FAQs...">
-                <select id="filterGroup">
-                    <option value="">All Groups</option>
-                    <option value="Operations">Operations</option>
-                    <option value="System">System</option>
-                    <option value="Data Entry">Data Entry</option>
-                    <option value="Reports">Reports</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            
-            <div class="faq-list-container">
-                <table id="faqList">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Question</th>
-                            <th>Group</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Will be populated by JavaScript -->
-                    </tbody>
-                </table>
-            </div>
-            
-            <div id="editFormContainer" class="hidden">
-                <!-- Edit form will be loaded here -->
-            </div>
-        </div>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+
+      <!-- burger menu-->
+      <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </a>
     </div>
-    
-    <script src="../assets/admin.js"></script>
+  </header>
+  <section>
+    <div class="admin-container">
+      <header class="admin-header">
+        <div class="header-left">
+          <h1><i class="fas fa-chart-line"></i> Help Center Analytics</h1>
+        </div>
+        <div class="header-right">
+          <span class="user-info">
+            <i class="fas fa-user"></i>
+            <span id="admin-username">Admin</span>
+          </span>
+          <button id="logout-btn" class="btn btn-logout">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+        <div class="header-actions">
+          <button id="refresh-btn" class="btn btn-primary">
+            <i class="fas fa-sync-alt"></i> Refresh
+          </button>
+          <button id="export-btn" class="btn btn-secondary">
+            <i class="fas fa-download"></i> Export CSV
+          </button>
+          <button id="cleanup-btn" class="btn btn-warning">
+            <i class="fas fa-broom"></i> Cleanup Old Votes
+          </button>
+        </div>
+      </header>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-thumbs-up"></i>
+          </div>
+          <div class="stat-info">
+            <h3 id="total-likes">0</h3>
+            <p>Total Likes</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-thumbs-down"></i>
+          </div>
+          <div class="stat-info">
+            <h3 id="total-dislikes">0</h3>
+            <p>Total Dislikes</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-info">
+            <h3 id="unique-voters">0</h3>
+            <p>Unique Voters</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="stat-info">
+            <h3 id="total-articles">0</h3>
+            <p>Articles with Votes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-grid">
+        <!-- Top Articles Section -->
+        <section class="content-section">
+          <h2><i class="fas fa-trophy"></i> Most Helpful Articles</h2>
+          <div class="table-container">
+            <table id="top-articles-table">
+              <thead>
+                <tr>
+                  <th>Article</th>
+                  <th>Likes</th>
+                  <th>Dislikes</th>
+                  <th>Helpfulness</th>
+                </tr>
+              </thead>
+              <tbody id="top-articles-body">
+                <!-- Filled by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Recent Activity Section -->
+        <section class="content-section">
+          <h2><i class="fas fa-clock"></i> Recent Votes</h2>
+          <div class="table-container">
+            <table id="recent-votes-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Article</th>
+                  <th>Vote</th>
+                  <th>IP</th>
+                </tr>
+              </thead>
+              <tbody id="recent-votes-body">
+                <!-- Filled by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Suspicious Activity Section -->
+        <section class="content-section full-width">
+          <h2><i class="fas fa-shield-alt"></i> Suspicious Activity</h2>
+          <div class="table-container">
+            <table id="suspicious-table">
+              <thead>
+                <tr>
+                  <th>IP Address</th>
+                  <th>Vote Count</th>
+                  <th>Last Activity</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="suspicious-body">
+                <!-- Filled by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Loading analytics data...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="style-center">
+      <a href="#" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
+    </div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Brains POS</h3>
+          <p>Powerful point of sale software designed to help businesses of all sizes streamline operations and increase
+            profitability.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
+              aria-label="facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/brains-sarl-lb/" target="_blank" aria-label="linkedin"
+              class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp"
+              class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul class="footer-links">
+            <li><a href="#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
+            <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
+            <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2025 Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="admin.js"></script>
+  <script src="../script.js"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+  <!-- n8n Chat -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    // Chat Manager with Dark Mode Support
+    class BrainsChatManager {
+      constructor() {
+        this.chatInstance = null;
+        this.currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        this.init();
+      }
+
+      init() {
+        this.createChat();
+        this.watchThemeChanges();
+      }
+
+      createChat() {
+        this.chatInstance = createChat({
+          webhookUrl: 'http://localhost:5678/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+          //webhookUrl: 'http://ma2fd0fnv.localto.net/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+
+
+          target: '#brains-chatbot',
+          mode: 'window',
+
+          showWelcomeScreen: true,
+          defaultLanguage: 'en',
+
+          initialMessages: [
+            '👋 Welcome to Brains Accounting Assistant!',
+            'I can help you with software features, troubleshooting, and guides. What would you like to know?'
+          ],
+
+          i18n: {
+            en: {
+              title: 'Brains Assistant',
+              subtitle: 'Your 24/7 Accounting Software Expert',
+              footer: '',
+              getStarted: 'Start New Conversation',
+              inputPlaceholder: 'Get help with Brains AI...',
+              waiting: 'Consulting knowledge base...',
+              messageError: 'Sorry, please try again',
+              messageRetry: 'Retry'
+            }
+          },
+
+          theme: {
+            style: {
+              primaryColor: '#2c5aa0',
+              secondaryColor: '#20b69e',
+              backgroundColor: this.currentTheme === 'dark' ? '#1a1d23' : '#ffffff',
+              textColor: this.currentTheme === 'dark' ? '#e9ecef' : '#343a40',
+              borderRadius: '0.5rem'
+            }
+          }
+        });
+      }
+
+      watchThemeChanges() {
+        // Watch for theme changes
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+              this.currentTheme = document.documentElement.getAttribute('data-theme');
+              console.log('Theme changed to:', this.currentTheme);
+            }
+          });
+        });
+
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['data-theme']
+        });
+      }
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      new BrainsChatManager();
+    });
+  </script>
+
 </body>
+
 </html>

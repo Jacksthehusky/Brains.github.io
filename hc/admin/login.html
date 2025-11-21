@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brains - Admin Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styleMain.css">
+    <link rel="stylesheet" href="../../css/responsiveDesign.css" />
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/chatbot.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../Images/brains.ico" />
+
+</head>
+
+<body>
+
+    <!-- Navbar/Header (sit on top) -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../../index.html#home" aria-label="logo">
+                    <img src="../../Images/BLogo.png" alt="Brains POS Logo">
+                    <h1>Brains</h1>
+                </a>
+            </div>
+            <!-- Right-sided navbar links -->
+            <nav>
+                <ul>
+                    <li><a href="../../index.html#home" class="active" style="--i:1;">Home</a></li>
+                    <li><a href="../../index.html#about" style="--i:2;">About</a></li>
+                    <li><a href="../../index.html#features" style="--i:3;">Features</a></li>
+                    <li><a href="../../Careers/careers.html" style="--i:4;">Careers</a></li>
+                    <li><a href="../../index.html" style="--i:5;">Contact</a></li>
+                    <li><a href="../../Demo/Products.html" style="--i:6;">Demo</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <div class="navhelpcenter">
+                    <a href="/hc/HelpCenter.html" class="btns">Help Center</a>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <!-- burger menu-->
+            <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <!-- Background Video -->
+        <div class="bg-video">
+            <video preload="auto" loop autoplay muted playsinline>
+                <source src="../../Images/galaxy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Gradient Card Container -->
+        <div class="gradient-card-wrapper1">
+            <span class="effect-gradient"></span>
+            <div class="gradient-card">
+                <div class="gradient-card-content">
+                    <!-- Home Content Inside Card -->
+                    <div class="home-content">
+
+
+
+                        <div class="login-header">
+                            <i class="fas fa-lock"></i>
+                            <h1>Admin Login</h1>
+                            <p>Help Center Analytics Dashboard</p>
+                        </div>
+
+                        <form id="login-form" class="login-form">
+                            <div class="form-group">
+                                <label for="username">
+                                    <i class="fas fa-user"></i> Username
+                                </label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">
+                                    <i class="fas fa-key"></i> Password
+                                </label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+
+                            <button type="submit" class="login-btn">
+                                <i class="fas fa-sign-in-alt"></i> Sign In
+                            </button>
+                        </form>
+
+                        <div id="login-message" class="message"></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+    </section>
+
+    <!--<div class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fas fa-lock"></i>
+                <h1>Admin Login</h1>
+                <p>Help Center Analytics Dashboard</p>
+            </div>
+
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="username">
+                        <i class="fas fa-user"></i> Username
+                    </label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-key"></i> Password
+                    </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> Sign In
+                </button>
+            </form>
+
+            <div id="login-message" class="message"></div>
+        </div>
+    </div>
+  </div>-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="style-center">
+            <a href="#" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Brains POS</h3>
+                    <p>Powerful point of sale software designed to help businesses of all sizes streamline operations
+                        and increase
+                        profitability.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL"
+                            target="_blank" aria-label="facebook" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/brains-sarl-lb/" target="_blank" aria-label="linkedin"
+                            class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp"
+                            class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+                        <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd
+                                floor</a></li>
+                        <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
+                        <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i>
+                                michel@brains-lb.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025 Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="admin-login.js"></script>
+    <script src="../script.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+    <!-- n8n Chat -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        // Chat Manager with Dark Mode Support
+        class BrainsChatManager {
+            constructor() {
+                this.chatInstance = null;
+                this.currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+                this.init();
+            }
+
+            init() {
+                this.createChat();
+                this.watchThemeChanges();
+            }
+
+            createChat() {
+                this.chatInstance = createChat({
+                    webhookUrl: 'http://localhost:5678/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+                    //webhookUrl: 'http://ma2fd0fnv.localto.net/webhook/c1ff65a5-2f69-44ab-b1c4-152e736a68f7/chat',
+
+
+                    target: '#brains-chatbot',
+                    mode: 'window',
+
+                    showWelcomeScreen: true,
+                    defaultLanguage: 'en',
+
+                    initialMessages: [
+                        '👋 Welcome to Brains Accounting Assistant!',
+                        'I can help you with software features, troubleshooting, and guides. What would you like to know?'
+                    ],
+
+                    i18n: {
+                        en: {
+                            title: 'Brains Assistant',
+                            subtitle: 'Your 24/7 Accounting Software Expert',
+                            footer: '',
+                            getStarted: 'Start New Conversation',
+                            inputPlaceholder: 'Get help with Brains AI...',
+                            waiting: 'Consulting knowledge base...',
+                            messageError: 'Sorry, please try again',
+                            messageRetry: 'Retry'
+                        }
+                    },
+
+                    theme: {
+                        style: {
+                            primaryColor: '#2c5aa0',
+                            secondaryColor: '#20b69e',
+                            backgroundColor: this.currentTheme === 'dark' ? '#1a1d23' : '#ffffff',
+                            textColor: this.currentTheme === 'dark' ? '#e9ecef' : '#343a40',
+                            borderRadius: '0.5rem'
+                        }
+                    }
+                });
+            }
+
+            watchThemeChanges() {
+                // Watch for theme changes
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        if (mutation.attributeName === 'data-theme') {
+                            this.currentTheme = document.documentElement.getAttribute('data-theme');
+                            console.log('Theme changed to:', this.currentTheme);
+                        }
+                    });
+                });
+
+                observer.observe(document.documentElement, {
+                    attributes: true,
+                    attributeFilter: ['data-theme']
+                });
+            }
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            new BrainsChatManager();
+        });
+    </script>
+
+</body>
+
+</html>
