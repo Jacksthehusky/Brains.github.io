@@ -42,23 +42,42 @@ if (!file_exists($jsonPath)) {
     exit;
 }
 
-// Simple IP-based rate limiting (basic anti-cheating)
+// Rate limiting check (using simple timestamp storage)
 $clientIP = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
-$rateLimitKey = "vote_{$questionId}_{$clientIP}";
-$rateLimitFile = __DIR__ . "/../data/vote_log.json";
+$rateLimitKey = "rate_{$questionId}_{$clientIP}";
+$rateLimitFile = __DIR__ . "/../data/rate_limits.json";
 
 // Check rate limiting
 if (file_exists($rateLimitFile)) {
-    $voteLog = json_decode(file_get_contents($rateLimitFile), true) ?: [];
-    $lastVoteTime = $voteLog[$rateLimitKey] ?? 0;
+    $rateLimits = json_decode(file_get_contents($rateLimitFile), true) ?: [];
+    $lastVoteTime = $rateLimits[$rateLimitKey] ?? 0;
     
-    // Prevent voting more than once per hour from same IP
     if (time() - $lastVoteTime < 3600) {
         http_response_code(429);
         echo json_encode(["error" => "Vote rate limit exceeded. Please try again later."]);
         exit;
     }
 }
+
+// Update rate limits
+$rateLimits[$rateLimitKey] = time();
+file_put_contents($rateLimitFile, json_encode($rateLimits, JSON_PRETTY_PRINT));
+
+// ENHANCED LOGGING (separate file for analytics)
+$voteLogFile = __DIR__ . "/../data/vote_analytics.json";
+$voteLog = file_exists($voteLogFile) ? json_decode(file_get_contents($voteLogFile), true) : [];
+
+$voteId = "vote_" . time() . "_" . uniqid();
+$voteLog[$voteId] = [
+    'questionId' => $questionId,
+    'ip' => $clientIP,
+    'action' => $action,
+    'timestamp' => time(),
+    'userAgent' => $_SERVER['HTTP_USER_AGENT'] ?? 'unknown',
+    'date' => date('Y-m-d H:i:s')
+];
+
+file_put_contents($voteLogFile, json_encode($voteLog, JSON_PRETTY_PRINT));
 
 // Read and update JSON with locking
 $fp = fopen($jsonPath, "r+");
@@ -106,10 +125,21 @@ if (flock($fp, LOCK_EX)) {
         exit;
     }
 
-    // Write back to file
+    // Write back to file with proper formatting
     ftruncate($fp, 0);
     rewind($fp);
-    fwrite($fp, json_encode($questions, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+    // Encode with pretty print and no unnecessary escaping
+    $jsonString = json_encode($questions, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+
+    // Optional: Adjust formatting to match your original style
+    $jsonString = str_replace('    ', '  ', $jsonString); // 2-space indentation
+
+    // Ensure consistent LF line endings
+    $jsonString = str_replace("\r\n", "\n", $jsonString);
+    $jsonString = str_replace("\r", "\n", $jsonString);
+
+    fwrite($fp, $jsonString);
     flock($fp, LOCK_UN);
     fclose($fp);
 
