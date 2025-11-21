@@ -111,71 +111,146 @@ fetch("../data/questions.json")
       document.querySelector(".related-section").style.display = "none";
     }
 
-    // --------------------------
-    // FEEDBACK SYSTEM
-    // --------------------------
+// --------------------------
+// FEEDBACK SYSTEM
+// --------------------------
 
-    const helpfulCountElement = document.getElementById("helpful-count");
-    const likeBtn = document.getElementById("like-btn");
-    const dislikeBtn = document.getElementById("dislike-btn");
+const helpfulCountElement = document.getElementById("helpful-count");
+const likeBtn = document.getElementById("like-btn");
+const dislikeBtn = document.getElementById("dislike-btn");
 
-    let helpfulCount = question.helpfulCount || 0;
-    let unhelpfulCount = question.unhelpfulCount || 0;
+let helpfulCount = question.helpfulCount || 0;
+let unhelpfulCount = question.unhelpfulCount || 0;
 
-    const voteKey = "vote_" + question.id;
-    const previousVote = localStorage.getItem(voteKey);
+const voteKey = "vote_" + question.id;
+const previousVote = localStorage.getItem(voteKey);
 
-    function renderCount() {
-      helpfulCountElement.textContent =
-        `${helpfulCount} out of ${helpfulCount + unhelpfulCount} found this helpful`;
+function renderCount() {
+  helpfulCountElement.textContent =
+    `${helpfulCount} out of ${helpfulCount + unhelpfulCount} found this helpful`;
+}
+
+// Disable buttons if already voted
+if (previousVote) {
+  likeBtn.disabled = true;
+  dislikeBtn.disabled = true;
+  // Show which one was previously selected
+  if (previousVote === "like") {
+    likeBtn.classList.add("voted");
+  } else {
+    dislikeBtn.classList.add("voted");
+  }
+}
+
+async function sendVoteToServer(type) {
+  try {
+    const response = await fetch("/api/update-helpful.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        id: question.id,
+        action: type,
+        timestamp: Date.now()
+      })
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || "Failed to submit vote");
     }
 
-    if (previousVote) {
-      likeBtn.disabled = previousVote === "like";
-      dislikeBtn.disabled = previousVote === "dislike";
-    }
+    return result;
+  } catch (error) {
+    console.error("Vote API error:", error);
+    // Revert the UI if server update fails
+    revertVote(type);
+    showNotification("Failed to submit vote. Please try again.", "error");
+    throw error;
+  }
+}
 
-    function sendVoteToServer(type) {
-      fetch("/api/update-helpful.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          id: question.id,
-          action: type
-        })
-      }).catch(err => console.error("Vote API error:", err));
-    }
+function revertVote(type) {
+  if (type === "like") {
+    helpfulCount--;
+  } else {
+    unhelpfulCount--;
+  }
+  localStorage.removeItem(voteKey);
+  likeBtn.disabled = false;
+  dislikeBtn.disabled = false;
+  renderCount();
+}
 
-    function voteLike() {
-      if (previousVote) return;
+function showNotification(message, type = "info") {
+  // Create a simple notification system
+  const notification = document.createElement("div");
+  notification.className = `notification ${type}`;
+  notification.textContent = message;
+  notification.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background: ${type === "error" ? "#f44336" : "#4CAF50"};
+    color: white;
+    border-radius: 4px;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+  `;
+  
+  document.body.appendChild(notification);
+  
+  setTimeout(() => {
+    notification.remove();
+  }, 3000);
+}
 
-      helpfulCount++;
-      localStorage.setItem(voteKey, "like");
+async function voteLike() {
+  if (previousVote) return;
+  
+  // Immediate UI update
+  helpfulCount++;
+  likeBtn.disabled = true;
+  dislikeBtn.disabled = true;
+  likeBtn.classList.add("voted");
+  renderCount();
+  
+  // Store vote immediately to prevent double voting during network delay
+  localStorage.setItem(voteKey, "like");
+  
+  try {
+    await sendVoteToServer("like");
+    showNotification("Thanks for your feedback!", "success");
+  } catch (error) {
+    // Error handling done in sendVoteToServer
+  }
+}
 
-      likeBtn.disabled = true;
-      dislikeBtn.disabled = true;
+async function voteDislike() {
+  if (previousVote) return;
+  
+  // Immediate UI update
+  unhelpfulCount++;
+  likeBtn.disabled = true;
+  dislikeBtn.disabled = true;
+  dislikeBtn.classList.add("voted");
+  renderCount();
+  
+  localStorage.setItem(voteKey, "dislike");
+  
+  try {
+    await sendVoteToServer("dislike");
+    showNotification("Thanks for your feedback!", "success");
+  } catch (error) {
+    // Error handling done in sendVoteToServer
+  }
+}
 
-      sendVoteToServer("like");
-      renderCount();
-    }
+likeBtn.addEventListener("click", voteLike);
+dislikeBtn.addEventListener("click", voteDislike);
 
-    function voteDislike() {
-      if (previousVote) return;
-
-      unhelpfulCount++;
-      localStorage.setItem(voteKey, "dislike");
-
-      likeBtn.disabled = true;
-      dislikeBtn.disabled = true;
-
-      sendVoteToServer("dislike");
-      renderCount();
-    }
-
-    likeBtn.addEventListener("click", voteLike);
-    dislikeBtn.addEventListener("click", voteDislike);
-
-    renderCount();
+renderCount();
   })
   .catch((error) => {
     console.log("An error occurred while fetching data:", error);
