@@ -1066,7 +1066,8 @@ section {
 /* Responsive Fix */
 @media (max-width: 850px) {
   .support-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .owner-card {
@@ -1648,7 +1649,8 @@ section {
 
 @media (max-width: 968px) {
   .support-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .articles-grid {
@@ -1667,7 +1669,8 @@ section {
   }
 
   .form-grid {
-    grid-template-columns: 1fr; /* One column on phones */
+    display: flex;
+    flex-direction: column;
   }
 
   .input-group input,
