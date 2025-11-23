@@ -34,20 +34,24 @@
 .search-container {
   position: relative;
   margin: auto !important;
-  width: 50%;
+  width: 100%; /* Changed from 50% to 100% as base */
+  max-width: 600px; /* Add max-width for larger screens */
+  padding: 0 1rem; /* Add padding to prevent edge touching */
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .search-box {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   background: rgba(255, 255, 255, 0.15);
   border-radius: 50px;
   padding: 0.75rem 1.5rem;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
+  width: 100%; /* Ensure it takes full width of container */
+  box-sizing: border-box; /* Important: include padding in width calculation */
 }
 
 .search-box:focus-within {
@@ -59,6 +63,7 @@
   color: rgba(255, 255, 255, 0.8);
   margin-right: 1rem;
   font-size: 1.1rem;
+  flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .search-input {
@@ -68,6 +73,8 @@
   color: white;
   font-size: 1.1rem;
   padding: 0.5rem 0;
+   width: 100%; /* Ensure input takes available space */
+  min-width: 0; /* Important: allow input to shrink properly */
 }
 
 .search-input::placeholder {
@@ -78,26 +85,11 @@
   outline: none;
 }
 
-.search-clear {
-  background: none;
-  border: none;
-  color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.search-clear:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-}
-
 .search-results {
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+   left: 1rem; /* Match container padding */
+  right: 1rem; /* Match container padding */
   background: white;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -105,9 +97,10 @@
   max-height: 400px;
   overflow-y: auto;
   overflow-x: hidden;
-  z-index: 1000;
+  z-index: 999;
   display: none;
   text-align: start;
+  box-sizing: border-box; /* Include padding in width */
 }
 
 .search-result-item {
@@ -726,7 +719,11 @@
 
 @media (max-width: 968px) {
   .search-container {
-    width: 100%;
+   padding: 0 0.5rem; /* Reduce padding on very small screens */
+  }
+  .search-results {
+    left: 0.5rem;
+    right: 0.5rem;
   }
 
   .support-grid {
