@@ -84,160 +84,176 @@
   <section class="products-section">
     <div class="container">
       <div class="products-header">
-        <h2 class="section-title">Experience <span>Our Software</span></h2>
-        <p class="section-subtitle">Select a module to explore our interactive demo and discover how Brains can
-          transform your business operations</p>
+        <h2 class="section-title">Explore <span>Our Solutions</span></h2>
+        <p class="section-subtitle">Select a module to view detailed walkthroughs and discover how our system can
+          optimize your business operations</p>
       </div>
 
       <div class="products-grid">
-        <!-- General Accounting Card -->
-        <div class="product-card">
-          <a href="GeneralAccounting.html" class="product-card-link">
-            <div class="product-card-inner">
-              <div class="product-card-front">
-                <div class="product-icon">
-                  <i class="fas fa-chart-line"></i>
-                  <div class="icon-backdrop"></div>
-                </div>
-                <h3 class="product-title">General Accounting</h3>
-                <p class="product-description">Simple, reliable, and secure solution to help you easily manage your cash
-                  flow and financial operations</p>
-                <div class="feature-highlights">
-                  <span class="feature-tag">Multi-currency</span>
-                  <span class="feature-tag">Real-time Reports</span>
-                  <span class="feature-tag">Tax Compliance</span>
-                </div>
-                <div class="card-cta">
-                  <span class="cta-text">Explore Accounting Demo</span>
-                  <i class="fas fa-arrow-right"></i>
-                </div>
-              </div>
-              <div class="product-card-back">
-                <div class="back-content">
-                  <h4>Accounting Features</h4>
-                  <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> Multi-currency account management</li>
-                    <li><i class="fas fa-check-circle"></i> Automated journal entries</li>
-                    <li><i class="fas fa-check-circle"></i> Real-time financial dashboards</li>
-                    <li><i class="fas fa-check-circle"></i> Tax calculation and compliance</li>
-                    <li><i class="fas fa-check-circle"></i> Cash flow analysis & forecasting</li>
-                    <li><i class="fas fa-check-circle"></i> Custom financial reporting</li>
-                  </ul>
-                  <div class="demo-badge">
-                    <i class="fas fa-play-circle"></i>
-                    Live Interactive Demo
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
 
         <!-- Stock System Card -->
-        <div class="product-card">
-          <a href="StockSystem.html" class="product-card-link">
-            <div class="product-card-inner">
-              <div class="product-card-front">
-                <div class="product-icon">
-                  <i class="fas fa-boxes"></i>
-                  <div class="icon-backdrop"></div>
-                </div>
-                <h3 class="product-title">Stock System</h3>
-                <p class="product-description">Track your inventory as it's bought, manufactured, stored, and sold
-                  across multiple locations</p>
-                <div class="feature-highlights">
-                  <span class="feature-tag">Barcode Scanning</span>
-                  <span class="feature-tag">Auto Reordering</span>
-                  <span class="feature-tag">Multi-location</span>
-                </div>
-                <div class="card-cta">
-                  <span class="cta-text">Explore Inventory Demo</span>
-                  <i class="fas fa-arrow-right"></i>
-                </div>
+        <div class="product-card" data-module="stock">
+          <div class="product-card-inner">
+            <div class="product-card-front">
+              <div class="product-icon">
+                <i class="fas fa-boxes"></i>
+                <div class="icon-backdrop"></div>
               </div>
-              <div class="product-card-back">
-                <div class="back-content">
-                  <h4>Inventory Features</h4>
-                  <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> Real-time stock level tracking</li>
-                    <li><i class="fas fa-check-circle"></i> Automated reorder point alerts</li>
-                    <li><i class="fas fa-check-circle"></i> Barcode and QR code scanning</li>
-                    <li><i class="fas fa-check-circle"></i> Multi-location inventory management</li>
-                    <li><i class="fas fa-check-circle"></i> Supplier and purchase order tracking</li>
-                    <li><i class="fas fa-check-circle"></i> Stock transfer and adjustment</li>
-                  </ul>
-                  <div class="demo-badge">
-                    <i class="fas fa-play-circle"></i>
-                    Live Interactive Demo
-                  </div>
-                </div>
+              <h3 class="product-title">Stock System</h3>
+              <p class="product-description">Complete inventory management across multiple locations with real-time
+                tracking and automated controls</p>
+              <div class="feature-highlights">
+                <span class="feature-tag">Barcode System</span>
+                <span class="feature-tag">Auto Reordering</span>
+                <span class="feature-tag">Multi-location</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-view-features" data-module="inventory">
+                  <i class="fas fa-list"></i>
+                  View Features
+                </button>
+                <a href="StockSystem.html" class="btn-view-demo">
+                  <i class="fas fa-play-circle"></i>
+                  View Walkthrough
+                </a>
               </div>
             </div>
-          </a>
+            <div class="product-card-back">
+              <div class="back-content">
+                <h4>Inventory Features</h4>
+                <ul class="feature-list">
+                  <li><i class="fas fa-check-circle"></i> Real-time stock level tracking</li>
+                  <li><i class="fas fa-check-circle"></i> Automated reorder point alerts</li>
+                  <li><i class="fas fa-check-circle"></i> Barcode and QR code scanning</li>
+                  <li><i class="fas fa-check-circle"></i> Multi-location inventory management</li>
+                  <li><i class="fas fa-check-circle"></i> Supplier and purchase order tracking</li>
+                  <li><i class="fas fa-check-circle"></i> Stock transfer and adjustment</li>
+                </ul>
+                <a href="StockSystem.html" class="btn-view-demo-full">
+                  <i class="fas fa-play-circle"></i>
+                  Explore Inventory Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- General Accounting Card -->
+        <div class="product-card" data-module="accounting">
+          <div class="product-card-inner">
+            <div class="product-card-front">
+              <div class="product-icon">
+                <i class="fas fa-chart-line"></i>
+                <div class="icon-backdrop"></div>
+              </div>
+              <h3 class="product-title">General Accounting</h3>
+              <p class="product-description">Comprehensive financial management solution for streamlined cash flow,
+                reporting, and compliance</p>
+              <div class="feature-highlights">
+                <span class="feature-tag">Multi-currency</span>
+                <span class="feature-tag">Real-time Reports</span>
+                <span class="feature-tag">Tax Compliance</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-view-features" data-module="accounting">
+                  <i class="fas fa-list"></i>
+                  View Features
+                </button>
+                <a href="GeneralAccounting.html" class="btn-view-demo">
+                  <i class="fas fa-play-circle"></i>
+                  View Walkthrough
+                </a>
+              </div>
+            </div>
+            <div class="product-card-back">
+              <div class="back-content">
+                <h4>Accounting Features</h4>
+                <ul class="feature-list">
+                  <li><i class="fas fa-check-circle"></i> Multi-currency account management</li>
+                  <li><i class="fas fa-check-circle"></i> Automated journal entries</li>
+                  <li><i class="fas fa-check-circle"></i> Real-time financial dashboards</li>
+                  <li><i class="fas fa-check-circle"></i> Tax calculation and compliance</li>
+                  <li><i class="fas fa-check-circle"></i> Cash flow analysis & forecasting</li>
+                  <li><i class="fas fa-check-circle"></i> Custom financial reporting</li>
+                </ul>
+                <a href="GeneralAccounting.html" class="btn-view-demo-full">
+                  <i class="fas fa-play-circle"></i>
+                  Explore Accounting Demo
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Payroll System Card -->
-        <div class="product-card">
-          <a href="PayrollSystem.html" class="product-card-link">
-            <div class="product-card-inner">
-              <div class="product-card-front">
-                <div class="product-icon">
-                  <i class="fas fa-users-cog"></i>
-                  <div class="icon-backdrop"></div>
-                </div>
-                <h3 class="product-title">Payroll System</h3>
-                <p class="product-description">Comprehensive payroll management for your organization's employees and
-                  salary processing</p>
-                <div class="feature-highlights">
-                  <span class="feature-tag">Auto Calculations</span>
-                  <span class="feature-tag">Tax Management</span>
-                  <span class="feature-tag">Leave Tracking</span>
-                </div>
-                <div class="card-cta">
-                  <span class="cta-text">Explore Payroll Demo</span>
-                  <i class="fas fa-arrow-right"></i>
-                </div>
+        <div class="product-card" data-module="payroll">
+          <div class="product-card-inner">
+            <div class="product-card-front">
+              <div class="product-icon">
+                <i class="fas fa-users-cog"></i>
+                <div class="icon-backdrop"></div>
               </div>
-              <div class="product-card-back">
-                <div class="back-content">
-                  <h4>Payroll Features</h4>
-                  <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> Automated salary calculations</li>
-                    <li><i class="fas fa-check-circle"></i> Tax and deduction management</li>
-                    <li><i class="fas fa-check-circle"></i> Leave and attendance tracking</li>
-                    <li><i class="fas fa-check-circle"></i> Compliance and reporting</li>
-                    <li><i class="fas fa-check-circle"></i> Employee self-service portal</li>
-                    <li><i class="fas fa-check-circle"></i> Multi-pay frequency support</li>
-                  </ul>
-                  <div class="demo-badge">
-                    <i class="fas fa-play-circle"></i>
-                    Live Interactive Demo
-                  </div>
-                </div>
+              <h3 class="product-title">Payroll System</h3>
+              <p class="product-description">End-to-end payroll processing with automated calculations, compliance
+                management, and employee self-service</p>
+              <div class="feature-highlights">
+                <span class="feature-tag">Auto Calculations</span>
+                <span class="feature-tag">Tax Management</span>
+                <span class="feature-tag">Leave Tracking</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-view-features" data-module="payroll">
+                  <i class="fas fa-list"></i>
+                  View Features
+                </button>
+                <a href="PayrollSystem.html" class="btn-view-demo">
+                  <i class="fas fa-play-circle"></i>
+                  View Walkthrough
+                </a>
               </div>
             </div>
-          </a>
+            <div class="product-card-back">
+              <div class="back-content">
+                <h4>Payroll Features</h4>
+                <ul class="feature-list">
+                  <li><i class="fas fa-check-circle"></i> Automated salary calculations</li>
+                  <li><i class="fas fa-check-circle"></i> Tax and deduction management</li>
+                  <li><i class="fas fa-check-circle"></i> Leave and attendance tracking</li>
+                  <li><i class="fas fa-check-circle"></i> Compliance and reporting</li>
+                  <li><i class="fas fa-check-circle"></i> Employee self-service portal</li>
+                  <li><i class="fas fa-check-circle"></i> Multi-pay frequency support</li>
+                </ul>
+                <a href="StockSystem.html" class="btn-view-demo-full">
+                  <i class="fas fa-play-circle"></i>
+                   Explore Payroll Demo
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Additional Info Section -->
+      <!-- Info Section -->
       <div class="demo-info">
         <div class="info-card">
-          <i class="fas fa-shield-alt"></i>
-          <h4>Secure Demo Environment</h4>
-          <p>All demos run in isolated sandbox environments. Your data remains private and secure throughout testing.
-          </p>
+          <i class="fas fa-images"></i>
+          <h4>Comprehensive Visual Walkthrough</h4>
+          <p>Detailed screenshots and videos showcase exactly how our system works in real business scenarios.</p>
+        <a href="#" class="article-link">Explore Demo <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="info-card">
-          <i class="fas fa-clock"></i>
-          <h4>No Time Limits</h4>
-          <p>Explore each module at your own pace. Take as much time as you need to thoroughly evaluate our features.
-          </p>
+          <i class="fas fa-calendar-check"></i>
+          <h4>Schedule Live Demo</h4>
+          <p>Contact us to schedule a personalized live demo where we'll walk you through the system and answer your
+            questions.</p>
+            <a href="/index.html#contact" class="article-link">Schedule Now <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="info-card">
-          <i class="fas fa-life-ring"></i>
-          <h4>Guided Assistance</h4>
-          <p>Our support team is ready to help you navigate the demos and answer any questions in real-time.</p>
+          <i class="fas fa-handshake"></i>
+          <h4>Free Consultation</h4>
+          <p>Get a free consultation to discuss your specific needs and see how our solution can address your business
+            challenges.</p>
+            <a href="/index.html#contact" class="article-link">Contact Us <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>

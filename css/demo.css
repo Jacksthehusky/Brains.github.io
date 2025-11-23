@@ -20,22 +20,26 @@
 /* Products Grid */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem;
   margin-bottom: 4rem;
+  cursor: pointer;
 }
 
 /* Product Card */
 .product-card {
   perspective: 1000px;
   height: 480px;
+  position: relative;
 }
 
-.product-card-link {
-  display: block;
+.product-card-inner {
+  position: relative;
+  width: 100%;
   height: 100%;
-  text-decoration: none;
-  color: inherit;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  border-radius: 20px;
 }
 
 .product-card-inner {
@@ -47,7 +51,15 @@
   border-radius: 20px;
 }
 
-.product-card:hover .product-card-inner {
+/* Hover effect for desktop only */
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover .product-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Flipped state for mobile */
+.product-card.flipped .product-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -67,7 +79,7 @@
   border: 1px solid var(--light-gray);
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -79,6 +91,68 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.btn-view-features,
+.btn-view-demo {
+  padding: 0.875rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn-view-features {
+  background: rgba(122, 21, 21, 0.08);
+  color: var(--primary);
+  border: 1px solid rgba(122, 21, 21, 0.2);
+  display: none;
+}
+
+.btn-view-demo {
+  background: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+}
+
+.btn-view-features:hover,
+.btn-view-demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(122, 21, 21, 0.2);
+}
+
+.btn-view-demo-full {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-view-demo-full:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Front Card Styles */
@@ -101,7 +175,11 @@
   transform: translate(-50%, -50%);
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgba(122, 21, 21, 0.1), rgba(197, 48, 48, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(122, 21, 21, 0.1),
+    rgba(197, 48, 48, 0.1)
+  );
   border-radius: 50%;
   z-index: 1;
 }
@@ -255,6 +333,19 @@
   line-height: 1.6;
   margin: 0;
   font-size: 0.95rem;
+  padding-bottom: 1.5rem;
+}
+
+.article-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+.demo-info .info-card .article-link i {
+font-size: 1.5rem;
 }
 
 /* Dark Mode Support */
@@ -289,7 +380,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
   }
-  
+
   .product-card {
     height: 460px;
   }
@@ -299,18 +390,43 @@
   .products-section {
     padding: 2rem 0;
   }
-  
+
   .products-grid {
     grid-template-columns: 1fr;
     max-width: 400px;
     margin: 0 auto 3rem;
+    gap: 1rem;
   }
-  
+
+  .product-card {
+    height: 420px;
+  }
+
   .product-card-front,
   .product-card-back {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
   }
-  
+
+  .card-actions {
+    gap: 0.5rem;
+  }
+
+  .btn-view-features,
+  .btn-view-demo {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Mobile tap indicator */
+  .product-card-front::after {
+    content: "Tap for features";
+    display: block;
+    font-size: 0.8rem;
+    color: var(--primary);
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+
   .demo-info {
     grid-template-columns: 1fr;
     max-width: 400px;
@@ -322,49 +438,49 @@
   .products-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .product-card {
     height: 440px;
   }
-  
+
   .product-card-front,
   .product-card-back {
     padding: 1.5rem 1rem;
   }
-  
+
   .product-title {
     font-size: 1.3rem;
   }
-  
+
   .feature-highlights {
     gap: 0.3rem;
   }
-  
+
   .feature-tag {
     font-size: 0.75rem;
     padding: 0.3rem 0.6rem;
   }
 }
 
-/* Touch device optimization */
-@media (hover: none) {
-  .product-card-inner {
-    transform: none !important;
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .product-card {
+    cursor: pointer;
   }
-  
-  .product-card-back {
-    display: none;
+
+  .btn-view-features {
+    display: none; /* Hide features button on mobile since we have tap */
   }
-  
-  .product-card-link::after {
-    content: 'Tap for features →';
-    display: block;
-    text-align: center;
-    margin-top: 1rem;
-    color: var(--primary);
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
+}
+
+/* Prevent text selection on mobile */
+.product-card {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.product-card * {
+  user-select: none;
 }
 
 /* Animation for card entrance */
@@ -383,6 +499,12 @@
   animation: cardEntrance 0.6s ease-out;
 }
 
-.product-card:nth-child(1) { animation-delay: 0.1s; }
-.product-card:nth-child(2) { animation-delay: 0.2s; }
-.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.product-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.product-card:nth-child(3) {
+  animation-delay: 0.3s;
+}

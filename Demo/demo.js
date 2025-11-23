@@ -22,21 +22,46 @@ function showTab(tabId) {
 }
 
  
-// Add smooth interactions for product cards
+// Improved product cards interaction
 document.addEventListener('DOMContentLoaded', function() {
   const productCards = document.querySelectorAll('.product-card');
-  
-  // Add click handler for mobile devices
+  let isMobile = window.innerWidth <= 768;
+
+  // Handle card interactions
   productCards.forEach(card => {
+    const viewFeaturesBtn = card.querySelector('.btn-view-features');
+    
+    // Mobile: tap to flip
     card.addEventListener('click', function(e) {
-      if (window.innerWidth <= 768) {
+      if (isMobile && !e.target.closest('a') && !e.target.closest('.btn-view-features')) {
         e.preventDefault();
         this.classList.toggle('flipped');
       }
     });
+    
+    // Desktop: view features button
+    if (viewFeaturesBtn) {
+      viewFeaturesBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        card.classList.add('flipped');
+      });
+    }
+    
+    // Close back card
+    if (closeBackBtn) {
+      closeBackBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        card.classList.remove('flipped');
+      });
+    }
   });
-  
-  // Add intersection observer for scroll animations
+
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    isMobile = window.innerWidth <= 768;
+  });
+
+  // Intersection observer for animations
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
