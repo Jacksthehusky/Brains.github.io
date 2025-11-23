@@ -5,6 +5,11 @@
   <title>Brains Demo</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Explore the Brains POS demo to experience our powerful point of sale software. Discover features, usability, and benefits for your business." />
+  <meta name="keywords"
+    content="Brains, POS Demo, Point of Sale Software, Software Demo, Business Solutions, Inventory Management, Sales Tracking" />
+  <meta name="author" content="Brains" />
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,8 +22,7 @@
 </head>
 
 <body>
-
-  <!-- Navbar/Header (sit on top) -->
+  <!-- Navbar -->
   <header>
     <div class="container nav-container">
       <div class="logo">
@@ -27,7 +31,7 @@
           <h1>Brains</h1>
         </a>
       </div>
-      <!-- Right-sided navbar links -->
+
       <nav>
         <ul>
           <li><a href="../index.html#home" style="--i:1;">Home</a></li>
@@ -44,32 +48,19 @@
           <a href="../hc/HelpCenter.html" class="btns">Help Center</a>
         </div>
 
-        <!-- Theme Toggle Button -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
           <i class="fas fa-moon"></i>
         </button>
       </div>
 
-      <!-- burger menu-->
       <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
     </div>
   </header>
 
-  <!-- Sidebar on small screens when clicking the menu icon 
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
-    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-    <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-    <a href="../Careers/careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
-    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
-    <a href="Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
-    <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
-  </nav>-->
-
-  <!-- Modern Breadcrumb -->
+  <!-- Breadcrumb -->
   <nav class="breadcrumb-nav">
     <div class="container">
       <ul class="breadcrumb">
@@ -89,8 +80,8 @@
     </div>
   </nav>
 
-  <!-- Modern Products Section -->
-  <section class="products-section" id="products">
+  <!-- Products Section -->
+  <section class="products-section">
     <div class="container">
       <div class="products-header">
         <h2 class="section-title">Experience <span>Our Software</span></h2>
@@ -255,7 +246,7 @@
   <!-- Footer -->
   <footer>
     <div class="style-center">
-      <a href="#products" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
+      <a href="#" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
     </div>
     <div class="container">
       <div class="footer-content">
@@ -305,9 +296,9 @@
   <script src="demo.js"></script>
   <script src="../hc/script.js"></script>
 
+  <!-- n8n Chat -->
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-  <!-- n8n Chat -->
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 

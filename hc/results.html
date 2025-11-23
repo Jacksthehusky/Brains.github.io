@@ -16,8 +16,7 @@
 </head>
 
 <body>
-
-  <!-- Navbar/Header (sit on top) -->
+  <!-- Navbar -->
   <header>
     <div class="container nav-container">
       <div class="logo">
@@ -26,7 +25,7 @@
           <h1>Brains</h1>
         </a>
       </div>
-      <!-- Right-sided navbar links -->
+
       <nav>
         <ul>
           <li><a href="../index.html#home" style="--i:1;">Home</a></li>
@@ -43,22 +42,20 @@
           <a href="HelpCenter.html" class="btns">Help Center</a>
         </div>
 
-        <!-- Theme Toggle Button -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
           <i class="fas fa-moon"></i>
         </button>
       </div>
 
-      <!-- burger menu-->
       <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
     </div>
   </header>
 
-  <!-- Modern Breadcrumb -->
-  <nav class="breadcrumb-nav" id="top">
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb-nav">
     <div class="container">
       <ul class="breadcrumb">
         <li class="breadcrumb-item">
@@ -76,125 +73,6 @@
       </ul>
     </div>
   </nav>
-
-  <!-- header section 
-  <div class="w3-display-container w3-grayscale-min">
-    <div class="SolutionHeader">
-      <div class="row">
-        <div>
-          <ul class="breadcrumb">
-            <li>
-              <a href="HelpCenter.html">Brains Help Center</a>
-            </li>
-            <li>
-              Search Results
-            </li>
-          </ul>
-        </div>
-      </div>
-      <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-      <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop" delay="4000"
-        colors="primary:white,secondary:red">
-      </lord-icon>
-    </div>
-  </header>-->
-
-
-  <!-- html output after clicking on card search
-  <section>
-    <div class="Solution w3-container w3-light-grey">
-      <div class="question-header">
-        <div><span class="question-title" id="abbr"></span> <span class="question-id" id="id"></span></div>
-        <span class="question-time" id="modified-date-time"></span>
-      </div>
-      <div style="display: flex;justify-content: space-between;align-items: baseline;">
-        <p id="question"></p>
-        <button class="whatsapp-share-button" id="share-button">Share</button>
-      </div>
-      <div id="video-container" class="video-wrapper"></div>
-      <ul id="answers-container" class="answer-steps">
-      </ul>
-      <i id="notes"></i>
-      <div style="display: flex;justify-content: center;">
-        <div class="w3-right" id="feedback-section" style="padding:5em 0 1em 0">
-          <h4 style="font-size: 15px; font-weight: bold;">Was this article helpful?</h4>
-          <button class="fas fa-thumbs-up w3-hover-opacity w3-xlarge" style="padding:10px 30px" aria-hidden="true"
-            id="like-btn" onclick="handleLike()"></button>
-          <button class="fas fa-thumbs-down w3-hover-opacity w3-xlarge" style="padding:10px 30px" aria-hidden="true" id="dislike-btn"
-            onclick="handleDislike()"></button><br>
-          <span style="font-size: 15px; font-weight: normal; text-transform:none" id="helpful-count"></span>
-        </div>
-      </div>
-    </div>
-    <div style="color: #000;" id="related-articles" class="related-articles">
-      <ul id="related-articles-list"></ul>
-    </div>
-  </section> -->
-
-
-
-  <!-- Modal for full size images on click
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image" alt="">
-      <p id="caption" class="w3-large caption"></p>
-    </div>
-  </div>-->
-
-
-  <!-- Footer 
-  <footer class="w3-center w3-black w3-padding-64">
-    <a href="HelpCenter.html" class="btns w3-light-grey">
-      <i class="fa fa-search w3-margin-right"></i>Search</a>
-    <div>
-      <h4>Working Hours</h4>
-    </div>
-    <div>
-      Monday to Friday<br>
-      From 9:00 A.M.<br>
-      To 4:30 P.M.
-    </div>
-
-    <div class="footer w3-xlarge w3-section">
-      <ul>
-        <div></div>
-        <li>
-          <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" aria-label="whatsapp">
-            <i class="fa fa-whatsapp w3-hover-opacity"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
-            aria-label="facebook">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/brains-sarl-lb/" target="_blank" aria-label="linkedin">
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-          </a>
-        </li>
-        <div></div>
-      </ul>
-    </div>
-
-    <p class="w3-small">
-      Copyright &copy; Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL
-    </p>
-  </footer>
-  <script src="results.js"></script>
-  <script src="script.js"></script>-->
-
-  <!-- Dialogflow Messenger 
- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
- <df-messenger
-   chat-icon="https://raw.githubusercontent.com/Jacksthehusky/Brains.github.io/refs/heads/main/Images/AiBot.png"
-   intent="WELCOME"
-   chat-title="Brains Assistant"
-   agent-id="749f115e-db73-495e-8de0-a48a00e72366"
-   language-code="en"
- ></df-messenger>-->
 
   <!-- Results Section -->
   <section class="results-section">
@@ -290,7 +168,7 @@
   <!-- Footer -->
   <footer>
     <div class="style-center">
-      <a href="#top" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
+      <a href="#" class="btns"><i class="fas fa-arrow-up style-margin-right"></i>To the top</a>
     </div>
     <div class="container">
       <div class="footer-content">
@@ -337,14 +215,12 @@
     </div>
   </footer>
 
-  <!--<script src="results.js"></script>-->
    <script src="script.js"></script>
   <script src="../assets/js/main.js"></script>
 
-
+  <!-- n8n Chat -->
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-  <!-- n8n Chat -->
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 

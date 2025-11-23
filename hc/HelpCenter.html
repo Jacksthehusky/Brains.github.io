@@ -5,6 +5,10 @@
   <title>Brains Help Center</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Find answers, guides, and support for Brains software solutions. Our Help Center offers FAQs, tutorials, and contact options to assist you." />
+  <meta name="keywords" content="Brains, Help Center, Support, FAQs, Tutorials, Guides, Software Assistance" />
+  <meta name="author" content="Brains" />
   <script src="https://kit.fontawesome.com/14bd651fc9.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,8 +21,7 @@
 </head>
 
 <body>
-
-  <!-- Navbar/Header (sit on top) -->
+  <!-- Navbar -->
   <header>
     <div class="container nav-container">
       <div class="logo">
@@ -27,7 +30,7 @@
           <h1>Brains</h1>
         </a>
       </div>
-      <!-- Right-sided navbar links -->
+
       <nav>
         <ul>
           <li><a href="../index.html#home" style="--i:1;">Home</a></li>
@@ -44,118 +47,19 @@
           <a href="HelpCenter.html" class="btns">Help Center</a>
         </div>
 
-        <!-- Theme Toggle Button -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
           <i class="fas fa-moon"></i>
         </button>
       </div>
 
-      <!-- burger menu-->
       <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
     </div>
   </header>
 
-  <!-- Sidebar on small screens when clicking the menu icon
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
-    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-    <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-    <a href="../Careers/careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
-    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
-    <a href="../Demo/Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
-    <a href="HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
-  </nav> -->
-
-  <!-- Search section 
-  <div class="w3-display-container" id="HelpCenter">
-    <div class="HelpSearch">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6 m-auto">
-            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-            <div style="
-                  display: flex;
-                  justify-content: center;">
-              <lord-icon src="https://cdn.lordicon.com/vlupvdhl.json" trigger="loop" delay="1000"
-                colors="primary:#ffffff,secondary:red" style="width:70px;height:70px">
-              </lord-icon>
-            </div>
-            <h3 class="text-center mb-3">How can we help?</h3>
-            <p class="digitalized text-center">The Help Center has the answers you need to succeed using
-              <span>Brains</span>
-            </p>
-            <div class="form-group search">
-              <div class="input-group search">
-                <input type="text" id="search" class="form-control form-control-lg" placeholder="Search"
-                  autocomplete="new-password" />
-                <div class="input-group-append">
-                  <span class="input-group-text"><i class="fas fa-search"></i></span>
-                </div>
-              </div>
-              <div id="match-list" class="cards"></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>-->
-
-  <!-- FAQ Section
-  <section class="faqs">
-    <div class="w3-container w3-light-grey">
-      <h1>FAQ</h1>
-      <h4>General FAQs about <span>Brains</span></h4>
-      <br>
-      <div id="faqs"></div>
-    </div>
-    <div class="faqsend">
-      <code> <img src='../Images/brains.ico' alt="icon">
-    : Kindly reach out to our customer services for assistance in accessing this answer.</code>
-    </div>
-  </section> -->
-
-  <!-- Support Section 
-  <section class="contact" id="support" style="color: black">
-    <h2 class="heading">Need <span>Support?</span></h2>
-    <h4 class="text-center">For any inquiries or assistance required, our support team is at your service. <br>Help us
-      understand your concerns better by providing accurate information in the form below.</h4><br>
-      <form action="/contact-form-handler.php" method="post" name="Contact Form">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" required name="fullname">
-          <input type="email" placeholder="Email Address" required name="emailaddress">
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number" required name="telephone">
-          <input type="text" placeholder="Email Subject" required name="subject">
-        </div>
-        <textarea id="messageInput" cols="30" rows="10" placeholder="Message" required name="message"></textarea>
-        <input type="hidden" name="redirect" value="/hc/HelpCenter.html">
-        <input type="hidden" name="recipient" value="michel@brains-lb.com">
-        <input type="submit" value="SEND MESSAGE" class="btns">
-      </form><br>
-    E-mail Support:<code>michel@brains-lb.com</code><br>
-    Tel:<code>+961 1 872 376</code><br>
-  </section>
-
-
-  <div class="w3-light-grey text-center w3-padding-64">
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <lord-icon src="https://cdn.lordicon.com/wzrwaorf.json" trigger="loop" delay="4000"
-      colors="primary:#121331,secondary:#8B0000" style="width:100px;height:100px">
-    </lord-icon>
-    <h4>Can’t find the answers you’re looking for? We’re here to help.</h4>
-    <p class="w3-padding-32">
-      <a href="javascript:void(0)" onclick="sendWhatsAppMessageFooter()" class="btns" id="ContactSupport"
-        target="_blank" aria-label="whatsapp">
-        <i class="fa fa-whatsapp w3-hover-opacity"></i> Contact Brains Support </a>
-    </p>
-  </div>-->
-
-  <!-- Modern Breadcrumb -->
+  <!-- Breadcrumb -->
   <nav class="breadcrumb-nav">
     <div class="container">
       <ul class="breadcrumb">
@@ -175,7 +79,7 @@
     </div>
   </nav>
 
-  <!-- Modern Hero Search Section -->
+  <!-- Hero Search Section -->
   <section class="help-hero" id="help-hero">
     <div class="container">
       <div class="help-hero-content">
@@ -201,25 +105,6 @@
       </div>
     </div>
   </section>
-  <!-- <div class="quick-links">
-          <div class="quick-link">
-            <i class="fas fa-book"></i>
-            <span>Getting Started </span>
-          </div>
-          <div class="quick-link">
-            <i class="fas fa-cog"></i>
-            <span>Installation </span>
-          </div>
-          <div class="quick-link">
-            <i class="fas fa-chart-line"></i>
-            <span>Troubleshooting </span>
-          </div>
-          <div class="quick-link">
-            <i class="fas fa-file-invoice"></i>
-            <span>Reports</span>
-          </div>
-        </div>-->
-
 
   <!-- FAQ Section -->
   <section class="modern-faqs">
@@ -262,15 +147,6 @@
           <p>Step-by-step instructions for installing Brains software on your system</p>
           <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
         </article>
-
-        <!--  <article class="article-card">
-          <div class="article-icon">
-            <i class="fas fa-database"></i>
-          </div>
-          <h3>Database Setup & Configuration</h3>
-          <p>Configure SQL Server database connections and optimize performance</p>
-          <a href="#" class="article-link">Read Guide <i class="fas fa-arrow-right"></i></a>
-        </article>-->
 
         <article class="article-card">
           <div class="article-icon">
@@ -475,13 +351,12 @@
     </div>
   </footer>
 
-  <script src="helpcenterhero.js"></script>
+  <script src="helpcenter.js"></script>
   <script src="script.js"></script>
 
-
+  <!-- n8n Chat -->
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-  <!-- n8n Chat -->
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 

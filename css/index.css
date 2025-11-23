@@ -1304,7 +1304,7 @@ section {
 }
 
 [data-theme="dark"] .world-map-section .overlay {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(135deg, var(--white), rgba(122, 21, 21, 0.1));
 }
 
 .worldmap-content {

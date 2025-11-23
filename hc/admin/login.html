@@ -18,8 +18,7 @@
 </head>
 
 <body>
-
-    <!-- Navbar/Header (sit on top) -->
+    <!-- Navbar -->
     <header>
         <div class="container nav-container">
             <div class="logo">
@@ -28,7 +27,7 @@
                     <h1>Brains</h1>
                 </a>
             </div>
-            <!-- Right-sided navbar links -->
+
             <nav>
                 <ul>
                     <li><a href="../../index.html#home" style="--i:1;">Home</a></li>
@@ -45,22 +44,20 @@
                     <a href="../HelpCenter.html" class="btns">Help Center</a>
                 </div>
 
-                <!-- Theme Toggle Button -->
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                     <i class="fas fa-sun"></i>
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
 
-            <!-- burger menu-->
             <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
                 <i class="fas fa-bars"></i>
             </a>
         </div>
     </header>
 
+    <!-- Home Section -->
     <section class="home" id="home">
-        <!-- Background Video -->
         <div class="bg-video">
             <video preload="auto" loop autoplay muted playsinline>
                 <source src="../../Images/galaxy.mp4" type="video/mp4">
@@ -69,12 +66,11 @@
             <div class="video-overlay"></div>
         </div>
 
-        <!-- Gradient Card Container -->
         <div class="gradient-card-wrapper1">
             <span class="effect-gradient"></span>
             <div class="gradient-card">
                 <div class="gradient-card-content">
-                    <!-- Home Content Inside Card -->
+
                     <div class="home-content">
                         <div class="login-header">
                             <i class="fas fa-lock"></i>
@@ -163,9 +159,9 @@
     <script src="../script.js"></script>
 
 
+    <!-- n8n Chat -->
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-    <!-- n8n Chat -->
     <script type="module">
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 

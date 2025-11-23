@@ -17,8 +17,7 @@
 </head>
 
 <body>
-
-  <!-- Navbar/Header (sit on top) -->
+  <!-- Navbar -->
   <header>
     <div class="container nav-container">
       <div class="logo">
@@ -27,7 +26,7 @@
           <h1>Brains</h1>
         </a>
       </div>
-      <!-- Right-sided navbar links -->
+
       <nav>
         <ul>
           <li><a href="../index.html#home" style="--i:1;">Home</a></li>
@@ -44,32 +43,19 @@
           <a href="../hc/HelpCenter.html" class="btns">Help Center</a>
         </div>
 
-        <!-- Theme Toggle Button -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
           <i class="fas fa-moon"></i>
         </button>
       </div>
 
-      <!-- burger menu-->
       <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
         <i class="fas fa-bars"></i>
       </a>
     </div>
   </header>
 
-  <!-- Sidebar on small screens when clicking the menu icon 
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-top w3-hide-large" style="display:none" id="mySidebar">
-    <a href="../index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-    <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-    <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-    <a href="../Careers/careers.html" onclick="w3_close()" class="w3-bar-item w3-button">Careers</a>
-    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
-    <a href="Products.html" onclick="w3_close()" class="w3-bar-item w3-button">Demo</a>
-    <a href="../hc/HelpCenter.html" onclick="w3_close()" class="w3-bar-item w3-button">Help Center</a>
-  </nav>-->
-
-  <!-- Modern Breadcrumb -->
+  <!-- Breadcrumb -->
   <nav class="breadcrumb-nav">
     <div class="container">
       <ul class="breadcrumb">
@@ -95,7 +81,7 @@
     </div>
   </nav>
 
-  <!-- Modern Demo Header -->
+  <!-- Demo Header -->
   <section class="demo-header" id="header">
     <div class="container">
       <div class="demo-hero">
@@ -116,264 +102,9 @@
     </div>
   </section>
 
-
-  <!-- Demo 
-
-  <section>
-
-    <div class="w3-container w3-light-gray" style="margin-bottom: 5rem;">
-      <div class="tabs">
-        <a class="tab" id="tab-menu1" onclick="showTab('menu1')">DATA ENTRY</a>
-        <a class="tab" id="tab-menu2" onclick="showTab('menu2')">OPERATIONS</a>
-        <a class="tab" id="tab-menu3" onclick="showTab('menu3')">REPORTS</a>
-        <a class="tab" id="tab-menu4" onclick="showTab('menu4')">END OF SESSION</a>
-        <a class="tab" id="tab-menu5" onclick="showTab('menu5')">SYSTEM</a>
-      </div>
-    </div>
-
-    <div class="w3-container w3-light-grey">
-
-      <div id="home" class="tab-content active">
-        <div class="Solution">
-          <h3>Required System</h3>
-          <p>The system software is developed under Visual Studio .NET Framework Using Sql Server Database. Please note
-            that the following description of the software system is based on different modules. All systems have
-            certain number of features of which we may list the following:
-          </p>
-
-
-          <ul class="answer-steps">
-            <li>
-              Management facilities in data entry screens such as creating, deleting, modifying and searching for
-              entries.
-            </li>
-            <li>
-              All screens have the feature of using the mouse or the arrows and the ability to open multiple screens at
-              one time.
-
-            </li>
-            <li>
-              Reports can be produced on printer and screen as well.
-            </li>
-          </ul>
-
-          <p><strong>Brief Description of the Software:</strong> <br>
-            This section describes in brief the features of the software. </p>
-        </div>
-
-        <h3>General Specifications:</h3>
-        <div>
-          <code>Integrated.</code><br>
-          <code>Multi company.</code><br>
-          <code>Multi currency.</code><br>
-          <code>User friendly.</code><br>
-          <code>Use of arrow keys to scroll and select options.</code><br>
-          <code>Fully menu driven system.</code><br>
-          <code>High level of security.</code><br>
-        </div>
-
-        <h3>Access Control:</h3>
-        <ul>
-          <li>Protection and restriction to the access of data and operations.</li>
-          <li>Unlimited number of users.</li>
-          <li>Access restriction according to user's category.</li>
-          <li>Password modification is user available.</li>
-        </ul>
-        <center><i>Continue the demo by selecting the Data Entry menu:</i></center>
-      </div>
-
-      <div id="menu1" class="tab-content">
-        <h3>Data Entry</h3>
-        <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
-        <div style="display: flex;justify-content: center;">
-          <img src="../Images/PayrollDataEntry.gif"
-            alt="Explore our software's features through this brief animated showcase" class="w3-hover-opacity"
-            onclick="onClick(this, 0)" style="max-width: 100%;">
-        </div>
-        <div class="Solution">
-          <ul class="answer-steps">
-            <li><strong>EMPLOYEES Module:</strong><br>
-              This module allows you to input all employees information for each employee either monthly, weekly, daily
-              or contracting. Allows the definition of salaries in any currency (ex: U.S.Dollars and LBP) with automatic
-              handling of social security and income tax provisions, social security allocations and children module.
-            </li>
-
-            <li><strong>DEPARTMENT Module:</strong><br>
-              This module allocates employees by departments (ex: accounting department, sales department ¡­)
-            </li>
-
-            <li><strong>STATUS Module:</strong><br>
-              This module is used to define the status of every employee (ex: Mr, Mrs, Miss ¡­)
-            </li>
-
-            <li><strong>NATIONALITY Module:</strong><br>
-              This module is used to define the nationality of every employee.
-            </li>
-
-            <li><strong>TAXES Module:</strong><br>
-              This module allows the creation of taxes defined by the government.
-            </li>
-
-            <li><strong>VOUCHER TYPE Module:</strong><br>
-              This module inputs the different types of voucher to be used in different numbering of payslips.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="menu2" class="tab-content">
-        <h3>OPERATIONS Menu</h3>
-        <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
-        <div style="display: flex;justify-content: center;">
-          <img src="../Images/PayrollOperations.gif"
-            alt="Explore our software's features through this brief animated showcase" class="w3-hover-opacity"
-            onclick="onClick(this, 0)" style="max-width: 100%;">
-        </div>
-        <div class="Solution">
-          <ul class="answer-steps">
-            <li>
-              <strong>SALARIES Module:</strong><br>
-              This module allows you to input and generate an unlimited payslips by different currencies according to
-              employee type monthly or not with an option to fill the salaries by row or column. Also, you have the
-              facility to copy information already entered from any voucher without reentering it. Also an advance on
-              salary can be entered in this part and deducted automatically later.
-            </li>
-
-            <li>
-              <strong>ATTENDANCE Module :</strong><br>
-              This module allows you to input the employee's attendance daily or monthly and it can be linked to any
-              external device.
-            </li>
-
-            <li>
-              <strong>CURRENCY RATES Module :</strong><br>
-              This module is needed to enter the currency rates that correspond to the amount of transactions. These
-              rates are entered on daily basis.
-            </li>
-
-            <li>
-              <strong>FIX DIFF. :</strong><br>
-              Fix the difference of the taxes and NSSF per epmloyee at the end of any period.
-            </li>
-
-            <li>
-              <strong>EXPORT TO ACCOUNT :</strong><br>
-              This module allows you to transfer the salaries on the accounting module.
-            </li>
-
-            <li>
-              <strong>CLOSING END OF YEAR :</strong><br>
-              This module will automatically close current year and open a new one.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="menu3" class="tab-content">
-        <h3>REPORTS Menu</h3>
-        <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
-        <div style="display: flex;justify-content: center;">
-          <img src="../Images/PayrollReports.gif"
-            alt="Explore our software's features through this brief animated showcase" class="w3-hover-opacity"
-            onclick="onClick(this, 0)" style="max-width: 100%;">
-        </div>
-        <div class="Solution">
-          <p>All the following modules can be produced on either the screen or the printer.</p>
-          <ul class="answer-steps">
-            <li>
-              <strong>SALARIES:</strong><br>
-              Salaries are printed in this module.
-            </li>
-            <li>
-              <strong>PAY SLIPS:</strong><br>
-              Payment Slips are printed in this module with the option to modify the layout to suit the company's need.
-            </li>
-            <li>
-              <strong>ATTENDANCE:</strong><br>
-              This module lists the monthly or daily attendance.
-            </li>
-          </ul>
-          <p>Additionnal options available :</p>
-          <div>
-            <code>The Subscriptions of the NSSF.</code><br>
-            <code>The End of Service provisions.</code><br>
-            <code>The taxes.</code><br>
-            <code>The Official report required by the government.</code>
-          </div>
-        </div>
-      </div>
-
-      <div id="menu4" class="tab-content">
-        <h3>END OF SESSION Menu</h3>
-        <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
-        <div style="display: flex;justify-content: center;">
-          <img src="../Images/PayrollEndOfSession.gif"
-            alt="Explore our software's features through this brief animated showcase" class="w3-hover-opacity"
-            onclick="onClick(this, 0)" style="max-width: 100%;">
-        </div>
-        <div class="Solution">
-          <ul class="answer-steps">
-            <li>
-              <strong>PACK & REINDEX Feature:</strong><br>
-              This feature reorganizes the data files when requested. It is very important to use this feature once
-              every a certain period of time.
-            </li>
-            <li>
-              <strong>BACKUP Feature:</strong><br>
-              It is very important to store data on tapes for later use in case of probable damage. You can run this
-              command directly from the system without quitting.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="menu5" class="tab-content">
-        <h3>SYSTEM Menu</h3>
-        <br><code>Watch the quick walkthrough below to see the seamless functionality and user-friendly interface of our software in action.</code><br>
-        <div style="display: flex;justify-content: center;">
-          <img src="../Images/PayrollSystem.gif"
-            alt="Explore our software's features through this brief animated showcase" class="w3-hover-opacity"
-            onclick="onClick(this, 0)" style="max-width: 100%;">
-        </div>
-        <div class="Solution">
-          <ul class="answer-steps">
-            <li><strong>CHANGE COMPANY Module:</strong><br>
-              By using this module, you can shift from one company to another.<br>This applies on a company that has
-              under its wings many other companies. All corresponding files will be open to the new entering data.
-            </li>
-            <li><strong>Other Features:</strong>
-            </li>
-            The Payroll system provides you with the following additional features:
-
-            <div>
-              <code>You may change the system password by using password option.</code><br>
-              <code>You may run your system in English, Arabic, or French.</code><br>
-              <code>You may use calculator and calendar directly from the program without quitting</code>
-            </div>
-            <li><strong>PREFERENCE Module:</strong><br>
-              This module allows the definition of all related government rulers and laws to be entered by the user.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="w3-container w3-light-gray" style="margin-top: 5rem;">
-      <div class="tabs">
-        <a class="tab" id="tab-menu1" onclick="showTab('menu1')">DATA ENTRY</a>
-        <a class="tab" id="tab-menu2" onclick="showTab('menu2')">OPERATIONS</a>
-        <a class="tab" id="tab-menu3" onclick="showTab('menu3')">REPORTS</a>
-        <a class="tab" id="tab-menu4" onclick="showTab('menu4')">END OF SESSION</a>
-        <a class="tab" id="tab-menu5" onclick="showTab('menu5')">SYSTEM</a>
-      </div>
-    </div>
-  </section>-->
-
-
-  <!-- Modern Tabs Navigation -->
+  <!-- Tabs Navigation -->
   <section class="demo-tabs-section">
-    <div class="container">
+    <div class="demo-width">
       <div class="modern-tabs">
         <div class="tab-nav">
           <button class="tab-btn active" data-tab="overview">
@@ -407,14 +138,17 @@
           <div class="tab-content active" id="overview">
             <div class="tab-header">
               <h2>System Overview</h2>
-              <p>Built with Visual Studio .NET Framework and SQL Server Database</p>
+              <p>Built with Visual Studio .NET Framework and SQL Server Database<br>This comprehensive payroll module
+                handles all employee data, multi-currency payslip generation, and daily attendance tracking. It
+                automates key calculations for taxes, social security (NSSF), and end-of-service, while managing daily
+                exchange rates and generating mandatory government reports</p>
             </div>
 
             <div class="overview-grid">
               <div class="overview-card">
                 <i class="fas fa-sync-alt"></i>
                 <h4>Integrated System</h4>
-                <p>Seamlessly connects all accounting modules for unified financial management</p>
+                <p>various HR functions feed into the central payroll module</p>
               </div>
               <div class="overview-card">
                 <i class="fas fa-building"></i>
@@ -478,56 +212,62 @@
           <!-- Data Entry Tab -->
           <div class="tab-content" id="data-entry">
             <div class="tab-header">
-              <h2>Data Entry Modules</h2>
-              <p>Foundation modules for setting up and managing your accounting structure</p>
+              <h2>Data Entry Modules Walkthrough</h2>
+              <p>Foundation modules for setting up and managing your payroll structure<br>See how to set up employees,
+                departments, and taxes</p>
             </div>
 
             <div class="demo-preview">
-              <div class="preview-header">
-                <h4>Data Entry Walkthrough</h4>
-                <p>See how to set up currencies, accounts, and voucher types</p>
-              </div>
               <div class="gif-container">
-                <img src="../Images/GeneralAccountingDataEntry.gif" alt="General Accounting Data Entry Demo"
-                  loading="lazy">
+                <img src="../Images/PayrollDataEntry.gif" alt="General Payroll Data Entry Demo" loading="lazy">
               </div>
             </div>
 
             <div class="modules-grid">
               <div class="module-card">
                 <div class="module-icon">
-                  <i class="fas fa-money-bill-alt"></i>
+                  <i class="fas fa-user-friends"></i>
                 </div>
-                <h4>Currency Management</h4>
-                <p>Input currency codes, descriptions, and symbols for all transactions</p>
+                <h4>Employees Module</h4>
+                <p>Streamline employee data entry (monthly, weekly, daily, or contract) with multi-currency payroll,
+                  automated tax, and social security calculations</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-sitemap"></i>
                 </div>
-                <h4>Chapters & Sub-Chapters</h4>
-                <p>Create and manage government-recognized accounting chapters</p>
+                <h4>Department Module</h4>
+                <p>
+                  Allocates employees by departments (ex: accounting department, sales department...)
+                </p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
-                  <i class="fas fa-book"></i>
+                  <i class="fas fa-user-cog"></i>
                 </div>
-                <h4>General Ledger</h4>
-                <p>Manage data related to the general ledger accounts</p>
+                <h4>Status Module</h4>
+                <p>Used to define the status of every employee (ex: Mr, Mrs, Miss...)</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
-                  <i class="fas fa-user-friends"></i>
+                  <i class="fas fas fa-globe"></i>
                 </div>
-                <h4>Auxiliary Accounts</h4>
-                <p>Show total account numbers with auxiliary codes</p>
+                <h4>Nationality Module</h4>
+                <p>Used to define the nationality of every employee</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-receipt"></i>
                 </div>
-                <h4>Voucher Types</h4>
-                <p>Define different voucher types (bank, journal, credit/debit notes)</p>
+                <h4>Taxes Module</h4>
+                <p>Allows the creation of taxes defined by the government</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h4>Operation Type Module</h4>
+                <p>Inputs the different types of voucher to be used in different numbering of payslips</p>
               </div>
             </div>
           </div>
@@ -535,50 +275,61 @@
           <!-- Operations Tab -->
           <div class="tab-content" id="operations">
             <div class="tab-header">
-              <h2>Operations Modules</h2>
-              <p>Daily transaction processing and financial operations management</p>
+              <h2>Operations Modules Walkthrough</h2>
+              <p>See how to set up Salaries</p>
             </div>
 
             <div class="demo-preview">
-              <div class="preview-header">
-                <h4>Operations Walkthrough</h4>
-                <p>See daily transaction processing and financial operations</p>
-              </div>
               <div class="gif-container">
-                <img src="../Images/GeneralAccountingOperations.gif" alt="General Accounting Operations Demo"
-                  loading="lazy">
+                <img src="../Images/PayrollOperations.gif" alt="General Accounting Operations Demo" loading="lazy">
               </div>
             </div>
-
 
             <div class="modules-grid">
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-file-invoice-dollar"></i>
                 </div>
-                <h4>Entry Voucher</h4>
-                <p>Input daily transactions including payments, receipts, and journal vouchers</p>
+                <h4>Salaries Module</h4>
+                <p>This module generates unlimited payslips in multiple currencies for any pay schedule. You can input
+                  salaries by row or column, copy existing data to avoid re-entry, and process advance salary payments
+                  with automatic future deductions</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-chart-line"></i>
                 </div>
-                <h4>Currency Rates</h4>
-                <p>Enter daily currency rates for accurate transaction calculations</p>
+                <h4>Attendance Module</h4>
+                <p>This module records daily or monthly employee attendance and can integrate with external
+                  time-tracking devices</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-exchange-alt"></i>
                 </div>
-                <h4>Difference of Exchange</h4>
-                <p>Calculate value differences caused by currency rate changes</p>
+                <h4>Currency Rates Module</h4>
+                <p>This module manages daily currency exchange rates for accurate financial transactions</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-balance-scale"></i>
                 </div>
-                <h4>Profit & Loss Closing</h4>
-                <p>Generate profit/loss vouchers at any point during the fiscal year</p>
+                <h4>Fix Module</h4>
+                <p>Fix the difference of the taxes and NSSF per epmloyee at the end of any period</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h4>Export To Accounting Module</h4>
+                <p>Allows you to transfer the salaries on the accounting module</p>
+              </div>
+              <div class="module-card">
+                <div class="module-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <h4>Closing End Of Year Module</h4>
+                <p>This module will automatically close current year and open a new one</p>
               </div>
             </div>
 
@@ -587,17 +338,13 @@
           <!-- Reports Tab -->
           <div class="tab-content" id="reports">
             <div class="tab-header">
-              <h2>Reporting Modules</h2>
-              <p>Comprehensive financial reporting and analysis tools</p>
+              <h2>Reporting Modules Walkthrough</h2>
+              <p>Explore Salaries and Pay Slips reports</p>
             </div>
 
             <div class="demo-preview">
-              <div class="preview-header">
-                <h4>Reports Walkthrough</h4>
-                <p>See how to generate comprehensive financial reports</p>
-              </div>
               <div class="gif-container">
-                <img src="../Images/GeneralAccountingReports.gif" alt="General Accounting Reports Demo" loading="lazy">
+                <img src="../Images/PayrollReports.gif" alt="General Accounting Reports Demo" loading="lazy">
               </div>
             </div>
 
@@ -606,36 +353,31 @@
                 <div class="module-icon">
                   <i class="fas fa-file-invoice"></i>
                 </div>
-                <h4>Statement of Account</h4>
-                <p>List transactions for specific accounts with date range filtering</p>
+                <h4>Salaries Module</h4>
+                <p>Salaries are printed in this module</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-chart-column"></i>
                 </div>
-                <h4>Daily Journal</h4>
-                <p>Produce government-compliant daily transaction reports</p>
+                <h4>Pay Slips</h4>
+                <p>Payment Slips are printed in this module with the option to modify the layout to suit the company's
+                  need</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
                   <i class="fas fa-chart-pie"></i>
                 </div>
-                <h4>Trial Balance</h4>
-                <p>Generate balance by currency, date, chapters, and ledgers</p>
+                <h4>Attendance</h4>
+                <p>This module lists the monthly or daily attendance</p>
               </div>
               <div class="module-card">
                 <div class="module-icon">
-                  <i class="fas fa-money-bills"></i>
+                  <i class="fas fa-info"></i>
                 </div>
-                <h4>Income Statement</h4>
-                <p>Lebanese accounting rule-compliant profit/loss statements</p>
-              </div>
-              <div class="module-card">
-                <div class="module-icon">
-                  <i class="fas fa-balance-scale"></i>
-                </div>
-                <h4>Balance Sheet</h4>
-                <p>Comprehensive financial position reporting</p>
+                <h4>Additional options available</h4>
+                <p>Explore additional features including NSSF subscriptions, end-of-service provisions, taxes, and
+                  mandatory government reports</p>
               </div>
             </div>
           </div>
@@ -643,17 +385,14 @@
           <!-- Session Tab -->
           <div class="tab-content" id="session">
             <div class="tab-header">
-              <h2>Session Management</h2>
-              <p>End-of-session procedures and data protection features</p>
+              <h2>Session Management Walkthrough</h2>
+              <p>End-of-session procedures and data protection features<br>See how to properly close sessions and backup
+                data</p>
             </div>
 
             <div class="demo-preview">
-              <div class="preview-header">
-                <h4>Session Management Walkthrough</h4>
-                <p>See how to properly close sessions and backup data</p>
-              </div>
               <div class="gif-container">
-                <img src="../Images/GeneralAccountingEndOfSession.gif" alt="General Accounting Session Management Demo"
+                <img src="../Images/PayrollEndOfSession.gif" alt="General Accounting Session Management Demo"
                   loading="lazy">
               </div>
             </div>
@@ -751,17 +490,14 @@
           <!-- System Tab -->
           <div class="tab-content" id="system">
             <div class="tab-header">
-              <h2>System Configuration</h2>
-              <p>Advanced system settings and customization options</p>
+              <h2>System Configuration Walkthrough</h2>
+              <p>Advanced system settings and customization options<br>See how to customize system settings and manage
+                companies</p>
             </div>
 
             <div class="demo-preview">
-              <div class="preview-header">
-                <h4>System Configuration Walkthrough</h4>
-                <p>See how to customize system settings and manage companies</p>
-              </div>
               <div class="gif-container">
-                <img src="../Images/GeneralAccountingSystem.gif" alt="General Accounting System Configuration Demo"
+                <img src="../Images/PayrollSystem.gif" alt="General Accounting System Configuration Demo"
                   loading="lazy">
               </div>
             </div>
@@ -814,6 +550,13 @@
                 <h3>System Configuration Options</h3>
                 <div class="config-grid">
                   <div class="config-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <div class="config-content">
+                      <h5>Company Switching</h5>
+                      <p>Instant switching between companies with automatic file management</p>
+                    </div>
+                  </div>
+                  <div class="config-item">
                     <i class="fas fa-key"></i>
                     <div class="config-content">
                       <h5>Password Management</h5>
@@ -821,10 +564,10 @@
                     </div>
                   </div>
                   <div class="config-item">
-                    <i class="fas fa-sort-alpha-down"></i>
+                    <i class="fas fas fa-history"></i>
                     <div class="config-content">
-                      <h5>Account Sorting</h5>
-                      <p>Choose to list auxiliary accounts by code or description for optimal organization</p>
+                      <h5>User History</h5>
+                      <p>Complete transaction history</p>
                     </div>
                   </div>
                   <div class="config-item">
@@ -835,24 +578,10 @@
                     </div>
                   </div>
                   <div class="config-item">
-                    <i class="fas fa-file-alt"></i>
-                    <div class="config-content">
-                      <h5>Journal Numbering</h5>
-                      <p>Automatically number daily journal pages for government submission and stamping</p>
-                    </div>
-                  </div>
-                  <div class="config-item">
                     <i class="fas fa-calculator"></i>
                     <div class="config-content">
                       <h5>Integrated Tools</h5>
                       <p>Access calculator and calendar functions directly within the application</p>
-                    </div>
-                  </div>
-                  <div class="config-item">
-                    <i class="fas fa-exchange-alt"></i>
-                    <div class="config-content">
-                      <h5>Company Switching</h5>
-                      <p>Instant switching between companies with automatic file management</p>
                     </div>
                   </div>
                 </div>
@@ -994,9 +723,9 @@
   <script src="demo.js"></script>
   <script src="accounting.js"></script>
 
+  <!-- n8n Chat -->
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-  <!-- n8n Chat -->
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
