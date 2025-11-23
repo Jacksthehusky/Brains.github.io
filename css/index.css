@@ -228,7 +228,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: var(--bg-color);
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
 }
 
 .heading {
@@ -273,11 +273,25 @@ section {
 /*-----------------------------------Services-----------------------------------*/
 
 .services {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
+
+  box-shadow: var(--shadow-color);
+  position: relative;
+  overflow: hidden;
 }
 
 .services h2 {
   margin-bottom: 3rem;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #7a1515, #c53030);
 }
 
 .services-container {
@@ -363,11 +377,7 @@ section {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  background: linear-gradient(
-    45deg,
-    rgba(235, 235, 245, 0.7),
-    rgba(250, 250, 255, 0.7)
-  );
+  background: var(--card-bg);
   transition: transform ease-in-out 0.2s;
   padding: 1em 0.5em;
   text-align: center;
@@ -570,11 +580,15 @@ section {
   font-weight: 600;
   margin: 0;
 }
+/*-----------------------------------SyncManager-----------------------------------*/
+.SyncManager {
+  padding: 80px 0;
+  background: var(--white);
+}
 
 /*-----------------------------------Features Section-----------------------------------*/
 .features {
   padding: 80px 0;
-  background: var(--white);
 }
 
 .features-grid {
@@ -1249,6 +1263,105 @@ section {
 .contact-method a:hover {
   text-decoration: underline;
 }
+/*-----------------------------------world map-----------------------------------*/
+/* ===============================
+   WORLD MAP SECTION
+   =============================== */
+.world-map-section {
+  position: relative;
+  padding: 120px 20px;
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+/* Subtle world map line-art background */
+.world-map-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../Images/worldmap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .world-map-section::before {
+  opacity: 0.2;
+  filter: brightness(0.8);
+}
+
+/* Blur + tint overlay for readability */
+.world-map-section .overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(1px);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+
+[data-theme="dark"] .world-map-section .overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+}
+
+.worldmap-content {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Cards */
+.worldmap-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.wm-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  margin-top: 10px;
+}
+
+.wm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.wm-card i {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(
+    135deg,
+    rgba(122, 21, 21, 0.1),
+    rgba(197, 48, 48, 0.1)
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.wm-card h3 {
+  font-size: var(--text-xl);
+  margin-bottom: 10px;
+}
+
+.wm-card p {
+  color: var(--gray);
+}
 
 /*-----------------------------------Contact-----------------------------------*/
 .team {
@@ -1391,7 +1504,7 @@ section {
 }
 
 [data-theme="dark"] .services {
-  background: var(--second-bg-color);
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--white) 100%);
 }
 
 [data-theme="dark"] .industries-section {
@@ -1409,7 +1522,7 @@ section {
 }
 
 [data-theme="dark"] .features {
-  background: var(--white);
+  background: var(--bg-color);
 }
 
 [data-theme="dark"] .feature-card {

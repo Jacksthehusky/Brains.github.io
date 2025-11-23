@@ -57,66 +57,71 @@
       </a>
     </div>
   </header>
-  <section>
+
+  <!-- Admin Dashboard Section -->
+  <section class="dashboard-protected">
     <div class="admin-container">
-      <header class="admin-header">
+
+      <!-- Header -->
+      <div class="admin-header">
         <div class="header-left">
           <h1><i class="fas fa-chart-line"></i> Help Center Analytics</h1>
+          <p class="subtitle">Performance overview and user feedback insights</p>
         </div>
+
         <div class="header-right">
-          <span class="user-info">
+          <div class="user-info">
             <i class="fas fa-user"></i>
             <span id="admin-username">Admin</span>
-          </span>
-          <button id="logout-btn" class="btn btn-logout">
+          </div>
+
+          <button id="logout-btn" class="btn btn-danger">
             <i class="fas fa-sign-out-alt"></i> Logout
           </button>
         </div>
-        <div class="header-actions">
-          <button id="refresh-btn" class="btn btn-primary">
-            <i class="fas fa-sync-alt"></i> Refresh
-          </button>
-          <button id="export-btn" class="btn btn-secondary">
-            <i class="fas fa-download"></i> Export CSV
-          </button>
-          <button id="cleanup-btn" class="btn btn-warning">
-            <i class="fas fa-broom"></i> Cleanup Old Votes
-          </button>
-        </div>
-      </header>
+      </div>
 
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button id="refresh-btn" class="btn btn-primary">
+          <i class="fas fa-sync-alt"></i> Refresh
+        </button>
+        <button id="export-btn" class="btn btn-secondary">
+          <i class="fas fa-download"></i> Export CSV
+        </button>
+        <button id="cleanup-btn" class="btn btn-warning">
+          <i class="fas fa-broom"></i> Cleanup Old Votes
+        </button>
+      </div>
+
+      <!-- Statistics Grid -->
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-thumbs-up"></i>
-          </div>
+          <div class="stat-icon icon-success"><i class="fas fa-thumbs-up"></i></div>
           <div class="stat-info">
             <h3 id="total-likes">0</h3>
             <p>Total Likes</p>
           </div>
         </div>
+
         <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-thumbs-down"></i>
-          </div>
+          <div class="stat-icon icon-error"><i class="fas fa-thumbs-down"></i></div>
           <div class="stat-info">
             <h3 id="total-dislikes">0</h3>
             <p>Total Dislikes</p>
           </div>
         </div>
+
         <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-users"></i>
-          </div>
+          <div class="stat-icon icon-primary"><i class="fas fa-users"></i></div>
           <div class="stat-info">
             <h3 id="unique-voters">0</h3>
             <p>Unique Voters</p>
           </div>
         </div>
+
         <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-file-alt"></i>
-          </div>
+          <div class="stat-icon icon-purple"><i class="fas fa-file-alt"></i></div>
           <div class="stat-info">
             <h3 id="total-articles">0</h3>
             <p>Articles with Votes</p>
@@ -124,74 +129,74 @@
         </div>
       </div>
 
+      <!-- Content Sections -->
       <div class="content-grid">
-        <!-- Top Articles Section -->
-        <section class="content-section">
+
+        <!-- Most Helpful Articles -->
+        <div class="content-section">
           <h2><i class="fas fa-trophy"></i> Most Helpful Articles</h2>
           <div class="table-container">
             <table id="top-articles-table">
               <thead>
                 <tr>
-                  <th>Article</th>
-                  <th>Likes</th>
-                  <th>Dislikes</th>
-                  <th>Helpfulness</th>
+                  <th class="sortable">Article</th>
+                  <th class="sortable">Likes</th>
+                  <th class="sortable">Dislikes</th>
+                  <th class="sortable">Helpfulness</th>
                 </tr>
               </thead>
-              <tbody id="top-articles-body">
-                <!-- Filled by JavaScript -->
-              </tbody>
+              <tbody id="top-articles-body"></tbody>
             </table>
           </div>
-        </section>
+        </div>
 
-        <!-- Recent Activity Section -->
-        <section class="content-section">
+        <!-- Recent Votes -->
+        <div class="content-section">
           <h2><i class="fas fa-clock"></i> Recent Votes</h2>
           <div class="table-container">
             <table id="recent-votes-table">
               <thead>
                 <tr>
-                  <th>Time</th>
-                  <th>Article</th>
-                  <th>Vote</th>
-                  <th>IP</th>
+                  <th class="sortable">Time</th>
+                  <th class="sortable">Article</th>
+                  <th class="sortable">Vote</th>
+                  <th class="sortable">IP</th>
                 </tr>
               </thead>
-              <tbody id="recent-votes-body">
-                <!-- Filled by JavaScript -->
-              </tbody>
+              <tbody id="recent-votes-body"></tbody>
             </table>
           </div>
-        </section>
+        </div>
 
-        <!-- Suspicious Activity Section -->
-        <section class="content-section full-width">
+        <!-- Suspicious Activity -->
+        <div class="content-section full-width">
           <h2><i class="fas fa-shield-alt"></i> Suspicious Activity</h2>
           <div class="table-container">
             <table id="suspicious-table">
               <thead>
                 <tr>
-                  <th>IP Address</th>
-                  <th>Vote Count</th>
-                  <th>Last Activity</th>
+                  <th class="sortable">IP Address</th>
+                  <th class="sortable">Vote Count</th>
+                  <th class="sortable">Last Activity</th>
                   <th>Status</th>
                 </tr>
               </thead>
-              <tbody id="suspicious-body">
-                <!-- Filled by JavaScript -->
-              </tbody>
+              <tbody id="suspicious-body"></tbody>
             </table>
           </div>
-        </section>
+        </div>
+
       </div>
 
+      <!-- Loading Overlay -->
       <div class="loading-overlay" id="loading-overlay">
         <div class="loading-spinner"></div>
         <p>Loading analytics data...</p>
       </div>
+
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
@@ -228,7 +233,8 @@
         <div class="footer-column">
           <h3>Contact Us</h3>
           <ul class="footer-links">
-            <li><a href="../../index.html#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
+            <li><a href="../../index.html#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd
+                floor</a></li>
             <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
             <li><a href="mailto:michel@brains-lb.com"><i class="fas fa-envelope"></i> michel@brains-lb.com</a></li>
             <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
