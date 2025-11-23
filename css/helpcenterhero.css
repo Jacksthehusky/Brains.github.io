@@ -33,6 +33,7 @@
 
 /* Search Container */
 .search-container {
+  position: relative;
   margin: auto !important;
   width: 50%;
 }
@@ -107,10 +108,11 @@
   overflow-x: hidden;
   z-index: 1000;
   display: none;
+  text-align: start;
 }
 
 .search-result-item {
-  padding: 1.5rem;
+  padding: 1rem;
   border-bottom: 1px solid var(--light-gray);
   cursor: pointer;
   transition: all 0.3s ease;
