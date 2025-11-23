@@ -320,12 +320,13 @@
 /* Mobile Responsive */
 @media (max-width: 968px) {
   .careers-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .form-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .careers-info {
