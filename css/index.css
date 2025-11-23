@@ -1100,7 +1100,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: end;
+  justify-items: center;
 }
 
 .support-content {

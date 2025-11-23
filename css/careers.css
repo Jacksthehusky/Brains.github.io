@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 400px;
   gap: 3rem;
-  align-items: start;
+  justify-items: center;
 }
 
 /* Careers Form */
@@ -167,8 +167,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Alternative Apply */
@@ -185,7 +189,7 @@
 }
 
 .divider::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -258,7 +262,11 @@
 .info-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(122, 21, 21, 0.1), rgba(197, 48, 48, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(122, 21, 21, 0.1),
+    rgba(197, 48, 48, 0.1)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -315,16 +323,16 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .form-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .careers-info {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .info-card {
     flex: 1;
     min-width: 250px;
@@ -335,15 +343,15 @@
   .careers-section {
     padding: 2rem 0;
   }
-  
+
   .careers-form-wrapper {
     padding: 1.5rem;
   }
-  
+
   .careers-info {
     flex-direction: column;
   }
-  
+
   .breadcrumb {
     font-size: 0.8rem;
   }
@@ -354,11 +362,11 @@
     padding: 1rem;
     border-radius: 16px;
   }
-  
+
   .form-header h3 {
     font-size: 1.3rem;
   }
-  
+
   .modern-btn {
     padding: 0.875rem 1.5rem;
     font-size: 1rem;
