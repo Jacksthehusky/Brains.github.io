@@ -444,10 +444,9 @@
 }
 
 .support-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 3rem;
-  justify-items: center;
+  justify-content: center;
 }
 
 .support-content {
@@ -727,7 +726,6 @@
 
 @media (max-width: 968px) {
   .support-grid {
-    display: flex;
     flex-direction: column;
   }
 
