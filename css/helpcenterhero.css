@@ -23,8 +23,7 @@
 .help-subtitle {
   font-size: 1.3rem;
   opacity: 0.9;
-  margin-bottom: 3rem;
-  line-height: 1.6;
+  padding-bottom: 3rem;
 }
 
 .help-subtitle span {

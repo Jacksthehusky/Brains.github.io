@@ -116,6 +116,39 @@
   animation: fadeIn 0.5s ease;
 }
 
+/* Video Section */
+.video-wrapper {
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  border-radius: 2em;
+  display: block;
+}
+
+.next-tab-btn {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 2rem;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(122, 21, 21, 0.3);
+}
+
+.next-tab-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(122, 21, 21, 0.4);
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
