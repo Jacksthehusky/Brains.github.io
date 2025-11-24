@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/styleMain.css">
   <link rel="stylesheet" href="css/leftright.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/RotatingBorder.css">
   <link rel="stylesheet" href="css/responsiveDesign.css">
   <link rel="stylesheet" href="css/chatbot.css">
   <link rel="shortcut icon" type="image/x-icon" href="Images/brains.ico">
@@ -48,10 +49,40 @@
         </ul>
       </nav>
 
-      <div class="nav-right">
-        <div class="navhelpcenter">
+      <div class="nav-right" id="nav-right">
+      <!--  <div class="navhelpcenter">
           <a href="hc/HelpCenter.html" class="btns">Help Center</a>
-        </div>
+        </div> -->
+        
+       <div data-theme="midnight">
+        <a href="hc/HelpCenter.html" class="styles_button__YDNft styles_featuredButton__zj76v styles_variant_pill__TyvvY"
+            id="rotatingButton">
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="styles_path__783Mk" width="100%"
+                height="100%">
+                <rect fill="none" width="100%" height="100%" rx="200" ry="200"></rect>
+            </svg>
+            <div class="styles_circleContainer__JKTvt">
+                <div class="styles_circleMover__l86dQ" id="circleMover">
+                    <div class="styles_circle__Ky5nK"></div>
+                </div>
+            </div>
+            <div class="styles_featuredButtonContent__DVHK_">
+                <figure class="styles_featuredButtonIconContainer__s1kUE styles_theme_midnight__brLAf">
+                    <span class="styles_featuredButtonIcon__qmKlU">
+                        <svg viewBox="0 0 16 16" fill="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.82825 9.68706C4.71549 9.38235 4.28451 9.38235 4.17175 9.68706L3.61053 11.2037C3.57508 11.2995 3.49955 11.3751 3.40375 11.4105L1.88708 11.9717C1.58236 12.0845 1.58236 12.5155 1.88708 12.6282L3.40375 13.1895C3.49955 13.2249 3.57508 13.3004 3.61053 13.3962L4.17175 14.9129C4.28451 15.2176 4.71549 15.2176 4.82825 14.9129L5.38947 13.3962C5.42492 13.3004 5.50045 13.2249 5.59625 13.1895L7.11292 12.6282C7.41764 12.5155 7.41764 12.0845 7.11292 11.9717L5.59625 11.4105C5.50045 11.3751 5.42492 11.2995 5.38947 11.2037L4.82825 9.68706Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M10.7282 1.68707C10.6155 1.38235 10.1845 1.38235 10.0718 1.68706L8.94334 4.73654C8.90789 4.83235 8.83236 4.90788 8.73656 4.94333L5.68708 6.07174C5.38236 6.18449 5.38236 6.61548 5.68708 6.72824L8.73656 7.85665C8.83236 7.8921 8.90789 7.96763 8.94334 8.06343L10.0718 11.1129C10.1845 11.4176 10.6155 11.4176 10.7282 11.1129L11.8567 8.06343C11.8921 7.96763 11.9676 7.8921 12.0634 7.85665L15.1129 6.72824C15.4176 6.61548 15.4176 6.18449 15.1129 6.07174L12.0634 4.94333C11.9676 4.90788 11.8921 4.83235 11.8567 4.73654L10.7282 1.68707Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                </figure>
+                Help Center
+            </div>
+        </a>
+    </div>
 
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
@@ -857,6 +888,7 @@
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   <script src="hc/script.js"></script>
   <script src="hc/typed.js"></script>
+  <script src="hc/rotationborder.js"></script>
 
   <!-- n8n Chat -->
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />

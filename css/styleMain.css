@@ -7,11 +7,24 @@ html {
 :root {
   /* Light mode (existing) */
   --bg-color: #f9f9f9;
-  --second-bg-color: rgb(235 220 220);
+  --second-bg-color: #f9f9f9;
   /*   --tw-bg-opacity: 1;
   --second-bg-color: rgb(14 9 24 / var(--tw-bg-opacity, 1));*/
+  --dusk: rgba(122, 21, 21, 0.1);
+  --bg-default: linear-gradient(
+    180deg,
+    var(--bg-color) 0.05%,
+    var(--dusk) 100%
+  );
+  --second-bg-default: linear-gradient(
+    180deg,
+    var(--second-bg-color) 0.05%,
+    var(--dusk) 100%
+  );
+
   --primary: #7a1515;
   --primary-light: #c53030;
+  --primary-light-super: #fc8181;
   --dark: #2d3748;
   --gray: #718096;
   --light-gray: #e2e8f0;
@@ -61,7 +74,7 @@ html {
   --bg-color: #0f1419;
   --second-bg-color: #1a1f2e;
   --primary: #e53e3e;
-  --primary-light: #fc8181;
+  --primary-light-super: #fc8181;
   --dark: #f7fafc;
   --gray: #a0aec0;
   --light-gray: #2d3748;
@@ -146,7 +159,7 @@ h6 {
 }
 
 .fa-bars {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 /*  Professional loading skeleton */
@@ -243,7 +256,7 @@ h6 {
   margin: 0 auto;
 }
 
-.section-subtitle span{
+.section-subtitle span {
   color: var(--primary);
   font-weight: 800;
 }
@@ -304,7 +317,7 @@ header {
 }
 
 .logo h1:hover {
-  color: var(--primary-light);
+  color: var(--primary-light-super);
 }
 
 .logo a {
@@ -501,10 +514,11 @@ footer {
   border: 0.18rem solid;
   border-radius: 50%;
   font-size: 1.5rem;
-    border-color: var(--gray);
-    color: var(--dark);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);  text-decoration: none;
+  border-color: var(--gray);
+  color: var(--dark);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  text-decoration: none;
   margin: 0.5rem 1rem 1.5rem 0;
   transition: 0.5s ease;
   opacity: 0;

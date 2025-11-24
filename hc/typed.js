@@ -40,5 +40,5 @@ var typed = new Typed(".multiple-text", {
   ScrollReveal().reveal('.home-content, .map, .heading, .section-title', { origin:'top' });
   ScrollReveal().reveal('.home-img, .services-section-header, .system-requirements, .industries-section, .contact form, .team, .about-content, .sys-icons', { origin:'bottom' });
   ScrollReveal().reveal('.home-content h1, .about-img', { origin:'left' });
-  ScrollReveal().reveal('.home-content p, .careers p, .contact p', { origin:'right' });
+  ScrollReveal().reveal('.home-content p, .careers p, .nav-right, .contact p', { origin:'right' });
   

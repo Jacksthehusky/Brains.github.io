@@ -51,7 +51,7 @@ section {
 }
 
 .home-content h3 span {
-  color: var(--primary);
+  color: var(--redis-red);
 }
 
 .home-content,
@@ -1297,15 +1297,13 @@ section {
   position: absolute;
   inset: 0;
   backdrop-filter: blur(1px);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.1)
-  );
+  background:  var(--second-bg-default) ;
+  /*background: linear-gradient(180deg,rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));*/
 }
 
 [data-theme="dark"] .world-map-section .overlay {
-  background: linear-gradient(135deg, var(--white), rgba(122, 21, 21, 0.1));
+ /* background: linear-gradient(135deg, var(--white), rgba(122, 21, 21, 0.1));*/
+  background:  var(--second-bg-default) ;
 }
 
 .worldmap-content {
