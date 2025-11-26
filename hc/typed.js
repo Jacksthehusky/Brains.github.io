@@ -46,3 +46,43 @@ var typed = new Typed(".multiple-text", {
   ScrollReveal().reveal('.home-content h1, .about-img', { origin:'left' });
   ScrollReveal().reveal('.home-content p, .careers p, .nav-right, .contact p', { origin:'right' });
   
+
+
+  (() => {
+  const scrollContainer = document.getElementById("smooth-scroll");
+
+  let current = 0;
+  let target = 0;
+  let ease = 0.07;     // adjust for more/less smoothing
+  let speed = 0;
+
+  // measure page height
+  function updateHeight() {
+    document.body.style.height = scrollContainer.getBoundingClientRect().height + "px";
+  }
+  updateHeight();
+  new ResizeObserver(updateHeight).observe(scrollContainer);
+
+  // wheel listener
+  window.addEventListener(
+    "wheel",
+    (e) => {
+      target += e.deltaY;
+      // clamp
+      target = Math.max(0, Math.min(target, document.body.scrollHeight - window.innerHeight));
+    },
+    { passive: true }
+  );
+
+  function raf() {
+    // inertia
+    current += (target - current) * ease;
+
+    // transform for GPU rendering
+    scrollContainer.style.transform = `translate3d(0, ${-current}px, 0)`;
+
+    requestAnimationFrame(raf);
+  }
+
+  raf();
+})();

@@ -146,7 +146,7 @@ window.addEventListener("scroll", () => {
 class ThemeManager {
   constructor() {
     this.themeToggle = document.getElementById("themeToggle");
-    this.currentTheme = localStorage.getItem("theme") || "light";
+    this.currentTheme = localStorage.getItem("theme") || "dark"; // Changed to dark
 
     this.init();
   }
@@ -192,12 +192,17 @@ class ThemeManager {
     // Check if user prefers dark mode
     const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-    // Set initial theme based on system preference if no user preference exists
-    if (!localStorage.getItem("theme") && systemPrefersDark.matches) {
-      this.setTheme("dark");
+    // Only use system preference if no user preference exists
+    if (!localStorage.getItem("theme")) {
+      // Since we set default to "dark" above, this will only run if localStorage is truly empty
+      if (systemPrefersDark.matches) {
+        this.setTheme("dark");
+      } else {
+        this.setTheme("light");
+      }
     }
 
-    // Listen for system theme changes
+    // Listen for system theme changes (only when no user preference)
     systemPrefersDark.addEventListener("change", (e) => {
       if (!localStorage.getItem("theme")) {
         this.setTheme(e.matches ? "dark" : "light");
@@ -219,7 +224,11 @@ class GradientEffect {
     this.cardWrapper = document.querySelector(".gradient-card-wrapper");
     this.isActive = false;
 
+    this.pos = { x: 0, y: 0 };
+    this.target = { x: 0, y: 0 };
+
     this.init();
+    this.animate();
   }
 
   init() {
@@ -227,41 +236,38 @@ class GradientEffect {
 
     this.cardWrapper.addEventListener("mouseenter", () => {
       this.isActive = true;
-      this.gradient.style.opacity = "0.3";
+      this.gradient.style.opacity = "0.35";
+      this.gradient.style.transform = `translate3d(${this.pos.x}px, ${this.pos.y}px, 0) scale(1.6)`;
     });
 
     this.cardWrapper.addEventListener("mouseleave", () => {
       this.isActive = false;
       this.gradient.style.opacity = "0";
-      this.resetGradientPosition();
+      this.target = { x: 0, y: 0 };
     });
 
     this.cardWrapper.addEventListener("mousemove", (e) => {
-      if (!this.isActive) return;
-      this.updateGradientPosition(e);
+      const rect = this.cardWrapper.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      this.target.x = x;
+      this.target.y = y;
     });
   }
 
-  updateGradientPosition(e) {
-    const rect = this.cardWrapper.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+  // smoothing interpolation (like inertia)
+  animate() {
+    this.pos.x += (this.target.x - this.pos.x) * 0.16;
+    this.pos.y += (this.target.y - this.pos.y) * 0.16;
 
-    const posX = (x / rect.width) * 100;
-    const posY = (y / rect.height) * 100;
+    this.gradient.style.transform =
+      `translate3d(${this.pos.x}px, ${this.pos.y}px, 0) scale(${this.isActive ? 1.6 : 0.5})`;
 
-    this.gradient.style.left = `${posX}%`;
-    this.gradient.style.top = `${posY}%`;
-    this.gradient.style.transform = `translate(-50%, -50%) scale(1.5)`;
-  }
-
-  resetGradientPosition() {
-    this.gradient.style.left = "50%";
-    this.gradient.style.top = "50%";
-    this.gradient.style.transform = "translate(-50%, -50%) scale(0.2)";
+    requestAnimationFrame(() => this.animate());
   }
 }
-
 document.addEventListener("DOMContentLoaded", () => {
   new GradientEffect();
 });
+

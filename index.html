@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/styleMain.css">
   <link rel="stylesheet" href="css/leftright.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/demo.css">
   <link rel="stylesheet" href="css/RotatingBorder.css">
   <link rel="stylesheet" href="css/responsiveDesign.css">
   <link rel="stylesheet" href="css/chatbot.css">
@@ -38,6 +39,7 @@
           <h1>Brains</h1>
         </a>
       </div>
+
       <nav>
         <ul>
           <li><a href="#home" style="--i:1;">Home</a></li>
@@ -46,43 +48,47 @@
           <li><a href="careers/careers.html" style="--i:4;">Careers</a></li>
           <li><a href="#contact" style="--i:5;">Contact</a></li>
           <li><a href="Demo/Products.html" style="--i:6;">Demo</a></li>
+
+           <!-- Mobile-only links -->
+        <li class="mobile-only"><a href="hc/HelpCenter.html" style="--i:7;">Help Center</a></li>
+        <li class="mobile-only"><a href="hc/admin/login.html" style="--i:8;">Login</a></li>
         </ul>
       </nav>
 
       <div class="nav-right" id="nav-right">
-      <!--  <div class="navhelpcenter">
-          <a href="hc/HelpCenter.html" class="btns">Help Center</a>
-        </div> -->
-        
-       <div data-theme="midnight">
-        <a href="hc/HelpCenter.html" class="styles_button__YDNft styles_featuredButton__zj76v styles_variant_pill__TyvvY"
-            id="rotatingButton">
+          <!-- Desktop Help Center Button -->
+        <div class="desktop-only" data-theme="midnight">
+          <a href="hc/HelpCenter.html"
+            class="styles_button__YDNft styles_featuredButton__zj76v styles_variant_pill__TyvvY" id="rotatingButton">
             <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="styles_path__783Mk" width="100%"
-                height="100%">
-                <rect fill="none" width="100%" height="100%" rx="200" ry="200"></rect>
+              height="100%">
+              <rect fill="none" width="100%" height="100%" rx="200" ry="200"></rect>
             </svg>
             <div class="styles_circleContainer__JKTvt">
-                <div class="styles_circleMover__l86dQ" id="circleMover">
-                    <div class="styles_circle__Ky5nK"></div>
-                </div>
+              <div class="styles_circleMover__l86dQ" id="circleMover">
+                <div class="styles_circle__Ky5nK"></div>
+              </div>
             </div>
             <div class="styles_featuredButtonContent__DVHK_">
-                <figure class="styles_featuredButtonIconContainer__s1kUE styles_theme_midnight__brLAf">
-                    <span class="styles_featuredButtonIcon__qmKlU">
-                        <svg viewBox="0 0 16 16" fill="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.82825 9.68706C4.71549 9.38235 4.28451 9.38235 4.17175 9.68706L3.61053 11.2037C3.57508 11.2995 3.49955 11.3751 3.40375 11.4105L1.88708 11.9717C1.58236 12.0845 1.58236 12.5155 1.88708 12.6282L3.40375 13.1895C3.49955 13.2249 3.57508 13.3004 3.61053 13.3962L4.17175 14.9129C4.28451 15.2176 4.71549 15.2176 4.82825 14.9129L5.38947 13.3962C5.42492 13.3004 5.50045 13.2249 5.59625 13.1895L7.11292 12.6282C7.41764 12.5155 7.41764 12.0845 7.11292 11.9717L5.59625 11.4105C5.50045 11.3751 5.42492 11.2995 5.38947 11.2037L4.82825 9.68706Z"
-                                fill="currentColor"></path>
-                            <path
-                                d="M10.7282 1.68707C10.6155 1.38235 10.1845 1.38235 10.0718 1.68706L8.94334 4.73654C8.90789 4.83235 8.83236 4.90788 8.73656 4.94333L5.68708 6.07174C5.38236 6.18449 5.38236 6.61548 5.68708 6.72824L8.73656 7.85665C8.83236 7.8921 8.90789 7.96763 8.94334 8.06343L10.0718 11.1129C10.1845 11.4176 10.6155 11.4176 10.7282 11.1129L11.8567 8.06343C11.8921 7.96763 11.9676 7.8921 12.0634 7.85665L15.1129 6.72824C15.4176 6.61548 15.4176 6.18449 15.1129 6.07174L12.0634 4.94333C11.9676 4.90788 11.8921 4.83235 11.8567 4.73654L10.7282 1.68707Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </span>
-                </figure>
-                Help Center
+              <figure class="styles_featuredButtonIconContainer__s1kUE styles_theme_midnight__brLAf">
+                <span class="styles_featuredButtonIcon__qmKlU">
+                  <svg viewBox="0 0 16 16" fill="none" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.82825 9.68706C4.71549 9.38235 4.28451 9.38235 4.17175 9.68706L3.61053 11.2037C3.57508 11.2995 3.49955 11.3751 3.40375 11.4105L1.88708 11.9717C1.58236 12.0845 1.58236 12.5155 1.88708 12.6282L3.40375 13.1895C3.49955 13.2249 3.57508 13.3004 3.61053 13.3962L4.17175 14.9129C4.28451 15.2176 4.71549 15.2176 4.82825 14.9129L5.38947 13.3962C5.42492 13.3004 5.50045 13.2249 5.59625 13.1895L7.11292 12.6282C7.41764 12.5155 7.41764 12.0845 7.11292 11.9717L5.59625 11.4105C5.50045 11.3751 5.42492 11.2995 5.38947 11.2037L4.82825 9.68706Z"
+                      fill="currentColor"></path>
+                    <path
+                      d="M10.7282 1.68707C10.6155 1.38235 10.1845 1.38235 10.0718 1.68706L8.94334 4.73654C8.90789 4.83235 8.83236 4.90788 8.73656 4.94333L5.68708 6.07174C5.38236 6.18449 5.38236 6.61548 5.68708 6.72824L8.73656 7.85665C8.83236 7.8921 8.90789 7.96763 8.94334 8.06343L10.0718 11.1129C10.1845 11.4176 10.6155 11.4176 10.7282 11.1129L11.8567 8.06343C11.8921 7.96763 11.9676 7.8921 12.0634 7.85665L15.1129 6.72824C15.4176 6.61548 15.4176 6.18449 15.1129 6.07174L12.0634 4.94333C11.9676 4.90788 11.8921 4.83235 11.8567 4.73654L10.7282 1.68707Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </span>
+              </figure>
+              Help Center
             </div>
-        </a>
-    </div>
+          </a>
+        </div>
+
+        <!-- Desktop Login Link -->
+      <a href="hc/admin/login.html" class="desktop-only whitemode">Login</a>
 
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
@@ -97,7 +103,7 @@
   </header>
 
   <!-- Home Section -->
-  <section class="home" id="home">
+  <section class="home section" id="home">
     <div class="bg-video">
       <video preload="auto" loop autoplay muted playsinline>
         <source src="Images/galaxy.mp4" type="video/mp4">
@@ -148,7 +154,7 @@
     </a>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section 
   <section class="about" id="about">
     <div class="about-img">
       <img src="Images/BLogo.png" alt="">
@@ -169,132 +175,278 @@
         Bank Reconciliation, Warehouse Management...
       </p>
     </div>
+  </section>-->
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="bg-video">
+      <video preload="auto" loop autoplay muted playsinline>
+        <source src="Images/about.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-header section-title" style="color: white;">About <span>Brains</span></h2>
+        <p class="about-intro">For over two decades, Brains SARL has been at the forefront of business software
+          innovation, delivering enterprise-grade solutions that drive operational excellence.</p>
+
+        <div class="about-grid">
+          <div class="about-stat">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="about-stat">
+            <div class="stat-number">850+</div>
+            <div class="stat-label">Global Clients</div>
+          </div>
+          <div class="about-stat">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Core Modules</div>
+          </div>
+        </div>
+
+        <div class="about-features">
+          <div class="about-feature-card">
+            <div class="about-feature-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <div class="about-feature-content">
+              <h4>Flexible Deployment</h4>
+              <p>Choose between cloud infrastructure or on-premise servers to match your operational workflow and
+                security requirements.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="about-feature-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <div class="about-feature-content">
+              <h4>Brains Sync Manager</h4>
+              <p>Real-time data synchronization across multiple branches with offline capability and automatic recovery
+                when connectivity is restored.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-card">
+            <div class="about-feature-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <div class="about-feature-content">
+              <h4>Seamless Integration</h4>
+              <p>Comprehensive API and interface capabilities for smooth interoperability with your existing software
+                ecosystem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modules-section">
+          <h3>Comprehensive Business Suite</h3>
+          <div class="modules-grid">
+            <div class="module-tag">General Ledger</div>
+            <div class="module-tag">Accounts Receivable</div>
+            <div class="module-tag">Accounts Payable</div>
+            <div class="module-tag">Payroll System</div>
+            <div class="module-tag">Purchase Orders</div>
+            <div class="module-tag">Sales Quotes</div>
+            <div class="module-tag">Sales Orders</div>
+            <div class="module-tag">Sales Invoices</div>
+            <div class="module-tag">Point of Sale (POS)</div>
+            <div class="module-tag">Inventory Management</div>
+            <div class="module-tag">Bank Reconciliation</div>
+            <div class="module-tag">Warehouse Management</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-img">
+          <img src="Images/BLogo.png" alt="Brains Software Solutions">
+          <div class="floating-element element-1">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="floating-element element-2">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="floating-element element-3">
+            <i class="fas fa-calculator"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- services -->
   <section class="services" id="services">
-    <h2 class="section-header section-title">Our <span>Services</span></h2>
+    <div class="products-header">
+      <h2 class="section-header section-title">Our <span>Services</span></h2>
+      <p class="section-subtitle">Upgrade Your Business With <span>Brains</span> Software</p>
+    </div>
+
     <div class="wrapper">
 
+      <!-- General Accounting Card -->
       <div class="cardw">
         <div class="poster">
-          <div>
-            <h1>ACCOUNTING</h1>
-            <p>Simple, reliable, and secure. <br>To help you easily manage your cash flow</p>
+          <div class="product-icon">
+            <i class="fas fa-chart-line"></i>
+            <div class="icon-backdrop"></div>
           </div>
-          <img src="Images/icon-accounting.png" class="card-icon">
+          <h3 class="product-title">Accounting System</h3>
+          <p class="product-description">Simple, reliable, and secure. <br>To help you easily manage your cash flow</p>
+          <div class="feature-highlights">
+            <span class="feature-tag">Multi-currency</span>
+            <span class="feature-tag">Real-time Reports</span>
+            <span class="feature-tag">Tax Compliance</span>
+          </div>
           <img src="Images/AccountingSystem.png" class="preview">
         </div>
-        <div class="details">
-          <h1>Accounting</h1>
-          <h2>Be ready for tax time</h2>
-          <div class="tags">
-            <span class="tag">Journal Voucher</span>
-            <span class="tag">Cost Analysis</span>
-            <span class="tag">Statements</span>
+
+        <a href="Demo/GeneralAccounting.html">
+          <div class="details">
+            <h1>Accounting</h1>
+            <h2>Be ready for tax time</h2>
+            <div class="tags">
+              <span class="tag">Journal Voucher</span>
+              <span class="tag">Cost Analysis</span>
+              <span class="tag">Statements</span>
+            </div>
+            <div class="cardfeatures">
+              <h3>Features</h3>
+              <ul>
+                <li>Multiple currency accounts.</li>
+                <li>View revenue, average sale and profit.</li>
+                <li>General ledger.</li>
+                <li>Trial Balance.</li>
+                <li>Payable and receivable accounts.</li>
+                <li>Detailed cost analysis.</li>
+                <li>Allows reviewing and modifying existing vouchers, and updates balances accordingly.</li>
+              </ul>
+            </div>
           </div>
-          <div class="cardfeatures">
-            <h3>Features</h3>
-            <ul>
-              <li>Multiple currency accounts.</li>
-              <li>View revenue, average sale and profit.</li>
-              <li>General ledger.</li>
-              <li>Trial Balance.</li>
-              <li>Payable and receivable accounts.</li>
-              <li>Detailed cost analysis.</li>
-              <li>Allows reviewing and modifying existing vouchers, and updates balances accordingly.</li>
-            </ul>
-          </div>
-        </div>
+        </a>
       </div>
 
+      <!-- Stock System Card -->
       <div class="cardw">
         <div class="poster">
-          <div>
-            <h1>INVENTORY</h1>
-            <p>Track your stock as it is bought, manufactured, stored, and used</p>
+          <div class="product-icon">
+            <i class="fas fa-boxes"></i>
+            <div class="icon-backdrop"></div>
           </div>
-          <img src="Images/icon-stock.png" class="card-icon">
+          <h3 class="product-title">Inventory System</h3>
+          <p class="product-description">Track your stock as it is bought, manufactured, stored, and used</p>
+          <div class="feature-highlights">
+            <span class="feature-tag">Barcode System</span>
+            <span class="feature-tag">Auto Reordering</span>
+            <span class="feature-tag">Multi-location</span>
+          </div>
           <img src="Images/InventoryManagment.png" class="preview">
         </div>
-        <div class="details">
-          <h1>Inventory Management</h1>
-          <h2>Never run out of stock</h2>
-          <div class="tags">
-            <span class="tag">Purchases</span>
-            <span class="tag">Transfer</span>
-            <span class="tag">Sales</span>
+
+        <a href="Demo/StockSystem.html">
+          <div class="details">
+            <h1>Inventory Management</h1>
+            <h2>Never run out of stock</h2>
+            <div class="tags">
+              <span class="tag">Purchases</span>
+              <span class="tag">Transfer</span>
+              <span class="tag">Sales</span>
+            </div>
+            <div class="cardfeatures">
+              <h3>Features</h3>
+              <ul>
+                <li>Track stock levels in real time.</li>
+                <li>Receive automatic low stock alerts.</li>
+                <li>Send orders to suppliers and track stock receipts.</li>
+                <li>Transfer stock between your stores.</li>
+                <li>Print barcode labels</li>
+              </ul>
+            </div>
           </div>
-          <div class="cardfeatures">
-            <h3>Features</h3>
-            <ul>
-              <li>Track stock levels in real time.</li>
-              <li>Receive automatic low stock alerts.</li>
-              <li>Send orders to suppliers and track stock receipts.</li>
-              <li>Transfer stock between your stores.</li>
-              <li>Print barcode labels</li>
-            </ul>
-          </div>
-        </div>
+        </a>
       </div>
 
+      <!--POINT OF SALE Card -->
       <div class="cardw">
         <div class="poster">
-          <div>
-            <h1>POINT OF SALE</h1>
-            <p>Make use of the easy, controled, and advanced features of our POS solution</p>
+          <div class="product-icon">
+            <i class="fas fa-cash-register"></i>
+            <div class="icon-backdrop"></div>
           </div>
-          <img src="Images/icon-market.png" class="card-icon">
+          <h3 class="product-title">POS System</h3>
+          <p class="product-description">Make use of the easy, controled, and advanced features of our POS solution</p>
+          <div class="feature-highlights">
+            <span class="feature-tag">Easy to use</span>
+            <span class="feature-tag">Fast Transactions</span>
+            <span class="feature-tag">Custom Receipts</span>
+          </div>
           <img src="Images/PointOS.png" class="preview">
         </div>
-        <div class="details">
-          <h1>Point of sale</h1>
-          <h2>Supports multi-currency payments</h2>
-          <div class="tags">
-            <span class="tag">Receipts</span>
-            <span class="tag">BarcodeScanner</span>
-            <span class="tag">CashDrawer</span>
+
+        <a href="Demo/StockSystem.html">
+          <div class="details">
+            <h1>Point of sale</h1>
+            <h2>Supports multi-currency payments</h2>
+            <div class="tags">
+              <span class="tag">Receipts</span>
+              <span class="tag">BarcodeScanner</span>
+              <span class="tag">CashDrawer</span>
+            </div>
+            <div class="cardfeatures">
+              <h3>Features</h3>
+              <ul>
+                <li>Issue printed or electronic receipts.</li>
+                <li>Apply discounts and issue refunds.</li>
+                <li>Keep recording sales even when offline.</li>
+                <li>Connect a receipt printer, barcode scanner, and cash drawer.</li>
+                <li>supports multi-currency payments.</li>
+              </ul>
+            </div>
           </div>
-          <div class="cardfeatures">
-            <h3>Features</h3>
-            <ul>
-              <li>Issue printed or electronic receipts.</li>
-              <li>Apply discounts and issue refunds.</li>
-              <li>Keep recording sales even when offline.</li>
-              <li>Connect a receipt printer, barcode scanner, and cash drawer.</li>
-              <li>supports multi-currency payments.</li>
-            </ul>
-          </div>
-        </div>
+        </a>
       </div>
 
+      <!-- Payroll System Card -->
       <div class="cardw">
         <div class="poster">
-          <div>
-            <h1>PAYROLL</h1>
-            <p>System designed to assist all types of organisations' human resources</p>
+          <div class="product-icon">
+            <i class="fas fa-users-cog"></i>
+            <div class="icon-backdrop"></div>
           </div>
-          <img src="Images/icon-payroll.png" class="card-icon">
+          <h3 class="product-title">Payroll System</h3>
+          <p class="product-description">System designed to assist all types of organisations' human resources</p>
+          <div class="feature-highlights">
+            <span class="feature-tag">Auto Calculations</span>
+            <span class="feature-tag">Tax Management</span>
+            <span class="feature-tag">Leave Tracking</span>
+          </div>
           <img src="Images/PayrollSystem.png" class="preview">
         </div>
-        <div class="details">
-          <h1>Payroll</h1>
-          <h2>Aids various organizations' HR needs</h2>
-          <div class="tags">
-            <span class="tag">Leave</span>
-            <span class="tag">HR</span>
-            <span class="tag">PayrollAdministration</span>
+
+        <a href="Demo/PayrollSystem.html">
+          <div class="details">
+            <h1>Payroll</h1>
+            <h2>Aids various organizations' HR needs</h2>
+            <div class="tags">
+              <span class="tag">Leave</span>
+              <span class="tag">HR</span>
+              <span class="tag">PayrollAdministration</span>
+            </div>
+            <div class="cardfeatures">
+              <h3>Features</h3>
+              <ul>
+                <li>Easily manage your staff and make balanced decisions.</li>
+                <li>Allocates employees by departments (ex: accounting department, sales department...)</li>
+                <li>Grant different levels of access to protect sensitive information.</li>
+              </ul>
+            </div>
           </div>
-          <div class="cardfeatures">
-            <h3>Features</h3>
-            <ul>
-              <li>Easily manage your staff and make balanced decisions.</li>
-              <li>Allocates employees by departments (ex: accounting department, sales department...)</li>
-              <li>Grant different levels of access to protect sensitive information.</li>
-            </ul>
-          </div>
-        </div>
+        </a>
       </div>
+
     </div>
   </section>
 
@@ -424,7 +576,7 @@
   </section>
 
   <!-- Brains Sync Manager" -->
-  <section class="SyncManager">
+  <section class="SyncManager" id="SyncManager">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Introducing our <span>Brains Sync Manager</span></h2>
@@ -662,11 +814,28 @@
         </p>
       </div>
       <div class="articles-grid">
+
         <article class="article-card">
           <div class="article-icon">
             <p class="style-center">
               <script src="https://cdn.lordicon.com/lordicon.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger="loop" delay="4000"
+              <lord-icon src="https://cdn.lordicon.com/nfuackpv.json" trigger="loop" delay="2000" state="in-reveal"
+                colors="primary:#121331,secondary:#c71f16" style="width:80px;height:80px">
+              </lord-icon>
+            </p>
+          </div>
+          <h3><span>Brains</span> API Documentation</h3>
+          <p>REST API service for Brains Visual MC.NET customers with customizable endpoints and authentication.</p>
+          <a href="https://documenter.getpostman.com/view/15256433/TzeUmTjQ" target="_blank" class="article-link">
+            Explore API <i class="fas fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <div class="article-icon">
+            <p class="style-center">
+              <script src="https://cdn.lordicon.com/lordicon.js"></script>
+              <lord-icon src="https://cdn.lordicon.com/unukghxb.json" trigger="loop" delay="2000"
                 style="width:80px;height:80px">
               </lord-icon>
             </p>
@@ -680,7 +849,7 @@
           <div class="article-icon">
             <p class="style-center">
               <script src="https://cdn.lordicon.com/lordicon.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/wzwygmng.json" trigger="loop" delay="4000"
+              <lord-icon src="https://cdn.lordicon.com/wzwygmng.json" trigger="loop" delay="2000"
                 style="width:80px;height:80px">
               </lord-icon>
             </p>
@@ -695,7 +864,7 @@
             <p class="style-center">
               <script src="https://cdn.lordicon.com/lordicon.js"></script>
               <lord-icon data-icon-type="careers" src="https://cdn.lordicon.com/fqbvgezn.json" trigger="loop"
-                delay="4000" style="width:80px;height:80px" colors="primary:white,secondary:darkred">
+                delay="2000" style="width:80px;height:80px" colors="primary:white,secondary:darkred">
               </lord-icon>
             </p>
           </div>

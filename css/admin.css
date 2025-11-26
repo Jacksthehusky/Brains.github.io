@@ -34,6 +34,26 @@
   text-align: center;
 }
 
+.gradient-card-content-login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  gap: 3rem;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 2em;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 992px) {
+  .gradient-card-content-login {
+    width: 100%;
+  }
+}
+
 .login-header {
   margin-bottom: 30px;
   text-align: center;
