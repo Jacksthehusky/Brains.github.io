@@ -262,7 +262,7 @@ class GradientEffect {
     this.pos.y += (this.target.y - this.pos.y) * 0.16;
 
     this.gradient.style.transform =
-      `translate3d(${this.pos.x}px, ${this.pos.y}px, 0) scale(${this.isActive ? 1.6 : 0.5})`;
+      `translate3d(${this.pos.x}px, ${this.pos.y}px, 0) scale(${this.isActive ? 1.6 : 0.8})`;
 
     requestAnimationFrame(() => this.animate());
   }

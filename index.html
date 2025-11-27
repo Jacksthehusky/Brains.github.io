@@ -49,14 +49,14 @@
           <li><a href="#contact" style="--i:5;">Contact</a></li>
           <li><a href="Demo/Products.html" style="--i:6;">Demo</a></li>
 
-           <!-- Mobile-only links -->
-        <li class="mobile-only"><a href="hc/HelpCenter.html" style="--i:7;">Help Center</a></li>
-        <li class="mobile-only"><a href="hc/admin/login.html" style="--i:8;">Login</a></li>
+          <!-- Mobile-only links -->
+          <li class="mobile-only"><a href="hc/HelpCenter.html" style="--i:7;">Help Center</a></li>
+          <li class="mobile-only"><a href="hc/admin/login.html" style="--i:8;">Login</a></li>
         </ul>
       </nav>
 
       <div class="nav-right" id="nav-right">
-          <!-- Desktop Help Center Button -->
+        <!-- Desktop Help Center Button -->
         <div class="desktop-only" data-theme="midnight">
           <a href="hc/HelpCenter.html"
             class="styles_button__YDNft styles_featuredButton__zj76v styles_variant_pill__TyvvY" id="rotatingButton">
@@ -88,7 +88,7 @@
         </div>
 
         <!-- Desktop Login Link -->
-      <a href="hc/admin/login.html" class="desktop-only whitemode">Login</a>
+        <a href="hc/admin/login.html" class="desktop-only whitemode">Login</a>
 
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
@@ -154,29 +154,6 @@
     </a>
   </section>
 
-  <!-- About Section 
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="Images/BLogo.png" alt="">
-    </div>
-    <div class="about-content">
-      <h2 class="section-header section-title">About <span>Brains</span></h2>
-      <p>Throughout the years, <span>Brains</span> has developed practical and creative solutions. A young, dedicated
-        team keeping up with future trends in the software industry, offer their expertise to develop, implement and
-        train customers. Their know-how is always at the service of the client's needs.<br>
-        The foundation of <span>Brains</span> success is our human resources committed to excellent service, efficient
-        original software development, and a satisfied client.<br>
-        Since the establishment of our company several years ago, we have hundreds of clients and are continously
-        expanding our base. Brains covers all sectors, wherever a creative software solution is needed.<br>
-        <b>Modules:</b>
-        General Ledger, Account Receivable,
-        Account Payable, Inventory, Purchase Orders, Sales Quotes,
-        Sales Orders, Sales Invoices, P.O.S, Payroll,
-        Bank Reconciliation, Warehouse Management...
-      </p>
-    </div>
-  </section>-->
-
   <!-- About Section -->
   <section class="about" id="about">
     <div class="bg-video">
@@ -208,6 +185,7 @@
         </div>
 
         <div class="about-features">
+
           <div class="about-feature-card">
             <div class="about-feature-icon">
               <i class="fas fa-cloud"></i>
@@ -220,17 +198,21 @@
           </div>
 
           <div class="about-feature-card">
-            <div class="about-feature-icon">
-              <i class="fas fa-sync-alt"></i>
-            </div>
-            <div class="about-feature-content">
-              <h4>Brains Sync Manager</h4>
-              <p>Real-time data synchronization across multiple branches with offline capability and automatic recovery
-                when connectivity is restored.</p>
-            </div>
+            <a href="#SyncManager">
+              <div class="about-feature-icon">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <div class="about-feature-content">
+                <h4>Brains Sync Manager</h4>
+                <p>Real-time data synchronization across multiple branches with offline capability and automatic
+                  recovery
+                  when connectivity is restored.</p>
+              </div>
+            </a>
           </div>
 
           <div class="about-feature-card">
+            <a href="#resources">
             <div class="about-feature-icon">
               <i class="fas fa-puzzle-piece"></i>
             </div>
@@ -240,6 +222,7 @@
                 ecosystem.</p>
             </div>
           </div>
+          </a>
         </div>
 
         <div class="modules-section">
@@ -584,31 +567,43 @@
           Seamlessly manage multiple store locations with real-time data synchronization.
         </p>
       </div>
-      <div class="screenshots">
-        <div class="screenshot">
-          <div class="left">
-            <img src="./Images/Screenshot_1.jpg" />
-          </div>
-          <div class="right">
-            Manage multiple locations from a single dashboard with real-time synchronization.
-          </div>
+      <div class="syncHeroImage">
+        <img src="./Images/SyncControls.jpg" />
+      </div>
+    </div>
+    <div class="screenshots containerNoPadding">
+      <div class="screenshot">
+        <div class="left">
+          <img src="./Images/SyncBranches.jpg" />
         </div>
-        <div class="screenshot">
-          <div class="left">
-            Brains Sync Manager ensures that all your store locations are always up-to-date with the latest data.
-          </div>
-          <div class="right">
-            <img src="./Images/Screenshot_2.jpg" />
-          </div>
+        <div class="right">
+          Real-time synchronization status at your fingertips, Easily synchronize data between multiple branches and
+          locations.
         </div>
-        <div class="screenshot">
-          <div class="left">
-            <img src="./Images/Screenshot_3.jpg" />
-          </div>
-          <div class="right">
-            Went offline? don't worry, Brains Sync Manager will automatically update all changes once you're back
-            online.
-          </div>
+      </div>
+      <div class="screenshot">
+        <div class="left">
+          Audit SyncLogs to track all synchronization activities, ensuring transparency and accountability.
+        </div>
+        <div class="right">
+          <img src="./Images/SyncLogs.jpg" />
+        </div>
+      </div>
+      <div class="screenshot">
+        <div class="left">
+          <img src="./Images/SyncStatus.jpg" />
+        </div>
+        <div class="right">
+          Went offline? don't worry, Brains Sync Manager will automatically update all changes once you're back
+          online.
+        </div>
+      </div>
+      <div class="screenshot">
+        <div class="left">
+          Control what data to synchronize: operations, items, or accounts...
+        </div>
+        <div class="right">
+          <img src="./Images/SyncSetup.jpg" />
         </div>
       </div>
     </div>
@@ -805,7 +800,7 @@
   </section>
 
   <!-- Featured Articles Section -->
-  <section class="featured-articles">
+  <section class="featured-articles" id="resources">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title"><span>Brains </span>Helpful Links</h2>
@@ -1012,9 +1007,8 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-column">
-          <h3>Brains POS</h3>
-          <p>Powerful point of sale software designed to help businesses of all sizes streamline operations and increase
-            profitability.</p>
+          <h3>Brains</h3>
+          <p>Powerful software designed to help businesses of all sizes streamline operations and increase profitability.</p>
           <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
               aria-label="facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
