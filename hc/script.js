@@ -397,3 +397,215 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+
+// Client Logos Slider
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.logos-slider');
+    const slides = document.querySelectorAll('.logo-slide');
+    const dotsContainer = document.getElementById('sliderDots');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    let currentSlide = 0;
+    let slideInterval;
+    const slideDuration = 3000; // 3 seconds per slide (1 second pause + 2 seconds transition)
+    
+    // Initialize dots
+    function initDots() {
+        dotsContainer.innerHTML = '';
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = `slider-dot ${index === 0 ? 'active' : ''}`;
+            dot.setAttribute('data-slide', index);
+            dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+            dot.addEventListener('click', () => goToSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+    }
+    
+    // Update slider position
+    function updateSlider() {
+        const translateX = -currentSlide * 100;
+        slider.style.transform = `translateX(${translateX}%)`;
+        
+        // Update dots
+        document.querySelectorAll('.slider-dot').forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+        
+        // Update button states
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide === slides.length - 1;
+    }
+    
+    // Go to specific slide
+    function goToSlide(slideIndex) {
+        currentSlide = slideIndex;
+        updateSlider();
+        resetAutoSlide();
+    }
+    
+    // Next slide
+    function nextSlide() {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+        } else {
+            currentSlide = 0; // Loop back to start
+        }
+        updateSlider();
+        resetAutoSlide();
+    }
+    
+    // Previous slide
+    function prevSlide() {
+        if (currentSlide > 0) {
+            currentSlide--;
+        } else {
+            currentSlide = slides.length - 1; // Loop to end
+        }
+        updateSlider();
+        resetAutoSlide();
+    }
+    
+    // Auto slide
+    function startAutoSlide() {
+        slideInterval = setInterval(nextSlide, slideDuration);
+    }
+    
+    function resetAutoSlide() {
+        clearInterval(slideInterval);
+        startAutoSlide();
+    }
+    
+    // Pause on hover
+    slider.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+    
+    slider.addEventListener('mouseleave', () => {
+        startAutoSlide();
+    });
+    
+    // Button events
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (document.querySelector('.trust-section').matches(':hover')) {
+            if (e.key === 'ArrowLeft') prevSlide();
+            if (e.key === 'ArrowRight') nextSlide();
+        }
+    });
+    
+    // Animate stats counter
+    function animateStats() {
+        statNumbers.forEach(stat => {
+            const target = parseFloat(stat.getAttribute('data-count'));
+            const suffix = stat.getAttribute('data-suffix') || '';
+            const duration = 2000;
+            const startValue = 0;
+            const startTime = Date.now();
+            
+            function update() {
+                const currentTime = Date.now();
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Easing function
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const currentValue = startValue + (target - startValue) * easeOutQuart;
+                
+                // Format number
+                let displayValue;
+                if (target % 1 === 0) {
+                    displayValue = Math.round(currentValue);
+                } else {
+                    displayValue = currentValue.toFixed(1);
+                }
+                
+                stat.textContent = displayValue;
+                stat.setAttribute('data-suffix', suffix);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            
+            // Delay animation based on slide position
+            setTimeout(update, currentSlide * 300);
+        });
+    }
+    
+    // Initialize
+    initDots();
+    updateSlider();
+    startAutoSlide();
+    
+    // Start stats animation when section is in view
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateStats();
+            observer.unobserve(entry.target);
+        }
+    });
+}, { 
+    threshold: 0.1, // Trigger when 10% is visible
+    rootMargin: '5px' // Add 5px margin around viewport
+});
+    
+    observer.observe(document.querySelector('.trust-section'));
+    
+    // Add auto-scroll animation for infinite effect (optional)
+    function addInfiniteScroll() {
+        // Clone slides for seamless infinite effect
+        const clone = slider.cloneNode(true);
+        slider.parentNode.appendChild(clone);
+        clone.style.position = 'absolute';
+        clone.style.top = '0';
+        clone.style.left = '100%';
+        
+        // Add animation
+        slider.classList.add('auto-scrolling');
+        clone.classList.add('auto-scrolling');
+    }
+    
+    // Uncomment for infinite scroll effect
+    // addInfiniteScroll();
+});
+
+// Add touch/swipe support for mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.logos-slider');
+    let startX = 0;
+    let isDragging = false;
+    
+    slider.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    }, { passive: true });
+    
+    slider.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const currentX = e.touches[0].clientX;
+        const diff = startX - currentX;
+        
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+                // Swipe left - next slide
+                document.querySelector('.next-btn').click();
+            } else {
+                // Swipe right - previous slide
+                document.querySelector('.prev-btn').click();
+            }
+            isDragging = false;
+        }
+    }, { passive: true });
+    
+    slider.addEventListener('touchend', () => {
+        isDragging = false;
+    });
+});
