@@ -271,3 +271,129 @@ document.addEventListener("DOMContentLoaded", () => {
   new GradientEffect();
 });
 
+
+// Loading Screen Logic
+document.addEventListener('DOMContentLoaded', function() {
+    const loadingWrapper = document.getElementById('loadingWrapper');
+    const mainContent = document.getElementById('mainContent');
+    const progressFill = document.querySelector('.progress-fill');
+    const loadingStatus = document.querySelector('.loading-status');
+    
+    // Simple loading stages
+    const loadingStages = [
+        { text: "Initializing systems...", progress: 10 },
+        { text: "Loading modules...", progress: 25 },
+        { text: "Establishing connection...", progress: 45 },
+        { text: "Processing data...", progress: 65 },
+        { text: "Finalizing setup...", progress: 85 },
+        { text: "Ready!", progress: 100 }
+    ];
+    
+    let currentStage = 0;
+    let progress = 0;
+    
+    // Update loading stage
+    function updateLoadingStage() {
+        if (currentStage < loadingStages.length) {
+            const stage = loadingStages[currentStage];
+            
+            // Update status text with fade animation
+            loadingStatus.style.opacity = '0';
+            loadingStatus.style.transform = 'translateY(5px)';
+            
+            setTimeout(() => {
+                loadingStatus.textContent = stage.text;
+                loadingStatus.style.opacity = '1';
+                loadingStatus.style.transform = 'translateY(0)';
+                loadingStatus.style.transition = 'all 0.3s ease';
+            }, 150);
+            
+            // Smooth progress bar animation
+            progressFill.style.transition = 'width 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+            progressFill.style.width = stage.progress + '%';
+            
+            currentStage++;
+            
+            // Continue to next stage or complete
+            if (currentStage < loadingStages.length) {
+                // Vary delay based on stage
+                const delay = currentStage === loadingStages.length - 1 ? 600 : 800;
+                setTimeout(updateLoadingStage, delay);
+            } else {
+                // Final stage - complete loading
+                setTimeout(completeLoading, 800);
+            }
+        }
+    }
+    
+    // Complete loading sequence
+    function completeLoading() {
+        // Add 'done' class to trigger fade out
+        loadingWrapper.classList.add('done');
+        
+        // Show main content after a slight delay
+        setTimeout(() => {
+            mainContent.classList.add('visible');
+            
+            // Remove loading wrapper from DOM after transition
+            setTimeout(() => {
+                loadingWrapper.style.display = 'none';
+                
+                // Dispatch custom event for other scripts
+                document.dispatchEvent(new Event('loadingComplete'));
+            }, 1000);
+        }, 300);
+    }
+    
+    // Start loading sequence after a brief delay
+    setTimeout(updateLoadingStage, 500);
+    
+    // Optional: Skip loading with Escape key (for testing)
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !loadingWrapper.classList.contains('done')) {
+            // Jump to final stage
+            currentStage = loadingStages.length - 1;
+            const finalStage = loadingStages[currentStage - 1];
+            loadingStatus.textContent = finalStage.text;
+            progressFill.style.width = '100%';
+            progressFill.style.transition = 'width 0.3s ease';
+            
+            setTimeout(completeLoading, 300);
+        }
+    });
+    
+    // Optional: Listen for window load event for faster completion
+    window.addEventListener('load', function() {
+        if (!loadingWrapper.classList.contains('done')) {
+            // If page loads before our sequence completes, speed it up
+            const remainingTime = Math.max(0, (loadingStages.length - currentStage) * 200);
+            setTimeout(() => {
+                loadingStatus.textContent = "Ready!";
+                progressFill.style.width = '100%';
+                progressFill.style.transition = 'width 0.3s ease';
+                
+                setTimeout(completeLoading, 300);
+            }, remainingTime);
+        }
+    });
+});
+
+// Add some dynamic CSS for animations
+const style = document.createElement('style');
+style.textContent = `
+    /* Add some bounce to letters */
+    .letter {
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    
+    .letter:hover {
+        transform: translateY(-5px);
+        color: var(--primary-light);
+    }
+    
+    /* Loading status animation */
+    .loading-status {
+        animation: pulse 2s ease-in-out infinite;
+    }
+`;
+document.head.appendChild(style);
