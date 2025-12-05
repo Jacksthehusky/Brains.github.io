@@ -1,15 +1,11 @@
-/* 1. Modern scroll behavior */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Account for fixed header */
+  scroll-padding-top: 80px; /* fixed header */
 }
 
 :root {
-  /* Light mode (existing) */
   --bg-color: #f9f9f9;
   --second-bg-color: #f9f9f9;
-  /*   --tw-bg-opacity: 1;
-  --second-bg-color: rgb(14 9 24 / var(--tw-bg-opacity, 1));*/
   --dusk: rgba(122, 21, 21, 0.1);
   --bg-default: linear-gradient(
     180deg,
@@ -21,7 +17,7 @@ html {
     var(--second-bg-color) 0.05%,
     var(--dusk) 100%
   );
-    --second-bg-default-reversed: linear-gradient(
+  --second-bg-default-reversed: linear-gradient(
     180deg,
     var(--dusk) 0.05%,
     var(--second-bg-color) 100%
@@ -34,9 +30,9 @@ html {
   --gray: #718096;
   --light-gray: #e2e8f0;
   --light: #f8fafc;
-  --white: #ffffff;
+  --white: #f9f9f9;
   --text-color: #2d3748;
-  --card-bg: #ffffff;
+  --card-bg: #f9f9f9;
   --border-color: #e2e8f0;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -44,7 +40,7 @@ html {
   --border-radius: 16px;
   --transition: all 0.3s ease;
 
-    --redis-red: #ff4438;
+  --redis-red: #ff4438;
   --hyper-09: linear-gradient(90deg, var(--primary), var(--primary-light));
 
   /* LordIcon specific CSS variables */
@@ -77,83 +73,85 @@ html {
   --text-4xl: 2.25rem;
   --text-5xl: 3rem;
 
-  	/* Brains Accounting chatbot Colors */
-	--chat--color--primary: #c53030 !important;
-	--chat--color--primary-shade-50: #7a1515 !important;
-	--chat--color--primary--shade-100: #1e4678 !important;
-	--chat--color--secondary: #20b69e !important;
-	--chat--color-secondary-shade-50: #1ca08a !important;
-	--chat--color-white: #ffffff !important;
-	--chat--color-light: #f8f9fa !important;
-	--chat--color-light-shade-50: #e9ecef !important;
-	--chat--color-light-shade-100: #dee2e6 !important;
-	--chat--color-medium: #6c757d !important;
-	--chat--color-dark: #343a40 !important;
-	--chat--color-disabled: #adb5bd !important;
-	--chat--color-typing: #495057 !important;
+  /* Brains Accounting chatbot Colors */
+  --chat--color--primary: #c53030 !important;
+  --chat--color--primary-shade-50: #7a1515 !important;
+  --chat--color--primary--shade-100: #1e4678 !important;
+  --chat--color--secondary: #20b69e !important;
+  --chat--color-secondary-shade-50: #1ca08a !important;
+  --chat--color-white: #f9f9f9 !important;
+  --chat--color-light: #f8f9fa !important;
+  --chat--color-light-shade-50: #e9ecef !important;
+  --chat--color-light-shade-100: #dee2e6 !important;
+  --chat--color-medium: #6c757d !important;
+  --chat--color-dark: #343a40 !important;
+  --chat--color-disabled: #adb5bd !important;
+  --chat--color-typing: #495057 !important;
 
-	/* Layout */
-	--chat--spacing: 1rem;
-	--chat--border-radius: 0.5rem;
-	--chat--transition-duration: 0.2s;
+  /* Layout */
+  --chat--spacing: 1rem;
+  --chat--border-radius: 0.5rem;
+  --chat--transition-duration: 0.2s;
 
-	/* Window Size */
-	--chat--window--width: 380px;
-	--chat--window--height: 580px;
+  /* Window Size */
+  --chat--window--width: 380px;
+  --chat--window--height: 580px;
 
-	/* Header - Fixed Gradient */
-	--chat--header-height: auto;
-	--chat--header--padding: 1.2rem var(--chat--spacing);
-	--chat--header--background: #2c5aa0;
-	--chat--header--color: var(--chat--color-white);
-	--chat--header--border-bottom: 1px solid var(--chat--color--primary-shade-50);
-	--chat--heading--font-size: 1.3em;
-	--chat--subtitle--font-size: 0.9em;
-	--chat--subtitle--line-height: 1.4;
-	--chat--subtitle--opacity: 0.9;
+  /* Header - Fixed Gradient */
+  --chat--header-height: auto;
+  --chat--header--padding: 1.2rem var(--chat--spacing);
+  --chat--header--background: #2c5aa0;
+  --chat--header--color: var(--chat--color-white);
+  --chat--header--border-bottom: 1px solid var(--chat--color--primary-shade-50);
+  --chat--heading--font-size: 1.3em;
+  --chat--subtitle--font-size: 0.9em;
+  --chat--subtitle--line-height: 1.4;
+  --chat--subtitle--opacity: 0.9;
 
-	/* Input Area */
-	--chat--textarea--height: 52px;
-	--chat--textarea--border-radius: 25px;
-	--chat--textarea--background: var(--chat--color-light);
-	--chat--textarea--border: 1px solid var(--chat--color-light-shade-100);
+  /* Input Area */
+  --chat--textarea--height: 52px;
+  --chat--textarea--border-radius: 25px;
+  --chat--textarea--background: var(--chat--color-light);
+  --chat--textarea--border: 1px solid var(--chat--color-light-shade-100);
 
-	/* Messages */
-	--chat--message--font-size: 0.95rem;
-	--chat--message--padding: 0.8rem 1rem;
-	--chat--message--border-radius: 1rem;
-	--chat--message-line-height: 1.5;
-	
-	/* Bot Messages */
-	--chat--message--bot--background: var(--chat--color-light);
-	--chat--message--bot--color: var(--chat--color-dark);
-	--chat--message--bot--border: 1px solid var(--chat--color-light-shade-100);
-	
-	/* User Messages */
-	--chat--message--user--background: var(--chat--color--primary);
-	--chat--message--user--color: var(--chat--color-white);
-	--chat--message--user--border: none;
-	
-	/* Code/Pre blocks */
-	--chat--message--pre--background: rgba(44, 90, 160, 0.08);
-	--chat--message--pre--border: 1px solid rgba(44, 90, 160, 0.1);
+  /* Messages */
+  --chat--message--font-size: 0.95rem;
+  --chat--message--padding: 0.8rem 1rem;
+  --chat--message--border-radius: 1rem;
+  --chat--message-line-height: 1.5;
 
-	/* Toggle Button */
-	--chat--toggle--background: var(--chat--color--primary);
-	--chat--toggle--hover--background: var(--chat--color--primary-shade-50);
-	--chat--toggle--active--background: var(--chat--color--primary--shade-100);
-	--chat--toggle--color: var(--chat--color-white);
-	--chat--toggle--size: 60px;
-	--chat--toggle--border-radius: 50%;
-	--chat--toggle--box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+  /* Bot Messages */
+  --chat--message--bot--background: var(--chat--color-light);
+  --chat--message--bot--color: var(--chat--color-dark);
+  --chat--message--bot--border: 1px solid var(--chat--color-light-shade-100);
 
-	/* Window Shadow */
-	--chat--window--box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-	--chat--window--border: 1px solid var(--chat--color-light-shade-100);
+  /* User Messages */
+  --chat--message--user--background: var(--chat--color--primary);
+  --chat--message--user--color: var(--chat--color-white);
+  --chat--message--user--border: none;
 
-      --chat--button--color: #f7fafc;
+  /* Code/Pre blocks */
+  --chat--message--pre--background: rgba(44, 90, 160, 0.08);
+  --chat--message--pre--border: 1px solid rgba(44, 90, 160, 0.1);
+
+  /* Toggle Button */
+  --chat--toggle--background: var(--chat--color--primary);
+  --chat--toggle--hover--background: var(--chat--color--primary-shade-50);
+  --chat--toggle--active--background: var(--chat--color--primary--shade-100);
+  --chat--toggle--color: var(--chat--color-white);
+  --chat--toggle--size: 60px;
+  --chat--toggle--border-radius: 50%;
+  --chat--toggle--box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+
+  /* Window Shadow */
+  --chat--window--box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  --chat--window--border: 1px solid var(--chat--color-light-shade-100);
+
+  --chat--button--color: #f7fafc;
 }
 
+
+/* Root Dark mode */
 [data-theme="dark"] {
   --bg-color: #0f1419;
   --second-bg-color: #1a1f2e;
@@ -174,27 +172,27 @@ html {
   --lord-icon-secondary: #e53e3e;
 
   /* Brains Accounting chatbot Colors */
-  	--chat--color-light: #1a1d23;
-	--chat--color-light-shade-50: #252932;
-	--chat--color-light-shade-100: #2d323d;
-	--chat--color-dark: #e9ecef;
-	--chat--color-medium: #8b9bb4;
-	--chat--color-disabled: #5a6578;
-	--chat--color-typing: #8b9bb4;
-	
-	--chat--message--bot--background: #252932;
-	--chat--message--bot--color: #e9ecef;
-	--chat--message--bot--border: 1px solid #2d323d;
-	
-	--chat--textarea--background: #252932;
-	--chat--textarea--border: 1px solid #2d323d;
-	--chat--textarea--color: #e9ecef;
-	
-	--chat--message--pre--background: rgba(44, 90, 160, 0.15);
-	--chat--message--pre--border: 1px solid rgba(44, 90, 160, 0.2);
-	
-	--chat--window--box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-	--chat--window--border: 1px solid #2d323d;
+  --chat--color-light: #1a1d23;
+  --chat--color-light-shade-50: #252932;
+  --chat--color-light-shade-100: #2d323d;
+  --chat--color-dark: #e9ecef;
+  --chat--color-medium: #8b9bb4;
+  --chat--color-disabled: #5a6578;
+  --chat--color-typing: #8b9bb4;
+
+  --chat--message--bot--background: #252932;
+  --chat--message--bot--color: #e9ecef;
+  --chat--message--bot--border: 1px solid #2d323d;
+
+  --chat--textarea--background: #252932;
+  --chat--textarea--border: 1px solid #2d323d;
+  --chat--textarea--color: #e9ecef;
+
+  --chat--message--pre--background: rgba(44, 90, 160, 0.15);
+  --chat--message--pre--border: 1px solid rgba(44, 90, 160, 0.2);
+
+  --chat--window--box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  --chat--window--border: 1px solid #2d323d;
 }
 
 /* Apply CSS variables to LordIcon elements */
@@ -327,7 +325,7 @@ h6 {
   font-size: 0.8rem;
 }
 
- /*-----------------------------------RotatingBorder-----------------------------------*/
+/*-----------------------------------Rotating Border-----------------------------------*/
 
 .styles_button__YDNft {
   display: inline-flex;
@@ -411,7 +409,7 @@ h6 {
 }
 
 .styles_featuredButton__zj76v:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(122, 21, 21, 0.4);
 }
 
@@ -428,7 +426,6 @@ h6 {
   path:nth-child(2) {
   animation: styles_big-sparkle__w0G2N 3.3s ease-in-out infinite;
 }
-
 
 .styles_featuredButton__zj76v .styles_path__783Mk {
   position: absolute;
@@ -478,11 +475,11 @@ h6 {
 
 @media (max-width: 768px) {
   .styles_featuredButton__zj76v .styles_featuredButtonContent__DVHK_ {
-  padding: 5px 10px 5px 8px;
-}
-.styles_button__YDNft {
-  font-size: 12px;
-}
+    padding: 5px 10px 5px 8px;
+  }
+  .styles_button__YDNft {
+    font-size: 12px;
+  }
 }
 
 .styles_featuredButton__zj76v .styles_buttonText__3xbJn,
@@ -496,7 +493,7 @@ h6 {
 }
 
 .styles_featuredButtonIconContainer__s1kUE.styles_theme_midnight__brLAf {
-  color:goldenrod;
+  color: goldenrod;
 }
 
 .styles_featuredButtonIcon__qmKlU {
@@ -520,121 +517,129 @@ h6 {
   transition: 0.2s ease-in-out;
 }
 
-
- /*-----------------------------------Chatbot-----------------------------------*/
+/*-----------------------------------Chatbot-----------------------------------*/
 
 .chat-header {
-	background: linear-gradient(135deg, var(--chat--color--primary) 0%, var(--chat--color--primary-shade-50) 100%) !important;
-	position: relative;
+  background: linear-gradient(
+    135deg,
+    var(--chat--color--primary) 0%,
+    var(--chat--color--primary-shade-50) 100%
+  ) !important;
+  position: relative;
 }
 
 .chat-header::before {
-	content: "";
-	position: absolute;
-	left: 1rem;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 8px;
-	height: 8px;
-	background: #20b69e;
-	border-radius: 50%;
-	animation: pulse 2s infinite;
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #20b69e;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
 }
 
 .chat-heading h1 {
-	font-weight: 600;
-	margin-left: 1.5rem; /* Space for the pulsing dot */
+  font-weight: 600;
+  margin-left: 1.5rem; /* Space for the pulsing dot */
 }
 
 .chat-button:hover {
-    background-color: var(--chat--color--primary-shade-50);
+  background-color: var(--chat--color--primary-shade-50);
 }
 
 .chat-button {
-    background-color:  var(--chat--color--primary);
+  background-color: var(--chat--color--primary);
 }
 @keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0.5; }
-	100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/* Remove "Powered by n8n" - CORRECT SELECTOR */
+/* Remove "Powered by n8n"  */
 .chat-footer > :not(.chat-input) {
-	display: none !important;
+  display: none !important;
 }
-
-/* Dark mode specific adjustments 
-[data-theme="dark"] .n8n-chat {
-	background: #1a1d23;
-}*/
 
 [data-theme="dark"] .chat-window {
-	background: #1a1d23;
+  background: #1a1d23;
 }
 
 [data-theme="dark"] .chat-message-from-bot {
-	background: #252932 !important;
-	color: #e9ecef !important;
-	border: 1px solid #2d323d !important;
+  background: #252932 !important;
+  color: #e9ecef !important;
+  border: 1px solid #2d323d !important;
 }
 
 [data-theme="dark"] .chat-message-from-bot .chat-message-markdown {
-	color: #e9ecef !important;
+  color: #e9ecef !important;
 }
 
 [data-theme="dark"] .chat-input textarea {
-	background: #252932 !important;
-	color: #e9ecef !important;
-	border: 1px solid #2d323d !important;
+  background: #252932 !important;
+  color: #e9ecef !important;
+  border: 1px solid #2d323d !important;
 }
 
 [data-theme="dark"] .chat-input textarea::placeholder {
-	color: #8b9bb4 !important;
+  color: #8b9bb4 !important;
 }
 
 [data-theme="dark"] .chat-body {
-	background: #1a1d23 !important;
+  background: #1a1d23 !important;
 }
 
 [data-theme="dark"] .chat-messages-list {
-	background: #1a1d23 !important;
+  background: #1a1d23 !important;
 }
 
 /* Ensure gradient works in both themes */
 .chat-header {
-	background: linear-gradient(135deg,var(--chat--color--primary) 0%,  var(--chat--color--primary-shade-50) 100%) !important;
+  background: linear-gradient(
+    135deg,
+    var(--chat--color--primary) 0%,
+    var(--chat--color--primary-shade-50) 100%
+  ) !important;
 }
 
 /* Fix toggle button position */
 .chat-window-toggle {
-	background: var(--chat--color--primary) !important;
-	border-radius: 50% !important;
-	box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3) !important;
+  background: var(--chat--color--primary) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3) !important;
 }
 
 .chat-window-toggle:hover {
-	background: var(--chat--color--primary-shade-50) !important;
+  background: var(--chat--color--primary-shade-50) !important;
 }
 
 .chat-window-toggle:active {
-	background: var(--chat--color--primary--shade-100) !important;
+  background: var(--chat--color--primary--shade-100) !important;
 }
 
 /* Message styling */
 .chat-message-from-user {
-	background: var(--chat--color--primary) !important;
-	color: white !important;
+  background: var(--chat--color--primary) !important;
+  color: white !important;
 }
 
 .chat-message-from-bot {
-	background: var(--chat--color-light) !important;
-	color: var(--chat--color-dark) !important;
-	border: 1px solid var(--chat--color-light-shade-100) !important;
+  background: var(--chat--color-light) !important;
+  color: var(--chat--color-dark) !important;
+  border: 1px solid var(--chat--color-light-shade-100) !important;
 }
 
- /*-----------------------------------Section-----------------------------------*/
- .section-header {
+/*-----------------------------------Section-----------------------------------*/
+.section-header {
   text-align: center;
   margin-bottom: 60px;
 }
@@ -801,7 +806,7 @@ header nav ul li a:hover::after {
 .logo h1 {
   display: flex;
   align-items: center;
-  gap: 8px; 
+  gap: 8px;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--primary);
@@ -811,7 +816,6 @@ header nav ul li a:hover::after {
 .logo span {
   color: var(--dark);
 }
-
 
 /* 4. Professional focus states for accessibility */
 .btns:focus-visible,
@@ -832,10 +836,10 @@ header nav ul li a:focus-visible {
   animation: slideLeft 1s ease forwards;
 }
 
- .whitemode{
-    color: var(--dark);
-    font-weight: 500;
-  }
+.whitemode {
+  color: var(--dark);
+  font-weight: 500;
+}
 
 /* Hide mobile-only items on desktop */
 .mobile-only {
@@ -846,12 +850,12 @@ header nav ul li a:focus-visible {
   .mobile-only {
     display: block;
   }
-  
+
   /* Hide on mobile */
-    .desktop-only {
+  .desktop-only {
     display: none !important;
   }
-  
+
   /* Show burger menu */
   .burger-menu {
     display: block;
@@ -861,7 +865,7 @@ header nav ul li a:focus-visible {
 /*-----------------------------------Footer-----------------------------------*/
 footer {
   background: #2d3748;
-  color: #ffffff;
+  color: #f9f9f9;
   padding: 60px 0 30px;
 }
 
@@ -907,7 +911,7 @@ footer {
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: #f9f9f9;
   font-size: 18px;
   transition: all 0.3s ease;
 }
@@ -1062,8 +1066,6 @@ footer {
   background: var(--primary);
   color: white;
 }
-
-
 
 /*-----------------------------------KEYFRAMES ANIMATION-----------------------------------*/
 @keyframes marquee {
