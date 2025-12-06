@@ -702,6 +702,14 @@ a {
   margin: 0 auto;
 }
 
+[data-theme="dark"] .section-title {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .section-subtitle {
+  color: var(--gray);
+}
+
 /*-----------------------------------Header-----------------------------------*/
 header {
   background: var(--white);
