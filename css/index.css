@@ -597,6 +597,37 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+    .scroll-indicator {
+    bottom: 20px;
+  }
+}
+
+@media (max-height: 450px) {
+  .home {
+    height: auto;
+  }
+
+  .home-img img {
+    width: 40vw;
+  }
+
+  .home-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.6rem;
+    margin: auto;
+  }
+}
+/* landscape mobile */
+@media (max-width: 1140px) and (min-width: 769px) {
+  .home-img img {
+    width: 60vw;
+  }
+}
+
 /*-----------------------------------About-----------------------------------*/
 .about {
   padding: 6rem 0;
@@ -1790,6 +1821,23 @@ section {
   padding-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .industry-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .industry-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .industry-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
 /*-----------------------------------SyncManager-----------------------------------*/
 .SyncManager {
   padding: 80px 0;
@@ -2372,6 +2420,42 @@ section {
 [data-theme="dark"] .note {
   background: var(--second-bg-color);
   color: var(--text-color);
+}
+
+@media (max-width: 992px) {
+    .requirements-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .system-requirements {
+    padding: 40px 20px;
+  }
+
+    .requirement-card {
+    padding: 25px 20px;
+  }
+
+    .card-title {
+    font-size: 1.5rem;
+  }
+
+  .spec-value {
+    font-size: 1.2rem;
+  }
+
+  .comparison-table {
+    padding: 20px 15px;
+  }
+
+  .spec-table th,
+  .spec-table td {
+    padding: 12px 15px;
+    font-size: 0.8rem;
+  }
 }
 
 /*-----------------------------------Featured Articles-----------------------------------*/
