@@ -62,8 +62,8 @@ var typed = new Typed(".multiple-text", {
     delay: 100
   });
   
-  ScrollReveal().reveal('.home-content, .map, .heading, .section-title', { origin:'top' });
-  ScrollReveal().reveal('.home-img, .services-section-header, .system-requirements, .industries-section, .contact form, .team, .about-content, .sys-icons', { origin:'bottom' });
-  ScrollReveal().reveal('.home-content h1, .about-img', { origin:'left' });
-  ScrollReveal().reveal('.home-content p, .careers p, .nav-right, .contact p', { origin:'right' });
+  ScrollReveal().reveal('.home-content, .map, .section-title, .support-form-container', { origin:'top'});
+  ScrollReveal().reveal('.home-img, .about-img, .section-subtitle, .system-requirements, .featured-articles, .modern-support, .about-content, .sys-icons', { origin:'bottom'});
+  ScrollReveal().reveal('.home-content h1', { origin:'left'});
+  ScrollReveal().reveal('.home-content p, .contact p', { origin:'right'});
   

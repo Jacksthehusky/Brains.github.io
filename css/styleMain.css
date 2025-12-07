@@ -692,13 +692,13 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1330px;
   margin: 0 auto;
   padding: 20px;
 }
 
 .containerNoPadding {
-  max-width: 1200px;
+  max-width: 1330px;
   margin: 0 auto;
 }
 
@@ -954,6 +954,11 @@ footer {
   color: var(--primary);
 }
 
+.footer-languages i {
+  margin-right: 10px;
+  color: var(--primary);
+}
+
 .copyright {
   text-align: center;
   padding-top: 30px;
@@ -994,7 +999,8 @@ footer {
   border: none;
   padding: 0.6rem 0.8rem;
   border-radius: 2rem;
-  display: inline-block;
+  display: inline-flex;
+      align-items: center;
   font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
@@ -1205,7 +1211,7 @@ footer {
   header nav ul {
     display: none;
     position: fixed;
-    top: 80px;
+    top: 71px;
     left: 0;
     width: 100%;
     background: var(--white);

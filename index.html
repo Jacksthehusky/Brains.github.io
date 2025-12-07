@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/styleMain.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/Lang.css">
   <link rel="shortcut icon" type="image/x-icon" href="Images/brains.ico">
 </head>
 
@@ -60,22 +61,23 @@
       <div class="logo">
         <a href="#home" aria-label="logo">
           <img src="Images/BLogo.png" alt="Brains POS Logo">
-          <h1>Brains</h1>
+          <h1 data-i18n="brains">Brains</h1>
         </a>
       </div>
 
       <nav>
         <ul>
-          <li><a href="#home" style="--i:1;">Home</a></li>
-          <li><a href="#about" style="--i:2;">About</a></li>
-          <li><a href="#features" style="--i:3;">Features</a></li>
-          <li><a href="careers/careers.html" style="--i:4;">Careers</a></li>
-          <li><a href="#contact" style="--i:5;">Contact</a></li>
-          <li><a href="Demo/Products.html" style="--i:6;">Demo</a></li>
+          <li><a href="#home" style="--i:1;" data-i18n="home">Home</a></li>
+          <li><a href="#about" style="--i:2;" data-i18n="about">About</a></li>
+          <li><a href="#features" style="--i:3;" data-i18n="features">Features</a></li>
+          <li><a href="careers/careers.html" style="--i:4;" data-i18n="careers">Careers</a></li>
+          <li><a href="#contact" style="--i:5;" data-i18n="contact">Contact</a></li>
+          <li><a href="Demo/Products.html" style="--i:6;" data-i18n="demo">Demo</a></li>
 
           <!-- Mobile-only links -->
-          <li class="mobile-only"><a href="hc/HelpCenter.html" style="--i:7;">Help Center</a></li>
-          <li class="mobile-only"><a href="hc/admin/login.html" style="--i:8;">Login</a></li>
+          <li class="mobile-only"><a href="hc/HelpCenter.html" style="--i:7;" data-i18n="helpCenter">Help Center</a>
+          </li>
+          <li class="mobile-only"><a href="hc/admin/login.html" style="--i:8;" data-i18n="login">Login</a></li>
         </ul>
       </nav>
 
@@ -106,18 +108,48 @@
                   </svg>
                 </span>
               </figure>
-              Help Center
+              <div data-i18n="helpCenter">
+                Help Center
+              </div>
             </div>
           </a>
         </div>
 
         <!-- Desktop Login Link -->
-        <a href="hc/admin/login.html" class="desktop-only whitemode">Login</a>
+        <a href="hc/admin/login.html" class="desktop-only whitemode" data-i18n="login">Login</a>
 
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-sun"></i>
           <i class="fas fa-moon"></i>
         </button>
+
+        <!-- Add this in header after theme toggle -->
+        <div class="language-selector">
+          <button class="language-btn" id="languageBtn" aria-label="Select language">
+            <i class="fas fa-globe"></i>
+            <span class="current-lang">EN</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown" id="languageDropdown">
+            <button class="lang-option" data-lang="en">
+              <span class="lang-flag">US</span>
+              <span class="lang-text">English</span>
+            </button>
+            <button class="lang-option" data-lang="fr">
+              <span class="lang-flag">FR</span>
+              <span class="lang-text">Français</span>
+            </button>
+            <button class="lang-option" data-lang="ar">
+              <span class="lang-flag">AR</span>
+              <span class="lang-text">العربية</span>
+            </button>
+            <button class="lang-option" data-lang="pt">
+              <span class="lang-flag">PT</span>
+              <span class="lang-text">Português</span>
+            </button>
+          </div>
+        </div>
+
       </div>
 
       <a href="javascript:void(0)" class="burger-menu" aria-label="menu">
@@ -145,8 +177,8 @@
             <h1>Cutting-edge software</h1>
             <h3>For <span class="multiple-text"></span></h3>-->
 
-            <h2 class="hero-lead">Everything Your Business Needs</h2>
-            <h1 class="hero-main">Brains Accounting Software</h1>
+            <h2 class="hero-lead" data-i18n="heroLead">Everything Your Business Needs</h2>
+            <h1 class="hero-main" data-i18n="heroMain">Brains Accounting Software</h1>
             <h3 class="hero-sub"><span class="multiple-text"></span></h3>
 
             <div class="social-media">
@@ -163,7 +195,10 @@
               </a>
             </div>
             <a href="Demo/Products.html" class="btns">
-              <i class="fab fa-wpforms style-margin-right" aria-hidden="true"></i>Online Demo
+              <i class="fab fa-wpforms style-margin-right" aria-hidden="true"></i>
+              <div data-i18n="onlineDemo">
+                 Online Demo
+              </div>             
             </a>
           </div>
 
@@ -193,29 +228,29 @@
     </div>
     <div class="container">
       <div class="about-content">
-        <h2 class="section-header section-title" style="color: white;">About <span>Brains</span></h2>
+        <h2 class="section-header section-title" style="color: white;" data-i18n="aboutTitle">About <span>Brains</span></h2>
 
         <div class="about-intro">
           <h4>One System, Complete Control</h4>
           <p>Brains replaces 4+ separate systems with one integrated platform that
             handles everything from sales to accounting.</p>
-        
 
-        <p>For over two decades, Brains SARL has been at the forefront of business software
-          innovation, delivering enterprise-grade solutions that drive operational excellence.</p>
-</div>
+
+          <p data-i18n="aboutIntro">For over two decades, Brains SARL has been at the forefront of business software
+            innovation, delivering enterprise-grade solutions that drive operational excellence.</p>
+        </div>
         <div class="about-grid">
           <div class="about-stat">
             <div class="stat-number-about">25+</div>
-            <div class="stat-label">Years of Excellence</div>
+            <div class="stat-label" data-i18n="yearsExcellence">Years of Excellence</div>
           </div>
           <div class="about-stat">
             <div class="stat-number-about">850+</div>
-            <div class="stat-label">Global Clients</div>
+            <div class="stat-label" data-i18n="globalClients">Global Clients</div>
           </div>
           <div class="about-stat">
             <div class="stat-number-about">12+</div>
-            <div class="stat-label">Core Modules</div>
+            <div class="stat-label" data-i18n="coreModules">Core Modules</div>
           </div>
         </div>
 
@@ -1120,7 +1155,7 @@
         <!-- Gray line -->
         <div class="trust-stats">
         </div>
-        
+
       </div>
 
       <div class="industry-grid">
@@ -1198,7 +1233,7 @@
       <div class="syncHeroImage">
         <img src="./Images/SyncControls.jpg" />
       </div>
-       <div class="trust-stats"></div>
+      <div class="trust-stats"></div>
     </div>
     <div class="screenshots containerNoPadding">
       <div class="screenshot">
@@ -1669,6 +1704,18 @@
             <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 4:30PM</a></li>
           </ul>
         </div>
+
+        <!-- Add in footer-column with Contact Us -->
+        <div class="footer-column">
+          <h3>Language</h3>
+          <ul class="footer-links">
+            <li><button class="footer-lang" data-lang="en"><i class="fas fa-e"></i> English</button></li>
+            <li><button class="footer-lang" data-lang="fr"><i class="fas fa-f"></i> Français</button></li>
+            <li><button class="footer-lang" data-lang="ar"><i class="fas fa-a"></i> العربية</button></li>
+            <li><button class="footer-lang" data-lang="pt"><i class="fas fa-p"></i> Português</button></li>
+          </ul>
+        </div>
+
       </div>
 
       <div class="copyright">
@@ -1679,6 +1726,10 @@
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <!-- Load translations first -->
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/language.js"></script>
+  <!-- Then your other scripts -->
   <script src="hc/script.js"></script>
   <script src="hc/typed.js"></script>
   <script src="hc/rotationborder.js"></script>
