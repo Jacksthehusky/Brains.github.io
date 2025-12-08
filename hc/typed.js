@@ -1,4 +1,4 @@
-var typed = new Typed(".multiple-text", {
+/*var typed = new Typed(".multiple-text", {
   strings: [
     // ANSWER THE 3 KEY QUESTIONS FIRST (CRITICAL)
     '<i class="fas fa-layer-group"></i> Complete Business Software Suite', // WHAT
@@ -54,7 +54,7 @@ var typed = new Typed(".multiple-text", {
  
 });
   
-  /*===============  Scroll reveal ===============*/
+  ===============  Scroll reveal ===============*/
   ScrollReveal({
     //reset: true,
     distance: '80px',

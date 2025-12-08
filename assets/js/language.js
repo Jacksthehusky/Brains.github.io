@@ -2,6 +2,7 @@
 class LanguageManager {
   constructor() {
     this.currentLang = localStorage.getItem('brains-lang') || 'en';
+    this.typedInstance = null;
     this.init();
   }
   
@@ -9,6 +10,7 @@ class LanguageManager {
     this.setupDropdown();
     this.loadLanguage(this.currentLang);
     this.setupRTL();
+    this.initializeTyped(); // Initialize Typed.js
   }
   
   setupDropdown() {
@@ -53,6 +55,7 @@ class LanguageManager {
     this.loadLanguage(lang);
     this.updateUI(lang);
     this.setupRTL();
+    this.updateTypedText(); // Update Typed.js text
   }
   
   loadLanguage(lang) {
@@ -84,61 +87,70 @@ class LanguageManager {
         option.classList.add('active');
       }
     });
-    
-    // Update Typed.js for different languages if needed
-    this.updateTypedText(lang);
   }
   
-  updateTypedText(lang) {
-    // You can create different typed arrays for each language
-    const typedTexts = {
-      en: [
-        '<i class="fas fa-layer-group"></i> Complete Business Software Suite',
-        '<i class="fas fa-store"></i> For Retail, Restaurants &amp; Service Businesses',
-        '<i class="fas fa-sync-alt"></i> All-in-One: POS, Accounting &amp; Inventory',
-        '<i class="fas fa-bolt"></i> Works Online &amp; Offline + Multi-Location Sync'
-        // ... rest of English array
-      ],
-      fr: [
-        '<i class="fas fa-layer-group"></i> Suite logicielle commerciale complète',
-        '<i class="fas fa-store"></i> Pour détaillants, restaurants &amp; services',
-        '<i class="fas fa-sync-alt"></i> Tout-en-un: PDV, comptabilité &amp; inventaire',
-        '<i class="fas fa-bolt"></i> Fonctionne en ligne &amp; hors ligne + synchronisation multi-sites'
-      ],
-      ar: [
-        '<i class="fas fa-layer-group"></i> مجموعة برامج الأعمال الكاملة',
-        '<i class="fas fa-store"></i> للتجار والمطاعم &amp; شركات الخدمات',
-        '<i class="fas fa-sync-alt"></i> شامل: نقطة البيع، المحاسبة &amp; المخزون',
-        '<i class="fas fa-bolt"></i> يعمل عبر الإنترنت &amp; دون اتصال + مزامنة متعددة المواقع'
-      ],
-      pt: [
-        '<i class="fas fa-layer-group"></i> Suíte de Software Empresarial Completa',
-        '<i class="fas fa-store"></i> Para varejo, restaurantes &amp; serviços',
-        '<i class="fas fa-sync-alt"></i> Tudo-em-um: PDV, contabilidade &amp; inventário',
-        '<i class="fas fa-bolt"></i> Funciona online &amp; offline + sincronização multi-local'
-      ]
-    };
-    
-    // Update Typed.js instance if it exists
-    if (window.typedInstance && typedTexts[lang]) {
-      window.typedInstance.destroy();
-      window.typedInstance = new Typed(".multiple-text", {
-        strings: typedTexts[lang],
-        typeSpeed: 70,
-        backSpeed: 40,
-        backDelay: 1500,
-        loop: true,
-        contentType: 'html'
-      });
+  initializeTyped() {
+    // Destroy existing instance if it exists
+    if (this.typedInstance) {
+      this.typedInstance.destroy();
     }
+    
+    // Get strings for current language
+    const langData = translations[this.currentLang];
+    const strings = langData?.typedTexts || translations.en.typedTexts;
+    
+    // Create new Typed.js instance
+    this.typedInstance = new Typed(".multiple-text", {
+      strings: strings,
+      typeSpeed: 70,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true,
+      contentType: 'html',
+      showCursor: true,
+      cursorChar: '|',
+      onDestroy: () => {
+        console.log('Typed.js instance destroyed');
+      }
+    });
+    
+    // Store reference globally if needed
+    window.typedInstance = this.typedInstance;
   }
+  
+updateTypedText() {
+  const typedElement = document.querySelector('.multiple-text');
+  if (typedElement) {
+    typedElement.classList.add('loading');
+  }
+  
+  // Destroy current instance
+  if (this.typedInstance) {
+    this.typedInstance.destroy();
+    this.typedInstance = null;
+  }
+  
+  // Reinitialize with new language strings
+  setTimeout(() => {
+    this.initializeTyped();
+    
+    // Remove loading class
+    if (typedElement) {
+      setTimeout(() => {
+        typedElement.classList.remove('loading');
+      }, 500);
+    }
+  }, 100);
+}
   
   updateUI(lang) {
     // Update HTML dir attribute for RTL languages
     if (lang === 'ar') {
       document.documentElement.dir = 'rtl';
+      document.body.classList.add('rtl');
     } else {
       document.documentElement.dir = 'ltr';
+      document.body.classList.remove('rtl');
     }
     
     // Update page title based on language
@@ -155,12 +167,13 @@ class LanguageManager {
   }
   
   setupRTL() {
-    // Add RTL specific styles if needed
-    if (this.currentLang === 'ar') {
-      document.body.classList.add('rtl');
-    } else {
-      document.body.classList.remove('rtl');
-    }
+    // Dispatch event for other components (like ScrollReveal)
+    document.dispatchEvent(new CustomEvent('languageChanged', { 
+      detail: { 
+        language: this.currentLang, 
+        isRTL: this.currentLang === 'ar' 
+      } 
+    }));
   }
 }
 

@@ -148,15 +148,19 @@
   direction: rtl;
 }
 
-[dir="rtl"] .about-feature-card {
-  flex-direction: row-reverse;
-}
-
 [dir="rtl"] .home-content {
     text-align: right;
 }
 
 [dir="rtl"] .owner-card {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .btns {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .screenshot  {
   flex-direction: row-reverse;
 }
 
@@ -227,4 +231,29 @@
   .language-dropdown {
     min-width: 160px;
   }
+}
+
+
+
+/* Add to index.css */
+.multiple-text {
+  min-height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Loading state during language switch */
+.multiple-text.loading {
+  opacity: 0.5;
+}
+
+.multiple-text.loading::after {
+  content: '...';
+  animation: loadingDots 1.5s infinite;
+}
+
+@keyframes loadingDots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
 }

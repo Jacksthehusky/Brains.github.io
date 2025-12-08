@@ -26,15 +26,14 @@
 </head>
 
 <body>
-  <!-- Loading Wrapper -->
+  <!-- Loading Wrapper 
   <div id="loadingWrapper" class="loading-wrapper">
     <div class="loading-content">
-      <!-- Logo -->
+
       <div class="loading-logo">
         <img src="Images/BLogo.png" alt="BRAINS Logo" class="logo-image">
       </div>
 
-      <!-- BRAINS Text -->
       <div class="brains-text">
         <span class="letter letter-b">B</span>
         <span class="letter letter-r">R</span>
@@ -45,7 +44,6 @@
         <span class="accounting-text">ACCOUNTING</span>
       </div>
 
-      <!-- Simple Progress Bar -->
       <div class="simple-progress">
         <div class="progress-bar">
           <div class="progress-fill"></div>
@@ -53,7 +51,7 @@
         <div class="loading-status">Initializing...</div>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <!-- Header -->
   <header>
@@ -231,8 +229,8 @@
         <h2 class="section-header section-title" style="color: white;" data-i18n="aboutTitle">About <span>Brains</span></h2>
 
         <div class="about-intro">
-          <h4>One System, Complete Control</h4>
-          <p>Brains replaces 4+ separate systems with one integrated platform that
+          <h4 data-i18n="aboutSubTitleh4">One System, Complete Control</h4>
+          <p data-i18n="aboutSubTitlep">Brains replaces 4+ separate systems with one integrated platform that
             handles everything from sales to accounting.</p>
 
 
@@ -257,14 +255,16 @@
         <div class="about-features">
 
           <div class="about-feature-card">
+            <a href="#about">
             <div class="about-feature-icon">
               <i class="fas fa-cloud"></i>
             </div>
             <div class="about-feature-content">
-              <h4>Flexible Deployment</h4>
-              <p>Choose between cloud infrastructure or on-premise servers to match your operational workflow and
+              <h4 data-i18n="flexibleDep">Flexible Deployment</h4>
+              <p data-i18n="flexibleDepSub">Choose between cloud infrastructure or on-premise servers to match your operational workflow and
                 security requirements.</p>
             </div>
+            </a>
           </div>
 
           <div class="about-feature-card">
@@ -273,8 +273,8 @@
                 <i class="fas fa-sync-alt"></i>
               </div>
               <div class="about-feature-content">
-                <h4>Brains Sync Manager</h4>
-                <p>Real-time data synchronization across multiple branches with offline capability and automatic
+                <h4 data-i18n="brainsSyncManager">Brains Sync Manager</h4>
+                <p data-i18n="brainsSyncManagerSub">Real-time data synchronization across multiple branches with offline capability and automatic
                   recovery
                   when connectivity is restored.</p>
               </div>
@@ -287,8 +287,8 @@
                 <i class="fas fa-puzzle-piece"></i>
               </div>
               <div class="about-feature-content">
-                <h4>Seamless Integration</h4>
-                <p>Comprehensive API and interface capabilities for smooth interoperability with your existing software
+                <h4 data-i18n="seamlessIntegration">Seamless Integration</h4>
+                <p data-i18n="seamlessIntegrationSub">Comprehensive API and interface capabilities for smooth interoperability with your existing software
                   ecosystem.</p>
               </div>
           </div>
@@ -296,20 +296,20 @@
         </div>
 
         <div class="modules-section">
-          <h3>Comprehensive Business Suite</h3>
+          <h3 data-i18n="comprehensiveBusinessSuite">Comprehensive Business Suite</h3>
           <div class="modules-grid">
-            <div class="module-tag">General Ledger</div>
-            <div class="module-tag">Accounts Receivable</div>
-            <div class="module-tag">Accounts Payable</div>
-            <div class="module-tag">Payroll System</div>
-            <div class="module-tag">Purchase Orders</div>
-            <div class="module-tag">Job cards</div>
-            <div class="module-tag">Sales Orders</div>
-            <div class="module-tag">Sales Invoices</div>
-            <div class="module-tag">Point of Sale (POS)</div>
-            <div class="module-tag">Inventory Management</div>
-            <div class="module-tag">Bank Reconciliation</div>
-            <div class="module-tag">Warehouse Management</div>
+            <div class="module-tag" data-i18n="aboutmodule1">General Ledger</div>
+            <div class="module-tag" data-i18n="aboutmodule2">Accounts Payable</div>
+            <div class="module-tag" data-i18n="aboutmodule3">Accounts Receivable</div>
+            <div class="module-tag" data-i18n="aboutmodule4">Payroll System</div>
+            <div class="module-tag" data-i18n="aboutmodule5">Purchase Orders</div>
+            <div class="module-tag" data-i18n="aboutmodule6">Job cards</div>
+            <div class="module-tag" data-i18n="aboutmodule7">Sales Orders</div>
+            <div class="module-tag" data-i18n="aboutmodule8">Sales Invoices</div>
+            <div class="module-tag" data-i18n="aboutmodule9">Point of Sale (POS)</div>
+            <div class="module-tag" data-i18n="aboutmodule10">Inventory Management</div>
+            <div class="module-tag" data-i18n="aboutmodule11">Bank Reconciliation</div>
+            <div class="module-tag" data-i18n="aboutmodule12">Warehouse Management</div>
           </div>
         </div>
       </div>
@@ -335,8 +335,8 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Our <span>Services</span></h2>
-        <p class="section-subtitle">Upgrade Your Business With <span>Brains</span> Software</p>
+        <h2 class="section-title" data-i18n="servicesTitle">Our <span>Services</span></h2>
+        <p class="section-subtitle" data-i18n="servicesSubtitle">Upgrade Your Business With <span>Brains</span> Software</p>
       </div>
     </div>
 
@@ -349,35 +349,35 @@
             <i class="fas fa-chart-line"></i>
             <div class="icon-backdrop"></div>
           </div>
-          <h3 class="product-title">Accounting System</h3>
-          <p class="product-description">Simple, reliable, and secure. <br>To help you easily manage your cash flow</p>
+          <h3 class="product-title" data-i18n="services1Title">Accounting System</h3>
+          <p class="product-description" data-i18n="services1Desc">Simple, reliable, and secure. <br>To help you easily manage your cash flow</p>
           <div class="feature-highlights">
-            <span class="feature-tag">Multi-currency</span>
-            <span class="feature-tag">Real-time Reports</span>
-            <span class="feature-tag">Tax Compliance</span>
+            <span class="feature-tag" data-i18n="services1Tag1">Multi-currency</span>
+            <span class="feature-tag" data-i18n="services1Tag2">Real-time Reports</span>
+            <span class="feature-tag" data-i18n="services1Tag3">Tax Compliance</span>
           </div>
           <img src="Images/AccountingSystem.png" class="preview">
         </div>
 
         <a href="Demo/GeneralAccounting.html">
           <div class="details">
-            <h1>Accounting</h1>
-            <h2>Be ready for tax time</h2>
+            <h1 data-i18n="services1Detailsh1">Accounting</h1>
+            <h2 data-i18n="services1Detailsh2">Be ready for tax time</h2>
             <div class="tags">
-              <span class="tag">Journal Voucher</span>
-              <span class="tag">Cost Analysis</span>
-              <span class="tag">Statements</span>
+              <span class="tag" data-i18n="services1DetailsTag1">Journal Voucher</span>
+              <span class="tag" data-i18n="services1DetailsTag2">Cost Analysis</span>
+              <span class="tag" data-i18n="services1DetailsTag3">Statements</span>
             </div>
             <div class="cardfeatures">
-              <h3>Features</h3>
+              <h3 data-i18n="features">Features</h3>
               <ul>
-                <li>Multiple currency accounts.</li>
-                <li>View revenue, average sale and profit.</li>
-                <li>General ledger.</li>
-                <li>Trial Balance.</li>
-                <li>Payable and receivable accounts.</li>
-                <li>Detailed cost analysis.</li>
-                <li>Allows reviewing and modifying existing vouchers, and updates balances accordingly.</li>
+                <li data-i18n="services1Detailsh3li1">Multiple currency accounts.</li>
+                <li data-i18n="services1Detailsh3li2">View revenue, average sale and profit.</li>
+                <li data-i18n="services1Detailsh3li3">General ledger.</li>
+                <li data-i18n="services1Detailsh3li4">Trial Balance.</li>
+                <li data-i18n="services1Detailsh3li5">Payable and receivable accounts.</li>
+                <li data-i18n="services1Detailsh3li6">Detailed cost analysis.</li>
+                <li data-i18n="services1Detailsh3li7">Allows reviewing and modifying existing vouchers, and updates balances accordingly.</li>
               </ul>
             </div>
           </div>
@@ -391,33 +391,33 @@
             <i class="fas fa-boxes"></i>
             <div class="icon-backdrop"></div>
           </div>
-          <h3 class="product-title">Inventory System</h3>
-          <p class="product-description">Track your stock as it is bought, manufactured, stored, and used</p>
+          <h3 class="product-title" data-i18n="services2Title">Inventory System</h3>
+          <p class="product-description" data-i18n="services2Desc">Track your stock as it is bought, manufactured, stored, and used</p>
           <div class="feature-highlights">
-            <span class="feature-tag">Barcode System</span>
-            <span class="feature-tag">Auto Reordering</span>
-            <span class="feature-tag">Multi-location</span>
+            <span class="feature-tag" data-i18n="services2Tag1">Barcode System</span>
+            <span class="feature-tag" data-i18n="services2Tag2">Auto Reordering</span>
+            <span class="feature-tag" data-i18n="services2Tag3">Multi-location</span>
           </div>
           <img src="Images/InventoryManagment.png" class="preview">
         </div>
 
         <a href="Demo/StockSystem.html">
           <div class="details">
-            <h1>Inventory Management</h1>
-            <h2>Never run out of stock</h2>
+            <h1 data-i18n="services2Detailsh1">Inventory Management</h1>
+            <h2 data-i18n="services2Detailsh2">Never run out of stock</h2>
             <div class="tags">
-              <span class="tag">Purchases</span>
-              <span class="tag">Transfer</span>
-              <span class="tag">Sales</span>
+              <span class="tag" data-i18n="services2DetailsTag1">Purchases</span>
+              <span class="tag" data-i18n="services2DetailsTag2">Transfer</span>
+              <span class="tag" data-i18n="services2DetailsTag3">Sales</span>
             </div>
             <div class="cardfeatures">
-              <h3>Features</h3>
+              <h3 data-i18n="features">Features</h3>
               <ul>
-                <li>Track stock levels in real time.</li>
-                <li>Receive automatic low stock alerts.</li>
-                <li>Send orders to suppliers and track stock receipts.</li>
-                <li>Transfer stock between your stores.</li>
-                <li>Print barcode labels</li>
+                <li data-i18n="services2Detailsh3li1">Track stock levels in real time.</li>
+                <li data-i18n="services2Detailsh3li2">Receive automatic low stock alerts.</li>
+                <li data-i18n="services2Detailsh3li3">Send orders to suppliers and track stock receipts.</li>
+                <li data-i18n="services2Detailsh3li4">Transfer stock between your stores.</li>
+                <li data-i18n="services2Detailsh3li5">Print barcode labels</li>
               </ul>
             </div>
           </div>
@@ -431,33 +431,33 @@
             <i class="fas fa-cash-register"></i>
             <div class="icon-backdrop"></div>
           </div>
-          <h3 class="product-title">POS System</h3>
-          <p class="product-description">Make use of the easy, controled, and advanced features of our POS solution</p>
+          <h3 class="product-title" data-i18n="services3Title">POS System</h3>
+          <p class="product-description" data-i18n="services3Desc">Make use of the easy, controled, and advanced features of our POS solution</p>
           <div class="feature-highlights">
-            <span class="feature-tag">Easy to use</span>
-            <span class="feature-tag">Fast Transactions</span>
-            <span class="feature-tag">Custom Receipts</span>
+            <span class="feature-tag" data-i18n="services3Tag1">Easy to use</span>
+            <span class="feature-tag" data-i18n="services3Tag2">Fast Transactions</span>
+            <span class="feature-tag" data-i18n="services3Tag3">Custom Receipts</span>
           </div>
           <img src="Images/PointOS.png" class="preview">
         </div>
 
         <a href="Demo/StockSystem.html">
           <div class="details">
-            <h1>Point of sale</h1>
-            <h2>Supports multi-currency payments</h2>
+            <h1 data-i18n="services3Detailsh1">Point of sale</h1>
+            <h2 data-i18n="services3Detailsh2">Supports multi-currency payments</h2>
             <div class="tags">
-              <span class="tag">Receipts</span>
-              <span class="tag">BarcodeScanner</span>
-              <span class="tag">CashDrawer</span>
+              <span class="tag" data-i18n="services3DetailsTag1">Receipts</span>
+              <span class="tag" data-i18n="services3DetailsTag2">BarcodeScanner</span>
+              <span class="tag" data-i18n="services3DetailsTag3">CashDrawer</span>
             </div>
             <div class="cardfeatures">
-              <h3>Features</h3>
+              <h3 data-i18n="features">Features</h3>
               <ul>
-                <li>Issue printed or electronic receipts.</li>
-                <li>Apply discounts and issue refunds.</li>
-                <li>Keep recording sales even when offline.</li>
-                <li>Connect a receipt printer, barcode scanner, and cash drawer.</li>
-                <li>supports multi-currency payments.</li>
+                <li data-i18n="services3Detailsh3li1">Issue printed or electronic receipts.</li>
+                <li data-i18n="services3Detailsh3li2">Apply discounts and issue refunds.</li>
+                <li data-i18n="services3Detailsh3li3">Keep recording sales even when offline.</li>
+                <li data-i18n="services3Detailsh3li4">Connect a receipt printer, barcode scanner, and cash drawer.</li>
+                <li data-i18n="services3Detailsh3li5">supports multi-currency payments.</li>
               </ul>
             </div>
           </div>
@@ -471,31 +471,31 @@
             <i class="fas fa-users-cog"></i>
             <div class="icon-backdrop"></div>
           </div>
-          <h3 class="product-title">Payroll System</h3>
-          <p class="product-description">System designed to assist all types of organisations' human resources</p>
+          <h3 class="product-title" data-i18n="services4Title">Payroll System</h3>
+          <p class="product-description" data-i18n="services4Desc">System designed to assist all types of organisations' human resources</p>
           <div class="feature-highlights">
-            <span class="feature-tag">Auto Calculations</span>
-            <span class="feature-tag">Tax Management</span>
-            <span class="feature-tag">Leave Tracking</span>
+            <span class="feature-tag" data-i18n="services4Tag1">Auto Calculations</span>
+            <span class="feature-tag" data-i18n="services4Tag2">Tax Management</span>
+            <span class="feature-tag" data-i18n="services4Tag3">Leave Tracking</span>
           </div>
           <img src="Images/PayrollSystem.png" class="preview">
         </div>
 
         <a href="Demo/PayrollSystem.html">
           <div class="details">
-            <h1>Payroll</h1>
-            <h2>Aids various organizations' HR needs</h2>
+            <h1 data-i18n="services4Detailsh1">Payroll</h1>
+            <h2 data-i18n="services4Detailsh2">Aids various organizations' HR needs</h2>
             <div class="tags">
-              <span class="tag">Leave</span>
-              <span class="tag">HR</span>
-              <span class="tag">PayrollAdministration</span>
+              <span class="tag" data-i18n="services4DetailsTag1">Leave</span>
+              <span class="tag" data-i18n="services4DetailsTag2">HR</span>
+              <span class="tag" data-i18n="services4DetailsTag3">PayrollAdministration</span>
             </div>
             <div class="cardfeatures">
-              <h3>Features</h3>
+              <h3 data-i18n="features">Features</h3>
               <ul>
-                <li>Easily manage your staff and make balanced decisions.</li>
-                <li>Allocates employees by departments (ex: accounting department, sales department...)</li>
-                <li>Grant different levels of access to protect sensitive information.</li>
+                <li data-i18n="services4Detailsh3li1">Easily manage your staff and make balanced decisions.</li>
+                <li data-i18n="services4Detailsh3li2">Allocates employees by departments (ex: accounting department, sales department...)</li>
+                <li data-i18n="services4Detailsh3li3">Grant different levels of access to protect sensitive information.</li>
               </ul>
             </div>
           </div>
@@ -509,8 +509,8 @@
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Everything You Need to <span>Succeed</span></h2>
-        <p class="section-subtitle">Brains provides a comprehensive solution for managing all aspects of your
+        <h2 class="section-title" data-i18n="featuresTitle">Everything You Need to <span>Succeed</span></h2>
+        <p class="section-subtitle" data-i18n="featuresSubtitle">Brains provides a comprehensive solution for managing all aspects of your
           business</p>
       </div>
       <div class="features-grid">
@@ -1540,8 +1540,8 @@
     <div class="container">
       <div class="support-grid">
         <div class="support-content">
-          <h2 class="section-header section-title">Contact <span>Us!</span></h2>
-          <p class="support-description section-header section-subtitle">The <span>ones</span> who runs this company</p>
+          <h2 class="section-header section-title" data-i18n="contactTitle">Contact <span>Us!</span></h2>
+          <p class="support-description section-header section-subtitle" data-i18n="contactSubtitle">The <span>ones</span> who runs this company</p>
           <div class="owner-cards">
 
             <!-- Michel -->
@@ -1554,7 +1554,7 @@
 
                 <div class="owner-whatsapp">
                   <a href="javascript:void(0)" onclick="sendWhatsAppMessageMichel()">
-                    <i class="fab fa-whatsapp"></i> Contact
+                    <i class="fab fa-whatsapp"></i><div data-i18n="contactButton"> Contact</div>
                   </a>
                 </div>
               </div>
@@ -1570,7 +1570,7 @@
 
                 <div class="owner-whatsapp">
                   <a href="javascript:void(0)" onclick="sendWhatsAppMessageNassar()">
-                    <i class="fab fa-whatsapp"></i> Contact
+                    <i class="fab fa-whatsapp"></i><div data-i18n="contactButton"> Contact</div>
                   </a>
                 </div>
               </div>
@@ -1581,38 +1581,38 @@
 
         <div class="support-form-container">
           <div class="support-form">
-            <h3>Contact Us!</h3>
+            <h3 data-i18n="contactUs">Contact Us!</h3>
             <form action="/contact-form-handler.php" method="post" name="Contact Form" class="modern-form">
               <div class="form-grid">
                 <div class="input-group">
-                  <label for="fullname">Full Name</label>
-                  <input type="text" id="fullname" placeholder="fullname" required name="fullname">
+                  <label for="fullname" data-i18n="fullName">Full Name</label>
+                  <input type="text" id="fullname" placeholder="fullname" required name="fullname" data-i18n="namePlaceholder">
                   <i class="fas fa-user input-icon"></i>
                 </div>
 
                 <div class="input-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" placeholder="email" required name="emailaddress">
+                  <label for="email" data-i18n="email">Email Address</label>
+                  <input type="email" id="email" placeholder="email" required name="emailaddress" data-i18n="emailPlaceholder">
                   <i class="fas fa-envelope input-icon"></i>
                 </div>
 
                 <div class="input-group">
-                  <label for="telephone">Mobile Number</label>
-                  <input type="tel" id="telephone" placeholder="phone" required name="telephone">
+                  <label for="telephone" data-i18n="phone">Mobile Number</label>
+                  <input type="tel" id="telephone" placeholder="phone" required name="telephone" data-i18n="phonePlaceholder">
                   <i class="fas fa-phone input-icon"></i>
                 </div>
 
                 <div class="input-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" id="subject" placeholder="subject" required name="subject">
+                  <label for="subject" data-i18n="subject">Subject</label>
+                  <input type="text" id="subject" placeholder="subject" required name="subject" data-i18n="subjectPlaceholder">
                   <i class="fas fa-tag input-icon"></i>
                 </div>
               </div>
 
               <div class="input-group">
-                <label for="message">Detailed Description</label>
+                <label for="message" data-i18n="message">Detailed Description</label>
                 <textarea id="message" cols="30" rows="6" placeholder="Please describe your request..." required
-                  name="message"></textarea>
+                  name="message" data-i18n="messagePlaceholder"></textarea>
                 <i class="fas fa-comment input-icon textarea-icon"></i>
               </div>
 
@@ -1621,7 +1621,9 @@
 
               <button type="submit" class="modern-btn">
                 <i class="fas fa-paper-plane"></i>
+                <div data-i18n="send">
                 Send Message
+              </div>
               </button>
             </form>
           </div>
@@ -1671,8 +1673,8 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-column">
-          <h3>Brains</h3>
-          <p>Powerful software designed to help businesses of all sizes streamline operations and increase
+          <h3 data-i18n="brains">Brains</h3>
+          <p data-i18n="footerDescription">Powerful software designed to help businesses of all sizes streamline operations and increase
             profitability.</p>
           <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
@@ -1685,18 +1687,18 @@
         </div>
 
         <div class="footer-column">
-          <h3>Quick Links</h3>
+          <h3 data-i18n="quickLinks">Quick Links</h3>
           <ul class="footer-links">
-            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
-            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i><div data-i18n="home"> Home</div></a></li>
+            <li><a href="#features"><i class="fas fa-chevron-right"></i><div data-i18n="features"> Features</div></a></li>
+            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i><div data-i18n="helpCenter"> Help Center</div></a></li>
             <li><a href="#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
-            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i><div data-i18n="contact"> Contact</div></a></li>
           </ul>
         </div>
 
         <div class="footer-column">
-          <h3>Contact Us</h3>
+          <h3 data-i18n="contactUs">Contact Us</h3>
           <ul class="footer-links">
             <li><a href="#map"><i class="fas fa-map-marker-alt"></i> Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a></li>
             <li><a href="tel:+9611872376"><i class="fas fa-phone-alt"></i> +961 1 872 376</a></li>
@@ -1707,7 +1709,7 @@
 
         <!-- Add in footer-column with Contact Us -->
         <div class="footer-column">
-          <h3>Language</h3>
+          <h3 data-i18n="language">Language</h3>
           <ul class="footer-links">
             <li><button class="footer-lang" data-lang="en"><i class="fas fa-e"></i> English</button></li>
             <li><button class="footer-lang" data-lang="fr"><i class="fas fa-f"></i> Français</button></li>
@@ -1719,7 +1721,7 @@
       </div>
 
       <div class="copyright">
-        <p>© 2025 Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL.</p>
+        <p data-i18n="allRights">© 2025 Brains s.a.r.l | All Rights Reserved - Designed and powered by Brains SARL.</p>
       </div>
     </div>
   </footer>
