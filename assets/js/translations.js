@@ -130,6 +130,90 @@ const translations = {
     featuresTitle: "Everything You Need to <span>Succeed</span>",
     featuresSubtitle:
       "Brains provides a comprehensive solution for managing all aspects of your business",
+    features1h3: "Intuitive POS",
+    features1p:
+      "Easy-to-use interface with lightning-fast transactions and customizable workflows",
+    features2h3: "Real-Time Analytics",
+    features2p:
+      "Make data-driven decisions with comprehensive sales reports and analytics",
+    features3h3: "Inventory Management",
+    features3p:
+      "Track stock levels, set reorder points, and manage suppliers efficiently",
+    features4h3: "Customer Management",
+    features4p:
+      "Build customer loyalty with profiles, purchase history, and targeted promotions",
+    features5h3: "Custom Reports",
+    features5p:
+      "We build customizable RDLC reports tailored to your needs. Add your logo and choose from POS, A4, A5, or Letter sizes",
+    features6h3: "Multi-Store Sync",
+    features6p:
+      "Manage multiple locations from a single dashboard with real-time synchronization",
+
+    //TrustSection
+    trustTitle: "<span>Trusted</span> by Industry Leaders",
+    trustSubTitle:
+      "Perfect POS Solution for Your Business<br>Join hundreds of businesses who trust <span>BRAINS</span> Accounting",
+    trustStat: "Happy Clients",
+
+    //Industry
+    industryCard1: "Supermarkets",
+    industryCard2: "Auto Parts",
+    industryCard3: "Libraries",
+    industryCard4: "Coffee Shops",
+    industryCard5: "Fashion Boutiques",
+    industryCard6: "Restaurants",
+    industryCard7: "Jewelry Stores",
+    industryCard8: "Salons & Spas",
+    industryCard9: "Hotels",
+    industryCard10: "Rental Services",
+    industryCard11: "Bakeries",
+    industryCard12: "Car Dealers",
+    movingAd:
+      "Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes Fashion-Services Car-Dealers Catering-Factories Salon Hotels Rentals Bakery Fast-food Café Jewelry",
+
+    //Brains Sync Manager
+    syncTitle: "Introducing our <span>Brains Sync Manager</span>",
+    syncSubTitle:
+      "Seamlessly manage multiple store locations with real-time data synchronization",
+    syncDiv1:
+      "Real-time synchronization status at your fingertips, Easily synchronize data between multiple branches and locations",
+    syncDiv2:
+      "Audit SyncLogs to track all synchronization activities, ensuring transparency and accountability",
+    syncDiv3:
+      "Went offline? don't worry, Brains Sync Manager will automatically update all changes once you're back online",
+    syncDiv4:
+      "Control what data to synchronize: operations, items, or accounts...",
+
+    //Globally
+    globalTitle: "Empowering <span>Businesses</span> Globally",
+    globalSubTitle:
+      "Brains software is used by companies across Lebanon, Dubai, Congo, Ghana and expanding across Africa & the Middle East",
+    global1h3: "Global Reach",
+    global1p: "Available in multiple regions with full international support",
+    global2h3: "Multi-Currency",
+    global2p: "Automatic conversions & exchange rates for global operations",
+    global3h3: "Multi-Language",
+    global3p: "Supports English, French, Arabic, Portuguese & more",
+
+    //system-requirements
+    sysReqTitle: "System Requirements for <span>Brains</span> V6",
+    sysReqSubTitle:
+      "Ensure your hardware meets the specifications for optimal performance",
+    sysReqCard1: "Minimal Configuration",
+    operatingSystem: "Operating System",
+    processor: "Processor",
+    memory: "Memory",
+    storage: "Storage",
+
+    sysReqCard2: "Recommended Configuration",
+
+    sysReqCard3: "Specification Comparison",
+    sysReqCard3Th1: "Component",
+    sysReqCard3Th2: "Minimal",
+    sysReqCard3Th3: "Recommended",
+
+    sysReqNote:
+      "<strong>Note:</strong> For multi-location businesses with high transaction volumes, we recommend enterprise-grade hardware and a dedicated database server. SSD storage is highly recommended for optimal performance and faster data processing",
 
     // Contact
     contactTitle: "Contact <span>Us!</span>",
@@ -258,7 +342,8 @@ const translations = {
     aboutmodule12: "Gestion d'entrepôt",
 
     servicesTitle: "Nos <span>Services</span>",
-    servicesSubtitle: "Améliorez votre entreprise avec le logiciel <span>Brains</span>",
+    servicesSubtitle:
+      "Améliorez votre entreprise avec le logiciel <span>Brains</span>",
 
     services1Title: "Système comptable",
     services1Desc:
@@ -272,7 +357,8 @@ const translations = {
     services1DetailsTag2: "Analyse des coûts",
     services1DetailsTag3: "Relevés",
     services1Detailsh3li1: "Comptes multidevises",
-    services1Detailsh3li2: "Consultez le chiffre d'affaires, les ventes moyennes et les bénéfices",
+    services1Detailsh3li2:
+      "Consultez le chiffre d'affaires, les ventes moyennes et les bénéfices",
     services1Detailsh3li3: "Grand livre",
     services1Detailsh3li4: "Balance de vérification",
     services1Detailsh3li5: "Comptes fournisseurs et clients",
@@ -293,7 +379,8 @@ const translations = {
     services2DetailsTag3: "Ventes",
     services2Detailsh3li1: "Suivez vos niveaux de stock en temps réel",
     services2Detailsh3li2: "Recevez des alertes automatiques de stock faible",
-    services2Detailsh3li3: "Envoyez des commandes aux fournisseurs et suivez les réceptions de stock",
+    services2Detailsh3li3:
+      "Envoyez des commandes aux fournisseurs et suivez les réceptions de stock",
     services2Detailsh3li4: "Transférez des stocks entre vos magasins",
     services2Detailsh3li5: "mprimez des étiquettes de codes-barres",
 
@@ -309,8 +396,10 @@ const translations = {
     services3DetailsTag2: "Lecteur de codes-barres",
     services3DetailsTag3: "Tiroir-caisse",
     services3Detailsh3li1: "Émettez des reçus imprimés ou électroniques",
-    services3Detailsh3li2: "Appliquez des remises et effectuez des remboursements",
-    services3Detailsh3li3: "Conservez l'historique des transactions Ventes même hors ligne.",
+    services3Detailsh3li2:
+      "Appliquez des remises et effectuez des remboursements",
+    services3Detailsh3li3:
+      "Conservez l'historique des transactions Ventes même hors ligne.",
     services3Detailsh3li4:
       "Connectez une imprimante de reçus, un lecteur de codes-barres et un tiroir-caisse.",
     services3Detailsh3li5: "Prise en charge des paiements multidevises.",
@@ -336,6 +425,94 @@ const translations = {
     featuresTitle: "Tout ce dont vous avez besoin pour <span>réussir</span>",
     featuresSubtitle:
       "Brains fournit une solution complète pour gérer tous les aspects de votre entreprise",
+    features1h3: "Point de vente intuitif",
+    features1p:
+      "Interface conviviale avec des transactions ultra-rapides et des flux de travail personnalisables",
+    features2h3: "Analyses en temps réel",
+    features2p:
+      "Prenez des décisions basées sur les données grâce à des rapports de vente et des analyses complets",
+    features3h3: "Gestion des stocks",
+    features3p:
+      "Suivez les niveaux de stock, définissez les seuils de réapprovisionnement et gérez efficacement vos fournisseurs",
+    features4h3: "Gestion de la clientèle",
+    features4p:
+      "Fidélisez vos clients grâce aux profils, à l'historique d'achats et aux promotions ciblées",
+    features5h3: "Rapports personnalisés",
+    features5p:
+      "Nous créons des rapports RDLC personnalisables et adaptés à vos besoins. Ajoutez votre logo et choisissez parmi les formats POS, A4, A5 ou Lettre",
+    features6h3: "Synchronisation multi-magasins",
+    features6p:
+      "Gérez plusieurs points de vente depuis un tableau de bord unique avec synchronisation en temps réel",
+
+    //TrustSection
+    trustTitle: "<span>La confiance</span> des leaders du secteur",
+    trustSubTitle:
+      "Solution de point de vente idéale pour votre entreprise<br>Rejoignez des centaines d'entreprises qui font confiance à <span>BRAINS</span> Accounting",
+    trustStat: "Clients satisfaits",
+
+    //Industry
+    industryCard1: "Supermarchés",
+    industryCard2: "Pièces automobiles",
+    industryCard3: "Bibliothèques",
+    industryCard4: "Cafés",
+    industryCard5: "Boutiques de mode",
+    industryCard6: "Restaurants",
+    industryCard7: "Bijouteries",
+    industryCard8: "Salons de beauté et spas",
+    industryCard9: "Hôtels",
+    industryCard10: "Services de location",
+    industryCard11: "Boulangeries",
+    industryCard12: "Concessionnaires automobiles",
+
+    movingAd:
+      "Supermarchés Pièces-détachées Bibliothèques Cafés Commerce-de-détail Épiceries Boutiques-de-vêtements Services-de-mode Concessionnaires-automobiles Traiteurs Usines Salons-de-beauté Hôtels Locations Boulangeries Restauration-rapide Cafés Bijouteries",
+
+    //Brains Sync Manager
+    syncTitle: "Présentation de <span>Brains Sync Manager</span>",
+    syncSubTitle:
+      "Gérez facilement plusieurs points de vente grâce à la synchronisation des données en temps réel",
+    syncDiv1:
+      "Suivi en temps réel de la synchronisation. Synchronisez facilement les données entre vos différentes succursales et sites",
+    syncDiv2:
+      "Consultez les journaux de synchronisation pour suivre toutes les activités de synchronisation et garantir transparence et responsabilité",
+    syncDiv3:
+      "Déconnecté? Pas de souci, Brains Sync Manager mettra automatiquement à jour toutes les modifications dès votre retour en ligne",
+    syncDiv4:
+      "Contrôlez les données à synchroniser: opérations, articles ou comptes…",
+
+    //Globally
+    globalTitle: "Un atout <span>pour les entreprises</span> du monde entier",
+    globalSubTitle:
+      "Le logiciel Brains est utilisé par des entreprises au Liban, à Dubaï, au Congo, au Ghana et se développe actuellement en Afrique et au Moyen-Orient",
+    global1h3: "Portée mondiale",
+    global1p:
+      "Disponible dans de nombreuses régions avec un support international complet",
+    global2h3: "Multidevises",
+    global2p:
+      "Conversions et taux de change automatiques pour les opérations internationales",
+    global3h3: "Multilingue",
+    global3p:
+      "Prise en charge de l'anglais, du français, de l'arabe, du portugais et plus encore",
+
+    //system-requirements
+    sysReqTitle: "Configuration système requise pour <span>Brains</span> V6",
+    sysReqSubTitle:
+      "Assurez-vous que votre matériel respecte les spécifications pour des performances optimales",
+    sysReqCard1: "Configuration minimale",
+    operatingSystem: "Système d'exploitation",
+    processor: "Processeur",
+    memory: "Mémoire",
+    storage: "Stockage",
+
+    sysReqCard2: "Configuration recommandée",
+
+    sysReqCard3: "Comparaison des spécifications",
+    sysReqCard3Th1: "Composant",
+    sysReqCard3Th2: "Minimale",
+    sysReqCard3Th3: "Recommandée",
+
+    sysReqNote:
+      "<strong>Remarque:</strong> Pour les entreprises multisites avec des volumes de transactions élevés, nous recommandons un matériel de qualité professionnelle et un serveur de base de données dédié. Le stockage SSD est fortement recommandé pour des performances optimales et un traitement des données plus rapide",
 
     contactTitle: "Contactez-<span>nous!</span>",
     contactSubtitle: "Les <span>personnes</span> qui dirigent cette entreprise",
@@ -481,8 +658,7 @@ const translations = {
       "يسمح بمراجعة وتعديل القسائم الحالية، وتحديث الأرصدة وفقًا لذلك",
 
     services2Title: "نظام المخزون",
-    services2Desc:
-      "تتبع مخزونك أثناء الشراء، التصنيع، التخزين، والاستخدام",
+    services2Desc: "تتبع مخزونك أثناء الشراء، التصنيع، التخزين، والاستخدام",
     services2Tag1: "نظام الباركود",
     services2Tag2: "إعادة الطلب التلقائي",
     services2Tag3: "مواقع متعددة",
@@ -516,8 +692,7 @@ const translations = {
     services3Detailsh3li5: "يدعم المدفوعات بعملات متعددة",
 
     services4Title: "نظام الرواتب",
-    services4Desc:
-      "نظام مصمم لدعم جميع أنواع الموارد البشرية في المؤسسات",
+    services4Desc: "نظام مصمم لدعم جميع أنواع الموارد البشرية في المؤسسات",
     services4Tag1: "الحسابات التلقائية",
     services4Tag2: "إدارة الضرائب",
     services4Tag3: "تتبع الإجازات",
@@ -526,8 +701,7 @@ const translations = {
     services4DetailsTag1: "الإجازات",
     services4DetailsTag2: "الموارد البشرية",
     services4DetailsTag3: "إدارة الرواتب",
-    services4Detailsh3li1:
-      "إدارة موظفيك بسهولة واتخاذ قرارات متوازنة",
+    services4Detailsh3li1: "إدارة موظفيك بسهولة واتخاذ قرارات متوازنة",
     services4Detailsh3li2:
       "توزيع الموظفين حسب الأقسام (مثل: قسم المحاسبة، قسم المبيعات...)",
     services4Detailsh3li3:
@@ -535,6 +709,89 @@ const translations = {
 
     featuresTitle: "كل ما تحتاجه <span>للنجاح</span>",
     featuresSubtitle: "يوفر برينز حلاً شاملاً لإدارة جميع جوانب عملك",
+    features1h3: "نظام نقاط بيع بديهي",
+    features1p:
+      "واجهة سهلة الاستخدام مع معاملات فائقة السرعة وسير عمل قابل للتخصيص",
+    features2h3: "تحليلات آنية",
+    features2p:
+      "اتخذ قرارات مبنية على البيانات من خلال تقارير وتحليلات مبيعات شاملة",
+    features3h3: "إدارة المخزون",
+    features3p:
+      "تتبع مستويات المخزون، وتحديد نقاط إعادة الطلب، وإدارة الموردين بكفاءة",
+    features4h3: "إدارة العملاء",
+    features4p:
+      "ابنِ ولاء عملائك من خلال الملفات الشخصية وسجل المشتريات والعروض الترويجية المستهدفة",
+    features5h3: "تقارير مخصصة",
+    features5p:
+      "نصمم تقارير RDLC قابلة للتخصيص ومُصممة خصيصًا لتلبية احتياجاتك. أضف شعارك واختر من بين أحجام نقاط البيع، أو A4، أو A5، أو Letter",
+    features6h3: "مزامنة متعددة المتاجر",
+    features6p: "إدارة مواقع متعددة من لوحة معلومات واحدة مع مزامنة آنية",
+
+    //TrustSection
+    trustTitle: "<span>موثوق به</span> من قبل رواد الصناعة",
+    trustSubTitle:
+      "حل نقاط البيع الأمثل لأعمالك <br>انضم إلى مئات الشركات التي تثق بـ <span>برينز</span> للمحاسبة",
+    trustStat: "عملاء راضون",
+
+    //Industry
+    industryCard1: "متاجر السوبر ماركت",
+    industryCard2: "قطع غيار السيارات",
+    industryCard3: "المكتبات",
+    industryCard4: "المقاهي",
+    industryCard5: "متاجر الأزياء",
+    industryCard6: "المطاعم",
+    industryCard7: "متاجر المجوهرات",
+    industryCard8: "الصالونات والمنتجعات الصحية",
+    industryCard9: "الفنادق",
+    industryCard10: "خدمات التأجير",
+    industryCard11: "المخابز",
+    industryCard12: "تجار السيارات",
+
+    movingAd:
+      "متاجر-السوبر-ماركت قطع-غيار-السيارات المكتبات المقاهي متاجر-التجزئة متاجر-البقالة متاجر-الملابس خدمات-الأزياء تجار-السيارات مصانع-الطعام الصالونات الفنادق الإيجارات المخابز الوجبات-السريعة المقاهي المجوهرات",
+
+    //Brains Sync Manager
+    syncTitle: "نقدم لكم برنامج <span>Brains Sync Manager</span>",
+    syncSubTitle:
+      "إدارة مواقع متاجر متعددة بسلاسة مع مزامنة البيانات في الوقت الفعلي",
+    syncDiv1:
+      "حالة المزامنة في متناول يديك، مزامنة البيانات بسهولة بين فروع ومواقع متعددة",
+    syncDiv2:
+      "تدقيق سجلات المزامنة لتتبع جميع أنشطة المزامنة، وضمان الشفافية والمساءلة",
+    syncDiv3:
+      "انقطعت عن الإنترنت؟ لا تقلق، سيقوم Brains Sync Manager بتحديث جميع التغييرات تلقائيًا بمجرد عودتك إلى الإنترنت",
+    syncDiv4:
+      "تحكم في البيانات التي تريد مزامنتها: العمليات، الأصناف، أو الحسابات...",
+
+    //Globally
+    globalTitle: "تمكين <span>الشركات</span> عالميًا",
+    globalSubTitle:
+      "يستخدم برنامج برينز من قبل شركات في لبنان، دبي، الكونغو، غانا، ويتوسع في أفريقيا والشرق الأوسط",
+    global1h3: "الانتشار العالمي",
+    global1p: "متوفر في مناطق متعددة مع دعم دولي كامل",
+    global2h3: "عملات متعددة",
+    global2p: "تحويلات وأسعار صرف تلقائية للعملات العالمية العمليات",
+    global3h3: "متعدد اللغات",
+    global3p: "يدعم الإنجليزية، الفرنسية، العربية، البرتغالية، وغيرها",
+
+    //system-requirements
+    sysReqTitle: "متطلبات نظام <span>برينز</span> الإصدار 6",
+    sysReqSubTitle: "تأكد من أن أجهزتك تلبي مواصفات الأداء الأمثل",
+    sysReqCard1: "الحد الأدنى من التكوين",
+    operatingSystem: "نظام التشغيل",
+    processor: "المعالج",
+    memory: "الذاكرة",
+    storage: "التخزين",
+
+    sysReqCard2: "التكوين الموصى به",
+
+    sysReqCard3: "مقارنة المواصفات",
+    sysReqCard3Th1: "المكون",
+    sysReqCard3Th2: "الحد الأدنى",
+    sysReqCard3Th3: "موصى به",
+
+    sysReqNote:
+      "<strong>ملاحظة: </strong> بالنسبة للشركات متعددة المواقع ذات أحجام المعاملات العالية، نوصي باستخدام أجهزة من فئة المؤسسات وخادم قاعدة بيانات مخصص. يُنصح بشدة باستخدام وحدة تخزين SSD للحصول على أداء مثالي ومعالجة بيانات أسرع",
 
     contactTitle: "اتصل <span>بنا!</span>",
     contactSubtitle: "<span>الأشخاص</span> الذين يديرون هذه الشركة",
@@ -544,8 +801,7 @@ const translations = {
     quickLinks: "روابط سريعة",
     contactUs: "اتصل بنا",
     language: "لغة",
-    allRights:
-      "© 2026 برينز ش.ذ.م.م | جميع الحقوق محفوظة - تصميم وتشغيل برينز.",
+    allRights: "© 2026 برينز ش.م.م | جميع الحقوق محفوظة - تصميم وتشغيل برينز.",
 
     fullName: "الاسم الكامل",
     email: "البريد الإلكتروني",
@@ -692,7 +948,8 @@ const translations = {
     services2DetailsTag3: "Vendas",
     services2Detailsh3li1: "Acompanhe os níveis de stock em tempo real",
     services2Detailsh3li2: "Receba alertas automáticos de baixo stock",
-    services2Detailsh3li3: "Envie os pedidos aos fornecedores e acompanhe a receção de stock",
+    services2Detailsh3li3:
+      "Envie os pedidos aos fornecedores e acompanhe a receção de stock",
     services2Detailsh3li4: "Transfira o stock entre as suas lojas",
     services2Detailsh3li5: "Imprima etiquetas de código de barras",
 
@@ -735,6 +992,90 @@ const translations = {
     featuresTitle: "Tudo que você precisa para <span>ter sucesso</span>",
     featuresSubtitle:
       "A Brains fornece uma solução abrangente para gerenciar todos os aspectos do seu negócio",
+    features1h3: "POS intuitivo",
+    features1p:
+      "Interface fácil de utilizar com transações ultrarrápidas e fluxos de trabalho personalizáveis",
+    features2h3: "Análises em tempo real",
+    features2p:
+      "Tome decisões baseadas em dados com relatórios e análises de vendas abrangentes",
+    features3h3: "Gestão de stocks",
+    features3p:
+      "Acompanhe os níveis de stock, defina pontos de substituição e gerencie fornecedores de forma eficiente",
+    features4h3: "Gestão de clientes",
+    features4p:
+      "Fidelize os seus clientes com perfis, histórico de compras e promoções direcionadas",
+    features5h3: "Relatórios personalizados",
+    features5p:
+      "Criamos relatórios RDLC personalizáveis, adaptados às suas necessidades. Adicione o seu logótipo e escolha entre os tamanhos POS, A4, A5 ou Carta",
+    features6h3: "Sincronização entre várias lojas",
+    features6p:
+      "Gerencie várias lojas a partir de um único painel com sincronização em tempo real",
+
+    //TrustSection
+    trustTitle: "<span>Fiável</span> para líderes do setor",
+    trustSubTitle:
+      "Solução de POS perfeita para o seu negócio<br>unte-se a centenas de empresas que confiam na <span>BRAINS</span> Accounting",
+    trustStat: "Clientes satisfeitos",
+
+    //Industry
+    industryCard1: "Supermercados",
+    industryCard2: "Peças para automóveis",
+    industryCard3: "Bibliotecas",
+    industryCard4: "Cafetarias",
+    industryCard5: "Boutiques de moda",
+    industryCard6: "Restaurantes",
+    industryCard7: "Joalharias",
+    industryCard8: "Salões de beleza e spas",
+    industryCard9: "Hotéis",
+    industryCard10: "Serviços de locação",
+    industryCard11: "Padarias",
+    industryCard12: "Concessionários de veículos",
+
+    movingAd:
+      "Supermercados Peças-Auto Bibliotecas Cafetarias Retalho Mercearias Boutiques-de-vestuário Serviços-de-moda Concessionários-de-veículos Catering Fábricas Institutos-de-beleza Hotéis Aluguer Padarias Fast-food Cafés Joalharias",
+
+    //Brains Sync Manager
+    syncTitle: "Apresentamos o <span>Brains Sync Manager</span>",
+    syncSubTitle:
+      "Faça a gestão de várias lojas com sincronização de dados em tempo real sem problemas",
+    syncDiv1:
+      "Estado da sincronização em tempo real na ponta dos seus dedos. Sincronize dados facilmente entre várias filiais e locais",
+    syncDiv2:
+      "Registos de sincronização para acompanhar todas as atividades de sincronização, garantindo transparência e responsabilidade",
+    syncDiv3:
+      "Ficou offline? Não se preocupe, o Brains Sync Manager irá atualizar automaticamente todas as alterações assim que voltar a estar online",
+    syncDiv4: "Controle que dados sincronizar: operações, artigos ou contas...",
+
+    //Globally
+    globalTitle: "Empoderar as <span>empresas</span> globalmente",
+    globalSubTitle:
+      "O software Brains é utilizado por empresas no Líbano, Dubai, Congo, Gana e está em expansão por África e Médio Oriente",
+    global1h3: "Alcance global",
+    global1p: "Disponível em várias regiões com suporte internacional completo",
+    global2h3: "Multimoeda",
+    global2p: "Conversões e taxas de câmbio automáticas para operações globais",
+    global3h3: "Multilingue",
+    global3p: "Suporta inglês, francês, árabe, português e muito mais",
+
+    //system-requirements
+    sysReqTitle: "Requisitos de sistema para <span>Brains</span> V6",
+    sysReqSubTitle:
+      "Certifique-se de que o seu hardware cumpre as especificações para um desempenho ideal",
+    sysReqCard1: "Configuração mínima",
+    operatingSystem: "Sistema operativo",
+    processor: "Processador",
+    memory: "Memória",
+    storage: "Armazenamento",
+
+    sysReqCard2: "Configuração recomendada",
+
+    sysReqCard3: "Comparação de especificações",
+    sysReqCard3Th1: "Componente",
+    sysReqCard3Th2: "Mínimo",
+    sysReqCard3Th3: "Recomendado",
+
+    sysReqNote:
+      "<strong>Nota:</strong> Para empresas com várias filiais e um elevado volume de transações, recomendamos hardware de nível empresarial e um servidor de base de dados dedicado. O armazenamento SSD é altamente recomendado para um desempenho ideal e um processamento de dados mais rápido",
 
     contactTitle: "Entre em <span>Contato!</span>",
     contactSubtitle: "As <span>pessoas</span> que administram esta empresa",

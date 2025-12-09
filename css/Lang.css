@@ -160,6 +160,30 @@
   flex-direction: row-reverse;
 }
 
+[dir="rtl"] .spec-table th {
+  text-align: right;
+}
+
+[dir="rtl"] .spec-icon {
+ margin-left: 15px;
+}
+
+[dir="rtl"] .card-ficon {
+ margin-left: 20px;
+}
+
+[dir="rtl"] .spec-value {
+  direction: ltr;
+}
+
+[dir="rtl"] .min-value {
+  direction: ltr;
+}
+
+[dir="rtl"] .rec-value {
+  direction: ltr;
+}
+
 [dir="rtl"] .screenshot  {
   flex-direction: row-reverse;
 }
