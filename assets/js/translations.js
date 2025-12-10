@@ -16,6 +16,11 @@ const translations = {
     heroLead: "Everything Your Business Needs",
     heroMain: "Brains Accounting Software",
 
+    laptopLine1: "Integrated Complete",
+    laptopLine2: "ERP Solution",
+    laptopLine3: "Developed under Visual Studio",
+    laptopLine4: ".Net Framework & SQL Server",
+
     // About Section
     aboutTitle: "About <span>Brains</span>",
     aboutSubTitleh4: "One System, Complete Control",
@@ -215,9 +220,37 @@ const translations = {
     sysReqNote:
       "<strong>Note:</strong> For multi-location businesses with high transaction volumes, we recommend enterprise-grade hardware and a dedicated database server. SSD storage is highly recommended for optimal performance and faster data processing",
 
+    //articles
+    articlesTitle: "<span>Brains </span>Helpful Links",
+    articlesSubTitle:
+      "Explore our resources to get the most out of Brains software",
+    article1h3: "<span>Brains</span> API Documentation",
+    article1p:
+      "REST API service for Brains Visual MC.NET customers with customizable endpoints and authentication",
+    article1a: "Explore API ",
+    article2h3: "<span>Brains </span>Help Center!",
+    article2p: "The place to get answers to your questions...",
+    article2a: "Get Help ",
+    article3h3: "<span>Brains </span>Demo!",
+    article3p:
+      "Take a tour through our software's features with our online demo...",
+    article3a: "Explore Demo ",
+    article4h3: "Career opportunities at <span>Brains</span>",
+    article4p: "We are always interrested in new and motivated people...",
+    article4a: "Apply Here ",
+
     // Contact
     contactTitle: "Contact <span>Us!</span>",
     contactSubtitle: "The <span>ones</span> who runs this company",
+    ceo: "CEO & Founder",
+    michelP:
+      "Feel free to reach out if you need more information about our product",
+    nassarP:
+      "For inquiries or details about our solutions, feel free to contact us",
+    officePhone: "Office Phone",
+    address: "Address",
+    michel: "Michel Aynati",
+    nassar: "Nassar Nassar",
 
     // Footer
     footerDescription:
@@ -227,6 +260,7 @@ const translations = {
     language: "Language",
     allRights:
       "© 2026 Brains S.A.R.L. | All Rights Reserved - Designed and powered by Brains.",
+    solutionsFooter: "Solutions",
 
     // Form labels
     fullName: "Full Name",
@@ -308,6 +342,11 @@ const translations = {
 
     heroLead: "Tout ce dont votre entreprise a besoin",
     heroMain: "Logiciel Comptable Brains",
+
+    laptopLine1: "Solution ERP Complète",
+    laptopLine2: "Intégrée",
+    laptopLine3: "Développée sous Visual Studio",
+    laptopLine4: ".Net Framework & SQL Server",
 
     aboutTitle: "À propos de <span>Brains</span>",
     aboutSubTitleh4: "Un seul système, un contrôle total",
@@ -514,9 +553,39 @@ const translations = {
     sysReqNote:
       "<strong>Remarque:</strong> Pour les entreprises multisites avec des volumes de transactions élevés, nous recommandons un matériel de qualité professionnelle et un serveur de base de données dédié. Le stockage SSD est fortement recommandé pour des performances optimales et un traitement des données plus rapide",
 
+    //articles
+    articlesTitle: "Liens utiles <span>Brains</span>",
+    articlesSubTitle:
+      "Explorez nos ressources pour tirer le meilleur parti du logiciel Brains",
+    article1h3: "Documentation de l'API <span>Brains</span>",
+    article1p:
+      "Service API REST pour les clients Brains Visual MC.NET avec points de terminaison et authentification personnalisables",
+    article1a: "Explore API ",
+    article2h3: "Centre d'aide <span>Brains!</span>",
+    article2p: "Trouvez les réponses à vos questions...",
+    article2a: "Obtenir de l'aide ",
+    article3h3: "Démo <span>Brains!</span>",
+    article3p:
+      "Découvrez les fonctionnalités de notre logiciel grâce à notre démo en ligne...",
+    article3a: "Explorer la démo ",
+    article4h3: "Opportunités de carrière chez <span>Brains</span>",
+    article4p:
+      "Nous sommes toujours à la recherche de personnes motivées et dynamiques...",
+    article4a: "Postulez ici ",
+
     contactTitle: "Contactez-<span>nous!</span>",
     contactSubtitle: "Les <span>personnes</span> qui dirigent cette entreprise",
+    ceo: "PDG et fondateur",
+    michelP:
+      "N'hésitez pas à nous contacter pour plus d'informations sur notre produit",
+    nassarP:
+      "Pour toute question ou information concernant nos solutions, n'hésitez pas à nous contacter",
+    officePhone: "Téléphone du bureau",
+    address: "Adresse",
+    michel: "Michel Aynati",
+    nassar: "Nassar Nassar",
 
+    // Footer
     footerDescription:
       "Logiciel puissant conçu pour aider les entreprises de toutes tailles à rationaliser leurs opérations et augmenter leur rentabilité.",
     quickLinks: "Liens rapides",
@@ -524,6 +593,7 @@ const translations = {
     language: "Langue",
     allRights:
       "© 2026 Brains S.A.R.L. | Tous droits réservés - Conçu et propulsé par Brains.",
+    solutionsFooter: "Solutions",
 
     fullName: "Nom complet",
     email: "Adresse e-mail",
@@ -601,6 +671,11 @@ const translations = {
 
     heroLead: "كل ما تحتاجه شركتك",
     heroMain: "برنامج برينز المحاسبي",
+
+    laptopLine1: "حل متكامل",
+    laptopLine2: "نظام تخطيط موارد المؤسسة",
+    laptopLine3: "مطور تحت Visual Studio",
+    laptopLine4: ".Net Framework & SQL Server",
 
     aboutTitle: "عن <span>برينز</span>",
     aboutSubTitleh4: "نظام واحد، تحكم كامل",
@@ -793,15 +868,43 @@ const translations = {
     sysReqNote:
       "<strong>ملاحظة: </strong> بالنسبة للشركات متعددة المواقع ذات أحجام المعاملات العالية، نوصي باستخدام أجهزة من فئة المؤسسات وخادم قاعدة بيانات مخصص. يُنصح بشدة باستخدام وحدة تخزين SSD للحصول على أداء مثالي ومعالجة بيانات أسرع",
 
+    //articles
+    articlesTitle: "روابط مفيدة لبرنامج <span>برينز</span>",
+    articlesSubTitle: "استكشف مواردنا لتحقيق أقصى استفادة من برنامج برينز",
+    article1h3: "وثائق واجهة برمجة تطبيقات <span>برينز</span>",
+    article1p:
+      "خدمة REST API لعملاء Brains Visual MC.NET مع نقاط نهاية قابلة للتخصيص ومصادقة",
+    article1a: "استكشف واجهة برمجة التطبيقات ",
+    article2h3: "مركز مساعدة <span>برينز</span>",
+    article2p: "المكان الذي تجد فيه إجابات لأسئلتك...",
+    article2a: "احصل على المساعدة ",
+    article3h3: "عرض توضيحي لبرنامج <span>برينز!</span>",
+    article3p:
+      "تعرّف على ميزات برنامجنا من خلال عرضنا التوضيحي عبر الإنترنت...",
+    article3a: "استكشف العرض التوضيحي ",
+    article4h3: "فرص عمل في <span>برينز</span>",
+    article4p: "نحن مهتمون دائمًا بالأشخاص الجدد والمتحمسين...",
+    article4a: "قدّم طلبك هنا ",
+
     contactTitle: "اتصل <span>بنا!</span>",
     contactSubtitle: "<span>الأشخاص</span> الذين يديرون هذه الشركة",
+    ceo: "الرئيس التنفيذي والمؤسس",
+    michelP:
+      "لا تتردد في التواصل معنا إذا كنت بحاجة إلى مزيد من المعلومات حول منتجنا",
+    nassarP: "للاستفسارات أو التفاصيل حول حلولنا، تواصل معنا",
+    officePhone: "هاتف المكتب",
+    address: "العنوان",
+    michel: "ميشال عيناتي",
+    nassar: "نصار نصار",
 
+    // Footer
     footerDescription:
       "برنامج قوي مصمم لمساعدة الشركات من جميع الأحجام على تبسيط العمليات وزيادة الربحية.",
     quickLinks: "روابط سريعة",
     contactUs: "اتصل بنا",
     language: "لغة",
     allRights: "© 2026 برينز ش.م.م | جميع الحقوق محفوظة - تصميم وتشغيل برينز.",
+    solutionsFooter: "حلول",
 
     fullName: "الاسم الكامل",
     email: "البريد الإلكتروني",
@@ -879,6 +982,11 @@ const translations = {
 
     heroLead: "Tudo que sua empresa precisa",
     heroMain: "Software Contábil Brains",
+
+    laptopLine1: "Solução ERP Completa",
+    laptopLine2: "Integrada",
+    laptopLine3: "Desenvolvida no Visual Studio",
+    laptopLine4: ".Net Framework & SQL Server",
 
     aboutTitle: "Sobre a <span>Brains</span>",
     aboutSubTitleh4: "Um sistema, controle total",
@@ -1077,9 +1185,38 @@ const translations = {
     sysReqNote:
       "<strong>Nota:</strong> Para empresas com várias filiais e um elevado volume de transações, recomendamos hardware de nível empresarial e um servidor de base de dados dedicado. O armazenamento SSD é altamente recomendado para um desempenho ideal e um processamento de dados mais rápido",
 
+    //articles
+    articlesTitle: "Links úteis do <span>Brains</span>",
+    articlesSubTitle:
+      "Explorar os nossos recursos para tirar o máximo partido do software Brains",
+    article1h3: "Documentação da API do <span>Brains</span>",
+    article1p:
+      "Serviço API REST para clientes Brains Visual MC.NET com endpoints e autenticação personalizáveis",
+    article1a: "Explorar a API ",
+    article2h3: "Central de Ajuda do <span>Brains!</span>",
+    article2p: "O local para obter respostas às suas perguntas...",
+    article2a: "Obtenha ajuda ",
+    article3h3: "Demonstração do <span>Brains!</span>",
+    article3p:
+      "Faça um tour pelas funcionalidades do nosso software com a nossa demonstração online...",
+    article3a: "Explorar a demonstração ",
+    article4h3: "Oportunidades de carreira na <span>Brains</span>",
+    article4p: "Estamos sempre interessados em pessoas novas e motivadas...",
+    article4a: "Candidate-se aqui ",
+
     contactTitle: "Entre em <span>Contato!</span>",
     contactSubtitle: "As <span>pessoas</span> que administram esta empresa",
+    ceo: "CEO e Fundador",
+    michelP:
+      "Sinta-se à vontade para entrar em contacto caso necessite de mais informações sobre o nosso produto",
+    nassarP:
+      "Para dúvidas ou detalhes sobre as nossas soluções, por favor contacte-nos",
+    officePhone: "Telefone de escritório",
+    address: "Morada",
+    michel: "Michel Aynati",
+    nassar: "Nassar Nassar",
 
+    // Footer
     footerDescription:
       "Software poderoso projetado para ajudar empresas de todos os tamanhos a simplificar operações e aumentar a lucratividade.",
     quickLinks: "Links Rápidos",
@@ -1087,6 +1224,7 @@ const translations = {
     language: "Linguagem",
     allRights:
       "© 2026 Brains S.A.R.L. | Todos os direitos reservados - Concebido e desenvolvido pela Brains.",
+    solutionsFooter: "Soluções",
 
     fullName: "Nome Completo",
     email: "Endereço de E-mail",

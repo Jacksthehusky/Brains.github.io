@@ -195,24 +195,72 @@
             <a href="Demo/Products.html" class="btns">
               <i class="fab fa-wpforms style-margin-right" aria-hidden="true"></i>
               <div data-i18n="onlineDemo">
-                 Online Demo
-              </div>             
+                Online Demo
+              </div>
             </a>
           </div>
 
-          <div class="home-img">
+          <!--  <div class="home-img">
             <img src="Images/mockup.png" alt="Brains POS Software Interface" loading="lazy">
+          </div>-->
+
+          <div class="home-img">
+            <!-- Laptop Mockup Container -->
+            <div class="laptop-mockup">
+              <!-- Laptop body image (should be without screen text) -->
+              <img src="Images/mockup.png" alt="Brains Software Interface" class="laptop-body" loading="lazy">
+
+              <!-- Laptop screen overlay for text -->
+              <div class="laptop-screen">
+                <div class="screen-content">
+                  <!-- Brains logo on screen -->
+                  <div class="screen-logo">
+                    <img src="Images/BLogo.png" alt="Brains Logo">
+                    <span class="brains-logo-text" data-i18n="brains">BRAINS</span>
+                  </div>
+
+                  <!-- Translatable text lines -->
+                  <div class="screen-text">
+                    <div class="text-line line-1" data-i18n="laptopLine1">Integrated Complete</div>
+                    <div class="text-line line-2" data-i18n="laptopLine2">ERP Solution</div>
+                    <div class="text-line line-3" data-i18n="laptopLine3">Developed under Visual Studio</div>
+                    <div class="text-line line-4" data-i18n="laptopLine4">.Net Framework & SQL Server</div>
+                  </div>
+
+                  <!-- Animated loading/processing indicator -->
+                  <div class="screen-indicator">
+                    <div class="indicator-dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating elements around laptop -->
+              <div class="floating-elements">
+                <div class="floating-element el-1">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="floating-element el-2">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="floating-element el-3">
+                  <i class="fas fa-sync-alt"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <a href="#about" class="scroll-indicator">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="6 9 12 15 18 9"></polyline>
-      </svg>
-    </a>
+      <a href="#about" class="scroll-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
   </section>
 
   <!-- About Section -->
@@ -226,7 +274,8 @@
     </div>
     <div class="container">
       <div class="about-content">
-        <h2 class="section-header section-title" style="color: white;" data-i18n="aboutTitle">About <span>Brains</span></h2>
+        <h2 class="section-header section-title" style="color: white;" data-i18n="aboutTitle">About <span>Brains</span>
+        </h2>
 
         <div class="about-intro">
           <h4 data-i18n="aboutSubTitleh4">One System, Complete Control</h4>
@@ -256,14 +305,15 @@
 
           <div class="about-feature-card">
             <a href="#about">
-            <div class="about-feature-icon">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <div class="about-feature-content">
-              <h4 data-i18n="flexibleDep">Flexible Deployment</h4>
-              <p data-i18n="flexibleDepSub">Choose between cloud infrastructure or on-premise servers to match your operational workflow and
-                security requirements.</p>
-            </div>
+              <div class="about-feature-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="about-feature-content">
+                <h4 data-i18n="flexibleDep">Flexible Deployment</h4>
+                <p data-i18n="flexibleDepSub">Choose between cloud infrastructure or on-premise servers to match your
+                  operational workflow and
+                  security requirements.</p>
+              </div>
             </a>
           </div>
 
@@ -274,7 +324,8 @@
               </div>
               <div class="about-feature-content">
                 <h4 data-i18n="brainsSyncManager">Brains Sync Manager</h4>
-                <p data-i18n="brainsSyncManagerSub">Real-time data synchronization across multiple branches with offline capability and automatic
+                <p data-i18n="brainsSyncManagerSub">Real-time data synchronization across multiple branches with offline
+                  capability and automatic
                   recovery
                   when connectivity is restored.</p>
               </div>
@@ -288,7 +339,8 @@
               </div>
               <div class="about-feature-content">
                 <h4 data-i18n="seamlessIntegration">Seamless Integration</h4>
-                <p data-i18n="seamlessIntegrationSub">Comprehensive API and interface capabilities for smooth interoperability with your existing software
+                <p data-i18n="seamlessIntegrationSub">Comprehensive API and interface capabilities for smooth
+                  interoperability with your existing software
                   ecosystem.</p>
               </div>
           </div>
@@ -336,7 +388,8 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title" data-i18n="servicesTitle">Our <span>Services</span></h2>
-        <p class="section-subtitle" data-i18n="servicesSubtitle">Upgrade Your Business With <span>Brains</span> Software</p>
+        <p class="section-subtitle" data-i18n="servicesSubtitle">Upgrade Your Business With <span>Brains</span> Software
+        </p>
       </div>
     </div>
 
@@ -350,7 +403,8 @@
             <div class="icon-backdrop"></div>
           </div>
           <h3 class="product-title" data-i18n="services1Title">Accounting System</h3>
-          <p class="product-description" data-i18n="services1Desc">Simple, reliable, and secure. <br>To help you easily manage your cash flow</p>
+          <p class="product-description" data-i18n="services1Desc">Simple, reliable, and secure. <br>To help you easily
+            manage your cash flow</p>
           <div class="feature-highlights">
             <span class="feature-tag" data-i18n="services1Tag1">Multi-currency</span>
             <span class="feature-tag" data-i18n="services1Tag2">Real-time Reports</span>
@@ -377,7 +431,8 @@
                 <li data-i18n="services1Detailsh3li4">Trial Balance.</li>
                 <li data-i18n="services1Detailsh3li5">Payable and receivable accounts.</li>
                 <li data-i18n="services1Detailsh3li6">Detailed cost analysis.</li>
-                <li data-i18n="services1Detailsh3li7">Allows reviewing and modifying existing vouchers, and updates balances accordingly.</li>
+                <li data-i18n="services1Detailsh3li7">Allows reviewing and modifying existing vouchers, and updates
+                  balances accordingly.</li>
               </ul>
             </div>
           </div>
@@ -392,7 +447,8 @@
             <div class="icon-backdrop"></div>
           </div>
           <h3 class="product-title" data-i18n="services2Title">Inventory System</h3>
-          <p class="product-description" data-i18n="services2Desc">Track your stock as it is bought, manufactured, stored, and used</p>
+          <p class="product-description" data-i18n="services2Desc">Track your stock as it is bought, manufactured,
+            stored, and used</p>
           <div class="feature-highlights">
             <span class="feature-tag" data-i18n="services2Tag1">Barcode System</span>
             <span class="feature-tag" data-i18n="services2Tag2">Auto Reordering</span>
@@ -432,7 +488,8 @@
             <div class="icon-backdrop"></div>
           </div>
           <h3 class="product-title" data-i18n="services3Title">POS System</h3>
-          <p class="product-description" data-i18n="services3Desc">Make use of the easy, controled, and advanced features of our POS solution</p>
+          <p class="product-description" data-i18n="services3Desc">Make use of the easy, controled, and advanced
+            features of our POS solution</p>
           <div class="feature-highlights">
             <span class="feature-tag" data-i18n="services3Tag1">Easy to use</span>
             <span class="feature-tag" data-i18n="services3Tag2">Fast Transactions</span>
@@ -472,7 +529,8 @@
             <div class="icon-backdrop"></div>
           </div>
           <h3 class="product-title" data-i18n="services4Title">Payroll System</h3>
-          <p class="product-description" data-i18n="services4Desc">System designed to assist all types of organisations' human resources</p>
+          <p class="product-description" data-i18n="services4Desc">System designed to assist all types of organisations'
+            human resources</p>
           <div class="feature-highlights">
             <span class="feature-tag" data-i18n="services4Tag1">Auto Calculations</span>
             <span class="feature-tag" data-i18n="services4Tag2">Tax Management</span>
@@ -494,8 +552,10 @@
               <h3 data-i18n="features">Features</h3>
               <ul>
                 <li data-i18n="services4Detailsh3li1">Easily manage your staff and make balanced decisions.</li>
-                <li data-i18n="services4Detailsh3li2">Allocates employees by departments (ex: accounting department, sales department...)</li>
-                <li data-i18n="services4Detailsh3li3">Grant different levels of access to protect sensitive information.</li>
+                <li data-i18n="services4Detailsh3li2">Allocates employees by departments (ex: accounting department,
+                  sales department...)</li>
+                <li data-i18n="services4Detailsh3li3">Grant different levels of access to protect sensitive information.
+                </li>
               </ul>
             </div>
           </div>
@@ -510,7 +570,8 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title" data-i18n="featuresTitle">Everything You Need to <span>Succeed</span></h2>
-        <p class="section-subtitle" data-i18n="featuresSubtitle">Brains provides a comprehensive solution for managing all aspects of your
+        <p class="section-subtitle" data-i18n="featuresSubtitle">Brains provides a comprehensive solution for managing
+          all aspects of your
           business</p>
       </div>
       <div class="features-grid">
@@ -519,7 +580,8 @@
             <i class="fas fa-cash-register"></i>
           </div>
           <h3 data-i18n="features1h3">Intuitive POS</h3>
-          <p data-i18n="features1p">Easy-to-use interface with lightning-fast transactions and customizable workflows.</p>
+          <p data-i18n="features1p">Easy-to-use interface with lightning-fast transactions and customizable workflows.
+          </p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -547,7 +609,8 @@
             <i class="fas fa-file-alt"></i>
           </div>
           <h3 data-i18n="features5h3">Custom Reports</h3>
-          <p data-i18n="features5p">We build customizable RDLC reports tailored to your needs. Add your logo and choose from POS, A4, A5, or
+          <p data-i18n="features5p">We build customizable RDLC reports tailored to your needs. Add your logo and choose
+            from POS, A4, A5, or
             Letter sizes.</p>
         </div>
         <div class="feature-card">
@@ -555,7 +618,8 @@
             <i class="fas fa-sync-alt"></i>
           </div>
           <h3 data-i18n="features6h3">Multi-Store Sync</h3>
-          <p data-i18n="features6p">Manage multiple locations from a single dashboard with real-time synchronization.</p>
+          <p data-i18n="features6p">Manage multiple locations from a single dashboard with real-time synchronization.
+          </p>
         </div>
       </div>
     </div>
@@ -566,7 +630,8 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title" data-i18n="trustTitle"><span>Trusted</span> by Industry Leaders</h2>
-        <p class="section-subtitle" data-i18n="trustSubTitle">Perfect POS Solution for Your Business<br>Join hundreds of businesses who trust
+        <p class="section-subtitle" data-i18n="trustSubTitle">Perfect POS Solution for Your Business<br>Join hundreds of
+          businesses who trust
           <span>BRAINS</span> Accounting
         </p>
       </div>
@@ -1214,7 +1279,8 @@
 
     <div class="style-padding-top-bottom-32">
       <div class="marquee">
-        <span class="moving-ad" data-i18n="movingAd">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store Boutique Clothes
+        <span class="moving-ad" data-i18n="movingAd">Supermarkets Spare-Parts Libraries Coffee-shop Retail Grocery-store
+          Boutique Clothes
           Fashion-Services Car-Dealers Catering-Factories
           Salon Hotels Rentals Bakery Fast-food Café Jewelry</span>
       </div>
@@ -1313,7 +1379,8 @@
 
     <div class="section-header">
       <h2 class="section-title" data-i18n="sysReqTitle">System Requirements for <span>Brains</span> V6</h2>
-      <p class="section-subtitle" data-i18n="sysReqSubTitle">Ensure your hardware meets the specifications for optimal performance</p>
+      <p class="section-subtitle" data-i18n="sysReqSubTitle">Ensure your hardware meets the specifications for optimal
+        performance</p>
       <div class="sys-icons"><i class="fa fa-brands fa-windows"></i><i class="fa fa-microchip "></i><i
           class="fa fa-solid fa-server "></i></div>
     </div>
@@ -1467,8 +1534,8 @@
   <section class="featured-articles" id="resources">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title"><span>Brains </span>Helpful Links</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title" data-i18n="articlesTitle"><span>Brains </span>Helpful Links</h2>
+        <p class="section-subtitle" data-i18n="articlesSubTitle">
           Explore our resources to get the most out of Brains software
         </p>
       </div>
@@ -1483,10 +1550,13 @@
               </lord-icon>
             </p>
           </div>
-          <h3><span>Brains</span> API Documentation</h3>
-          <p>REST API service for Brains Visual MC.NET customers with customizable endpoints and authentication.</p>
+          <h3 data-i18n="article1h3"><span>Brains</span> API Documentation</h3>
+          <p data-i18n="article1p">REST API service for Brains Visual MC.NET customers with customizable endpoints and
+            authentication.</p>
           <a href="https://documenter.getpostman.com/view/15256433/TzeUmTjQ" target="_blank" class="article-link">
-            Explore API <i class="fas fa-arrow-right"></i>
+            <div data-i18n="article1a">
+              Explore API </div>
+            <i class="fas fa-arrow-right"></i>
           </a>
         </article>
 
@@ -1499,9 +1569,13 @@
               </lord-icon>
             </p>
           </div>
-          <h3><span>Brains </span>Help Center!</h3>
-          <p>The place to get answers to your questions...</p>
-          <a href="hc/HelpCenter.html" class="article-link">Get Help <i class="fas fa-arrow-right"></i></a>
+          <h3 data-i18n="article2h3"><span>Brains </span>Help Center!</h3>
+          <p data-i18n="article2p">The place to get answers to your questions...</p>
+          <a href="hc/HelpCenter.html" class="article-link">
+            <div data-i18n="article2a">
+              Get Help </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </article>
 
         <article class="article-card">
@@ -1513,9 +1587,13 @@
               </lord-icon>
             </p>
           </div>
-          <h3><span>Brains </span>Demo!</h3>
-          <p>Take a tour through our software's features with our online demo...</p>
-          <a href="Demo/Products.html" class="article-link">Explore Demo <i class="fas fa-arrow-right"></i></a>
+          <h3 data-i18n="article3h3"><span>Brains </span>Demo!</h3>
+          <p data-i18n="article3p">Take a tour through our software's features with our online demo...</p>
+          <a href="Demo/Products.html" class="article-link">
+            <div data-i18n="article3a">
+              Explore Demo </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </article>
 
         <article class="article-card">
@@ -1527,9 +1605,12 @@
               </lord-icon>
             </p>
           </div>
-          <h3>Career opportunities at <span>Brains</span></h3>
-          <p>We are always interrested in new and motivated people...</p>
-          <a href="careers/careers.html" class="article-link">Apply Here <i class="fas fa-arrow-right"></i></a>
+          <h3 data-i18n="article4h3">Career opportunities at <span>Brains</span></h3>
+          <p data-i18n="article4p">We are always interrested in new and motivated people...</p>
+          <a href="careers/careers.html" class="article-link">
+            <div data-i18n="article4a">Apply Here </div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </article>
       </div>
     </div>
@@ -1541,20 +1622,23 @@
       <div class="support-grid">
         <div class="support-content">
           <h2 class="section-header section-title" data-i18n="contactTitle">Contact <span>Us!</span></h2>
-          <p class="support-description section-header section-subtitle" data-i18n="contactSubtitle">The <span>ones</span> who runs this company</p>
+          <p class="support-description section-header section-subtitle" data-i18n="contactSubtitle">The
+            <span>ones</span> who runs this company
+          </p>
           <div class="owner-cards">
 
             <!-- Michel -->
             <div class="owner-card">
               <img src="./Images/Michel.jpg" class="owner-photo" alt="Michel Aynati">
               <div class="owner-info">
-                <h3>Michel Aynati</h3>
-                <div class="role">CEO & Founder</div>
-                <p>Feel free to reach out if you need more information about our product.</p>
+                <h3 data-i18n="michel">Michel Aynati</h3>
+                <div class="role" data-i18n="ceo">CEO & Founder</div>
+                <p data-i18n="michelP">Feel free to reach out if you need more information about our product.</p>
 
                 <div class="owner-whatsapp">
                   <a href="javascript:void(0)" onclick="sendWhatsAppMessageMichel()">
-                    <i class="fab fa-whatsapp"></i><div data-i18n="contactButton"> Contact</div>
+                    <i class="fab fa-whatsapp"></i>
+                    <div data-i18n="contactButton"> Contact</div>
                   </a>
                 </div>
               </div>
@@ -1564,13 +1648,14 @@
             <div class="owner-card">
               <img src="./Images/Nassar.jpg" class="owner-photo" alt="Nassar Nassar">
               <div class="owner-info">
-                <h3>Nassar Nassar</h3>
-                <div class="role">CEO & Founder</div>
-                <p>For inquiries or details about our solutions, feel free to contact us.</p>
+                <h3 data-i18n="nassar">Nassar Nassar</h3>
+                <div class="role" data-i18n="ceo">CEO & Founder</div>
+                <p data-i18n="nassarP">For inquiries or details about our solutions, feel free to contact us.</p>
 
                 <div class="owner-whatsapp">
                   <a href="javascript:void(0)" onclick="sendWhatsAppMessageNassar()">
-                    <i class="fab fa-whatsapp"></i><div data-i18n="contactButton"> Contact</div>
+                    <i class="fab fa-whatsapp"></i>
+                    <div data-i18n="contactButton"> Contact</div>
                   </a>
                 </div>
               </div>
@@ -1586,25 +1671,29 @@
               <div class="form-grid">
                 <div class="input-group">
                   <label for="fullname" data-i18n="fullName">Full Name</label>
-                  <input type="text" id="fullname" placeholder="fullname" required name="fullname" data-i18n="namePlaceholder">
+                  <input type="text" id="fullname" placeholder="fullname" required name="fullname"
+                    data-i18n="namePlaceholder">
                   <i class="fas fa-user input-icon"></i>
                 </div>
 
                 <div class="input-group">
                   <label for="email" data-i18n="email">Email Address</label>
-                  <input type="email" id="email" placeholder="email" required name="emailaddress" data-i18n="emailPlaceholder">
+                  <input type="email" id="email" placeholder="email" required name="emailaddress"
+                    data-i18n="emailPlaceholder">
                   <i class="fas fa-envelope input-icon"></i>
                 </div>
 
                 <div class="input-group">
                   <label for="telephone" data-i18n="phone">Mobile Number</label>
-                  <input type="tel" id="telephone" placeholder="phone" required name="telephone" data-i18n="phonePlaceholder">
+                  <input type="tel" id="telephone" placeholder="phone" required name="telephone"
+                    data-i18n="phonePlaceholder">
                   <i class="fas fa-phone input-icon"></i>
                 </div>
 
                 <div class="input-group">
                   <label for="subject" data-i18n="subject">Subject</label>
-                  <input type="text" id="subject" placeholder="subject" required name="subject" data-i18n="subjectPlaceholder">
+                  <input type="text" id="subject" placeholder="subject" required name="subject"
+                    data-i18n="subjectPlaceholder">
                   <i class="fas fa-tag input-icon"></i>
                 </div>
               </div>
@@ -1622,8 +1711,8 @@
               <button type="submit" class="modern-btn">
                 <i class="fas fa-paper-plane"></i>
                 <div data-i18n="send">
-                Send Message
-              </div>
+                  Send Message
+                </div>
               </button>
             </form>
           </div>
@@ -1634,14 +1723,14 @@
         <div class="contact-method">
           <i class="fa fa-phone"></i>
           <div>
-            <h4>Office Phone</h4>
+            <h4 data-i18n="officePhone">Office Phone</h4>
             <a href="tel:+9611872376">+961 1 872 376</a>
           </div>
         </div>
         <div class="contact-method">
           <i class="fa fa-map"></i>
           <div>
-            <h4>Address</h4>
+            <h4 data-i18n="address">Address</h4>
             <a href="#map">Lebanon, Jdeideh, Boulos Bldg, 2nd floor</a>
           </div>
         </div>
@@ -1674,7 +1763,8 @@
       <div class="footer-content">
         <div class="footer-column">
           <h3 data-i18n="brains">Brains</h3>
-          <p data-i18n="footerDescription">Powerful software designed to help businesses of all sizes streamline operations and increase
+          <p data-i18n="footerDescription">Powerful software designed to help businesses of all sizes streamline
+            operations and increase
             profitability.</p>
           <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=100057098153837&mibextid=ZbWKwL" target="_blank"
@@ -1689,11 +1779,21 @@
         <div class="footer-column">
           <h3 data-i18n="quickLinks">Quick Links</h3>
           <ul class="footer-links">
-            <li><a href="#"><i class="fas fa-chevron-right"></i><div data-i18n="home"> Home</div></a></li>
-            <li><a href="#features"><i class="fas fa-chevron-right"></i><div data-i18n="features"> Features</div></a></li>
-            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i><div data-i18n="helpCenter"> Help Center</div></a></li>
-            <li><a href="#services"><i class="fas fa-chevron-right"></i> Solutions</a></li>
-            <li><a href="#contact"><i class="fas fa-chevron-right"></i><div data-i18n="contact"> Contact</div></a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>
+                <div data-i18n="home"> Home</div>
+              </a></li>
+            <li><a href="#features"><i class="fas fa-chevron-right"></i>
+                <div data-i18n="features"> Features</div>
+              </a></li>
+            <li><a href="hc/HelpCenter.html"><i class="fas fa-chevron-right"></i>
+                <div data-i18n="helpCenter"> Help Center</div>
+              </a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i>
+                <div data-i18n="solutionsFooter"> Solutions</div>
+              </a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i>
+                <div data-i18n="contact"> Contact</div>
+              </a></li>
           </ul>
         </div>
 

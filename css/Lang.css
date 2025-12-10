@@ -113,11 +113,11 @@
 /* RTL Support */
 [dir="rtl"] body {
   text-align: right;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 [dir="rtl"] .logo h1 {
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-family: "Poppins", "Segoe UI", sans-serif;
   margin-right: 8px;
 }
 
@@ -129,19 +129,19 @@
 [dir="rtl"] .theme-toggle {
   margin-left: 0;
   margin-right: 20px;
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 [dir="rtl"] .logos-slider {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 [dir="rtl"] .fa-chevron-right::before {
- content: "\f053" !important;
+  content: "\f053" !important;
 }
 
 [dir="rtl"] .fa-chevron-left::before {
- content: "\f054" !important;
+  content: "\f054" !important;
 }
 
 [dir="rtl"] .about .container {
@@ -149,7 +149,7 @@
 }
 
 [dir="rtl"] .home-content {
-    text-align: right;
+  text-align: right;
 }
 
 [dir="rtl"] .owner-card {
@@ -160,16 +160,25 @@
   flex-direction: row-reverse;
 }
 
+[dir="rtl"] .fa-arrow-right:before {
+  content: "\f060" !important;
+}
+
+[dir="rtl"] .contact-method {
+  direction: ltr;
+  flex-direction: row-reverse;
+}
+
 [dir="rtl"] .spec-table th {
   text-align: right;
 }
 
 [dir="rtl"] .spec-icon {
- margin-left: 15px;
+  margin-left: 15px;
 }
 
 [dir="rtl"] .card-ficon {
- margin-left: 20px;
+  margin-left: 20px;
 }
 
 [dir="rtl"] .spec-value {
@@ -184,7 +193,7 @@
   direction: ltr;
 }
 
-[dir="rtl"] .screenshot  {
+[dir="rtl"] .screenshot {
   flex-direction: row-reverse;
 }
 
@@ -198,16 +207,19 @@
   margin-left: 10px;
 }
 
-[dir="rtl"] .footer-column h3::after { 
+[dir="rtl"] .footer-column h3::after {
   right: 0;
 }
 
 /* Arabic font fallback */
 [lang="ar"] {
-  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4 {
+[lang="ar"] h1,
+[lang="ar"] h2,
+[lang="ar"] h3,
+[lang="ar"] h4 {
   font-weight: 600;
 }
 
@@ -247,17 +259,15 @@
     padding: 6px 12px;
     font-size: 0.85rem;
   }
-  
+
   .language-btn span:not(.current-lang) {
     display: none;
   }
-  
+
   .language-dropdown {
     min-width: 160px;
   }
 }
-
-
 
 /* Add to index.css */
 .multiple-text {
@@ -272,12 +282,20 @@
 }
 
 .multiple-text.loading::after {
-  content: '...';
+  content: "...";
   animation: loadingDots 1.5s infinite;
 }
 
 @keyframes loadingDots {
-  0%, 20% { content: '.'; }
-  40% { content: '..'; }
-  60%, 100% { content: '...'; }
+  0%,
+  20% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  60%,
+  100% {
+    content: "...";
+  }
 }
